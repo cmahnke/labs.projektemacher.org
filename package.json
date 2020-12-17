@@ -5,8 +5,8 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "manifesto.js": "IIIF-Commons/manifesto",
     "jsonlint": "^1.6.3",
+    "manifesto.js": "IIIF-Commons/manifesto#4.2.1",
     "patch-package": "^6.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

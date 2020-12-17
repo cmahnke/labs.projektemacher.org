@@ -8,7 +8,7 @@ canonifyurls = true
 disablePathToLower = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
-theme = ["hugo-base16-theme", "projektemacher-base"]
+theme = ["hugo-video", "projektemacher-base", "hugo-base16-theme"]
 paginate = 6
 
 # navigation
