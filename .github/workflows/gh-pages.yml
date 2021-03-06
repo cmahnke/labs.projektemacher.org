@@ -28,6 +28,12 @@ jobs:
         with:
           node-version: 10.22.0
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.81.0'
+          extended: true
+
       - name: Create IIIF derivates
 # UID is als available via $(id -u)
         run: |
@@ -40,11 +46,7 @@ jobs:
         run: |
           ./scripts/setup.sh
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.81.0'
-          extended: true
+
       - name: Build Hugo site
         run: hugo
 
