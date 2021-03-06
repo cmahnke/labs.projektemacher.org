@@ -25,7 +25,7 @@ paginate = 6
     quality = 95
 
 [outputs]
-    page = ["HTML", "JSON"]
+    page = ["HTML"]
 
 [module]
     [[module.mounts]]
