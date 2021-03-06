@@ -1,20 +1,4 @@
 {
- "comments": {
-  "dependencies": {
-   "jquery": "project",
-   "mirador": "project",
-   "normalize.css": "project"
-  },
-  "devDependencies": {
-   "jsonlint": "project",
-   "manifesto.js": "project",
-   "patch-package": "project",
-   "react": "project",
-   "react-dom": "project",
-   "svgo": "project",
-   "url": "project"
-  }
- },
  "dependencies": {
   "jquery": "^3.5.1",
   "mirador": "ProjectMirador/mirador",
@@ -22,19 +6,14 @@
  },
  "devDependencies": {
   "jsonlint": "^1.6.3",
-  "manifesto.js": "IIIF-Commons/manifesto#4.2.1",
   "patch-package": "^6.2.2",
-  "react": "^17.0.1",
-  "react-dom": "^17.0.1",
-  "svgo": "^1.3.2",
-  "url": "^0.11.0"
+  "svgo": "^1.3.2"
+
  },
  "scripts": {
-  "clean-build": "rm -rf node_modules/mirador/node_modules node_modules/manifesto.js/node_modules",
   "patch": "yarn run patch-package",
-  "postinstall": "yarn run patch \u0026\u0026 yarn run postinstall-manifesto \u0026\u0026 yarn run postinstall-mirador",
-  "postinstall-manifesto": "cd node_modules/manifesto.js \u0026\u0026 yarn install \u0026\u0026 yarn run build:esmodule",
-  "postinstall-mirador": "cd node_modules/mirador \u0026\u0026 yarn install \u0026\u0026 rm -r node_modules/manifesto.js \u0026\u0026 ln -s ../manifesto.js node_modules/manifesto.js \u0026\u0026 yarn run build \u0026\u0026 yarn run build:es",
+  "postinstall": "yarn run patch && yarn run postinstall-mirador",
+  "postinstall-mirador": "cd node_modules/mirador \u0026\u0026 yarn install \u0026\u0026 yarn run build",
   "validate": "for file in `ls docs/post/*/*.json`; do yarn run jsonlint $file; if [ $? != 0 ]; then exit $?; fi ; done"
  }
 }
