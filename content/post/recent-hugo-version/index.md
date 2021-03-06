@@ -5,7 +5,7 @@ tags:
 - Hugo
 ---
 
-Bisher wird Hugo 0.74.3 vom 23.7.20 verwendet, aktuell ist Version 0.79. Änderungen an der Handling von JavaScript Build-Prozessen verhindern ein Update. Erschwerend kommt hinzu, dass Homebrew in letzter Zeit eher verschlimmbessert wurde. Downgrades sind nicht mehr einfach über die Kommandozeile möglich.
+Bisher wird Hugo 0.81.0 vom 23.7.20 verwendet, aktuell ist Version 0.79. Änderungen an der Handling von JavaScript Build-Prozessen verhindern ein Update. Erschwerend kommt hinzu, dass Homebrew in letzter Zeit eher verschlimmbessert wurde. Downgrades sind nicht mehr einfach über die Kommandozeile möglich.
 
 # Aktualisierung de Generators
 
@@ -24,7 +24,7 @@ Zusätzlich muss `.github/workflows/gh-pages.yml` angepasst werden:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.79.0'
+          hugo-version: '0.81.0'
 ```
 
 # Anpassungen der Blogs
