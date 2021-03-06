@@ -7,6 +7,7 @@ if [[ -z "$SKIP_IIIF" ]] ; then
 fi
 
 #NPM dependencies
+hugo mod npm pack
 yarn install
 
 # Favicons
