@@ -32,8 +32,9 @@
  "scripts": {
   "clean-build": "rm -rf node_modules/mirador/node_modules node_modules/manifesto.js/node_modules",
   "patch": "yarn run patch-package",
-  "postinstall": "yarn run patch && yarn run postinstall-mirador",
-  "postinstall-mirador": "cd node_modules/mirador && yarn install && yarn run build ",
+  "postinstall": "yarn run patch \u0026\u0026 yarn run postinstall-manifesto \u0026\u0026 yarn run postinstall-mirador",
+  "postinstall-manifesto": "cd node_modules/manifesto.js \u0026\u0026 yarn install \u0026\u0026 yarn run build:esmodule",
+  "postinstall-mirador": "cd node_modules/mirador \u0026\u0026 yarn install \u0026\u0026 rm -r node_modules/manifesto.js \u0026\u0026 ln -s ../manifesto.js node_modules/manifesto.js \u0026\u0026 yarn run build \u0026\u0026 yarn run build:es",
   "validate": "for file in `ls docs/post/*/*.json`; do yarn run jsonlint $file; if [ $? != 0 ]; then exit $?; fi ; done"
  }
 }
