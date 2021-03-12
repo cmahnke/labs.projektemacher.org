@@ -46,7 +46,6 @@ jobs:
         run: |
           ./scripts/setup.sh
 
-
       - name: Build Hugo site
         run: hugo
 

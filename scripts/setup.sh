@@ -7,7 +7,7 @@ if [ -z "$SKIP_IIIF" ] ; then
 fi
 
 #NPM dependencies
-hugo mod npm pack
+find . -name "package.hugo.json" -o -name "package.json" -depth 0 | xargs jq -s add > package.json
 yarn install
 
 # Favicons
