@@ -7,6 +7,12 @@ if [ -z "$SKIP_IIIF" ] ; then
 fi
 
 #NPM dependencies
+echo "Generating package.json"
+if ! command -v jq &> /dev/null
+then
+    echo "vips could not be found, exiting"
+    exit 123
+fi
 find . -name "package.hugo.json" -o -name "package.json" -depth 0 | xargs jq -s add > package.json
 yarn install
 
