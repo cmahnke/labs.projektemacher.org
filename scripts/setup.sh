@@ -17,7 +17,7 @@ if test -f package.json ; then
     rm package.json
 fi
 
-find . -name "package.hugo.json" -o -name "package.json" -depth 0 -size +0c | xargs jq -s add > package.json
+find . -name "package.hugo.json" -o \( -name "package.json" -depth 0 -size +0c \) | xargs jq -s add > package.json
 if ! yarn install ; then
     ERR=$?
     cat package.json | jq -C .
