@@ -1,0 +1,13 @@
+<main role="main" class="error404">
+    {{ partial "hero.html" . }}
+
+    <div class="error-msg">
+       <p>Die angeforderte URL konnte auf dem Server nicht gefunden werden.</p>
+       <p>Du kannst hier zurück zur <a href="{{ .Site.BaseURL | safeHTML }}">Startseite</a>.</p>
+    </div>
+    <div class="errorImg">
+      {{ if .Site.Params.errorimg -}}
+        <img class="error404 mx-auto d-block" src="{{ .Site.Params.logo | absURL }}" alt="Der Blaufußtölpel kann diese Seite nicht finden!"/>
+      {{- end }}
+    </div>
+</main>

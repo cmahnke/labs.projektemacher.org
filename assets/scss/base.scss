@@ -37,6 +37,78 @@
        url('../fonts/source-code-pro-v13-latin-700italic.ttf') format('truetype');
 }
 
-.container {
-     max-width: 65%;
+@media (max-width: 52em) {
+    h1.site-title {
+        font-size: 3em;
+        overflow: hidden;
+    }
+
+    h1.headline {
+        margin-left: 1.4rem;
+    }
+
+    article {
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    article.single section, .article-list article {
+            padding-left: 2rem;
+            padding-right: 2rem;
+    }
+
+    header {
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+
+}
+
+.homepage {
+    p code {
+        padding: 0.2em 0.5em;
+        border-radius: 3px;
+        background: #747369;
+        background: var(--base03);
+        color: #f2f0ec;
+        color: var(--base07);
+    }
+
+    pre {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        overflow-x: scroll;
+        border-radius: 3px;
+        padding: 2rem;
+    }
+}
+
+.site-title {
+
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+        text-decoration: none;
+        color: var(--base0c);
+    }
+
+}
+
+.error-msg {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+footer {
+    margin-bottom: 0rem !important;
+}
+
+article {
+    border-radius: 20px;
 }

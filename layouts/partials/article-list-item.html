@@ -7,7 +7,7 @@
 {{ end }}
   </div>
   <section class="summary">
-    {{ .Content }}
-    {{ if .Truncated }} <a href="{{ .RelPermalink }}">Read More...</a>{{ end }}
+    {{ .Summary }}
+    {{ if .Truncated }} <a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a>{{ end }}
   </section>
 </article>
