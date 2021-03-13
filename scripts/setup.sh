@@ -8,7 +8,6 @@ fi
 
 #NPM dependencies
 echo "Generating package.json"
-#if ! command -v jq &> /dev/null ; then
 if ! which jq &> /dev/null ; then
     echo "jq could not be found, exiting"
     exit 123
@@ -17,7 +16,12 @@ if test -f package.json ; then
     rm package.json
 fi
 
-find . -name "package.hugo.json" -o \( -name "package.json" -depth 0 -size +0c \) | xargs jq -s add > package.json
+PACKAGE_FILES="$(find . -name "package.hugo.json") $(find . -name "package.json" -depth 0 -size +0c )"
+PACKAGE_FILES=`echo $PACKAGE_FILES | tr '\n' ' '`
+echo "Merging $PACKAGE_FILES"
+
+#find . -name "package.hugo.json" -o \( -name "package.json" -depth 0 -size +0c \) | xargs jq -s add > package.json
+jq -s add $PACKAGE_FILES > package.json
 if ! yarn install ; then
     ERR=$?
     cat package.json | jq -C .
