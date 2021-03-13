@@ -10,7 +10,7 @@ fi
 echo "Generating package.json"
 if ! command -v jq &> /dev/null
 then
-    echo "vips could not be found, exiting"
+    echo "jq could not be found, exiting"
     exit 123
 fi
 find . -name "package.hugo.json" -o -name "package.json" -depth 0 | xargs jq -s add > package.json
