@@ -8,12 +8,16 @@ fi
 
 #NPM dependencies
 echo "Generating package.json"
-if ! command -v jq &> /dev/null
-then
+#if ! command -v jq &> /dev/null ; then
+if ! which jq &> /dev/null ; then
     echo "jq could not be found, exiting"
     exit 123
 fi
-find . -name "package.hugo.json" -o -name "package.json" -depth 0 | xargs jq -s add > package.json
+if test -f package.json ; then
+    rm package.json
+fi
+
+find . -name "package.hugo.json" -o -name "package.json" -depth 0 -size +0c | xargs jq -s add > package.json
 yarn install
 
 # Favicons
