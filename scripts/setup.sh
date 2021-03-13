@@ -18,7 +18,12 @@ if test -f package.json ; then
 fi
 
 find . -name "package.hugo.json" -o -name "package.json" -depth 0 -size +0c | xargs jq -s add > package.json
-yarn install
+if ! yarn install ; then
+    ERR=$?
+    cat package.json | jq -C .
+    cat yarn-error.log
+    exit $ERR
+fi
 
 # Favicons
 # See https://gist.github.com/pfig/1808188
