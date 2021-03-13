@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
 
