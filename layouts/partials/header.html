@@ -45,7 +45,14 @@
 
 <title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
 </head>
-<body>
+{{- $class := "" -}}
+{{- if hasPrefix .Page.File.Path "about" -}}
+    {{- $class = "about" -}}
+{{- end -}}
+{{- if .Params.metaPage -}}
+    {{- $class = printf "%s %s" $class "meta" -}}
+{{ end }}
+<body class="{{ $class }}">
 
 <header>
   <div class="container clearfix">

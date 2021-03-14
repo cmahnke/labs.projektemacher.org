@@ -37,6 +37,17 @@
        url('../fonts/source-code-pro-v13-latin-700italic.ttf') format('truetype');
 }
 
+body {
+    min-height: 100vh;
+    position: relative;
+
+    &.about .container .article .single .body {
+        background-position: 95% 4em;
+        background-image: url("/images/cm.svg");
+        background-repeat: no-repeat;
+    }
+}
+
 @media (max-width: 52em) {
     h1.site-title {
         font-size: 3em;
@@ -105,8 +116,16 @@
     margin-bottom: 5em;
 }
 
+.tags, .container .article .single {
+    padding-bottom: calc(2rem + .9em + 2rem);
+}
+
 footer {
     margin-bottom: 0rem !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 
 header {
