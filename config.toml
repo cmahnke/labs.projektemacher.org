@@ -10,6 +10,7 @@ disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 theme = ["hugo-video", "projektemacher-base", "hugo-base16-theme"]
 paginate = 10
+enableInlineShortcodes = true
 
 # navigation
 [menu]
@@ -25,7 +26,7 @@ paginate = 10
     quality = 95
 
 [outputs]
-    page = ["HTML"]
+    page = ["HTML", "JSON"]
 
 [module]
     [[module.mounts]]

@@ -9,3 +9,5 @@ title: "Ideen und Links"
 * [Mirador Textoverlay](https://github.com/dbmdz/mirador-textoverlay)
 
 # Schriften
+
+* [Averia Sans Libre](https://fonts.google.com/specimen/Averia+Sans+Libre)

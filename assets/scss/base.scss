@@ -1,4 +1,5 @@
 @import "normalize";
+@import "mirador";
 
 /* source-code-pro-regular - latin */
 @font-face {
@@ -55,10 +56,11 @@ body {
     }
 
     h1.headline {
-        margin-left: 1.4rem;
+        margin-left: 1rem;
     }
 
-    article {
+    article.list-item,
+    article.single {
         margin-left: 1.4rem;
         margin-right: 1.4rem;
     }
@@ -67,9 +69,9 @@ body {
         width: 100%;
     }
 
-    article.single section, .article-list article {
-            padding-left: 2rem;
-            padding-right: 2rem;
+    article.single section.body, .article-list article.list-item {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     header {
@@ -92,10 +94,14 @@ body {
     pre {
         margin-top: 0;
         margin-bottom: 1rem;
-        overflow-x: scroll;
-        border-radius: 3px;
+        overflow-x: auto;
+        border-radius: 1rem;
         padding: 2rem;
     }
+}
+
+article.single pre {
+    overflow-x: auto;
 }
 
 .site-title {
@@ -110,6 +116,12 @@ body {
     }
 
 }
+
+/*
+pre {
+    border-radius: 1rem;
+}
+*/
 
 .error-msg {
     margin-top: 5em;
@@ -133,5 +145,16 @@ header {
 }
 
 article, section.body {
-    border-radius: 20px;
+    border-radius: 2em;
+}
+
+/* Reset badly written theme CSS */
+article.single * {
+    max-width: unset;
+}
+
+article.single section header,
+article.single section section {
+    padding: unset;
+    margin: unset;
 }
