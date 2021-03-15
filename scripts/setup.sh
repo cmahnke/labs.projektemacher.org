@@ -7,7 +7,7 @@ echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
 
 #NPM dependencies
 echo "Calling theme scripts"
-for SCRIPT in $PWD/themes/projektemacher-base/scripts/*.sh ; do
+for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
     echo "Running $SCRIPT"
     bash "$SCRIPT"
 done
