@@ -1,5 +1,6 @@
 @import "normalize";
 @import "mirador";
+@import "ol-iiif";
 
 /* source-code-pro-regular - latin */
 @font-face {
@@ -166,4 +167,8 @@ article.single section section {
 .sections h1.headline {
     font-size: 3em;
     color: var(--base0a);
+}
+
+.iiif .viewer {
+    width: 100% !important;
 }
