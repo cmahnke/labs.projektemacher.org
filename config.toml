@@ -15,9 +15,14 @@ enableInlineShortcodes = true
 # navigation
 [menu]
     [[menu.main]]
+        name = "Geplante Blogs"
+        URL = "/future"
+        weight = 1
+
+    [[menu.main]]
         name = "Über"
         URL = "/about"
-        weight = 1
+        weight = 2
 
 [markup.goldmark.renderer]
   unsafe= true

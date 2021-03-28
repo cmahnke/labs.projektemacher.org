@@ -104,7 +104,8 @@ article.single pre {
     overflow-x: auto;
 }
 
-.site-title {
+.site-title,
+.sections {
 
     a,
     a:active,
@@ -137,7 +138,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-
 }
 
 header {
@@ -157,4 +157,13 @@ article.single section header,
 article.single section section {
     padding: unset;
     margin: unset;
+}
+
+.homepage .tag {
+    margin-right: .5rem;
+}
+
+.sections h1.headline {
+    font-size: 3em;
+    color: var(--base0a);
 }

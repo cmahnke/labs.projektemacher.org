@@ -1,0 +1,16 @@
+{{- $page := .Page -}}
+{{- $context := path.Dir .File.Path -}}
+{{- $pageURL := .Permalink -}}
+
+{{ .Content }}
+<div class="iiif">
+    {{- if (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/image/") -}}
+        {{- range .Params.resources -}}
+          {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}
+            {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "heading" (i18n .name) "pageContext" $page "site" $.Site) }}
+          {{- end -}}
+        {{- end -}}
+    {{- else if (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/presentation/") -}}
+        {{- partial "iiif-presentation.html" . -}}
+    {{- end -}}
+</div>

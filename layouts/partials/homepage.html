@@ -36,8 +36,7 @@
   <section class="tags">
     {{ range $name, $value := . }}
     <span class="tag">
-      <a href="{{ $baseurl }}tags/{{ $name | urlize }}">{{ $name }}</a>
-      <small>({{ .Count }})</small>
+      <a href="{{ $baseurl }}tags/{{ $name | urlize }}">{{ $name }}</a>&nbsp<small>({{ .Count }})</small>
     </span>
     {{ end }}
   </section>

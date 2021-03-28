@@ -1,0 +1,30 @@
+{{- partial "header.html" . -}}
+
+<main role="main" class="sections">
+    <h1 class="headline">{{ .CurrentSection.Title }}</h1>
+    <div class="article-list">
+
+    {{- if eq .CurrentSection .FirstSection -}}
+        {{- range .CurrentSection.Pages -}}
+            <article class="list-item">
+                <h2 class="headline" itemprop="headline">
+                    <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                </h2>
+                <div>
+                    {{- if .Description -}}
+                        {{ .Description }}
+                    {{- end -}}
+                </div>
+            </article>
+        {{- end -}}
+    {{- else -}}
+          {{- $paginator := .Paginate .CurrentSection.Pages -}}
+          <div class="article-list">
+            {{- range $paginator.Pages -}}
+              {{ partial "article-list-item.html" . }}
+            {{- end -}}
+          </div>
+     {{- end -}}
+     </div>
+  </main>
+{{- partial "footer.html" . -}}

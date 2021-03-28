@@ -95,3 +95,6 @@ other = "ist ein <a href=\"https://projektemacher.org/\">Projektemacher</a> Blog
 
 [readmore]
 other = "Mehr lesen..."
+
+[publishedOn]
+other = "Veröffentlicht am"

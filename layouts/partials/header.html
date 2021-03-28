@@ -39,9 +39,7 @@
 {{- else -}}
   {{- $mainJs = slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
 {{- end -}}
-<script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity }}"></script>
-
-
+<script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity | html }}"></script>
 
 <title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
 </head>

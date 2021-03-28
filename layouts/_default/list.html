@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{- partial "header.html" . -}}
 
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}
@@ -6,11 +6,11 @@
 {{- end -}}
 
 {{/* Sort sticky pages to top */}}
-{{ $stickyPages := where $pages "Params.sticky" "==" true }}
-{{ $nonStickyPages := where $pages "Params.sticky" "!=" true }}
-{{ $pages = union $stickyPages $nonStickyPages }}
+{{- $stickyPages := where $pages "Params.sticky" "==" true -}}
+{{- $nonStickyPages := where $pages "Params.sticky" "!=" true -}}
+{{- $pages = union $stickyPages $nonStickyPages -}}
 
-{{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
+{{- $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 
 <main role="main" class="article-list">
   <h1 class="list-title">{{ .Title }}</h1>
@@ -19,4 +19,4 @@
   {{ end }}
 </main>
 {{ partial "paginator.html" $paginator }}
-{{ partial "footer.html" . }}
+{{- partial "footer.html" . -}}

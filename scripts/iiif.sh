@@ -4,6 +4,10 @@ TILE_SIZE=512
 IIIF_STATIC_CMD=""
 OUTPUT_PREFIX=""
 DEFAULT_URL_PREFIX="."
+IMAGE_PREFIX=content
+
+# This only works if there are no generated IIIF directories, otherwise these will be processed as well
+#shopt -s globstar
 
 if [ -z "$SKIP_IIIF" ] ; then
 
@@ -35,8 +39,9 @@ if [ -z "$SKIP_IIIF" ] ; then
 
     fi
 
+    echo "Processing files in '$IMAGE_PREFIX'"
     # IIFF
-    for IMAGE in `ls -1 content/post/**/front*.jpg content/post/**/back*.jpg content/post/**/page*.jpg content/post/**/front.jpg content/post/**/end.jpg content/post/**/title.jpg content/post/**/back.jpg content/post/**/*-recto.jpg content/post/**/*-verso.jpg content/post/**/img*.jpg content/post/**/**/*.jpg`
+    for IMAGE in `ls -1 $IMAGE_PREFIX/**/**/**/front*.jpg $IMAGE_PREFIX/**/front*.jpg $IMAGE_PREFIX/**/back*.jpg $IMAGE_PREFIX/**/page*.jpg $IMAGE_PREFIX/**/front.jpg $IMAGE_PREFIX/**/end.jpg $IMAGE_PREFIX/**/title.jpg $IMAGE_PREFIX/**/back.jpg $IMAGE_PREFIX/**/*-recto.jpg $IMAGE_PREFIX/**/*-verso.jpg $IMAGE_PREFIX/**/img*.jpg $IMAGE_PREFIX/**/**/*.jpg`
     do
         OUTPUT_DIR=`dirname $IMAGE`
         IIIF_DIR=`basename $IMAGE .jpg`

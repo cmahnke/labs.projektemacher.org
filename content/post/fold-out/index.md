@@ -9,60 +9,78 @@ resources:
 - src: "front01.jpg"
   params:
     iiif: front01/info.json
+    hint: continuous
 - src: "front02.jpg"
   params:
     iiif: front02/info.json
+    hint: continuous
 - src: "front03.jpg"
   params:
     iiif: front03/info.json
+    hint: continuous
 - src: "front04.jpg"
   params:
     iiif: front04/info.json
+    hint: continuous
 - src: "front05.jpg"
   params:
     iiif: front05/info.json
+    hint: continuous
 - src: "front06.jpg"
   params:
     iiif: front06/info.json
+    hint: continuous
 - src: "front07.jpg"
   params:
     iiif: front07/info.json
+    hint: continuous
 - src: "front08.jpg"
   params:
     iiif: front08/info.json
+    hint: continuous
 - src: "front09.jpg"
   params:
     iiif: front09/info.json
+    hint: continuous
 - src: "front10.jpg"
   params:
     iiif: front10/info.json
 - src: "back01.jpg"
   params:
     iiif: back01/info.json
+    hint: continuous
 - src: "back02.jpg"
   params:
     iiif: back02/info.json
+    hint: continuous
 - src: "back03.jpg"
   params:
     iiif: back03/info.json
+    hint: continuous
 - src: "back04.jpg"
   params:
     iiif: back04/info.json
+    hint: continuous
 - src: "back05.jpg"
   params:
     iiif: back05/info.json
+    hint: continuous
 - src: "back06.jpg"
   params:
     iiif: back06/info.json
+    hint: continuous
 - src: "back07.jpg"
   params:
     iiif: back07/info.json
+    hint: continuous
 - src: "back08.jpg"
   params:
     iiif: back08/info.json
+    hint: continuous
 - src: "back09.jpg"
   params:
     iiif: back09/info.json
+    hint: continuous
 - src: "back10.jpg"
   params:
     iiif: back10/info.json
