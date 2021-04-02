@@ -16,4 +16,8 @@ content/**/front-*/
 content/**/front*/
 content/**/back/
 content/**/back*/
-content/*+/end/
+content/**/end/a
+content/future/3d/**/*-right.*
+content/future/3d/**/*-left.*
+content/future/3d/**/*.gif
+content/future/3d/**/*.jps
