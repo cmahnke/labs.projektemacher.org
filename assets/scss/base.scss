@@ -81,7 +81,6 @@ body {
     }
 
 }
-
 .homepage {
     p code {
         padding: 0.2em 0.5em;
@@ -105,9 +104,8 @@ article.single pre {
     overflow-x: auto;
 }
 
-.site-title,
-.sections {
-
+.sections,
+.site-title {
     a,
     a:active,
     a:focus,
@@ -116,39 +114,37 @@ article.single pre {
         text-decoration: none;
         color: var(--base0c);
     }
-
 }
-
 /*
 pre {
     border-radius: 1rem;
 }
 */
-
 .error-msg {
     margin-top: 5em;
     margin-bottom: 5em;
 }
 
-.tags, .container .article .single {
+.container .article .single,
+.tags {
     padding-bottom: calc(2rem + .9em + 2rem);
 }
 
 footer {
-    margin-bottom: 0rem !important;
+    margin-bottom: 0 !important;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 header {
-    margin-top: 0rem !important;
+    margin-top: 0 !important;
 }
 
-article, section.body {
+article,
+section.body {
     border-radius: 2em;
 }
-
 /* Reset badly written theme CSS */
 article.single * {
     max-width: unset;
@@ -161,7 +157,7 @@ article.single section section {
 }
 
 .homepage .tag {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
 .sections h1.headline {
@@ -171,4 +167,71 @@ article.single section section {
 
 .iiif .viewer {
     width: 100% !important;
+}
+
+.dreiD-images {
+    width: 100%;
+    margin-top: 1em;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .radio {
+            display: none;
+        }
+
+        .panels {
+            background: #f1f0ec;
+            min-height: 200px;
+            width: 100%;
+            border-radius: 1em;
+            padding: 10px;
+            border: black 1px solid;
+            transition: width .6s, height .6s;
+
+            .panel {
+                display: none;
+
+                img {
+                    width: 100%;
+                }
+
+                .description {
+                    margin: 1.4rem;
+                }
+            }
+        }
+
+        .tabs {
+            .tab {
+                cursor: pointer;
+                padding: 10px 20px;
+                margin: 0 2px;
+                background: #2d2d2d;
+                display: inline-block;
+                color: #fff;
+                border-radius: 6px 6px 0 0;
+            }
+        }
+        /* Inspired by https://codepen.io/Wendy-Ho/pen/MWWBvmd */
+        #dreiD-ana:checked ~ .panels #dreiD-ana-panel,
+        #dreiD-gif:checked ~ .panels #dreiD-gif-panel,
+        #dreiD-jps:checked ~ .panels #dreiD-jps-panel,
+        #dreiD-mpo:checked ~ .panels #dreiD-mpo-panel,
+        #dreiD-single:checked ~ .panels #dreiD-single-panel {
+            display: block;
+        }
+
+        #dreiD-ana:checked ~ .tabs #dreiD-ana-tab,
+        #dreiD-gif:checked ~ .tabs #dreiD-gif-tab,
+        #dreiD-jps:checked ~ .tabs #dreiD-jps-tab,
+        #dreiD-mpo:checked ~ .tabs #dreiD-mpo-tab,
+        #dreiD-single:checked ~ .tabs #dreiD-single-tab {
+            background: #ffcc66;
+            color: #000;
+            border-top: 3px solid #393939;
+        }
+    }
 }
