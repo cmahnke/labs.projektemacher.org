@@ -13,6 +13,7 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
 done
 
 ./scripts/3d.sh
+./scripts/height-map.sh
 
 # Favicons
 # See https://gist.github.com/pfig/1808188

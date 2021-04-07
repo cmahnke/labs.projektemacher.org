@@ -24,4 +24,6 @@ content/future/3d/**/*.jps
 content/**/img*-*.png
 content/**/page*-*.png
 content/**/img*-*.json
+!content/**/img*-map.json
 content/**/page*-*.json
+!content/**/page*-map.json
