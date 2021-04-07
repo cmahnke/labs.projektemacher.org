@@ -83,12 +83,12 @@ right = im.crop((right_left, right_top, right_right, right_bottom))
 
 # See https://blog.miguelgrinberg.com/post/take-3d-pictures-with-your-canon-dslr-and-magic-lantern
 
-if ('gif' in args.output):
+if ('gif' in outputs):
     gifFileName = args.image.parent.joinpath(args.image.stem + '.gif')
     left.save(gifFileName, save_all=True, append_images=[right], duration=0.1, loop=0, dispose=2)
-elif ('jps' in args.output):
+if ('jps' in outputs):
     ceFileName = args.image.parent.joinpath(args.image.stem + '.jps')
     crossed_eyed(left, right, ceFileName)
-elif ('images' in args.output):
+if ('images' in outputs):
     left.save(leftFileName)
     right.save(rightFileName)

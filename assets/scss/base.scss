@@ -1,6 +1,7 @@
 @import "normalize";
 @import "mirador";
 @import "ol-iiif";
+@import "iframe-consent";
 
 /* source-code-pro-regular - latin */
 @font-face {
@@ -100,8 +101,11 @@ body {
     }
 }
 
-article.single pre {
-    overflow-x: auto;
+article.single {
+
+    pre {
+        overflow-x: auto;
+    }
 }
 
 .sections,
@@ -234,4 +238,24 @@ article.single section section {
             border-top: 3px solid #393939;
         }
     }
+}
+
+.iframe-wrapper {
+
+    .opt-in-overlay {
+        border-radius: 1rem;
+
+        .opt-in-header {
+            color: var(--base0c);
+        }
+        .opt-in-text {
+            color: var(--base03);
+
+        }
+        .opt-in-confirm {
+
+        }
+
+    }
+
 }
