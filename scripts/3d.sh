@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 IMAGE_PREFIX=content/future/3d/
-SCRIPT=`dirname $0`/../image-splitter.py
+SCRIPT=`dirname $0`/./image-splitter.py
 
 for META in `ls -1 $IMAGE_PREFIX/**/3d-images.json`
 do
