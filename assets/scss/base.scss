@@ -150,14 +150,21 @@ section.body {
     border-radius: 2em;
 }
 /* Reset badly written theme CSS */
-article.single * {
-    max-width: unset;
-}
-
-article.single section header,
-article.single section section {
-    padding: unset;
-    margin: unset;
+article.single {
+    figure {
+        background-color: unset;
+        margin-left: unset;
+        margin-right: unset;
+        width: unset;
+    }
+    * {
+        max-width: unset;
+    }
+    section header,
+    section section {
+        padding: unset;
+        margin: unset;
+    }
 }
 
 .homepage .tag {
