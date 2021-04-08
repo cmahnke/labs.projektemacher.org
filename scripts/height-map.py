@@ -5,10 +5,11 @@ import argparse, pathlib, json
 from termcolor import cprint
 
 parser = argparse.ArgumentParser(description='Create height map')
-parser.add_argument('--image',  type=pathlib.Path, help='Image to process', required=True)
-parser.add_argument('--metadata',  type=pathlib.Path, help='File containing metadata', required=True)
-parser.add_argument('--pixel-size',  type=int, help='Size of a pixel in mm', default=1)
-parser.add_argument('--output',  choices=['json', 'png'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
+parser.add_argument('--metadata', type=pathlib.Path, help='File containing metadata', required=True)
+parser.add_argument('--pixel-size', type=int, help='Size of a pixel in mm', default=1)
+parser.add_argument('--output', choices=['json', 'png'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--debug', '-d', action='store_true', help='Create images for each filter step', default=False)
 
 args = parser.parse_args()
 
@@ -25,6 +26,12 @@ if (len(args.output) == 0):
 else:
     outputs = sum(args.output, [])
 
+debug = False
+if (args.debug):
+    debug = True
+    cprint('Enabeling debug mode', 'yellow')
+    cprint('Requested output formats: ' + ', '.join(outputs), 'yellow')
+
 metadata = json.load(args.metadata.open())
 for i in range(len(metadata)):
     cprint("Processing image {} from file {}".format(i, args.image), 'yellow')
@@ -35,8 +42,13 @@ for i in range(len(metadata)):
     bottom = metadata[i]['coords']['size']['y'] + metadata[i]['coords']['position']['y']
 
     image = inImg.crop((left, top, right, bottom))
-    operations = bottom = metadata[i]['filters']
-    for op in operations:
+    if (debug):
+        debugFileName = args.image.parent.joinpath(args.image.stem + "-{}-cut".format(i) + '.png')
+        cprint("Saving image {}".format(debugFileName), 'yellow')
+        image.save(debugFileName)
+    operations = metadata[i]['filters']
+    for j in range(len(operations)):
+        op = operations[j]
         if (isinstance(op, str)):
             name = op.upper()
         elif (isinstance(op, dict)):
@@ -68,6 +80,11 @@ for i in range(len(metadata)):
             else:
                 threshold = 128
             image = image.point(lambda x : 255 if x > threshold else 0, mode='1')
+        if (debug):
+            debugFileName = args.image.parent.joinpath(args.image.stem + "-{}-filter_{}_{}".format(i, j, name) + '.png')
+            cprint("Saving image {}".format(debugFileName), 'yellow')
+            image.save(debugFileName)
+
     if (args.pixel_size != 0):
         width = round(image.size[0] / (pixelPerMm * args.pixel_size))
         height = round(image.size[1] / (pixelPerMm * args.pixel_size))
@@ -78,7 +95,7 @@ for i in range(len(metadata)):
         outFileName = args.image.parent.joinpath(args.image.stem + "-{}".format(i) + '.png')
         cprint("Saving image {}".format(outFileName), 'yellow')
         image.save(outFileName)
-    elif ('json' in outputs):
+    if ('json' in outputs):
         outFileName = args.image.parent.joinpath(args.image.stem + "-{}".format(i) + '.json')
         cprint("Saving image {}".format(outFileName), 'yellow')
         json.dump({'height': height, 'width': width, 'data': list(image.getdata())}, open(outFileName, 'w'))
