@@ -3,6 +3,16 @@
 <main role="main" class="sections">
     <h1 class="headline">{{ .CurrentSection.Title }}</h1>
     <div class="article-list">
+        {{- if .Description -}}
+            <article class="section-description">
+                <div class="description">
+                    {{ .Description }}
+                </div>
+                <div class="content">
+                    {{ .Content }}
+                </div>
+            </article>
+        {{- end -}}
 
     {{- if eq .CurrentSection .FirstSection -}}
         {{- range .CurrentSection.Pages -}}

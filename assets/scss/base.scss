@@ -266,3 +266,15 @@ article.single {
     }
 
 }
+
+.section-description {
+    .description {
+        margin-left: -4rem;
+        margin-right: -4rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+    .content {
+        font-weight: bold;
+    }
+}
