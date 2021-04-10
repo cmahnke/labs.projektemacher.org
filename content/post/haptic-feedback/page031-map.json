@@ -4,5 +4,5 @@
         "position": {"x": 2304, "y": 488},
         "size": {"x": 1360, "y": 864}
     },
-    "filters": ["FIND_EDGES", "EDGE_ENHANCE", "SMOOTH_MORE", "SMOOTH_MORE", "GRAYSCALE", "EQUALIZE", {"name": "BINARIZE", "params": {"threshold": 128}}]
+    "filters": ["FIND_EDGES", "EDGE_ENHANCE", "SMOOTH_MORE", "SMOOTH_MORE", "GRAYSCALE", "EQUALIZE", {"name": "BINARIZE", "params": {"threshold": 108}}]
 }]
