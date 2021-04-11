@@ -30,8 +30,28 @@ enableInlineShortcodes = true
 [imaging]
     quality = 95
 
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["geojson", "gjson"]
+
+[outputFormats]
+  [outputFormats.GEOJSON]
+    mediaType = "application/json"
+    isPlainText = true
+    isHTML = false
+    baseName = "map"
+    notAlternative = true
+
+  [outputFormats.IIIF]
+    mediaType = "application/json"
+    isPlainText = true
+    isHTML = false
+    baseName = "manifest"
+    notAlternative = true
+
 [outputs]
     page = ["HTML", "JSON"]
+#    section= ["GEOJSON"]
 
 [module]
     [[module.mounts]]

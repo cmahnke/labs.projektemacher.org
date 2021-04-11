@@ -5,6 +5,10 @@ type: 3d
 iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
+geojson:
+  coordinates:
+  - 55.9531559
+  - -3.1873873
 resources:
 - src: "front.jpg"
   name: front

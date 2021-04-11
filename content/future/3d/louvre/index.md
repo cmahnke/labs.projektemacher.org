@@ -3,6 +3,10 @@ title: "Louvre Paris"
 date: 2021-04-02T17:15:07+02:00
 type: 3d
 iiifContext: http://iiif.io/api/image/2/context.json
+geojson:
+  coordinates:
+  - 48.8599137
+  - 2.3346566
 tags:
 - 3D
 resources:
