@@ -12,17 +12,54 @@ theme = ["hugo-video", "projektemacher-base", "hugo-base16-theme"]
 paginate = 10
 enableInlineShortcodes = true
 
-# navigation
-[menu]
-    [[menu.main]]
-        name = "Geplante Blogs"
-        URL = "/future"
-        weight = 1
 
-    [[menu.main]]
-        name = "Über"
-        URL = "/about"
-        weight = 2
+[languages]
+    [languages.de]
+        languagename = "Deutsch"
+
+        [languages.de.params]
+
+        [languages.de.menu]
+
+            [[languages.de.menu.main]]
+                name = "Geplante Blogs"
+                URL = "/future"
+                weight = 1
+
+            [[languages.de.menu.main]]
+                name = "Über"
+                weight = 5
+                url = "about/"
+
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.params]
+
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+                name = "Planed Blogs"
+                weight = 1
+                url = "/future"
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 2
+                url = "about/"
+
+# navigation
+#[menu]
+#    [[menu.main]]
+#        name = "Geplante Blogs"
+#        URL = "/future"
+#        weight = 1
+#
+#    [[menu.main]]
+#        name = "Über"
+#        URL = "/about"
+#        weight = 2
 
 [markup.goldmark.renderer]
   unsafe= true

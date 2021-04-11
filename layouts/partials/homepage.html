@@ -3,9 +3,20 @@
 
   {{ partial "hero.html" . }}
 
-  <h1 class="headline">Beiträge</h1>
+  <h1 class="headline">{{ i18n "posts" }}</h1>
+  {{- $pages := where (where .Site.RegularPages "Section" "post") "Params.displayinlist" "!=" false -}}
+  {{- .Scratch.Set "pages" $pages -}}
+  {{- $mainSite := .Sites.First -}}
+  {{- if ne $mainSite .Site -}}
+      {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" "post") ) -}}
+  {{- end -}}
+  {{- $pages = .Scratch.Get "pages" -}}
 
-  {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") (or .Site.Params.paginate 3) }}
+{{/*
+  {{- $pages := where .Site.RegularPages "Section" "post" -}}
+  {{- $pages = $pages | lang.Merge (where .Site.RegularPages "Section" "post") -}}
+*/}}
+  {{- $paginator := .Paginate ($pages) (or .Site.Params.paginate 3) -}}
   <div class="article-list">
     {{ range $paginator.Pages }}
       {{ partial "article-list-item.html" . }}
