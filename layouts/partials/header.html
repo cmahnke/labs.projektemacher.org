@@ -20,7 +20,6 @@
 {{- $style := slice  $scssStyle | resources.Concat "css/concated.css" | minify | fingerprint -}}
 <link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
 
-
 {{/* JavaScript */}}
 {{- $defines := dict "process.env.NODE_ENV" `"production"` -}}
 {{- $externals := slice "domain" -}}

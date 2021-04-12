@@ -19,8 +19,8 @@ resources:
 "Calvaire de la Corniche" in [Trouville-sur-Mer](https://de.wikipedia.org/wiki/Trouville-sur-Mer).
 <!--more-->
 
-{{< iframe-consent >}}
+{{< html/iframe-consent >}}
 <iframe src="https://www.google.com/maps/embed?pb=!4v1617527917395!6m8!1m7!1sYqrUpkau3wrkyDQDFT4q-g!2m2!1d49.37426731751075!2d0.08650350370885652!3f256.59808!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-{{< /iframe-consent >}}
+{{< /html/iframe-consent >}}
 
 Heute kann man nur noch einzelne Häuser wieder erkennen...
