@@ -86,13 +86,13 @@ resources:
     iiif: back10/info.json
 ---
 
-Demonstrator zur Anzeige von [Leporello](https://de.wikipedia.org/wiki/Leporello_(Heft)) (fold-outs) mit Mirador [Mirador](https://github.com/ProjectMirador/mirador). Hinweise zur Kodierung können  [hier](https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw) gefunden werden. Die folgenden Seiten bieten Dokumentation und Beispiele:
+Demonstrator for displaying fold-outs (Orihon, Accordion Book) using [Mirador](https://github.com/ProjectMirador/mirador). Hints on encoding the fold-out can be found [here](https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw). the following pages are relevant:
 * [IIIF cookbook](https://preview.iiif.io/cookbook/3333-choice/recipe/0035-foldouts/)
 * [Example Mahābhārata scroll](https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json#?c=0&m=0&s=0&cv=0&xywh=-25583%2C0%2C54981%2C49069)
 
 <!--more-->
 
-Beispiel für derzeit unterstütztes `viewing hints` Attribut:
+Example for currently supported viewing hints:
 ```
 - src: "front01.jpg"
   params:
@@ -100,7 +100,7 @@ Beispiel für derzeit unterstütztes `viewing hints` Attribut:
     hint: non-paged
 ```
 
-Beispiel für notwendige Änderung:
+Example for the necessary change:
 ```
 - src: "front01.jpg"
   params:
