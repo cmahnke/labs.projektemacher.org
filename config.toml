@@ -9,9 +9,11 @@ disablePathToLower = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 theme = ["hugo-video", "projektemacher-base", "hugo-base16-theme"]
-paginate = 10
+paginate = 5
 enableInlineShortcodes = true
 
+[params]
+    paginate = 5
 
 [languages]
     [languages.de]
@@ -49,20 +51,8 @@ enableInlineShortcodes = true
                 weight = 2
                 url = "about/"
 
-# navigation
-#[menu]
-#    [[menu.main]]
-#        name = "Geplante Blogs"
-#        URL = "/future"
-#        weight = 1
-#
-#    [[menu.main]]
-#        name = "Über"
-#        URL = "/about"
-#        weight = 2
-
 [markup.goldmark.renderer]
-  unsafe= true
+  unsafe = true
 
 [imaging]
     quality = 95
