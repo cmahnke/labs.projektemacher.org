@@ -13,9 +13,16 @@ resources:
     label: Tafel 31
 ---
 
+Da es in diesem Blog auch darum gehen soll analoge Inhalte innovativ in den digitalen Raum zu transportieren, hier ein Versuch Stoffe fühlbar zu machen...
+
 <!--more-->
 
 # Vorbereitung der Bilddaten
+
+Diese Schritte sind konfigurierbar für jeden einzelnen Bildausschnitt, das Ziel ist die Überführung von Bilddaten in ein Raster von fühlbaren Punkten. Dabei muss noch experimentell ermittelt werden:
+
+* Welche Kantenlänge jeder dieser Punkte haben soll - derzeit 1mm
+* Wie viele Abstufungen von Intensität nützlich sind - derzeit nur 2 (An und Aus)
 
 {{< figure src="./page031-0-cut.png" caption="Ausschnitt zur Analyse" >}}
 
@@ -34,5 +41,9 @@ resources:
 {{< figure src="./page031-0-filter_6_BINARIZE.png" caption="Binarisieren" >}}
 
 {{< figure src="./page031-0.png" caption="Reduktion auf eine Pixelkantenlänge von 1mm" >}}
+
+# Das Ergebnis
+
+Derzeit noch ohne Anreicherung.
 
 {{< mirador manifestUrl="index.json" >}}

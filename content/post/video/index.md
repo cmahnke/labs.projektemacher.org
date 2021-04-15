@@ -5,11 +5,15 @@ tags:
 - Medientypen
 ---
 
+Mit dem [`hugo-video`](https://github.com/martignoni/hugo-video) Theme können einfach lokale Videos eingebunden werden:
+
 {{< video src="marburg" >}}
 
 <!--more-->
 
-Converting a DVD video file into MP4 for the web. With deiniterlacing (`-vf yadif`) and cutting to timestamps (`-ss 00:00:05 -to 00:05:39`).
+YouTube wird von Hugo mit dem entsprechendem [Shortcode](https://gohugo.io/content-management/shortcodes/#youtube) unterstützt.
+
+Eine DVD Video Datei in MP4 fürs Web konvertieren. Mit deiniterlacing (`-vf yadif`) und Zuschnitt auf einen speziellen Ausschnitt (`-ss 00:00:05 -to 00:05:39`).
 
 ```
 ffmpeg -i VTS_01_1.VOB -vf yadif -ss 00:00:05 -to 00:05:39 -an output.mp4

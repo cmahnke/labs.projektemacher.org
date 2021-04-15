@@ -2,14 +2,9 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="{{ if eq .Description "" }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
-{{- with $.Param "keywords" }}
-<meta name="keywords" content="{{ delimit . "," }}">
-{{- end }}
-{{- with $.Param "author" }}
-<meta name="author" content="{{ . }}">
-{{- end }}
-{{ hugo.Generator }}
+
+{{ partial "html/head/meta.html" . }}
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{/* Base Style from theme */}}
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css">
@@ -26,17 +21,24 @@
 {{- $mainOpts := dict "targetPath" "js/main.js" "externals" $externals "defines" $defines -}}
 {{- $main := resources.Get "js/main.js" | js.Build $mainOpts -}}
 
+{{- $iiifJs := partial "iiif-js.html" . -}}
 {{- $mainJs := "" -}}
+
 {{- if or .IsHome (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/image/") -}}
-  {{- $iiifOpts := dict "targetPath" "js/iiif-image-viewer.js" "defines" $defines "minify" true -}}
+  {{- $iiifOpts := dict "targetPath" "js/iiif-image-viewer.js" "defines" $defines "minify" false -}}
   {{- $iiif := resources.Get "js/iiif-image-viewer.js" | js.Build $iiifOpts -}}
   {{- $mainJs = slice $main $iiif | resources.Concat "js/main-iiif-i.js" | minify | fingerprint -}}
 {{- else if (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/presentation/") -}}
-  {{- $iiifOpts := dict "targetPath" "js/iiif-presentation-viewer.js" "defines" $defines "minify" true -}}
+  {{- $iiifOpts := dict "targetPath" "js/iiif-presentation-viewer.js" "defines" $defines "minify" false -}}
   {{- $iiif := resources.Get "js/iiif-presentation-viewer.js" | js.Build $iiifOpts -}}
   {{- $mainJs = slice $main $iiif | resources.Concat "js/main-iiif-p.js" | minify | fingerprint -}}
+
+{{/*
+{{- if and (isset $iiifJs "js") (ne (index $iiifJs "js") "")  -}}
+    {{- $mainJs = slice $main (index $iiifJs "js") | resources.Concat (printf "js/main-iiif-%s.js" (index $iiifJs "name")) | minify | fingerprint -}}
+*/}}
 {{- else -}}
-  {{- $mainJs = slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
+    {{- $mainJs = slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
 {{- end -}}
 <script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity | html }}"></script>
 

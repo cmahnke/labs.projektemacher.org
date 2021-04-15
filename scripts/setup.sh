@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
-
 ./scripts/iiif.sh
 
+rm -f 'themes/projektemacher-base/patches/mirador+3.0.0.patch'
 
 #NPM dependencies
 echo "Calling theme scripts"
