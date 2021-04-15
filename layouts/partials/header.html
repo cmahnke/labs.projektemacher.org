@@ -21,7 +21,10 @@
 {{- $mainOpts := dict "targetPath" "js/main.js" "externals" $externals "defines" $defines -}}
 {{- $main := resources.Get "js/main.js" | js.Build $mainOpts -}}
 
+{{/*
 {{- $iiifJs := partial "iiif-js.html" . -}}
+*/}}
+
 {{- $mainJs := "" -}}
 
 {{- if or .IsHome (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/image/") -}}
