@@ -258,3 +258,24 @@ article.single {
         }
     }
 }
+.right {
+    .menu-seperator {
+        display: inline-block;
+
+        &:after {
+            content: '$';
+        }
+    }
+
+    .lang-switcher {
+        display: inline-block;
+    }
+
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+        color: var(--base0d);
+    }
+}
