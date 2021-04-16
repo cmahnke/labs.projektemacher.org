@@ -11,9 +11,11 @@ ignoreErrors = ["error-disable-taxonomy"]
 theme = ["hugo-video", "projektemacher-base", "hugo-base16-theme"]
 paginate = 5
 enableInlineShortcodes = true
+copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>"
 
 [params]
     paginate = 5
+    copyrightYears = "MMXXI"
 
 [languages]
     [languages.de]

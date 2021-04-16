@@ -95,7 +95,7 @@ pre {
 
 .container .article .single,
 .tags {
-    padding-bottom: calc(2rem + .9em + 2rem);
+    padding-bottom: calc(3rem + .9em + 2rem);
 }
 
 footer {
@@ -277,5 +277,11 @@ article.single {
     a:hover,
     a:visited {
         color: var(--base0d);
+    }
+}
+
+.footer-container {
+    p {
+        margin: 0;
     }
 }

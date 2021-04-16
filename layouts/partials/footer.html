@@ -1,9 +1,7 @@
 </div>
 
 <footer>
-  <div class="container">
-    <span class="copyright">&copy; {{ .Sites.First.LastChange.Year }} {{ .Sites.First.Title }}</span>
-  </div>
+  {{ partialCached "footer-content.html" . }}
 </footer>
 
 </body>
