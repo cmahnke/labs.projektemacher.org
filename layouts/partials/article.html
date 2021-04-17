@@ -25,6 +25,12 @@
   </div>
   <h1 class="headline" itemprop="headline">{{ .Title }}</h1>
   <section class="body" itemprop="articleBody">
+  {{- if (in .Params.tags "Work in progress" ) -}}
+    <div class="under-construction">
+        {{ i18n "thisFeature" }} {{ i18n "underConstruction" }}
+    </div>
+    <hr class="under-construction-separator">
+  {{- end -}}
     {{ partial "content.html" . }}
   </section>
 </article>

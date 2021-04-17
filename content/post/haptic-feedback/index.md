@@ -3,8 +3,12 @@ date: 2020-12-04T18:22:44+02:00
 title: "Haptisches Feedback"
 tags:
 - IIIF
+- Work in progress
 iiifManifest: ./index.json
 iiifContext: http://iiif.io/api/presentation/2/context.json
+outputs:
+- html
+- IIIF
 resources:
 - src: "page031.jpg"
   params:

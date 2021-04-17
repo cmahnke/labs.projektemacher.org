@@ -285,3 +285,26 @@ article.single {
         margin: 0;
     }
 }
+
+.under-construction {
+    /* margin: 2em; */
+    opacity: .6;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    color: red;
+    margin-top: -4rem;
+    margin-left: -8rem;
+    margin-right: -8rem;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 1.4rem;
+    text-align: center;
+    /* See https://stripesgenerator.com/ */
+    background-image: linear-gradient(135deg, #ffff00 25%, #000000 25%, #000000 50%, #ffff00 50%, #ffff00 75%, #000000 75%, #000000 100%);
+    background-size: 56.57px 56.57px;
+}
+
+.under-construction-separator {
+    border: 0 solid transparent !important;
+    margin-bottom: 1.4rem;
+}
