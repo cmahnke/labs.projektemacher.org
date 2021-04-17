@@ -62,27 +62,28 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
 [mediaTypes]
   [mediaTypes."application/json"]
     suffixes = ["geojson", "gjson"]
-  [mediaTypes."application/json"]
-    suffixes = ["iiif.json"]
+  [mediaTypes."application/ld+json"]
+    suffixes = ["iiif", "jsonld"]
 
 
 [outputFormats]
   [outputFormats.GEOJSON]
     mediaType = "application/json"
+#    mediaType = "application/geo+json"
     isPlainText = true
     isHTML = false
     baseName = "map"
     notAlternative = true
 
   [outputFormats.IIIF]
-    mediaType = "application/json"
+    mediaType = "application/ld+json"
     isPlainText = true
     isHTML = false
     baseName = "manifest"
     notAlternative = true
 
 [outputs]
-    page = ["HTML", "JSON"]
+    page = ["HTML"]
 #    section= ["GEOJSON"]
 
 [module]
