@@ -4,8 +4,8 @@ title: "Haptisches Feedback"
 tags:
 - IIIF
 - Work in progress
-iiifManifest: ./manifest.json
-iiifContext: http://iiif.io/api/presentation/2/context.json
+#iiifManifest: ./manifest.json
+#iiifContext: http://iiif.io/api/presentation/2/context.json
 outputs:
 - html
 - iiif
@@ -50,4 +50,4 @@ These steps can be configured for each individual image section. The goal is to 
 
 Currently without enriched contents.
 
-{{< mirador manifestUrl="index.json" >}}
+{{< mirador manifestUrl="manifest.json" >}}
