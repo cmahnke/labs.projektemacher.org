@@ -4,7 +4,7 @@ title: "Haptisches Feedback"
 tags:
 - IIIF
 - Work in progress
-iiifManifest: ./index.json
+iiifManifest: ./manifest.json
 iiifContext: http://iiif.io/api/presentation/2/context.json
 outputs:
 - html
