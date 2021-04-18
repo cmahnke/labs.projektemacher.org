@@ -8,7 +8,7 @@ iiifManifest: ./index.json
 iiifContext: http://iiif.io/api/presentation/2/context.json
 outputs:
 - html
-- IIIF
+- iiif
 resources:
 - src: "page031.jpg"
   params:

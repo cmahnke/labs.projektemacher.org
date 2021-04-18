@@ -25,6 +25,13 @@ Da die Konvertierung in IIIF Derivate auf GitHub durch ein [Docker Image](https:
 docker pull ghcr.io/cmahnke/iiif-action:latest-jxl
 ```
 
+Es gibt auch ein  Image, dass nur die JPEG XL Referenz-Implementierung beinahaltet:
+
+```
+docker pull ghcr.io/cmahnke/jpeg-xl-action:latest
+```
+
+
 # Vorbereitung
 
 ## Starten eines interaktiven Containers
@@ -57,3 +64,35 @@ cjxl front.png front.jxl
 Die möglichen Parameter sind hier verlinkt:
 * Für [`vips jxlsave`](https://github.com/libvips/libvips/blob/add-jxl/libvips/foreign/jxlsave.c)
 * Für [`cjxl`](https://gitlab.com/wg1/jpeg-xl/-/blob/master/doc/man/cjxl.txt)
+
+## Optionen
+
+Da JPEG XL hier primär dazu dienen soll den Speicherbedarf zu senken und das bei gleicher oder höherer Qualität kommt es darauf an dies bei der Konvertierung zu berücksichtigen. Wenn möglich sollten die bearbeitet Master (also verlustfreie Bilddaten) direkt für die Erstellung der Derivate genutzt werden. Derzeit sind JPEG Dateien (ImageMagick Qualitätsstufe 95) das Ausgangsmaterial.
+
+Für die Beurteilung der Qualität wird das Tool [`butteraugli`](https://github.com/google/butteraugli) zum Einsatz.
+
+### Vergleichsdatei erzeugen
+
+```
+convert front.tif -quality 95 front.jpg
+```
+
+`butteraugli` kann JPEG bzw. PNG lesen.
+
+```
+vips jxlsave front.tif front.jxl --distance 1
+```
+
+## Ergebnisse
+
+Dieser Beitrag erhebt nicht den Anspruch, die optimalsten - wenn es das Wort den gäbe - Ergebnisse zu erzielen. Zusätzlich ist der Speicherbedarf des JPEG XL Encoder sehr intensiv und kann daher nicht in vollem Umfang in der Docker Umgebung ausprobiert werden. Aus diesen Gründen gibt es an dieser Stelle keine Benchmarks, Vergleiche von Dateigrößen usw.
+
+Grundsätzlich bleibt was eingangs bekannt war: Dateien sind bei ähnlicher Qualität kleiner.
+
+# IIIF
+
+Nachdem man nun ein paar JPEG XL Dateien erzeugt hat, kann man nun IIIF Derivate generieren:
+
+```
+vips dzsave front.jxl front -t 512 --layout iiif
+```
