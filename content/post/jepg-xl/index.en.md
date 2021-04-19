@@ -3,6 +3,21 @@ date: 2021-04-17T11:22:44+02:00
 title: "JPEG XL"
 tags:
 - Work in progress
+iiifContext: http://iiif.io/api/presentation/2/context.json
+outputs:
+- html
+- iiif
+resources:
+- src: "front.jxl"
+  params:
+    iiif: front/info.json
+    hint: non-paged
+    label: Front
+- src: "back.jxl"
+  params:
+    iiif: back/info.json
+    hint: non-paged
+    label: Back
 ---
 
 # Why JPEG XL?
@@ -86,3 +101,5 @@ After you have created a few JPEG XL files, you can now generate IIIF derivative
 ```
 vips dzsave front.jxl front -t 512 --layout iiif
 ```
+
+{{< iiif/mirador manifestUrl="manifest.json" >}}

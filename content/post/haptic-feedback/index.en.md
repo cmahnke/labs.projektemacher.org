@@ -50,4 +50,4 @@ These steps can be configured for each individual image section. The goal is to 
 
 Currently without enriched contents.
 
-{{< mirador manifestUrl="manifest.json" >}}
+{{< iiif/mirador manifestUrl="manifest.json" >}}

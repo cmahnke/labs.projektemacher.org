@@ -50,4 +50,4 @@ Diese Schritte sind konfigurierbar für jeden einzelnen Bildausschnitt, das Ziel
 
 Derzeit noch ohne Anreicherung.
 
-{{< mirador manifestUrl="manifest.json" >}}
+{{< iiif/mirador manifestUrl="manifest.json" >}}

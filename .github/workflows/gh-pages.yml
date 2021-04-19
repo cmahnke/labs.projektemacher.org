@@ -48,7 +48,8 @@ jobs:
 # UID is als available via $(id -u)
         run: |
           echo "Running as ${UID}"
-          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest sh -c "cd ${PWD} && ./scripts/iiif.sh"
+          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl sh -c "cd ${PWD} && ./scripts/iiif.sh && ./scripts/iiif-jxl.sh"
+#          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl sh -c "cd ${PWD} && ./scripts/iiif-jxl.sh"
 
       - name: Generate Files
         env:
@@ -58,12 +59,12 @@ jobs:
           ./scripts/setup.sh
 
       - name: Build Hugo site
-        run: hugo
+        run: hugo --i18n-warnings
 
       - name: Cleanup disk
         run: |
           df -h
-          docker rmi -f ghcr.io/cmahnke/iiif-action:latest
+          docker rmi -f ghcr.io/cmahnke/iiif-action:latest-jxl
           rm -rf node_modules
           rm -rf content
           df -h
