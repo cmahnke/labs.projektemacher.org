@@ -65,7 +65,6 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
   [mediaTypes."application/ld+json"]
     suffixes = ["json"]
 
-
 [outputFormats]
   [outputFormats.geojson]
     mediaType = "application/json"
@@ -82,8 +81,8 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
     baseName = "manifest"
     notAlternative = true
 
-[outputs]
-    page = ["HTML"]
+#[outputs]
+#    page = ["HTML"]
 #    section= ["GEOJSON"]
 
 [module]
