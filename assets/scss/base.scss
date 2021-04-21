@@ -261,14 +261,14 @@ article.single {
 .right {
     .menu-seperator {
         display: inline-block;
-
-        &:after {
-            content: '$';
-        }
     }
 
     .lang-switcher {
         display: inline-block;
+
+        &:before {
+            content: '$ ';
+        }
     }
 
     a,
@@ -307,4 +307,20 @@ article.single {
 .under-construction-separator {
     border: 0 solid transparent !important;
     margin-bottom: 1.4rem;
+}
+
+.article-list .list-item:last-child {
+
+}
+
+.lang-switcher.no-translation-available {
+    display: none;
+}
+
+.footer-container {
+    p.projektemacher {
+        img {
+            vertical-align: text-bottom;
+        }
+    }
 }

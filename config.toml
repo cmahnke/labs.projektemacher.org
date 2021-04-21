@@ -46,12 +46,12 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
             [[languages.en.menu.main]]
                 name = "Planed Blogs"
                 weight = 1
-                url = "/future"
+                url = "en/future"
 
             [[languages.en.menu.main]]
                 name = "About"
                 weight = 2
-                url = "about/"
+                url = "en/about/"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -60,15 +60,14 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
     quality = 95
 
 [mediaTypes]
-  [mediaTypes."application/json"]
+  [mediaTypes."application/geo+json"]
     suffixes = ["geojson", "gjson"]
   [mediaTypes."application/ld+json"]
     suffixes = ["json"]
 
 [outputFormats]
   [outputFormats.geojson]
-    mediaType = "application/json"
-#    mediaType = "application/geo+json"
+    mediaType = "application/geo+json"
     isPlainText = true
     isHTML = false
     baseName = "map"

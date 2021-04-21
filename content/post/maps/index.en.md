@@ -13,4 +13,4 @@ Before posts can be displayed on maps, the following steps must be taken:
 
 After this has been done, the next step can be approached.
 
-An example of the old 3D images can be found [here] (/ future / 3d / map.geojson).
+An example of the old 3D images can be found [here](/future/3d/map.gjson).

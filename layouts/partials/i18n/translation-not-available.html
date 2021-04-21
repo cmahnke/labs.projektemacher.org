@@ -1,0 +1,5 @@
+{{/* TODO: Make this work and merge into base theme */}}
+{{/* TODO: Also create a meta tag for filtering */}}
+{{- if ne $.Site.Language .Language -}}
+    <div class="translation-not-available">{{ i18n "translationNotAvailable" ( i18n ( printf "%s_adj" .Language.Lang)) }}</div>
+{{- end -}}

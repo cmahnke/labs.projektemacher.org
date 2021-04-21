@@ -66,15 +66,26 @@
         {{ end }}
         <div class="top-menu menu-seperator"></div>
         {{- if .Site.IsMultiLingual -}}
-            {{ $class := "" }}
-            {{- range (default .Site.Home.AllTranslations .Translations) -}}
-                {{- if ne $.Site.Language .Language -}}
-                    {{ $class = "active" }}
-                {{ end }}
-                <div class="lang-switcher lang {{ $class }}">
-                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                </div>
-            {{ end }}
+            {{ if .IsHome }}
+                {{- range .Site.Home.AllTranslations -}}
+                    {{- if (ne $.Site.Language .Language) -}}
+                        <div class="lang-switcher lang home">
+                            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                        </div>
+                     {{- end -}}
+                 {{- end -}}
+            {{- else -}}
+                {{- range .Translations -}}
+                    <div class="lang-switcher lang">
+                        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                    </div>
+                {{ else }}
+                    <div class="lang-switcher lang disabled">
+                        <span> {{ i18n (partialCached "functions/i18n/default-lang" .) }}</span>
+                    </div>
+                {{- end -}}
+            {{- end -}}
+
         {{ end }}
     </div>
   </div>

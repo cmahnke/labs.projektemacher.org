@@ -6,7 +6,7 @@ tags:
 - Themes
 - Node
 ---
-Mit dem [Upgrade auf eine Hugo version auf über 0.75.0](/post/recent-hugo-version/) besteht die Möglichkeit das Kommando [`hugo mod npm pack`](https://gohugo.io/commands/hugo_mod_npm_pack/) zu verwenden um die Node Abhängigkeiten eines Themes mit denen eines Projektes zusammenzuführen.
+Mit dem [Upgrade auf eine Hugo version auf über 0.75.0](/post/recent-hugo-version/) besteht die Möglichkeit das Kommando `[hugo mod npm pack](https://gohugo.io/commands/hugo_mod_npm_pack/)` zu verwenden um die Node Abhängigkeiten eines Themes mit denen eines Projektes zusammenzuführen.
 
 Dafür müssen die Abhängigkeiten eines Themes in einer Datei `package.hugo.json` statt `package.json` gesichert sein, es reicht einfach die von `npm` oder `yarn` angelegte Datei umzubenennen. Ein Symlink alleine funktioniert nicht, da Hugo's virtuelles Dateisystem Symlinks nicht mag.
 
@@ -24,7 +24,7 @@ Ein Beispiel für zwei Dateien:
 jq -s '.[0] * .[1]'  package.hugo.json themes/some-hugo-theme-with-npm-dependencies/package.hugo.json
 ```
 
-Ein Beispiel für mehrere Themes:
+Ein Beispiel für mehrere Themes (funktioniert nur mit BSD `find`, nicht auf GitHub):
 ```
 find . -name "package.hugo.json" -o -name "package.json" -depth 0 | xargs jq -s add > package.json
 ```
