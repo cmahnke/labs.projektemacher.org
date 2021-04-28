@@ -15,6 +15,7 @@ body {
         background-repeat: no-repeat;
     }
 }
+
 @media (max-width: 52em) {
     h1.site-title {
         font-size: 3em;
@@ -66,14 +67,23 @@ body {
     }
 }
 
-article.single {
-    pre {
-        overflow-x: auto;
+.right {
+    .menu-seperator {
+        display: inline-block;
+    }
+
+    .lang-switcher {
+        display: inline-block;
+
+        &::before {
+            content: '$ ';
+        }
     }
 }
 
 .sections,
-.site-title {
+.site-title,
+.right {
     a,
     a:active,
     a:focus,
@@ -83,11 +93,7 @@ article.single {
         color: var(--base0c);
     }
 }
-/*
-pre {
-    border-radius: 1rem;
-}
-*/
+
 .error-msg {
     margin-top: 5em;
     margin-bottom: 5em;
@@ -106,6 +112,7 @@ article,
 section.body {
     border-radius: 2em;
 }
+
 /* Reset badly written theme CSS */
 article.single {
     figure {
@@ -123,6 +130,10 @@ article.single {
     section section {
         padding: unset;
         margin: unset;
+    }
+
+    pre {
+        overflow-x: auto;
     }
 }
 
@@ -185,6 +196,7 @@ article.single {
                 border-radius: 6px 6px 0 0;
             }
         }
+
         /* Inspired by https://codepen.io/Wendy-Ho/pen/MWWBvmd */
         #dreiD-ana:checked ~ .panels #dreiD-ana-panel,
         #dreiD-gif:checked ~ .panels #dreiD-gif-panel,
@@ -199,7 +211,7 @@ article.single {
         #dreiD-jps:checked ~ .tabs #dreiD-jps-tab,
         #dreiD-mpo:checked ~ .tabs #dreiD-mpo-tab,
         #dreiD-single:checked ~ .tabs #dreiD-single-tab {
-            background: #ffcc66;
+            background: #fc6;
             color: #000;
             border-top: 3px solid #393939;
         }
@@ -243,39 +255,18 @@ article.single {
     .link {
         text-decoration: none;
 
-        &:after {
+        &::after {
             display: inline-block;
             width: 1em;
-            padding-left: .5rem;
+            padding-left: 0.5rem;
             content: url($link-light);
         }
-    }
-}
-.right {
-    .menu-seperator {
-        display: inline-block;
-    }
-
-    .lang-switcher {
-        display: inline-block;
-
-        &:before {
-            content: '$ ';
-        }
-    }
-
-    a,
-    a:active,
-    a:focus,
-    a:hover,
-    a:visited {
-        color: var(--base0d);
     }
 }
 
 .under-construction {
     /* margin: 2em; */
-    opacity: .6;
+    opacity: 0.6;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     color: red;
@@ -286,8 +277,9 @@ article.single {
     font-size: larger;
     padding: 1.4rem;
     text-align: center;
+
     /* See https://stripesgenerator.com/ */
-    background-image: linear-gradient(135deg, #ffff00 25%, #000000 25%, #000000 50%, #ffff00 50%, #ffff00 75%, #000000 75%, #000000 100%);
+    background-image: linear-gradient(135deg, #ff0 25%, #000 25%, #000 50%, #ff0 50%, #ff0 75%, #000 75%, #000 100%);
     background-size: 56.57px 56.57px;
 }
 
@@ -307,6 +299,7 @@ body div.container {
 footer {
     margin-bottom: 0 !important;
     position: absolute;
+
     /* bottom: 0; */
     width: 100%;
 

@@ -23,12 +23,6 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - name: Install required dependencies
-        env:
-          SKIP_IIIF: yes
-        run: |
-          ./themes/projektemacher-base/scripts/github/setup-dependendies.sh
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -39,10 +33,11 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Python dependencies
+      - name: Install required dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install pillow termcolor
+          ./themes/projektemacher-base/scripts/github/setup-dependendies.sh
+# Python dependencies
+          ./themes/projektemacher-base/scripts/github/python-dependendies.sh
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -55,7 +50,6 @@ jobs:
         run: |
           echo "Running as ${UID}"
           docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl sh -c "cd ${PWD} && ./scripts/iiif.sh && ./scripts/iiif-jxl.sh"
-#          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl sh -c "cd ${PWD} && ./scripts/iiif-jxl.sh"
 
       - name: Generate Files
         env:
