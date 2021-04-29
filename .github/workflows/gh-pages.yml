@@ -36,7 +36,6 @@ jobs:
       - name: Install required dependencies
         run: |
           ./themes/projektemacher-base/scripts/github/setup-dependendies.sh
-# Python dependencies
           ./themes/projektemacher-base/scripts/github/python-dependendies.sh
 
       - name: Setup Hugo
