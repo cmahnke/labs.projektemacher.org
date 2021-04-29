@@ -16,38 +16,6 @@ body {
     }
 }
 
-@media (max-width: 52em) {
-    h1.site-title {
-        font-size: 3em;
-        overflow: hidden;
-    }
-
-    h1.headline {
-        margin-left: 1rem;
-    }
-
-    article.list-item,
-    article.single {
-        margin-left: 1.4rem;
-        margin-right: 1.4rem;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .article-list article.list-item,
-    article.single section.body {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    header {
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
-    }
-}
-
 .homepage {
     p code {
         padding: 0.2em 0.5em;
@@ -64,6 +32,10 @@ body {
         overflow-x: auto;
         border-radius: 1rem;
         padding: 2rem;
+    }
+
+    .tag {
+        margin-right: 0.5rem;
     }
 }
 
@@ -122,10 +94,6 @@ article.single {
         width: unset;
     }
 
-    * {
-        max-width: unset;
-    }
-
     section header,
     section section {
         padding: unset;
@@ -135,10 +103,11 @@ article.single {
     pre {
         overflow-x: auto;
     }
-}
 
-.homepage .tag {
-    margin-right: 0.5rem;
+    .under-construction {
+        max-width: unset;
+    }
+
 }
 
 .sections h1.headline {
@@ -292,6 +261,12 @@ article.single {
     display: none;
 }
 
+code {
+    @media (max-width: 56em) {
+            word-break: break-all;
+    }
+}
+
 body div.container {
     margin-bottom: 2rem;
 }
@@ -313,5 +288,43 @@ footer {
                 vertical-align: text-bottom;
             }
         }
+    }
+}
+
+@media (max-width: 52em) {
+    h1.site-title {
+        font-size: 25.5vw;
+        overflow: hidden;
+    }
+
+    h1.headline {
+        margin-left: 1rem;
+    }
+
+    article.list-item,
+    article.single {
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .article-list article.list-item,
+    article.single section.body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    header {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+}
+
+@media (max-width: 52em) {
+    header span.caret {
+        display: none;
     }
 }

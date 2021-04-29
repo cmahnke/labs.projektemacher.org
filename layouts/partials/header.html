@@ -4,46 +4,8 @@
 <meta charset="utf-8">
 
 {{ partial "html/head/meta.html" . }}
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{{/* Base Style from theme */}}
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css">
-
-{{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/ol" "node_modules/normalize.css" )) -}}
-{{- $scssTemplate := resources.Get "scss/base.scss" -}}
-{{- $scssStyle := $scssTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options -}}
-{{- $style := slice  $scssStyle | resources.Concat "css/concated.css" | minify | fingerprint -}}
-<link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
-
-{{/* JavaScript */}}
-{{- $defines := dict "process.env.NODE_ENV" `"production"` -}}
-{{- $externals := slice "domain" -}}
-{{- $mainOpts := dict "targetPath" "js/main.js" "externals" $externals "defines" $defines -}}
-{{- $main := resources.Get "js/main.js" | js.Build $mainOpts -}}
-
-{{/*
-{{- $iiifJs := partial "iiif-js.html" . -}}
-*/}}
-
-{{- $mainJs := "" -}}
-
-{{- if or .IsHome (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/image/") -}}
-  {{- $iiifOpts := dict "targetPath" "js/iiif-image-viewer.js" "defines" $defines "minify" false -}}
-  {{- $iiif := resources.Get "js/iiif-image-viewer.js" | js.Build $iiifOpts -}}
-  {{- $mainJs = slice $main $iiif | resources.Concat "js/main-iiif-i.js" | minify | fingerprint -}}
-{{- else if (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/presentation/") -}}
-  {{- $iiifOpts := dict "targetPath" "js/iiif-presentation-viewer.js" "defines" $defines "minify" false -}}
-  {{- $iiif := resources.Get "js/iiif-presentation-viewer.js" | js.Build $iiifOpts -}}
-  {{- $mainJs = slice $main $iiif | resources.Concat "js/main-iiif-p.js" | minify | fingerprint -}}
-
-{{/*
-{{- if and (isset $iiifJs "js") (ne (index $iiifJs "js") "")  -}}
-    {{- $mainJs = slice $main (index $iiifJs "js") | resources.Concat (printf "js/main-iiif-%s.js" (index $iiifJs "name")) | minify | fingerprint -}}
-*/}}
-{{- else -}}
-    {{- $mainJs = slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
-{{- end -}}
-<script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity | html }}"></script>
+{{- partial "html/head/style.html" (dict "context" . "css" "css/style.css") -}}
+{{- partial "html/head/script.html" (dict "js" (partial "html/head/iiif-js.html" .)) -}}
 
 <title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
 </head>
