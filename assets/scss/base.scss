@@ -417,7 +417,12 @@ footer {
         .navigation-item {
             padding-left: unset;
 
-            a {
+            a,
+            a:active,
+            a:focus,
+            a:hover,
+            a:visited
+            {
                 color: var(--base0d);
                 text-decoration: underline;
                 @media (max-width : 56.25em) {
