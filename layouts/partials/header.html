@@ -22,35 +22,7 @@
   <div class="container clearfix">
     <a class="path" href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a>
     <span class="caret"># _</span>
-    <div class="right">
-        {{/* TODO: Replace with menu.html */}}
-        {{ range .Site.Menus.main }}
-              <a class="path" href="{{ .URL | absURL }}">{{ .Name }}</a>
-        {{ end }}
-        <div class="top-menu menu-seperator"></div>
-        {{- if .Site.IsMultiLingual -}}
-            {{ if .IsHome }}
-                {{- range .Site.Home.AllTranslations -}}
-                    {{- if (ne $.Site.Language .Language) -}}
-                        <div class="lang-switcher lang home">
-                            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                        </div>
-                     {{- end -}}
-                 {{- end -}}
-            {{- else -}}
-                {{- range .Translations -}}
-                    <div class="lang-switcher lang">
-                        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                    </div>
-                {{ else }}
-                    <div class="lang-switcher lang disabled">
-                        <span> {{ i18n (partialCached "functions/i18n/default-lang" .) }}</span>
-                    </div>
-                {{- end -}}
-            {{- end -}}
-
-        {{ end }}
-    </div>
+    {{- partial "menu.html" . -}}
   </div>
 </header>
 
