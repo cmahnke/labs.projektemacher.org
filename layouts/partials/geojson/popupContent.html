@@ -1,9 +1,33 @@
+{{- $context := path.Dir .File.Path -}}
+{{- $entry := . -}}
+
+{{/* Extract the preview and make it JPEG XL compatible */}}
+
+{{- $fit := "180x" -}}
+{{- $previewImg := "" -}}
+{{- $images := newScratch -}}
+
+{{- range .Params.resources -}}
+    {{- if eq .name "front" -}}
+        {{- $images.Set "previewLoc" (path.Join $context .src) -}}
+        {{- $images.Set "preview" (($entry.Resources.ByType "image").GetMatch .name) -}}
+    {{ end }}
+{{ end }}
+
+{{- $imgLocation := $images.Get "previewLoc" -}}
+{{- $previewImg := $images.Get "preview" -}}
+{{- if eq $previewImg nil -}}
+    {{- warnf "Can't find image %s for post %s" $imgLocation $context -}}
+{{- end -}}
+{{- $previewImg = $previewImg.Resize $fit -}}
+
 {{ $content := .Summary }}
 <div class="geojsonPopup">
     <div class="title">
         {{ .Title }}
     </div>
     <div class="content">
+        <img class="preview" src="{{ $previewImg.RelPermalink }}">
         {{ $content | markdownify }}
     </div>
     <div class="link">

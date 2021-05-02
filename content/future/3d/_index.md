@@ -12,4 +12,6 @@ Ein Experiment zu Medientypen und Dateiformaten.
 
 {{< html/link file="./map.geojson" content="GeoJSON" >}}
 
-{{< maps/osm src="./map.geojson" >}}
+{{< html/iframe-consent >}}
+    {{< maps/osm src="./map.geojson" >}}
+{{< /html/iframe-consent >}}

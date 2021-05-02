@@ -28,6 +28,8 @@ export function initMap(element, url, source) {
     var toolTips = { 'de': {'zoomIn': 'Vergrößern', 'zoomOut': 'Verkleinern', 'fullscreen': 'Vollbildansicht', 'rotate': 'Rotation zurücksetzen', 'rotateLeft': '90° nach links drehen', 'rotateRight': '90° nach rechst drehen'},
                      'en': {'zoomIn': 'Zoom in', 'zoomOut': 'Zoom out', 'fullscreen': 'Toggle full-screen', 'rotate': 'Reset rotation', 'rotateLeft': 'Rotate 90° left', 'rotateRight': 'Rotate 90° right'}};
 
+    var padding = [30, 30, 30, 30];
+
     // Popup elements
     var container = document.getElementById(element + '-popup');
     var content = document.getElementById(element + '-popup-content');
@@ -109,7 +111,9 @@ export function initMap(element, url, source) {
                         })
                     );
 
-                    map.getView().fit(vectorSource.getExtent());
+                    map.getView().fit(vectorSource.getExtent(),
+                        {size: map.getSize(), padding: padding}
+                    );
 
                 })
                 .catch(function(body) {

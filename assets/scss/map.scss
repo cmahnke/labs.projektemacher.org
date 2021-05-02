@@ -18,6 +18,24 @@
         border: 1px solid #ccc;
         bottom: 12px;
         left: -50px;
+
+        h1 {
+            font-size: larger;
+        }
+        .title {
+            font-size: large;
+            display: none;
+
+        }
+        .content {
+            font-weight: 500;
+        }
+        .link {
+            text-align: center;
+        }
+        .preview {
+            display: block;
+        }
     }
 
     .ol-popup:after,
