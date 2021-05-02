@@ -5,8 +5,8 @@ type: 3d
 iiifContext: http://iiif.io/api/image/2/context.json
 geojson:
   coordinates:
-  - 48.8599137
   - 2.3346566
+  - 48.8599137
 tags:
 - 3D
 resources:

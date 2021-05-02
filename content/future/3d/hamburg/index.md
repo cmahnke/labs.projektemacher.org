@@ -7,8 +7,8 @@ tags:
 - 3D
 geojson:
   coordinates:
-  - 53.53347046375686
   - 10.02659235098882
+  - 53.53347046375686
 resources:
 - src: "front.jpg"
   name: front

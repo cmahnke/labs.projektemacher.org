@@ -10,4 +10,6 @@ outputs:
 
 Ein Experiment zu Medientypen und Dateiformaten.
 
-{{< html/link file="./map.gjson" content="GeoJSON" >}}
+{{< html/link file="./map.geojson" content="GeoJSON" >}}
+
+{{< maps/osm src="./map.geojson" >}}
