@@ -4,6 +4,7 @@
 @import "iframe-consent";
 @import "icons";
 @import "fonts/source-code-pro";
+@import "map";
 /* Menu */
 $font-color-body: var(--base00);
 $secondary-icon-color: #69c;
@@ -84,6 +85,7 @@ body {
 
 header {
     margin-top: 0 !important;
+
     div.clearfix {
         overflow: hidden;
     }
@@ -295,7 +297,6 @@ footer {
     }
 }
 @media (max-width: 56.25em) {
-
     .homepage {
         h1 {
             &.site-title {
@@ -308,6 +309,7 @@ footer {
             }
         }
     }
+
     article.list-item,
     article.single {
         margin-left: 1.4rem;
@@ -421,13 +423,12 @@ footer {
             a:active,
             a:focus,
             a:hover,
-            a:visited
-            {
+            a:visited {
                 color: var(--base0d);
                 text-decoration: underline;
                 @media (max-width : 56.25em) {
-                        color: var(--base0d);
-                        text-decoration: none;
+                    color: var(--base0d);
+                    text-decoration: none;
                 }
             }
 
@@ -437,7 +438,6 @@ footer {
                 &:before {
                     content: '$ ';
                     font-weight: normal;
-
                     @media (max-width : 56.25em) {
                         content: '';
                     }
