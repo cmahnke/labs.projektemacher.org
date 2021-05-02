@@ -37,6 +37,7 @@ jobs:
         run: |
           ./themes/projektemacher-base/scripts/github/setup-dependencies.sh
           ./themes/projektemacher-base/scripts/github/python-dependencies.sh
+          ./themes/projektemacher-base/scripts/github/docker-images.sh
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -48,7 +49,7 @@ jobs:
 # UID is also available via $(id -u)
         run: |
           echo "Running as ${UID}"
-          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl sh -c "cd ${PWD} && ./scripts/iiif.sh"
+          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://labs.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest sh -c "cd ${PWD} && ./scripts/iiif.sh"
 
       - name: Generate Files
         env:
