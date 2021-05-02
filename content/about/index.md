@@ -8,7 +8,7 @@ Bisher wurden, einem Schnellballsystem gleich, einzelne Blog-Projekte genutzt um
 
 Projektemacher Labs ist ein Versuchsfeld für bestehende und [zukünftige](/future/) [Projektemacher](https://projektemacher.org/) Blogs, die Schwerpunkte liegen dabei auf weitere Medientypen (z.B. Video), Geoinformationen und IIIF Erweiterungen.
 
-Da diese Seite dazu dient neue Funktionalitäten zu testen, kann weder sicher gestellt werden, dass die Seite immer funktioniert noch, dass experimentelle Einträge erhalten bleiben. Die Links zu einzelnen Posts sollten nicht anderweitig verwendet werden, da sie nicht stabil sind. Allerdings werden die gewonnen Erkenntnisse irgendwann auf [christianmahnke.de](https://christianmahnke.de) veröffentlicht.
+Da diese Seite dazu dient neue Funktionalitäten zu testen, kann weder sicher gestellt werden, dass die Seite immer funktioniert noch, dass experimentelle Einträge erhalten bleiben. Dazu ist auch nicht alles für mobile Endgeräte optimiert. Die Links zu einzelnen Posts sollten nicht anderweitig verwendet werden, da sie nicht stabil sind. Allerdings werden die gewonnen Erkenntnisse irgendwann auf [christianmahnke.de](https://christianmahnke.de) veröffentlicht.
 
 # Kolophon
 

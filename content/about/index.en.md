@@ -8,7 +8,7 @@ Until now the blog projects have been used to implement and test new features fo
 
 Projektemacher Labs is a proving ground for existing and [future](/future/) [Projektemacher](https://projektemacher.org/) blogs, the focus is on other media types (e.g. video), geographic information and IIIF extensions.
 
-Since this page is used to test new functionalities, it can neither be guaranteed that the page will always work nor that experimental entries will be preserved. The links to individual posts should not be used for anything else as they are not stable. However, the knowledge gained will at some point be published on [christianmahnke.de](https://christianmahnke.de).
+Since this page is used to test new functionalities, it can neither be guaranteed that the page will always work nor that experimental entries will be preserved. Not everything (as in almost nothing) is optimized for mobile devices. The links to individual posts should not be used for anything else as they are not stable. However, the knowledge gained will at some point be published on [christianmahnke.de](https://christianmahnke.de).
 
 # Colophon
 
