@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<div class="container iframe">
+    <main role="main" class="article iframe">
+        <div class="iframe-wrapper">
+            <iframe class="iframe" src="{{ .Params.src }}" title="Inlude IFrame"></iframe>
+        </div>
+    </main>
+</div>
+{{ partial "footer.html" . }}

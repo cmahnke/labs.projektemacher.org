@@ -2,7 +2,7 @@
 title: Hortenkacheln
 displayinlist: false
 metaPage: true
-description: "Hortenkacheln"
+description: "Hortenkacheln - Fassaden eines Konsumtempels"
 ---
 
 [Hortenkacheln](https://de.wikipedia.org/wiki/Hortenkachel) waren damals in Westdeutschland die Fassadenverkleidung der Konsumtempel der unteren Mittelschicht. Und nein - Egon Eiermann hat vermutlich nichts damit zu tun.

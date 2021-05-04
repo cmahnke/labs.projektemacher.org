@@ -1,0 +1,18 @@
+{{- $fileName := "" -}}
+{{- if .Params.src -}}
+    {{- $fileName = .Params.src -}}
+{{- end -}}
+{{- $fileName = path.Join .File.Dir $fileName -}}
+
+{{- $css := "" -}}
+{{- if fileExists $fileName -}}
+    {{- $css = readFile $fileName -}}
+{{- else -}}
+    {{- errorf "Can't find %s!" $fileName -}}
+{{- end -}}
+
+{{- $css = replaceRE "(?s).*?<head>.*<style.*?>(.*)</style>.*</head>.*" "$1" $css -}}
+
+<style type="text/css">
+    {{- $css | safeCSS -}}
+</style>

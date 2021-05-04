@@ -1,0 +1,64 @@
+$fullscreen-color: black !default;
+
+.container.iframe,
+.container.include {
+    max-width: 100%;
+
+    .article.iframe,
+    .article.include {
+        position: relative;
+        min-height: 100vh;
+
+        .iframe-wrapper,
+        .include-wrapper {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .iframe {
+            position: initial;
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .container .article {
+        margin-top: 3.6em;
+    }
+
+    .fullscreen-button {
+        cursor: pointer;
+        position: absolute;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: .4rem;
+        top: 4em;
+        right: 4em;
+        z-index: 1000;
+        mix-blend-mode: difference;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all .3s linear;
+        }
+
+        @media (max-width: 56.25em) {
+            top: 2em;
+            right: 2em;
+        }
+
+        .fullscreen-icon {
+
+            &::after {
+                display: inline-block;
+                width: 1.6em;
+                height: 1.6em;
+                line-height: 2em;
+                content: url($fullscreen-light);
+                padding-top: .25em;
+            }
+        }
+    }
+}

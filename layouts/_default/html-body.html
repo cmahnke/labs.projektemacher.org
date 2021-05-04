@@ -1,0 +1,40 @@
+{{- partial "header.html" . -}}
+
+{{- $fileName := "" -}}
+{{- if .Params.src -}}
+    {{- $fileName = .Params.src -}}
+{{- end -}}
+{{- $fileName = path.Join .File.Dir $fileName -}}
+
+{{- $content := "" -}}
+{{- if fileExists $fileName -}}
+    {{- $content = readFile $fileName -}}
+{{- else -}}
+    {{- errorf "Can't find %s!" $fileName -}}
+{{- end -}}
+
+{{- $content = replaceRE "(?s).*?<body.*?>(.*)</body>.*" "$1" $content -}}
+
+<div class="container include">
+    <main role="main" class="article include">
+        <button id="fullscreen-button" type="button" class="fullscreen-button">
+            <i class="fullscreen-icon"></i>
+        </button>
+        <div id="fullscreen-context" class="include-wrapper">
+            {{ if $content }}
+                {{ $content | safeHTML }}
+            {{- else -}}
+                {{- errorf "%s is either empty!" $fileName -}}
+            {{- end -}}
+        </div>
+    </main>
+    {{- if .Content -}}
+        <div class="container">
+            <main role="main" class="article">
+                {{ partial "article.html" . }}
+            </main>
+        </div>
+    {{- end -}}
+</div>
+
+{{- partial "footer.html" . -}}
