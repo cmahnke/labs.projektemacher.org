@@ -33,7 +33,7 @@ $fullscreen-color: black !default;
         position: absolute;
         text-decoration: none;
         background-color: transparent;
-        border-radius: .4rem;
+        border-radius: 0.4rem;
         top: 4em;
         right: 4em;
         z-index: 1000;
@@ -41,24 +41,26 @@ $fullscreen-color: black !default;
 
         &:hover {
             transform: scale(1.1);
-            transition: all .3s linear;
+            transition: all 0.3s linear;
         }
-
         @media (max-width: 56.25em) {
             top: 2em;
             right: 2em;
         }
 
         .fullscreen-icon {
-
             &::after {
                 display: inline-block;
                 width: 1.6em;
                 height: 1.6em;
                 line-height: 2em;
                 content: url($fullscreen-light);
-                padding-top: .25em;
+                padding-top: 0.25em;
             }
+
+        }
+        &.close .fullscreen-icon::after {
+            content: url($compress-light);
         }
     }
 }
