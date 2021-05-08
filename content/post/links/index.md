@@ -12,6 +12,7 @@ draft: true
 # Schriften
 
 * [Averia Sans Libre](https://fonts.google.com/specimen/Averia+Sans+Libre)
+* [Poiret One](https://fonts.google.com/specimen/Poiret+One)
 
 # Kartenmaterial
 * https://openlayers.org/en/latest/examples/icon-color.html

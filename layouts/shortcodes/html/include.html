@@ -1,0 +1,12 @@
+{{ $filename := "" }}
+{{ $content := "" }}
+{{ if (.Get "file") }}
+  {{ $filename = (.Get "file") }}
+{{ end }}
+{{ if $filename }}
+    {{ $content = readFile $filename }}
+{{ end }}
+
+<div class="included-html">
+    {{- partial "html/html-body.html" . -}}
+</div>
