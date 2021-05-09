@@ -1,9 +1,0 @@
-{{ $filename := "" }}
-{{ $content := "" }}
-{{ if (.Get "file") }}
-  {{ $filename = (.Get "file") }}
-{{ end }}
-
-<div class="included-html">
-    {{- partial "html/html-body.html" dict "context" . "src" $filename -}}
-</div>
