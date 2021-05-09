@@ -1,19 +1,32 @@
 {{- $fileName := "" -}}
-{{- if .Params -}}
+{{- $path := "" -}}
+{{- if ne (printf "%T" .) "*hugolib.pageState" -}}
+    {{/* Called by shortcode */}}
+    {{- if .context -}}
+        {{- if eq (printf "%T" .context) "*hugolib.ShortcodeWithPage" -}}
+            {{- if .src -}}
+                {{- $fileName = .src -}}
+            {{- end -}}
+            {{- $path = .context.Page.File.Dir -}}
+        {{- end -}}
+    {{- else if (in . "src") -}}
+        {{- $fileName = .src -}}
+        {{- if .contextPath -}}
+            {{- $path = .contextPath -}}
+        {{- end -}}
+        {{- if .context -}}
+            {{- $path = .context.File.Dir -}}
+        {{- end -}}
+    {{- else -}}
+        {{- errorf "Cant find context or src in %s" . -}}
+    {{- end -}}
+    {{- $fileName = path.Join $path $fileName -}}
+{{/* Called by layout without arguments */}}
+{{- else -}}
     {{- if .Params.src -}}
         {{- $fileName = .Params.src -}}
     {{- end -}}
     {{- $fileName = path.Join .File.Dir $fileName -}}
-{{ else if .Get "src" }}
-    {{- $fileName = .Get "src" -}}
-    {{- $path := "" -}}
-    {{- if .Get "context" -}}
-        {{- $path = .Get "context" -}}
-    {{- end -}}
-    {{- if .Get "ctx" -}}
-        {{- $path = .Get "ctx" -}}
-    {{- end -}}
-    {{- $fileName = path.Join $path $fileName -}}
 {{- end -}}
 
 {{- $content := "" -}}
