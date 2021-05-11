@@ -6,4 +6,4 @@ js:
   - js/kaleidoscope.js
 ---
 
-Ein Entwurf für die Startseite
+Ein Entwurf für die Visualisierung.

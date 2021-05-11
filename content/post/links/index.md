@@ -13,6 +13,7 @@ draft: true
 
 * [Averia Sans Libre](https://fonts.google.com/specimen/Averia+Sans+Libre)
 * [Poiret One](https://fonts.google.com/specimen/Poiret+One)
+* [Balsamiq Sans](https://fonts.google.com/specimen/Balsamiq+Sans) - Freie Comic Sans
 
 # Kartenmaterial
 * https://openlayers.org/en/latest/examples/icon-color.html
