@@ -1,4 +1,5 @@
 package.json
+postcss.config.js
 node_modules
 yarn-error.log
 docs
@@ -27,3 +28,5 @@ content/**/img*-*.json
 !content/**/img*-map.json
 content/**/page*-*.json
 !content/**/page*-map.json
+content/**/ogPreview.*g
+content/**/ogPreview-overlay.*g

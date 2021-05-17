@@ -100,3 +100,6 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
     [[module.mounts]]
         source = "themes/hugo-base16-theme/static"
         target = "assets"
+
+[build]
+    writeStats = true

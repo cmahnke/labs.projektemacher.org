@@ -14,6 +14,7 @@ draft: true
 * [Averia Sans Libre](https://fonts.google.com/specimen/Averia+Sans+Libre)
 * [Poiret One](https://fonts.google.com/specimen/Poiret+One)
 * [Balsamiq Sans](https://fonts.google.com/specimen/Balsamiq+Sans) - Freie Comic Sans
+* [Irrlicht](https://web.archive.org/web/20170627014250/http://www.myfonts.de/2015/03/irrlicht/)
 
 # Kartenmaterial
 * https://openlayers.org/en/latest/examples/icon-color.html
@@ -27,9 +28,24 @@ draft: true
 
 * [Weiland Antikes & Neues](https://www.weiland-antiquitaeten.de/unser-sortiment/alte-modezeitschriften-50er/)
 
+# CSS Tricks
+* [CSS Cinema Effect](https://codepen.io/bullerb/pen/BzKzvK)
+* [Distortion Effect – Glitch Effect Design Inspiration](https://codemyui.com/tag/distortion-effect/)
+* [Thriller Movie Typewriter Text Effects with JavaScript](http://thenewcode.com/1153/Thriller-Movie-Typewriter-Text-Effects-with-JavaScript)
+* [10 Exciting CSS & JavaScript Page Transition Effects](https://speckyboy.com/page-transition-effects/)
+* [CSS Image Effects #2: 3D Glasses](https://una.im/3d-effect/)
+* [Black Mirror Cracked Text Effect](https://codepen.io/GeorgePark/pen/jeBbGN)
+
+# Hugo
+* [Hugo & PurgeCSS](https://discourse.gohugo.io/t/how-i-can-implement-purgecss-uncss-or-purifycss-in-hugo/24446)
+
+# Image processing
+* [Triangula](https://github.com/RH12503/triangula)
+
 # Videos
 
 * https://www.youtube.com/watch?v=slDybGJI1Ao
+* https://www.youtube.com/watch?v=GRCkkMWeCCQ
 
 # Informationen zum aktuellen Theme
 
