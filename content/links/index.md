@@ -14,6 +14,10 @@ Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Bl
 # CSS
 * [CSS-Tricks](https://css-tricks.com/)
 
+# Medienbearbeitung
+
+* [PhotoGIMP](https://github.com/Diolinux/PhotoGIMP)
+
 # Metadaten für Beiträge
 
 ## Bücher
