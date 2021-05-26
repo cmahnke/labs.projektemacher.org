@@ -4,8 +4,7 @@ displayinlist: false
 metaPage: true
 ---
 
-Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Blogs oder Beitrags helfen können gesammelt:
-
+The links collected on this page, can help with the creation of a blog or post:
 
 # Hugo
 * [Hugo Themes: Complete List](https://themes.gohugo.io/)
@@ -16,20 +15,20 @@ Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Bl
 * [CSS-Tricks](https://css-tricks.com/)
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-# Medienbearbeitung
+# Media processing
 * [PhotoGIMP](https://github.com/Diolinux/PhotoGIMP)
 
-# Metadaten für Beiträge
+# Metadata for posts
 
-## Bücher
+## Books
 * [Worldcat](https://www.worldcat.org/)
 
-## Geo Daten
+## Working with Geo data
 * [Meyers Gazetteer](https://www.meyersgaz.org/) - Meyers Orts- und Verkehrslexikon des deutschen Reichs
 
-# Sonstige Tools
-* [YAML Validierung mit hilfreichen Fehlermeldungen](https://jsonformatter.org/yaml-validator)
-* [Bilder vektorisieren](https://www.vectorizer.io/)
-* [SVG Grafiken für Inline CSS kodieren](https://yoksel.github.io/url-encoder/)
+# Other Tools
+* [YAML validation with good error messages](https://jsonformatter.org/yaml-validator)
+* [Vectorize images](https://www.vectorizer.io/)
+* [Convert SVGs to Base64 for CSS inlining](https://yoksel.github.io/url-encoder/)
 * [CSS Gradient Generator](https://cssgradient.io/)
 * [Pixels to Ems Conversion](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)

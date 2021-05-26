@@ -13,8 +13,10 @@ draft: true
 
 * [Averia Sans Libre](https://fonts.google.com/specimen/Averia+Sans+Libre)
 * [Poiret One](https://fonts.google.com/specimen/Poiret+One)
+* [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 * [Balsamiq Sans](https://fonts.google.com/specimen/Balsamiq+Sans) - Freie Comic Sans
 * [Irrlicht](https://web.archive.org/web/20170627014250/http://www.myfonts.de/2015/03/irrlicht/)
+* [League Spartan - Futura Variante](https://www.theleagueofmoveabletype.com/league-spartan)
 
 # Kartenmaterial
 * https://openlayers.org/en/latest/examples/icon-color.html
@@ -31,6 +33,7 @@ draft: true
 # CSS Tricks
 * [CSS Cinema Effect](https://codepen.io/bullerb/pen/BzKzvK)
 * [Distortion Effect – Glitch Effect Design Inspiration](https://codemyui.com/tag/distortion-effect/)
+* [19 Trippy & Glitchy CSS Distortion Effects](https://1stwebdesigner.com/trippy-css-distortion-effects/)
 * [Thriller Movie Typewriter Text Effects with JavaScript](http://thenewcode.com/1153/Thriller-Movie-Typewriter-Text-Effects-with-JavaScript)
 * [10 Exciting CSS & JavaScript Page Transition Effects](https://speckyboy.com/page-transition-effects/)
 * [CSS Image Effects #2: 3D Glasses](https://una.im/3d-effect/)
