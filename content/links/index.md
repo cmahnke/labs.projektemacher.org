@@ -33,3 +33,6 @@ Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Bl
 * [SVG Grafiken für Inline CSS kodieren](https://yoksel.github.io/url-encoder/)
 * [CSS Gradient Generator](https://cssgradient.io/)
 * [Pixels to Ems Conversion](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+* [Icon finder](https://www.iconfinder.com/)
+* [CSS clip-path maker](https://bennettfeely.com/clippy/)
+* [CSS Stripes Generator](https://stripesgenerator.com/)
