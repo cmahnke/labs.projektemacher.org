@@ -12,7 +12,7 @@ Since this page is used to test new functionalities, it can neither be guarantee
 
 # Colophon
 
-This page was generated with [Hugo] (https://gohugo.io/).
+This page was generated with [Hugo](https://gohugo.io/).
 
 An adapted version of [`hugo-base16-theme`](https://github.com/htdvisser/hugo-base16-theme) and [`hugo-video`](https://github.com/martignoni/hugo-video) for videos are used as the themes. [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) is used as the font.
 

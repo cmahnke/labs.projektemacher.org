@@ -6,7 +6,6 @@ metaPage: true
 
 Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Blogs oder Beitrags helfen können gesammelt:
 
-
 # Hugo
 * [Hugo Themes: Complete List](https://themes.gohugo.io/)
 * [Hugo Support](https://discourse.gohugo.io/)
@@ -36,3 +35,5 @@ Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Bl
 * [Icon finder](https://www.iconfinder.com/)
 * [CSS clip-path maker](https://bennettfeely.com/clippy/)
 * [CSS Stripes Generator](https://stripesgenerator.com/)
+* [SVG Gradient Map Filter](https://yoksel.github.io/svg-gradient-map/#/)
+* [Regex101](https://regex101.com/)

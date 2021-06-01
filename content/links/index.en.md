@@ -35,3 +35,5 @@ The links collected on this page, can help with the creation of a blog or post:
 * [Icon finder](https://www.iconfinder.com/)
 * [CSS clip-path maker](https://bennettfeely.com/clippy/)
 * [CSS Stripes Generator](https://stripesgenerator.com/)
+* [SVG Gradient Map Filter](https://yoksel.github.io/svg-gradient-map/#/)
+* [Regex101](https://regex101.com/)
