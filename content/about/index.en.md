@@ -28,6 +28,6 @@ The site is hosted by [GitHub](https://github.com/).
 
 # Contact
 
-"Projektemacher Labs" is a project by **Christian Mahnke**.
+"Projektemacher Labs" is a project by **[Christian Mahnke](https://christianmahnke.de/)**.
 
 Contact is possible via [E-Mail](mailto:projektemacher@projektemacher.org).

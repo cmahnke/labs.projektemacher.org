@@ -29,6 +29,6 @@ Die Seite wird von [GitHub](https://github.com/) gehosted.
 
 # Kontakt
 
-"Projektemacher Labs" ist ein Projekt von **Christian Mahnke**.
+"Projektemacher Labs" ist ein Projekt von **[Christian Mahnke](https://christianmahnke.de/)**.
 
 Kontakt ist via [E-Mail](mailto:projektemacher@projektemacher.org) möglich.
