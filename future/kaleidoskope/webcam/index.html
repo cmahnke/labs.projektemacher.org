@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+
+<meta name="description" content="Ein Entwurf für die Visualisierung.">
+<meta name="keywords" content="">
+<meta http-equiv="Content-Language" content="de">
+
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/future/kaleidoskope/webcam/" /><meta property="og:title" content="Webcam" />
+
+
+<meta name="generator" content="Hugo 0.84.2" />
+<meta name="projektemacher.org:build-date" content="2021-07-21 05:33:46.079755134 &#43;0000 UTC m=&#43;0.798791121">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<link href="https://labs.projektemacher.org/css/6bba7d9482aea90882a13a970cad400e.min.39fdff3e7b79a58df99dfd512e48dd0e2b547b1bfcce1b0b8fa24212dbd02360.css" rel="stylesheet" integrity="sha256-Of3/Pnt5pY35nf1RLkjdDitUexv8zhsLj6JCEtvQI2A=">
+<script src="https://labs.projektemacher.org/js/77ab163850ef0fa98d6a9ee9fb6bbcaf.min.62f4614d15123305258819192b4631ec27ec93fb1f446052a82f9fd2b2160311.js" integrity="sha256-YvRhTRUSMwUliBkZK0Yx7Cfsk/sfRGBSqC+f0rIWAxE="></script>
+<script src="https://labs.projektemacher.org/js/e5e5131f6990811ee46adde80fe10aa8.min.d6846da1905e6c4d7beae35e09ebca997bc9cf0f1b81f7cc0dce9d8bcadd4c05.js" integrity="sha256-1oRtoZBebE176uNeCevKmXvJzw8bgffMDc6di8rdTAU="></script><style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .article-container {
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 7vw;
+            margin: auto;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        /* https://css-tricks.com/almanac/properties/b/backdrop-filter/ */
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: blur(6px);
+        }
+
+        .background .wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background-tube {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, transparent 70vh, transparent 1%, gray 1%, gray 7%, black);
+            top: 0;
+        }
+
+        .content {
+            margin: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: #ffffffb0;
+            mix-blend-mode: hard-light;
+        }
+
+        #kaleidoscope {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+        }
+
+        video {
+            height: 100%;
+            width: 100%
+        }
+    </style>
+<title>Webcam - Projektemacher Labs</title>
+</head>
+<body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+        <ul class="navigation-list">
+            
+                <li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/future" title="Geplante Blogs">Geplante Blogs</a></li>
+                <li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/about/" title="Über">Über</a></li>
+                
+            
+            
+                
+                    
+                
+                    
+                        <li class="navigation-item lang">
+                            <a href="https://labs.projektemacher.org/en/" title="English">English</a>
+                        </li>
+                    
+                
+            
+        </ul>
+    </nav>
+
+</div>
+</header>
+<div class="container include">
+    <main role="main" class="article include">
+        <button id="fullscreen-button" type="button" class="fullscreen-button">
+            <i class="fullscreen-icon"></i>
+        </button>
+        <div id="fullscreen-context" class="include-wrapper">
+            
+    
+    <script>
+        window.exports = {
+            __esModule: true
+        };
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            /* See https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-with-javascripts-getusermedia */
+            if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+                console.log('Browser supports user media')
+            }
+            navigator.mediaDevices.getUserMedia({
+                video: true
+            });
+
+            const constraints = {
+                video: {
+                    width: {
+                        min: 640,
+                        ideal: 1024,
+                        max: 1280,
+                    },
+                    height: {
+                        min: 480,
+                        ideal: 768,
+                        max: 1024
+                    },
+                }
+            };
+
+            /*
+            const devices = await navigator.mediaDevices.enumerateDevices();
+            const videoDevices = devices.filter(device => device.kind === 'videoinput');
+            */
+
+            const video = document.querySelector('video');
+
+            const startStream = async (constraints) => {
+                const stream = await navigator.mediaDevices.getUserMedia(constraints);
+                handleStream(stream);
+            };
+
+            const handleStream = function(stream) {
+                video.srcObject = stream;
+                video.play();
+
+                streamStarted = true;
+            };
+
+            startStream(constraints);
+
+            var button = document.getElementById('fullscreen-button');
+            var ctx = document.getElementById('fullscreen-context');
+            addFSToggle(button, ctx);
+
+            new Kaleidoscope({
+                selector: '#kaleidoscope',
+            });
+        };
+    </script>
+    <div class="article-container">
+        <div class="background">
+            <div class="wrapper">
+                <video autoplay></video>
+                <canvas id="cam"></canvas>
+                <canvas id="kaleidoscope"></canvas>
+                <div class="background-tube"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Kaleidoskope!</h1>
+        </div>
+    </div>
+
+
+        </div>
+    </main><div class="container">
+            <main role="main" class="article">
+                
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">Webcam</h1>
+  <section class="body" itemprop="articleBody"><p>Ein Entwurf für die Visualisierung.</p>
+
+  </section>
+</article>
+
+            </main>
+        </div></div><footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs ist ein <a href="https://projektemacher.org/">Projektemacher</a> Blog<img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;">
+    </p><p class="copyright">&copy; MMXXI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p></div>
+
+</footer>
+
+</body>
+</html>

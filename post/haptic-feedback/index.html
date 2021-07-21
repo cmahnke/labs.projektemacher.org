@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+
+<meta name="description" content="Eine Einzelseite aus &#34;Textil-Atlas: ein Lehrbuch und Nachschlagebuch für den Textileinzelhandel und die Gewebeverarbeitung: Textilwarenkunde und Gewebemuster von Wilhelm Spitschka&#34;">
+<meta name="keywords" content="">
+<meta http-equiv="Content-Language" content="de">
+
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/post/haptic-feedback/" /><meta property="og:title" content="Haptisches Feedback" />
+
+
+<meta name="generator" content="Hugo 0.84.2" />
+<meta name="projektemacher.org:build-date" content="2021-07-21 05:33:46.079755134 &#43;0000 UTC m=&#43;0.798791121">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<link href="https://labs.projektemacher.org/css/6bba7d9482aea90882a13a970cad400e.min.39fdff3e7b79a58df99dfd512e48dd0e2b547b1bfcce1b0b8fa24212dbd02360.css" rel="stylesheet" integrity="sha256-Of3/Pnt5pY35nf1RLkjdDitUexv8zhsLj6JCEtvQI2A=">
+<script src="https://labs.projektemacher.org/js/8bb58ab96f662d8381348f36ce014171.min.1a29f9359d5bbd6b8dac344c3167daad2b579a6b3bfeeb13c83efbc4fc90170f.js" integrity="sha256-Gin5NZ1bvWuNrDRMMWfarStXmms7/usTyD77xPyQFw8="></script>
+<title>Haptisches Feedback - Projektemacher Labs</title>
+</head>
+<body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+        <ul class="navigation-list">
+            
+                <li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/future" title="Geplante Blogs">Geplante Blogs</a></li>
+                <li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/about/" title="Über">Über</a></li>
+                
+            
+            
+                
+                    
+                        <li class="navigation-item lang">
+                            <a href="https://labs.projektemacher.org/en/post/haptic-feedback/" title="English">English</a>
+                        </li>
+                    
+                
+            
+        </ul>
+    </nav>
+
+</div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">Veröffentlicht am</span>
+    <span class="val"><time itemprop="datePublished" datetime="2020-12-04">
+4. Dezember 2020
+</time></span>
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/IIIF">IIIF</a>
+
+        <a href="https://labs.projektemacher.org/tags/Work-in-progress">Work in progress</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">Haptisches Feedback</h1>
+  <section class="body" itemprop="articleBody"><div class="under-construction">
+        Diese Funktionalität ist derzeit in der Entwicklung
+    </div>
+    <hr class="under-construction-separator">
+    
+<p>Da es in diesem Blog auch darum gehen soll analoge Inhalte innovativ in den digitalen Raum zu transportieren, hier ein Versuch Stoffe fühlbar zu machen&hellip;</p>
+<h1 id="vorbereitung-der-bilddaten">Vorbereitung der Bilddaten</h1>
+<p>Diese Schritte sind konfigurierbar für jeden einzelnen Bildausschnitt, das Ziel ist die Überführung von Bilddaten in ein Raster von fühlbaren Punkten. Dabei muss noch experimentell ermittelt werden:</p>
+<ul>
+<li>Welche Kantenlänge jeder dieser Punkte haben soll - derzeit 1mm</li>
+<li>Wie viele Abstufungen von Intensität nützlich sind - derzeit nur 2 (An und Aus)</li>
+</ul>
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-cut.png" alt="Ausschnitt zur Analyse"/> <figcaption>
+                
+                <p>
+                    Ausschnitt zur Analyse
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_0_FIND_EDGES.png" alt="Kantenerkennung"/> <figcaption>
+                
+                <p>
+                    Kantenerkennung
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_1_EDGE_ENHANCE.png" alt="Kantenverbesserung"/> <figcaption>
+                
+                <p>
+                    Kantenverbesserung
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_2_SMOOTH_MORE.png" alt="Weichzeichnen 1"/> <figcaption>
+                
+                <p>
+                    Weichzeichnen 1
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_3_SMOOTH_MORE.png" alt="Weichzeichnen 2"/> <figcaption>
+                
+                <p>
+                    Weichzeichnen 2
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_4_GRAYSCALE.png" alt="Graustufen"/> <figcaption>
+                
+                <p>
+                    Graustufen
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_5_EQUALIZE.png" alt="Mittelwert"/> <figcaption>
+                
+                <p>
+                    Mittelwert
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0-filter_6_BINARIZE.png" alt="Binarisieren"/> <figcaption>
+                
+                <p>
+                    Binarisieren
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/haptic-feedback/./page031-0.png" alt="Reduktion auf eine Pixelkantenlänge von 1mm"/> <figcaption>
+                
+                <p>
+                    Reduktion auf eine Pixelkantenlänge von 1mm
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+<h1 id="das-ergebnis">Das Ergebnis</h1>
+<p>Derzeit noch ohne Anreicherung.</p>
+
+
+<div class="iiif">
+    <div id="iiif-presentation" class="viewer presentation-api portrait"></div>
+    <script type="text/javascript">
+        var viewer = addMirador('iiif-presentation', 'https:\/\/labs.projektemacher.org\/post\/haptic-feedback\/manifest.json');
+    </script>
+</div>
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs ist ein <a href="https://projektemacher.org/">Projektemacher</a> Blog<img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;">
+    </p><p class="copyright">&copy; MMXXI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p></div>
+
+</footer>
+
+</body>
+</html>
+

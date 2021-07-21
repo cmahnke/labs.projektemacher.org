@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+
+<meta name="description" content="Why JPEG XL? JPEG XL is a new format for raster images, in fact, is&rsquo;s so recent (at the time this text was written) there haven&rsquo;t even been an entry in the German Wikipedia.
+You can read there what exactly JPEG XL does differently or better than the well-known JPEG. We limit ourselves here to the advantages for the Projektemacher blogs:
+ Less storage space required Lossless compression available  Disadvantages are currently:">
+<meta name="keywords" content="">
+<meta http-equiv="Content-Language" content="en">
+
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/en/post/jepg-xl/" /><meta property="og:title" content="JPEG XL" />
+
+
+<meta name="generator" content="Hugo 0.84.2" />
+<meta name="projektemacher.org:build-date" content="2021-07-21 05:33:55.880218737 &#43;0000 UTC m=&#43;10.599254824">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<link href="https://labs.projektemacher.org/css/6bba7d9482aea90882a13a970cad400e.min.39fdff3e7b79a58df99dfd512e48dd0e2b547b1bfcce1b0b8fa24212dbd02360.css" rel="stylesheet" integrity="sha256-Of3/Pnt5pY35nf1RLkjdDitUexv8zhsLj6JCEtvQI2A=">
+<script src="https://labs.projektemacher.org/js/8bb58ab96f662d8381348f36ce014171.min.1a29f9359d5bbd6b8dac344c3167daad2b579a6b3bfeeb13c83efbc4fc90170f.js" integrity="sha256-Gin5NZ1bvWuNrDRMMWfarStXmms7/usTyD77xPyQFw8="></script>
+<title>JPEG XL - Projektemacher Labs</title>
+</head>
+<body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+        <ul class="navigation-list">
+            
+                <li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/en/future" title="Planed Blogs">Planed Blogs</a></li>
+                <li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/en/about/" title="About">About</a></li>
+                
+            
+            
+                
+                    
+                        <li class="navigation-item lang">
+                            <a href="https://labs.projektemacher.org/post/jepg-xl/" title="Deutsch">Deutsch</a>
+                        </li>
+                    
+                
+            
+        </ul>
+    </nav>
+
+</div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-04-17">
+April 17, 2021
+</time></span>
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/Work-in-progress">Work in progress</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">JPEG XL</h1>
+  <section class="body" itemprop="articleBody"><div class="under-construction">
+        This feature is currently under construction
+    </div>
+    <hr class="under-construction-separator">
+    
+<h1 id="why-jpeg-xl">Why JPEG XL?</h1>
+<p><a href="https://en.wikipedia.org/wiki/JPEG_XL" target="_blank">JPEG XL</a>
+ is a new format for raster images, in fact, is&rsquo;s so recent (at the time this text was written) there haven&rsquo;t even been an entry in the German Wikipedia.</p>
+<p>You can read there what exactly JPEG XL does differently or better than the well-known JPEG. We limit ourselves here to the advantages for the Projektemacher blogs:</p>
+<ul>
+<li>Less storage space required</li>
+<li>Lossless compression available</li>
+</ul>
+<p>Disadvantages are currently:</p>
+<ul>
+<li>Few programs can handle it</li>
+<li>The existing algorithms are not yet optimized - it is slower</li>
+</ul>
+<p>The reference implementation can be found on <a href="https://gitlab.com/wg1/jpeg-xl" target="_blank">GitLab</a>
+.</p>
+<h1 id="how">How?</h1>
+<p>Since the conversion to IIIF derivatives on GitHub is done by a <a href="https://github.com/cmahnke/iiif-action" target="_blank">Docker image</a>
+, the easiest way to integrate the use of the new format into the tool chain is to add JPEG XL support to this image. For the used <a href="https://github.com/libvips/libvips" target="_blank">LibVIPS</a>
+ there is a <a href="https://github.com/libvips/libvips/pull/2181" target="_blank">Pull Request</a>
+, which supports the JPEG XL reference implementation. This is now built into a variant of the image for conversion:</p>
+<pre><code>docker pull ghcr.io/cmahnke/iiif-action:latest-jxl
+</code></pre><h1 id="preparations">Preparations</h1>
+<h2 id="start-an-interactive-container">Start an interactive container</h2>
+<p>The image can also be used to create the source files.</p>
+<pre><code>docker run -it -v ${PWD}:${PWD} 'ghcr.io/cmahnke/iiif-action:latest-jxl' /bin/bash -c &quot;cd ${PWD}; $SHELL&quot;
+</code></pre><h2 id="file-conversion">File conversion</h2>
+<p>Using <code>vips</code> directly has the advantage that you can use any supported input file format.</p>
+<pre><code>vips copy front.tif front.jxl[Q=100]
+</code></pre><p>The following issues have been discovered:</p>
+<ul>
+<li><code>vips jxlsave</code> does not support parameters</li>
+<li>The parameter <code>effort</code> can lead to a crash if it is greater than <code>7</code> - might be a memory problem, not yet tested with <code>cjxl</code></li>
+</ul>
+<p><code>cjxl</code> can also be used, but you should use a losslessly compressed (e.g. PNG) input file:</p>
+<pre><code>cjxl front.png front.jxl
+</code></pre><p>The possible options are linked here:</p>
+<ul>
+<li><a href="https://github.com/libvips/libvips/blob/add-jxl/libvips/foreign/jxlsave.c" target="_blank"><code>vips jxlsave</code></a>
+</li>
+<li><a href="https://gitlab.com/wg1/jpeg-xl/-/blob/master/doc/man/cjxl.txt" target="_blank"><code>cjxl</code></a>
+</li>
+</ul>
+<h2 id="options">Options</h2>
+<p>Since the use of JPEG XL is primarily intended here to reduce the storage requirement and with the same or higher quality, it is important to take this into account during the conversion. If possible, the processed master images (i.e. uncompressed image data) should be used directly to create the derivatives. JPEG files (ImageMagick quality level 95) are currently the source material for creating IIIF derivates.</p>
+<p><a href="https://github.com/google/butteraugli" target="_blank"><code>butteraugli</code></a>
+ is used to assess the quality.</p>
+<h3 id="generate-comparison-file">Generate comparison file</h3>
+<pre><code>convert front.tif -quality 95 front.jpg
+</code></pre><p><code>butteraugli</code> can read JPEG or PNG files.</p>
+<h2 id="results">Results</h2>
+<p>This post does not claim to achieve the most optimal results. In addition, the JPEG XL encoder is very memory-hungry and can therefore not be fully tried out in the Docker environment. For these reasons there are no benchmarks, comparisons of file sizes, etc.</p>
+<p>Basically what was known at the beginning remains: files are smaller with a similar quality.</p>
+<h1 id="iiif">IIIF</h1>
+<p>After you have created a few JPEG XL files, you can now generate IIIF derivatives:</p>
+<pre><code>vips dzsave front.jxl front -t 512 --layout iiif
+</code></pre>
+
+<div class="iiif">
+    <div id="iiif-presentation" class="viewer presentation-api portrait"></div>
+    <script type="text/javascript">
+        var viewer = addMirador('iiif-presentation', 'https:\/\/labs.projektemacher.org\/en\/post\/jepg-xl\/manifest.json');
+    </script>
+</div>
+
+
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog<img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;">
+    </p><p class="copyright">&copy; MMXXI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p></div>
+
+</footer>
+
+</body>
+</html>
+

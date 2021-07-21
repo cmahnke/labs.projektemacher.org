@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medientypen on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/Medientypen/</link>
+    <description>Recent content in Medientypen on Projektemacher Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 16 Dec 2020 20:14:44 +0200</lastBuildDate><atom:link href="https://labs.projektemacher.org/tags/Medientypen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video</title>
+      <link>https://labs.projektemacher.org/post/video/</link>
+      <pubDate>Wed, 16 Dec 2020 20:14:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/video/</guid>
+      <description>&lt;p&gt;Mit dem &lt;a href=&#34;https://github.com/martignoni/hugo-video&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;hugo-video&lt;/code&gt;&lt;/a&gt;
+ Theme können einfach lokale Videos eingebunden werden:&lt;/p&gt;
+&lt;video controls preload=&#34;auto&#34; width=&#34;100%&#34; class=&#34;html-video&#34;&gt;
+    &lt;source src=&#34;https://labs.projektemacher.org/post/video/marburg.mp4&#34; type=&#34;video/mp4&#34; }}&gt;
+  &lt;p&gt;Ihr Browser unterstützt keine integrierten Videos, aber keine Sorge, Sie können &lt;a href=&#34;https://labs.projektemacher.org/post/video/marburg.mp4&#34;&gt;es herunterladen&lt;/a&gt; und mit Ihrem Lieblings-Videoplayer ansehen!&lt;/p&gt;
+&lt;/video&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

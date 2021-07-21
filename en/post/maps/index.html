@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+
+<meta name="description" content="Preparations Before posts can be displayed on maps, the following steps must be taken:
+ Geocoding of posts and / or tags Generation of an application-specific representations (GeoJSON, KML)  After this has been done, the next step can be approached.
+An example of the old 3D images can be found here .
+Plotting data on a map in a browser The map material provided by OpenStreetMap can be used to display the generated data in the browser.">
+<meta name="keywords" content="">
+<meta http-equiv="Content-Language" content="en">
+
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/en/post/maps/" /><meta property="og:title" content="Kartenmaterial" />
+
+
+<meta name="generator" content="Hugo 0.84.2" />
+<meta name="projektemacher.org:build-date" content="2021-07-21 05:33:55.880218737 &#43;0000 UTC m=&#43;10.599254824">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<link href="https://labs.projektemacher.org/css/6bba7d9482aea90882a13a970cad400e.min.39fdff3e7b79a58df99dfd512e48dd0e2b547b1bfcce1b0b8fa24212dbd02360.css" rel="stylesheet" integrity="sha256-Of3/Pnt5pY35nf1RLkjdDitUexv8zhsLj6JCEtvQI2A=">
+<script src="https://labs.projektemacher.org/js/77ab163850ef0fa98d6a9ee9fb6bbcaf.min.62f4614d15123305258819192b4631ec27ec93fb1f446052a82f9fd2b2160311.js" integrity="sha256-YvRhTRUSMwUliBkZK0Yx7Cfsk/sfRGBSqC+f0rIWAxE="></script>
+<title>Kartenmaterial - Projektemacher Labs</title>
+</head>
+<body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+        <input type="checkbox" id="menu-toggle" />
+        <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+        <ul class="navigation-list">
+            
+                <li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/en/future" title="Planed Blogs">Planed Blogs</a></li>
+                <li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/en/about/" title="About">About</a></li>
+                
+            
+            
+                
+                    
+                        <li class="navigation-item lang">
+                            <a href="https://labs.projektemacher.org/post/maps/" title="Deutsch">Deutsch</a>
+                        </li>
+                    
+                
+            
+        </ul>
+    </nav>
+
+</div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2020-12-13">
+December 13, 2020
+</time></span>
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/Karten">Karten</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">Kartenmaterial</h1>
+  <section class="body" itemprop="articleBody"><h1 id="preparations">Preparations</h1>
+<p>Before posts can be displayed on maps, the following steps must be taken:</p>
+<ul>
+<li>Geocoding of posts and / or tags</li>
+<li>Generation of an application-specific representations (GeoJSON, KML)</li>
+</ul>
+<p>After this has been done, the next step can be approached.</p>
+<p>An example of the <a href="https://labs.projektemacher.org/future/3d/">old 3D images</a>
+ can be found <a href="https://labs.projektemacher.org/future/3d/map.geojson">here</a>
+.</p>
+<h1 id="plotting-data-on-a-map-in-a-browser">Plotting data on a map in a browser</h1>
+<p>The map material provided by <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>
+ can be used to display the generated data in the browser. An external server generates the images needed to display a map.</p>
+<p>This example shows the locations of the 3D images on a map:</p>
+<div class="iframe-wrapper" id="_iframe-693912446eeb38f23c1373065f10a681">
+    <div class="iframe">
+        <div class="opt-in">
+            <div class="opt-in-overlay">
+                
+                <div class="opt-in-overlay-content">
+                    <h3 class="opt-in-header">External Content</h3>
+                    <p class="opt-in-text">External content is included at this point. Personal data might be transmitted to third-party platforms.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="switch-wrapper">
+            <label class="opt-in-switch">
+                <input type="checkbox">
+                <span class="opt-in-slider"></span>
+            </label>
+            <span class="opt-in-confirm">Allow external content</span>
+        </div>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var expire = 30 * 24 * 60 * 60;
+            var overlay = $('#_iframe-693912446eeb38f23c1373065f10a681').find('.opt-in');
+            var toggle = $('#_iframe-693912446eeb38f23c1373065f10a681').find('.opt-in-switch input');
+            addConsent(toggle, overlay, '693912446eeb38f23c1373065f10a681', '\n    \u003cdiv class=\u0022map-wrapper\u0022\u003e\n    \u003cdiv class=\u0022map\u0022 id=\u002233ad39a325aeb5dd853b85c0368547b3\u0022\u003e\u003c\/div\u003e\n    \u003cdiv id=\u002233ad39a325aeb5dd853b85c0368547b3-popup\u0022 class=\u0022ol-popup\u0022\u003e\n        \u003ca href=\u0022#\u0022 id=\u002233ad39a325aeb5dd853b85c0368547b3-popup-closer\u0022 class=\u0022ol-popup-closer\u0022\u003e\u003c\/a\u003e\n    \u003cdiv id=\u002233ad39a325aeb5dd853b85c0368547b3-popup-content\u0022\u003e\u003c\/div\u003e\n \u003c\/div\u003e\n\u003c\/div\u003e\n\u003cscript type=\u0022text\/javascript\u0022\u003e\n    var _33ad39a325aeb5dd853b85c0368547b3 = window.initMap(\u002733ad39a325aeb5dd853b85c0368547b3\u0027, \u0027.\\\/map.geojson\u0027, \u0027osm\u0027);\n    _33ad39a325aeb5dd853b85c0368547b3.updateSize();\n\u003c\/script\u003e\n\n');
+        });
+    </script>
+
+</div>
+
+<h1 id="next-steps">Next steps</h1>
+<p>Now only the last step is missing, generating your own map material in order to be independent of external services and also to have the possibility to change the appearance&hellip;</p>
+
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog<img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;">
+    </p><p class="copyright">&copy; MMXXI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p></div>
+
+</footer>
+
+</body>
+</html>
+
