@@ -5,6 +5,8 @@ yarn-error.log
 docs
 patches
 .hugo_build.lock
+hugo_stats.json
+static/pdfjs
 static/images/favicon*
 static/images/background.jpg
 resources
