@@ -4,6 +4,7 @@ node_modules
 yarn-error.log
 docs
 patches
+.hugo_build.lock
 static/images/favicon*
 static/images/background.jpg
 resources
