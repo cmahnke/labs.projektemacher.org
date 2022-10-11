@@ -3,8 +3,6 @@
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
 ./scripts/iiif.sh
 
-rm -f 'themes/projektemacher-base/patches/mirador+3.0.0.patch'
-
 #NPM dependencies
 echo "Calling theme scripts"
 for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
@@ -12,7 +10,7 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
     bash "$SCRIPT"
     ERR=$?
     if [ $ERR -ne 0 ] ; then
-        echo "Execution of ''$SCRIPT' failed!"
+        echo "Execution of '$SCRIPT' failed!"
         exit $ERR
     fi
 done
