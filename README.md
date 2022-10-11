@@ -60,3 +60,12 @@ This stopped to work reliably between Hugo 0.79.0 and 0.81.0
 ```
 hugo serve -F --debug --disableFastRender  --disableLiveReload --watch=false --renderToDisk
 ```
+
+# Dependencies
+
+## Dart SASS on Mac OS
+
+```
+brew install sass/sass/sass
+ln -s /opt/homebrew/bin/sass /usr/local/bin/dart-sass-embedded
+```
