@@ -6,6 +6,7 @@ docs
 patches
 .hugo_build.lock
 hugo_stats.json
+content/status.en.md
 static/pdfjs
 static/images/favicon*
 static/images/background.jpg

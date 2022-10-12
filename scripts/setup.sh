@@ -17,6 +17,7 @@ done
 
 ./scripts/3d.sh
 ./scripts/height-map.sh
+./scripts/translate-status.sh
 
 # Favicons
 # See https://gist.github.com/pfig/1808188
