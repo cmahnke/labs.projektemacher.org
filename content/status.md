@@ -14,7 +14,7 @@ metaPage: true
 
 * [Christian Mahnke](https://christianmahnke.de/) [![Christian Mahnke](https://github.com/cmahnke/christianmahnke/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/christianmahnke/actions/workflows/gh-pages.yml)
 
-* [Dia Präsentationen](https://diapraesentation.projektemacher.org/) [![Dia Präsentationen](https://github.com/cmahnke/diapraesentation /actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/diapraesentation /actions/workflows/gh-pages.yml)
+* [Dia Präsentationen](https://diapraesentation.projektemacher.org/) [![Dia Präsentationen](https://github.com/cmahnke/diapraesentation/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/diapraesentation/actions/workflows/gh-pages.yml)
 
 * [Flohmarktfunde](https://flohmarktfunde.projektemacher.org/) [![Flohmarktfunde](https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml)
 
@@ -42,12 +42,12 @@ metaPage: true
 
 * Projektemacher Base [![Projektemacher Base](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml/badge.svg)](https://github.com/projektemacher-base/actions/workflows/test.yml)
 
-{{/*
-* Observer Hugo [![Observer Hugo](https://github.com/cmahnke/observer-hugo/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/observer-hugo/actions/workflows/gh-pages.yml)
-*/}}
+<!--
+{{/* Observer Hugo [![Observer Hugo](https://github.com/cmahnke/observer-hugo/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/observer-hugo/actions/workflows/gh-pages.yml) */}}
+-->
 
 # Tools
 
-* IIIF Action [![IIIF Action](https://github.com/cmahnke/iiif-action/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yml)
+* IIIF Action [![IIIF Action](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml)
 
-* JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yml)
+* JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
