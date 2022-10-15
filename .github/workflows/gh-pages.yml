@@ -65,7 +65,7 @@ jobs:
           yarn run validate
 
       - name: Puppeteer
-        run: ./themes/projektemacher-base/scripts/check-js-errors.sh
+        run: ./themes/projektemacher-base/scripts/github/check-js-errors.sh 
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3.8.0
