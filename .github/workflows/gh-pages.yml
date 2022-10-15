@@ -8,7 +8,7 @@ on:
     - cron:  '30 23 1 * *'
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -58,15 +58,14 @@ jobs:
       - name: Build Hugo site
         run: hugo --printI18nWarnings --printUnusedTemplates
 
-  deploy:
-    runs-on: ubuntu-22.04
-    needs: build
-    steps:
       - name: Validate JSON
         env:
           OSTYPE: linux
         run: |
           yarn run validate
+
+      - name: Puppeteer
+        run: ./themes/projektemacher-base/scripts/check-js-errors.sh
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3.8.0
