@@ -1,6 +1,0 @@
-index.html
-https://labs.projektemacher.org/post/jepg-xl/
-https://labs.projektemacher.org/future/kaleidoskope/theme/
-https://labs.projektemacher.org/future/3d/
-https://labs.projektemacher.org/post/maps/
-https://labs.projektemacher.org/post/haptic-feedback/
