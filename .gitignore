@@ -34,3 +34,4 @@ content/**/page*-*.json
 !content/**/page*-map.json
 content/**/ogPreview.*g
 content/**/ogPreview-overlay.*g
+**/.DS_Store
