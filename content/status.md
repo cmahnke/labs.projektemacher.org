@@ -28,6 +28,8 @@ metaPage: true
 
 * [Projektemacher Labs](https://labs.projektemacher.org/) [![Projektemacher Labs](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml)
 
+* [Projektemacher Merch](https://merch.projektemacher.org/) [![Projektemacher Merch](https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml)
+
 * [Projektemacher](https://projektemacher.org/) [![Projektemacher](https://github.com/cmahnke/projektemacher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/projektemacher/actions/workflows/gh-pages.yml)
 
 * [Ric - An unknown artist](https://ric-unknownartist.projektemacher.org/) [![Ric - An unknown artist](https://github.com/cmahnke/ric-unknownartist/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/ric-unknownartist/actions/workflows/gh-pages.yml)
