@@ -38,7 +38,7 @@ jobs:
           ./scripts/github-setup.sh
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.5.0
+        uses: peaceiris/actions-hugo@v2.6.0
         with:
           hugo-version: '0.104.3'
           extended: true
@@ -68,7 +68,7 @@ jobs:
         run: ./themes/projektemacher-base/scripts/github/check-js-errors.sh 
 
       - name: Deploy site
-        uses: peaceiris/actions-gh-pages@v3.8.0
+        uses: peaceiris/actions-gh-pages@v3.9.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
