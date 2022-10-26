@@ -51,3 +51,5 @@ metaPage: true
 * IIIF Action [![IIIF Action](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml)
 
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
+
+* Map Action [![Map Action](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml)
