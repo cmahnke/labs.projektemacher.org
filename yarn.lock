@@ -6,3 +6,8 @@ ak-kaleidoscope@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ak-kaleidoscope/-/ak-kaleidoscope-1.1.0.tgz#877dbb964daf4d30dee9c537087c37692d5805c4"
   integrity sha512-6Ofj7HPzwn5L2dj6m2Lpk66UCacZFu1lb2GaE5CwVqN+wwdpMgG2cUGE/6OXb/MtgfRXLN4rbf8ESRCh1fi+6w==
+
+howler@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/howler/-/howler-2.2.3.tgz#a2eff9b08b586798e7a2ee17a602a90df28715da"
+  integrity sha512-QM0FFkw0LRX1PR8pNzJVAY25JhIWvbKMBFM4gqk+QdV+kPXOhleWGCB6AiAF/goGjIHK2e/nIElplvjQwhr0jg==
