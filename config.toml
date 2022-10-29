@@ -60,6 +60,8 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
     suffixes = ["geojson", "gjson"]
   [mediaTypes."application/ld+json"]
     suffixes = ["json"]
+  [mediaTypes."application/x-qrcode-template"]
+    suffixes = ["json"]
 
 [outputFormats]
   [outputFormats.geojson]
@@ -74,6 +76,13 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
     isPlainText = true
     isHTML = false
     baseName = "manifest"
+    notAlternative = true
+
+  [outputFormats.qrcode]
+    mediaType = "application/x-qrcode-template"
+    isPlainText = true
+    isHTML = false
+    baseName = "qrcode"
     notAlternative = true
 
 #[outputs]
