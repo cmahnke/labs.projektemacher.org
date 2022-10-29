@@ -9,9 +9,9 @@
 {{- $link := .Get "link" -}}
 <div class="quote">
     {{ if $link }}<a href="{{ $link }}">{{ end }}
-    <div class="quote-body">
+    <blockquote  class="quote-body">
         {{ $quote }}
-    </div>
+    </blockquote >
     {{ if $link }}</a>{{ end }}
     {{ if $from }}
         <div class="quote-from">{{ $from }}</div>

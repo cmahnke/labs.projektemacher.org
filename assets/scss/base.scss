@@ -15,6 +15,7 @@ $color-body-text: var(--base00);
 $fullscreen-color: var(--base07);
 @import "menu";
 @import "include";
+@import "audioplayer";
 
 body {
     min-height: 100vh;
@@ -474,5 +475,13 @@ footer {
                 }
             }
         }
+    }
+}
+
+.quote {
+    blockquote {}
+
+    .quote-from {
+        text-align: right;
     }
 }
