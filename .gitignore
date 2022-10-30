@@ -35,3 +35,5 @@ content/**/page*-*.json
 content/**/ogPreview.*g
 content/**/ogPreview-overlay.*g
 **/.DS_Store
+**/*.ogv
+content/status.en.md
