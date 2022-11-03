@@ -7,6 +7,9 @@ draft: true
 tags:
 - Ausstellung
 - Zukünftige Seite
+outputs:
+  - html
+  - qrcode
 ---
 
 In diesem "Making of" werden die Hintergründe und einige Entwürfe zur Ausstellung gezeigt.
