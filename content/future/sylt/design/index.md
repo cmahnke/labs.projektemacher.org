@@ -13,7 +13,13 @@ outputs:
 
 # Ideen zur Gestaltung
 
-##
+## Plakate
+
+Hier sind die Texte zur Präsentaion in der Ausstellung gemeint, keine "Werbeplakate" um auf die Ausstellung aufmerksam zu machen.
+
+## Webseite
+
+Eine Webseite ist für die Präsentation von Audioinhalten und zusätzlichen Texten notwendig. Da sie in der Ausstellung genutzt werden soll, muss sie auch für mobile Endgeräte optimiert sein.
 
 ## Schriftarten
 
@@ -34,7 +40,9 @@ Schmuckschriften (z.B. für „Sylt“) oder die Umschläge können (noch) nicht
 
 Als Beispiel dien der Schriftzug "Sylt" in zwei Varianten, die erste Variante ist dabei weniger geeignet, da die feinen Linien in kleineren Skalierungen nicht so gut zur Geltung kommen.
 
-{{< figure src="./Sylt2.jpg" title="Scan" caption="Umschlag von \"Leuchtendes Sylt\ Das Bräuner Farbfotobuch, 1965" >}}
+{{< figure src="./Sylt2.jpg" title="Scan" caption="Titelseite von \"Leuchtendes Sylt\ Das Bräuner Farbfotobuch, 1965" >}}
+
+{{< figure src="./Sylt2.svg" title="Vektorgrafik" caption="Die Vektorgrafik müsste noch weiter geglättet werden." >}}
 
 {{< figure src="./Sylt.jpg" title="Scan" caption="Buchdeckel von \"Sylt: Bildbuch einer Insel\", 1950er." >}}
 
