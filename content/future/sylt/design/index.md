@@ -34,13 +34,15 @@ Mögliche Alternativen sind:
 
 Eine Kombination bider Schriften bietet sich an, da die Helvetica auf der [Akzidenz-Grotesk](https://de.wikipedia.org/wiki/Akzidenz-Grotesk) basiert und diese Kombinationen nicht ungewöhnlich sind. Weitere [Kombinationen](https://fontsinuse.com/typefaces/3357/melior).
 
-Schmuckschriften (z.B. für „Sylt“) oder die Umschläge können (noch) nicht identifiziert werden, können aber auch als Vektorgrafik eingebettet werden. So kann das Wort "Sylt" im Fließtext eingebunden werden, die stört den Lesefluss, sorgt aber für eine individuelle Note.
+Schmuckschriften (z.B. für „Sylt“) oder die auf den Umschlägen können (noch) nicht identifiziert werden, können aber auch als Vektorgrafik eingebettet werden. So kann das Wort "Sylt" im Fließtext eingebunden werden, die stört den Lesefluss, sorgt aber für eine individuelle Note.
+
+{{< figure src="./das-braeuner-buch-sylt-fotos-einer-malerin.png" title="Schnappschuss Online-Antiquariat" caption="Umschlag von \"Das Bräuner-Buch Sylt - Fotos einer Malerin\", 60er" link="https://www.buchfreund.de/de/d/p/103491836/das-braeuner-buch-sylt-fotos-einer-malerin" target="_blank" >}}
 
 ### Beispiel Schmuckschrift
 
 Als Beispiel dien der Schriftzug "Sylt" in zwei Varianten, die erste Variante ist dabei weniger geeignet, da die feinen Linien in kleineren Skalierungen nicht so gut zur Geltung kommen.
 
-{{< figure src="./Sylt2.jpg" title="Scan" caption="Titelseite von \"Leuchtendes Sylt\ Das Bräuner Farbfotobuch, 1965" >}}
+{{< figure src="./Sylt2.jpg" title="Scan" caption="Titelseite von \"Leuchtendes Sylt - Das Bräuner Farbfotobuch\", 1965" >}}
 
 {{< figure src="./Sylt2.svg" title="Vektorgrafik" caption="Die Vektorgrafik müsste noch weiter geglättet werden." >}}
 
@@ -66,7 +68,7 @@ Prinzipiell sollten die Farben so gewählt sein, dass sie auch als Themenfarben 
 
 ## Beispiel
 
-{{< figure src="./Cover.jpg" title="Quelle der Farben" caption="Umschlag von \"Leuchtendes Sylt\ Das Bräuner Farbfotobuch, 1965" >}}
+{{< figure src="./Cover.jpg" title="Quelle der Farben" caption="Umschlag von \"Leuchtendes Sylt - Das Bräuner Farbfotobuch\", 1965" >}}
 
 Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werden.
 
