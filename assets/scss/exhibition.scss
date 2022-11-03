@@ -1,0 +1,23 @@
+@import "fonts/roboto";
+
+.nav-tile {
+    position: relative;
+    img {
+      filter: blur(4px);
+      border-radius: 2rem !important;
+    }
+    figcaption {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        text-align: right;
+        h4 {
+            font-weight: 900 !important;
+            font-family: Roboto, Helvetica, Arial;
+            font-size: 3em;
+            color: var(--base07) !important;
+            font-style: normal;
+            margin-right: .5em;
+        }
+    }
+}

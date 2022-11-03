@@ -21,6 +21,8 @@ Hier sind die Texte zur Präsentaion in der Ausstellung gemeint, keine "Werbepla
 
 Eine Webseite ist für die Präsentation von Audioinhalten und zusätzlichen Texten notwendig. Da sie in der Ausstellung genutzt werden soll, muss sie auch für mobile Endgeräte optimiert sein.
 
+Da die Themen die Blöcke der Ausstellung bilden, sollte sich das im Design niederschlagen, ein Vorbild kann das Theme [Twenty Twenty](https://github.com/themefisher/twenty-twenty-hugo) sein. Allerdings weniger eckig. Ebenfalls können darauf aufbauend abstrakte grafische Elemente erzeugt werden, die die verschiedenen Themenbereiche (s.u. "Farben") repräsentieren.
+
 ## Schriftarten
 
 ### Analyse
@@ -87,3 +89,42 @@ Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werde
 * Zeichnungen und Malerei {{< color-sample color="#D9B26A" text="Düne" >}}
 * Fotografie {{< color-sample color="#BDE3F2" text="Himmel" >}}
 * Engagement gegen Atlantis und für den Naturschutz {{< color-sample color="#7C8C3F" text="Gras" >}}
+
+# Kacheln für die Navigation
+
+Kacheln dienen der einfach erkennbaren Navigation. Die Farben dienen der einfachen Wiedererkennung.
+
+Die hier gezeigte Ansicht ist für Smartphones, dort werden die Kacheln nacheinander angezeigt. Auf dem Desktop wird ein 2x2 Raster gezeigt.
+
+Weitere geplante Anpassungen:
+* Die Kachel für den Bereich ist nicht enthalten
+* Die Ränder werden noch geschärft
+* Die Schriftfarbe wird je nach Hintergrund gewählt, um den Kontrast zu erhöhen.
+
+## Meer
+
+{{< figure src="./Wasser.svg" title="Lebensstationen" class="nav-tile" >}}
+
+## Dünen
+
+{{< figure src="./Dünen.svg" title="Zeichnung und Malerei" class="nav-tile" >}}
+
+## Himmel
+
+{{< figure src="./Himmel.svg" title="Fotographie" class="nav-tile" >}}
+
+## Gras
+
+{{< figure src="./Gras.svg" title="Naturschutz" class="nav-tile" >}}
+
+# Werkzeuge
+* [Schriftidenfikation](https://www.myfonts.com/pages/whatthefont)
+* [Farbvarianten](http://scg.ar-ch.org/)
+* [Extraktion von Farbthemen](https://color.adobe.com/de/create/image)
+
+## Sonstiges
+
+### Identifikation der Schiftarten
+* Ein Scan in einer hohen Auflösung (600dpi)
+* Ein Webdienst: https://www.myfonts.com/pages/whatthefont
+* Dann Beurteilung der Ergebnisse, an Hand des zeitlichen Kontexts, da die Ergebnisse aus dem Schritt davor viele Schriften liefert, die es damals gar nicht gab, oder eher ungebräuchlich waren. Dabei helfen Schriftmusterbücher.

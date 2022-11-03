@@ -16,6 +16,7 @@ $fullscreen-color: var(--base07);
 @import "menu";
 @import "include";
 @import "audioplayer";
+@import "exhibition";
 
 body {
     min-height: 100vh;
