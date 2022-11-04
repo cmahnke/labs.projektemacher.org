@@ -69,7 +69,6 @@ Weitere Gestaltungselemente (wie Rahmen, Bänder etc) in Varianten von Hellgelb 
 Prinzipiell sollten die Farben so gewählt sein, dass sie auch als Themenfarben funktionieren können.
 
 ## Beispiel
-
 {{< figure src="./Cover.jpg" title="Quelle der Farben" caption="Umschlag von \"Leuchtendes Sylt - Das Bräuner Farbfotobuch\", 1965" >}}
 
 Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werden.
@@ -82,7 +81,6 @@ Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werde
   * #BDE3F2 (Himmel) {{< color-sample color="#BDE3F2" text="Himmel" >}}
   * #7C8C3F (Gras) {{< color-sample color="#7C8C3F" text="Gras" >}}
 
-
 ***Themenbereiche:***
 * (Einleitung): Wird umdefiniert zu "Archivarischer Kontext" {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
 * Lebensstationen {{< color-sample color="#D9B26A" text="Düne" >}}
@@ -90,47 +88,34 @@ Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werde
 * Engagement gegen Atlantis und für den Naturschutz {{< color-sample color="#7C8C3F" text="Gras" >}}
 
 # Kacheln für die Navigation
-
-Kacheln dienen der einfach erkennbaren Navigation, die Farben der einfachen Wiedererkennung.
-
-Die hier gezeigte Ansicht ist für Smartphones, dort werden die Kacheln nacheinander angezeigt. Auf dem Desktop wird ein 2x2 Raster gezeigt.
+Kacheln dienen der einfach erkennbaren Navigation, die Farben der einfachen Wiedererkennung. Die hier gezeigte Ansicht ist für Smartphones, dort werden die Kacheln nacheinander angezeigt, auf dem Desktop in einem 2x2 Raster.
 
 Weitere geplante Anpassungen:
-* Die Kachel für den Bereich Archiv ist nicht enthalten
 * Die Ränder werden noch geschärft
 * Die Schriftfarbe wird je nach Hintergrund gewählt, um den Kontrast zu erhöhen.
 
 ## Himmel und Meer
-
 {{< figure src="./Himmel-Meer.svg" title="Künstlerisches Werk" class="nav-tile" >}}
-
 * Basisfarbe {{< color-sample color="#8DB2C3" text="Gemischtes Blau" >}}
 * Meer
   * Basisfarbe {{< color-sample color="#5d8094" text="Meer" >}}
   * Heller {{< color-sample color="#7999ab" text="10% heller" >}}
-
 * Himmel
   * Basisfarbe {{< color-sample color="#bde3f2" text="Himmel" >}}
   * Heller {{< color-sample color="#e8f5fa" text="10% heller" >}}
 
-
 ## Dünen
-
 {{< figure src="./Dünen.svg" title="Lebensstationen" class="nav-tile" >}}
-
 * Basisfarbe {{< color-sample color="#f7dba7" text="Düne" >}}
 * Dukler {{< color-sample color="#f3c878" text="10% dunkler" >}}
 
 ## Gras
-
 {{< figure src="./Gras.svg" title="Naturschutz" class="nav-tile" >}}
-
 * Basisfarbe  {{< color-sample color="#7C8C3F" text="Gras" >}}
 * Heller {{< color-sample color="#9baf4f" text="10% heller" >}}
+
 ## Archiv
-
 {{< figure src="./Archiv.svg" title="Archiv" class="nav-tile" >}}
-
 * Basisfarbe {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
 * Heller {{< color-sample color="#f9edde" text="5% heller" >}}
 * Dunkler {{< color-sample color="#edcb9d" text="10% dunkler" >}}
@@ -141,6 +126,10 @@ Weitere geplante Anpassungen:
 * [Extraktion von Farbthemen](https://color.adobe.com/de/create/image)
 
 ## Sonstiges
+
+### QR Codes
+
+Die QR Codes können auch gefärbt und in gewissen Grenzen sogar in der Form angepasst werden. [Hier](https://www.qrcode-monkey.com/) ein Generator, der verschieden Varianten erlaubt.
 
 ### Identifikation der Schiftarten
 * Ein Scan in einer hohen Auflösung (600dpi)
