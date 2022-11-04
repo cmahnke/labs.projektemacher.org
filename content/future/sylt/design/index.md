@@ -77,7 +77,7 @@ Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werde
 ***Beispielfarben***
   * #F5E2C8 Buchdekel {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
   * #260101 (Schatten) {{< color-sample color="#260101" text="Schatten" >}}
-  * #F7DBA7 (Düne) {{< color-sample color="#D9B26A" text="Düne" >}}
+  * #F7DBA7 (Düne) {{< color-sample color="#f7dba7" text="Düne" >}}
   * #5D8094 (Meer) {{< color-sample color="#5D8094" text="Meer" >}}
   * #BDE3F2 (Himmel) {{< color-sample color="#BDE3F2" text="Himmel" >}}
   * #7C8C3F (Gras) {{< color-sample color="#7C8C3F" text="Gras" >}}
@@ -104,13 +104,36 @@ Weitere geplante Anpassungen:
 
 {{< figure src="./Himmel-Meer.svg" title="Künstlerisches Werk" class="nav-tile" >}}
 
+* Basisfarbe {{< color-sample color="#8DB2C3" text="Gemischtes Blau" >}}
+* Meer
+  * Basisfarbe {{< color-sample color="#5d8094" text="Meer" >}}
+  * Heller {{< color-sample color="#7999ab" text="10% heller" >}}
+
+* Himmel
+  * Basisfarbe {{< color-sample color="#bde3f2" text="Himmel" >}}
+  * Heller {{< color-sample color="#e8f5fa" text="10% heller" >}}
+
+
 ## Dünen
 
 {{< figure src="./Dünen.svg" title="Lebensstationen" class="nav-tile" >}}
 
+* Basisfarbe {{< color-sample color="#f7dba7" text="Düne" >}}
+* Dukler {{< color-sample color="#f3c878" text="10% dunkler" >}}
+
 ## Gras
 
 {{< figure src="./Gras.svg" title="Naturschutz" class="nav-tile" >}}
+
+* Basisfarbe  {{< color-sample color="#7C8C3F" text="Gras" >}}
+* Heller {{< color-sample color="#9baf4f" text="10% heller" >}}
+## Archiv
+
+{{< figure src="./Archiv.svg" title="Archiv" class="nav-tile" >}}
+
+* Basisfarbe {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
+* Heller {{< color-sample color="#f9edde" text="5% heller" >}}
+* Dunkler {{< color-sample color="#edcb9d" text="10% dunkler" >}}
 
 # Werkzeuge
 * [Schriftidenfikation](https://www.myfonts.com/pages/whatthefont)
