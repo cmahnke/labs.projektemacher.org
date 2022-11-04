@@ -15,7 +15,7 @@ outputs:
 
 ## Plakate
 
-Hier sind die Texte zur Präsentaion in der Ausstellung gemeint, keine "Werbeplakate" um auf die Ausstellung aufmerksam zu machen.
+Hier sind die Texte zur Präsentation in der Ausstellung gemeint, keine "Werbeplakate" um auf die Ausstellung aufmerksam zu machen.
 
 ## Webseite
 
