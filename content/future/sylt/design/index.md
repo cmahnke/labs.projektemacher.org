@@ -100,9 +100,9 @@ Weitere geplante Anpassungen:
 * Die Ränder werden noch geschärft
 * Die Schriftfarbe wird je nach Hintergrund gewählt, um den Kontrast zu erhöhen.
 
-## Meer
+## Himmel und Meer
 
-{{< figure src="./Wasser.svg" title="Künstlerisches Werk" class="nav-tile" >}}
+{{< figure src="./Himmel-Meer.svg" title="Künstlerisches Werk" class="nav-tile" >}}
 
 ## Dünen
 
