@@ -92,12 +92,12 @@ Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werde
 
 # Kacheln für die Navigation
 
-Kacheln dienen der einfach erkennbaren Navigation. Die Farben dienen der einfachen Wiedererkennung.
+Kacheln dienen der einfach erkennbaren Navigation, die Farben der einfachen Wiedererkennung.
 
 Die hier gezeigte Ansicht ist für Smartphones, dort werden die Kacheln nacheinander angezeigt. Auf dem Desktop wird ein 2x2 Raster gezeigt.
 
 Weitere geplante Anpassungen:
-* Die Kachel für den Bereich ist nicht enthalten
+* Die Kachel für den Bereich Archiv ist nicht enthalten
 * Die Ränder werden noch geschärft
 * Die Schriftfarbe wird je nach Hintergrund gewählt, um den Kontrast zu erhöhen.
 
