@@ -85,9 +85,8 @@ Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werde
 
 ***Themenbereiche:***
 * (Einleitung): Wird umdefiniert zu "Archivarischer Kontext" {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
-* Lebensstationen {{< color-sample color="#5D8094" text="Meer" >}}
-* Zeichnungen und Malerei {{< color-sample color="#D9B26A" text="Düne" >}}
-* Fotografie {{< color-sample color="#BDE3F2" text="Himmel" >}}
+* Lebensstationen {{< color-sample color="#D9B26A" text="Düne" >}}
+* Künstlerisches Werk (war Fotografie, Zeichnungen und Malerei {{< color-sample color="#BDE3F2" text="Himmel" >}} und {{< color-sample color="#5D8094" text="Meer" >}}) Neue Farbe {{< color-sample color="#8DB2C3" text="Gemischtes Blau" >}}
 * Engagement gegen Atlantis und für den Naturschutz {{< color-sample color="#7C8C3F" text="Gras" >}}
 
 # Kacheln für die Navigation
@@ -103,15 +102,11 @@ Weitere geplante Anpassungen:
 
 ## Meer
 
-{{< figure src="./Wasser.svg" title="Lebensstationen" class="nav-tile" >}}
+{{< figure src="./Wasser.svg" title="Künstlerisches Werk" class="nav-tile" >}}
 
 ## Dünen
 
-{{< figure src="./Dünen.svg" title="Zeichnung und Malerei" class="nav-tile" >}}
-
-## Himmel
-
-{{< figure src="./Himmel.svg" title="Fotographie" class="nav-tile" >}}
+{{< figure src="./Dünen.svg" title="Lebensstationen" class="nav-tile" >}}
 
 ## Gras
 

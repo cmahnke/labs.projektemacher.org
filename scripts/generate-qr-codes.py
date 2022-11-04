@@ -15,6 +15,8 @@ if (outfile.endswith('svg')):
 else:
     factory = PilImage
 
+# Documentation: https://pypi.org/project/qrcode/
+
 cFilePAttern = re.compile(filePattern)
 for subdir, dirs, files in os.walk(contentPath):
     for file in files:
