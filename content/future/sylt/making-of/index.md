@@ -3,7 +3,6 @@ title: 'Making of'
 date: 2022-10-29T16:05:07+02:00
 archive: false
 news: false
-draft: true
 tags:
 - Ausstellung
 - Zukünftige Seite
@@ -34,7 +33,7 @@ Die Website soll die folgenden Aufgaben erfüllen:
  * Vorstellung der Exponate
  * Dokumentation
    * Fotos / Virtueller Rundgang
- * Entstehungsgechichte
+ * Entstehungsgeschichte der Ausstellung
 
 # Gestaltung
 
@@ -73,4 +72,10 @@ Die QR Codes dienen der Weiterleitung auf eine Webseite, so können kostengünst
 
 ## Karten
 
-## Bildvergleiche
+## Bilder
+
+### Hoch aufgelöste Bilder
+
+### Bildvergleiche
+
+### Vollbildansicht

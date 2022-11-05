@@ -16,10 +16,22 @@ news: false
 ## Infrastruktur
 * Optimierung von Vektorgrafiken (svgo)
 * Beispielseite mit Navigation erstellen
+* Theme erstellen
+  * Für Mobilgeräte optimieren
+  * Barrierefreiheit sicherstellen
 * Eigene Seite erstellen
 
 ## Gestaltung
 * Vektorisierte Schriftzüge (Sylt) optimieren
+* Schriften festlegen
 
 ## Inhalte
 * Umfang von digitalisierten Inhalten klären
+* Impressum
+* "Making of" zusammenführen
+
+## Print
+* Plakate
+
+# Sonstige Ideen
+* Überregionale Pressemeldungen zum Thema Atlantis digitalisieren

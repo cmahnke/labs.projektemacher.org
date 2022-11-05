@@ -124,12 +124,14 @@ Weitere geplante Anpassungen:
 * [Schriftidenfikation](https://www.myfonts.com/pages/whatthefont)
 * [Farbvarianten](http://scg.ar-ch.org/)
 * [Extraktion von Farbthemen](https://color.adobe.com/de/create/image)
+* [Farbmischer](https://meyerweb.com/eric/tools/color-blend/#BDE3F2:5D8094:1:hex)
 
 ## Sonstiges
 
 ### QR Codes
 
 Die QR Codes können auch gefärbt und in gewissen Grenzen sogar in der Form angepasst werden. [Hier](https://www.qrcode-monkey.com/) ein Generator, der verschieden Varianten erlaubt.
+In der Mitte können auch Grafiken platziert werden, so z.B. ein Lautsprechersymbol für Tonspuren.
 
 ### Identifikation der Schiftarten
 * Ein Scan in einer hohen Auflösung (600dpi)
