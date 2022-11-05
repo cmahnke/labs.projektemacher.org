@@ -14,12 +14,13 @@ news: false
 # Was noch zu tun ist
 
 ## Infrastruktur
-* Optimierung von Vektorgrafiken (svgo)
 * Beispielseite mit Navigation erstellen
 * Theme erstellen
   * Für Mobilgeräte optimieren
   * Barrierefreiheit sicherstellen
 * Eigene Seite erstellen
+  * Hosting klären
+  * SSL Zertifikat?
 
 ## Gestaltung
 * Vektorisierte Schriftzüge (Sylt) optimieren
@@ -35,3 +36,5 @@ news: false
 
 # Sonstige Ideen
 * Überregionale Pressemeldungen zum Thema Atlantis digitalisieren
+* GPS Auflösung prüfen
+* 3D Modelle?

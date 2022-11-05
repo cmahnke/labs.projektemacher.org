@@ -18,6 +18,7 @@ done
 ./scripts/3d.sh
 ./scripts/height-map.sh
 ./scripts/translate-status.sh
+./scripts/svgo.sh
 
 if [ -d ./scripts/post-build ] ; then
     echo "Don't forget to run post build scripts after 'hugo'!"

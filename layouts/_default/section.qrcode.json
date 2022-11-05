@@ -1,3 +1,6 @@
 {
   "url": "{{- .Permalink -}}"
+  {{- if (isset .Params "qr-icon") -}}
+    , "icon": "{{ .Params.Get "qr-icon" }}"
+  {{- end -}}
 }

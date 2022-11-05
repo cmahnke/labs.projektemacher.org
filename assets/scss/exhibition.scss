@@ -23,25 +23,49 @@
     }
 }
 
+.icon-preview {
+    width: 20% !important;
+}
+
 .nav-container {
     display: flex;
     width: 100%;
 
     .tile-nav {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        aspect-ratio: 16 / 9;
+        align-content: space-around;
+
 
         .tile {
-            width: 30%;
+            min-width: 40%;
             display: inline-block;
             padding: .6em;
 
+
+
             .tile-container {
+                border-radius: 2rem !important;
+
+                .tile-title {
+                  position: absolute;
+                  position: relative;
+
+                }
+
+                .tile-image {
+                    filter: blur(4px);
+                    border-radius: 2rem !important;
+                    position: absolute;
+
+                }
+
 
             }
 
-            .tile-title {
 
-            }
 
         }
 
@@ -49,4 +73,8 @@
     }
 
 
+}
+
+.about {
+    margin: auto;
 }
