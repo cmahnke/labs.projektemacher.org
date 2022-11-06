@@ -38,3 +38,4 @@ news: false
 * Überregionale Pressemeldungen zum Thema Atlantis digitalisieren
 * GPS Auflösung prüfen
 * 3D Modelle?
+* Wikipedia Eintrag

@@ -24,7 +24,17 @@
 }
 
 .icon-preview {
-    width: 20% !important;
+    width: 2em !important;
+    display: inline-block;
+    height: 2em;
+    padding: 0 !important;
+    margin-top: unset;
+    margin-bottom: unset !important;
+
+    img {
+        vertical-align: bottom;
+        max-height: 2em;
+    }
 }
 
 .nav-container {

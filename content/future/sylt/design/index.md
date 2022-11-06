@@ -30,9 +30,12 @@ Für „Wilma Bräuner, die Leica, das Meer ... und ihr Insel-Expreß“ wurde [
 Für „Leuchtendes Sylt“ kommt [Melior](https://www.typografie.info/3/Schriften/fonts.html/melior-r618/) von [Hermann Zapf](https://de.wikipedia.org/wiki/Hermann_Zapf) zum Einsatz.
 
 Mögliche Alternativen sind:
- * Edison Book
- * Latino Regular
+ * Zapf Elliptical 711 (Dies ist defacto die gleiche Schrift)
+ * [Latino Regular](https://fonts.adobe.com/fonts/latino-urw)
  * Marseille (Serial)
+ * Edison Book
+ * ggf. [GFS Didot]|(https://fonts.google.com/specimen/GFS+Didot)
+ * [weitere](https://www.fontshop.com/families/melior/similar)
 
 Eine Kombination bider Schriften bietet sich an, da die Helvetica auf der [Akzidenz-Grotesk](https://de.wikipedia.org/wiki/Akzidenz-Grotesk) basiert und diese Kombinationen nicht ungewöhnlich sind. Weitere [Kombinationen](https://fontsinuse.com/typefaces/3357/melior).
 
@@ -51,7 +54,6 @@ Als Beispiel dien der Schriftzug "Sylt" in zwei Varianten, die erste Variante is
 {{< figure src="./Sylt.jpg" title="Scan" caption="Buchdeckel von \"Sylt: Bildbuch einer Insel\", 1950er." >}}
 
 {{< figure src="./Sylt.svg" title="Vektorgrafik" caption="Die Vektorgrafik müsste noch weiter geglättet werden." >}}
-
 
 ### Freie Alternativen
 
@@ -122,6 +124,7 @@ Weitere geplante Anpassungen:
 
 # Werkzeuge
 * [Schriftidenfikation](https://www.myfonts.com/pages/whatthefont)
+* [Freie Schriften]( https://www.fontspace.com/)
 * [Farbvarianten](http://scg.ar-ch.org/)
 * [Extraktion von Farbthemen](https://color.adobe.com/de/create/image)
 * [Farbmischer](https://meyerweb.com/eric/tools/color-blend/#:::hex)
@@ -136,8 +139,9 @@ In der Mitte können auch Grafiken platziert werden, so z.B. ein Lautsprechersym
 #### Icons
 
 * Tondokument / Oral History {{< figure src="./icons/comment.svg" class="icon-preview" >}}
-* Textdokument / Link / Webseite {{< figure src="./icons/file-lines.svg" class="icon-preview" >}}
+* Textdokument / Link / Webseite {{< figure src="./icons/file-lines.svg" class="icon-preview" >}} oder {{< figure src="./icons/book-open.svg" class="icon-preview" >}}
 * Karte {{< figure src="./icons/map-location-dot.svg" class="icon-preview" >}}
+* Allgemeiner Hinweis auf Smartphone Inhalte  {{< figure src="./icons/mobile.svg" class="icon-preview" >}}
 
 [Quelle](https://fontawesome.com/icons/categories/music-audio)
 
