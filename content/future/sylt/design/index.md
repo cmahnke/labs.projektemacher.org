@@ -128,6 +128,8 @@ Weitere geplante Anpassungen:
 * [Farbvarianten](http://scg.ar-ch.org/)
 * [Extraktion von Farbthemen](https://color.adobe.com/de/create/image)
 * [Farbmischer](https://meyerweb.com/eric/tools/color-blend/#:::hex)
+* [Icons im Vektorformat](https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs/solid)
+* [Blindtext Generator](https://www.loremipsum.de/)
 
 ## Sonstiges
 
@@ -141,6 +143,7 @@ In der Mitte können auch Grafiken platziert werden, so z.B. ein Lautsprechersym
 * Tondokument / Oral History {{< figure src="./icons/comment.svg" class="icon-preview" >}}
 * Textdokument / Link / Webseite {{< figure src="./icons/file-lines.svg" class="icon-preview" >}} oder {{< figure src="./icons/book-open.svg" class="icon-preview" >}}
 * Karte {{< figure src="./icons/map-location-dot.svg" class="icon-preview" >}}
+* Bilddokument {{< figure src="./icons/image.svg" class="icon-preview" >}} oder {{< figure src="./icons/magnifying-glass.svg" class="icon-preview" >}}
 * Allgemeiner Hinweis auf Smartphone Inhalte  {{< figure src="./icons/mobile.svg" class="icon-preview" >}}
 
 [Quelle](https://fontawesome.com/icons/categories/music-audio)

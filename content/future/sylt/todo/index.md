@@ -21,6 +21,7 @@ news: false
 * Eigene Seite erstellen
   * Hosting klären
   * SSL Zertifikat?
+* QR Codes mit Icons als Vektordateien
 
 ## Gestaltung
 * Vektorisierte Schriftzüge (Sylt) optimieren

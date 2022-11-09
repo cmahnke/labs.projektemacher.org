@@ -27,7 +27,10 @@ Wilma Bräuner wurd in Hambug geboren und studierte an der dortigen Kunstgewerbe
 
 * Lit.: U. Schulte-Wülwer 'Künstlerinsel Sylt'.
 * AKL online
+* Sylt Lexikon
 
+# Weblinks
+* [Wilma Bräuner](http://www.artnet.de/k%C3%BCnstler/wilma-br%C3%A4uner/) bei artnet
 
 # Siehe auch
 * [Liste Sylter Persönlichkeiten](https://de.wikipedia.org/wiki/Liste_Sylter_Pers%C3%B6nlichkeiten)
@@ -44,6 +47,8 @@ Wilma Bräuner wurd in Hambug geboren und studierte an der dortigen Kunstgewerbe
 * Bildender Künstler (Schleswig-Holstein)
 * Fotograf (Schleswig-Holstein)
 * Fotograf (20. Jahrhundert)
+* Person (Hamburg)
+* Naturschützer
 * Deutscher
 * Geboren 1891
 * Gestorben 1984
@@ -51,7 +56,13 @@ Wilma Bräuner wurd in Hambug geboren und studierte an der dortigen Kunstgewerbe
 
 
 # Anmerkungen
-## Übersichtsseite
-* https://de.wikipedia.org/wiki/Liste_Sylter_Pers%C3%B6nlichkeiten
-## Sichtung beantragen
+## Status
+* Eingetragen auf [Liste Sylter Persönlichkeiten](https://de.wikipedia.org/wiki/Liste_Sylter_Pers%C3%B6nlichkeiten)
+* Weitere Lemma
+  * [Hochschule für bildende Künste Hamburg](https://de.wikipedia.org/wiki/Hochschule_f%C3%BCr_bildende_K%C3%BCnste_Hamburg#Geschichte_der_Frauen_an_der_HFBK_Hamburg:_Studium)
+  * Artikel zu "Hubertus Jessel" existiert noch nicht.
+  * Weitere Zeitgenossen überprüfen
+
+## Hilfsmittel
+### Sichtung beantragen
 * https://de.wikipedia.org/wiki/Wikipedia:Gesichtete_Versionen/Anfragen
