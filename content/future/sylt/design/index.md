@@ -140,7 +140,7 @@ In der Mitte können auch Grafiken platziert werden, so z.B. ein Lautsprechersym
 
 #### Icons
 
-* Tondokument / Oral History {{< figure src="./icons/comment.svg" class="icon-preview" >}}
+* Tondokument / Oral History {{< figure src="./icons/comment.svg" class="icon-preview" >}} oder {{< figure src="./icons/volume-high.svg" class="icon-preview" >}}
 * Textdokument / Link / Webseite {{< figure src="./icons/file-lines.svg" class="icon-preview" >}} oder {{< figure src="./icons/book-open.svg" class="icon-preview" >}}
 * Karte {{< figure src="./icons/map-location-dot.svg" class="icon-preview" >}}
 * Bilddokument {{< figure src="./icons/image.svg" class="icon-preview" >}} oder {{< figure src="./icons/magnifying-glass.svg" class="icon-preview" >}}

@@ -12,6 +12,8 @@ outputs:
   - qrcode
 archive: false
 news: false
+qr-icon: comment.svg
+qr-color: '#F5E2C8'
 ---
 
 {{< quote from="W. Bräuner" >}}
