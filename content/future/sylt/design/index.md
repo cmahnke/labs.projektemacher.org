@@ -146,7 +146,8 @@ In der Mitte können auch Grafiken platziert werden, so z.B. ein Lautsprechersym
 * Bilddokument {{< figure src="./icons/image.svg" class="icon-preview" >}} oder {{< figure src="./icons/magnifying-glass.svg" class="icon-preview" >}}
 * Allgemeiner Hinweis auf Smartphone Inhalte  {{< figure src="./icons/mobile.svg" class="icon-preview" >}}
 
-[Quelle](https://fontawesome.com/icons/categories/music-audio)
+[Quelle](https://fontawesome.com/icons/)
+[SVG Dateien](https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs/solid)
 
 ### Identifikation der Schiftarten
 * Ein Scan in einer hohen Auflösung (600dpi)

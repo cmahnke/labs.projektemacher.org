@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 # TODO:
-# * scale embedded icon, see https://github.com/lincolnloop/python-qrcode/blob/master/qrcode/image/styledpil.py#L85
-# * Clip QR Code
+# * scale embedded icon, with respect to border width
 
 import qrcode, json, re, os
 import argparse, pathlib
@@ -21,8 +20,7 @@ defaultOutfile = "qrcode.svg"
 contentPath = "./docs"
 filePattern = "qrcode.json"
 factory = 'svg'
-height = '10cm'
-width = '10cm'
+iconScale = 0.25
 
 parser = argparse.ArgumentParser(prog = 'generate-qr-codes.py', description = 'Generate QR Code')
 parser.add_argument('-i', '--include', '--icon', metavar="[include path]", type=pathlib.Path, help="Path to include icons from")
@@ -110,13 +108,9 @@ class BetterUnit (Unit):
         else:
             raise TypeError('Only \'Unit\' ant \'int\' are supported, not \'{}\''.format(type(number)))
 
-#def scale(svgStr, factor):
-#    root = ET.fromstring(svgStr)
-#    svgutils.transform.FigureElement(root[0]).scale(factor)
-
 # Documentation QR Codes: https://pypi.org/project/qrcode/
 # Documentation SVG to PNG: https://cairosvg.org/documentation/
-# Documentation Mxerge SVGs: https://svgutils.readthedocs.io/en/latest/index.html
+# Documentation Merge SVGs: https://svgutils.readthedocs.io/en/latest/index.html
 
 cFilePAttern = re.compile(filePattern)
 for subdir, dirs, files in os.walk(contentPath):
@@ -127,10 +121,19 @@ for subdir, dirs, files in os.walk(contentPath):
             with open(os.path.join(subdir, file), 'r') as f:
                 data = json.load(f)
 
-            img = qrcode.make(data['url'], image_factory=factory)
+            if "icon" in data:
+                qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_Q, image_factory=factory)
+            else:
+                qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, image_factory=factory)
+
+            qr.add_data(data['url'])
+            img = qr.make_image()
+
             svg = img.to_string().decode('utf-8')
             size = getSize(svg)
-            #cprint("Size is {} by {}".format(size["width"], size["height"]), 'yellow')
+            border = qr.border
+            cols = len(qr.get_matrix()[0])
+            cprint("Size is {} by {}, width {}, border width {}".format(size["width"], size["height"], cols, border), 'yellow')
             if "color" in data:
                 svg = setPathFill(svg, data['color'])
             if "icon" in data:
@@ -143,12 +146,11 @@ for subdir, dirs, files in os.walk(contentPath):
                 if iconFile.endswith('svg') and exists(iconFile):
                     cprint("Using icon " + iconFile, 'green')
                     #PIL.Image.open(io.BytesIO(svg2png(url=filename, write_to=None)))
-                    # Merge SVGs https://stackoverflow.com/a/23482756
                     svgTemplate = svgutils.transform.fromstring(svg)
                     icon = svgutils.transform.fromfile(iconFile)
                     if "iconColor" in data:
-                        iconSvg = icon.tostr().decode('utf-8')
-                        iconSvg = setPathFill(iconSVG, data['iconColor'])
+                        iconSvg = icon.to_str().decode('utf-8')
+                        iconSvg = setPathFill(iconSvg, data['iconColor'])
                         icon = svgutils.transform.fromstring(iconSvg)
                     background = None
                     if args.background is not None:
@@ -170,8 +172,10 @@ for subdir, dirs, files in os.walk(contentPath):
                         icon = GroupElement([icon.root])
 
                     icon = GroupElement(icon.root)
-                    iconScale = 0.4
+                    qrcodeWidth = (BetterUnit(size["width"]) / cols) * (cols - (border * 2))
+                    borderWidth = (BetterUnit(size["width"]) / cols) * border
                     margin = calculateMargin(size["width"], iconScale)
+                    #margin = calculateMargin(qrcodeWidth, iconScale) + borderWidth
                     icon.moveto(margin, margin, scale_x=iconScale)
                     svgTemplate.append(icon)
                     svg = svgTemplate.to_str().decode('utf-8')

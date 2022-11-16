@@ -37,6 +37,21 @@
     }
 }
 
+.qr-preview {
+    display: inline-block;
+    padding: 0 !important;
+    margin-top: unset;
+    margin-bottom: unset !important;
+    width: 100% !important;
+
+    img {
+        vertical-align: bottom;
+        
+        width: 40vh;
+    }
+
+}
+
 .nav-container {
     display: flex;
     width: 100%;

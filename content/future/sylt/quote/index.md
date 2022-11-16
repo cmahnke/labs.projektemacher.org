@@ -1,7 +1,6 @@
 ---
 title: 'Vorwort "Leuchtendes Sylt"'
 date: 2022-10-29T16:05:07+02:00
-layout: qr-code
 tags:
 - Ausstellung
 - Zukünftige Seite
@@ -13,7 +12,8 @@ outputs:
 archive: false
 news: false
 qr-icon: comment.svg
-qr-color: '#F5E2C8'
+qr-color: '#edcb9d'
+qr-icon-color: '#edcb9d'
 ---
 
 {{< quote from="W. Bräuner" >}}
