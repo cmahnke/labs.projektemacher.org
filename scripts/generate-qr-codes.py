@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 
-# TODO:
-# * scale embedded icon, with respect to border width
-
 import qrcode, json, re, os
 import argparse, pathlib
 import svgutils.transform
@@ -21,6 +18,8 @@ contentPath = "./docs"
 filePattern = "qrcode.json"
 factory = 'svg'
 iconScale = 0.25
+# Set this to None to get an transparent background
+backgroundColor = 'white'
 
 parser = argparse.ArgumentParser(prog = 'generate-qr-codes.py', description = 'Generate QR Code')
 parser.add_argument('-i', '--include', '--icon', metavar="[include path]", type=pathlib.Path, help="Path to include icons from")
@@ -49,14 +48,16 @@ for prefix, namespace in namespaces.items():
 primitives = {}
 primitives['circle'] = """
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="50" cy="50" r="50" fill="white" />
+  <circle cx="50" cy="50" r="50" fill="{}" />
 </svg>
-"""
+""".format(backgroundColor)
 primitives['square'] = """
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100" height="100" fill="white" />
+  <rect width="100" height="100" fill="{}" />
 </svg>
-"""
+""".format(backgroundColor)
+
+
 
 # Functions
 def setPathFill(svgStr, color):
@@ -127,7 +128,11 @@ for subdir, dirs, files in os.walk(contentPath):
                 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, image_factory=factory)
 
             qr.add_data(data['url'])
-            img = qr.make_image()
+            if backgroundColor:
+                img = qr.make_image(back_color=backgroundColor)
+                img._img.set('style', 'background-color: {};'.format(backgroundColor))
+            else:
+                img = qr.make_image()
 
             svg = img.to_string().decode('utf-8')
             size = getSize(svg)
