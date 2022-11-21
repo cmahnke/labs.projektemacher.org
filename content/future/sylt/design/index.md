@@ -59,6 +59,10 @@ Als Beispiel dien der Schriftzug "Sylt" in zwei Varianten, die erste Variante is
 
  * Für Helvetica: [Roboto](https://fonts.google.com/specimen/Roboto)
  * Für Melior: (Muss noch identifiziert werden)
+   * [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) oder [Cormorant](https://fonts.google.com/specimen/Cormorant/)
+
+### Dritte Schrift
+ * Schreibmaschine / Archiv: [Sono](https://fonts.google.com/specimen/Sono) 
 
 # Farben
 
@@ -76,12 +80,12 @@ Prinzipiell sollten die Farben so gewählt sein, dass sie auch als Themenfarben 
 Es kann auch ein anderes Bild zur Extraktion eines Farbthemas herangezogen werden.
 
 ***Beispielfarben***
-  * #F5E2C8 Buchdekel {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
-  * #260101 (Schatten) {{< color-sample color="#260101" text="Schatten" >}}
-  * #F7DBA7 (Düne) {{< color-sample color="#f7dba7" text="Düne" >}}
-  * #5D8094 (Meer) {{< color-sample color="#5D8094" text="Meer" >}}
-  * #BDE3F2 (Himmel) {{< color-sample color="#BDE3F2" text="Himmel" >}}
-  * #7C8C3F (Gras) {{< color-sample color="#7C8C3F" text="Gras" >}}
+  * #F5E2C8 Buchdekel {{< color-sample color="#F5E2C8" text="Buchdeckel" print="True" >}}
+  * #260101 (Schatten) {{< color-sample color="#260101" text="Schatten" print="True" >}}
+  * #F7DBA7 (Düne) {{< color-sample color="#f7dba7" text="Düne" print="True" >}}
+  * #5D8094 (Meer) {{< color-sample color="#5D8094" text="Meer" print="True" >}}
+  * #BDE3F2 (Himmel) {{< color-sample color="#BDE3F2" text="Himmel" print="True" >}}
+  * #7C8C3F (Gras) {{< color-sample color="#7C8C3F" text="Gras" print="True" >}}
 
 ***Themenbereiche:***
 * (Einleitung): Wird umdefiniert zu "Archivarischer Kontext" {{< color-sample color="#F5E2C8" text="Buchdeckel" >}}
