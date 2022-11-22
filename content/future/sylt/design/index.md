@@ -58,11 +58,18 @@ Als Beispiel dien der Schriftzug "Sylt" in zwei Varianten, die erste Variante is
 ### Freie Alternativen
 
  * Für Helvetica: [Roboto](https://fonts.google.com/specimen/Roboto)
- * Für Melior: (Muss noch identifiziert werden)
-   * [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) oder [Cormorant](https://fonts.google.com/specimen/Cormorant/)
+ * Für Melior: [Ledger](https://fonts.google.com/specimen/Ledger)
+
+### Ersatzschriften
+Da es ggf. nicht genug Schriftschnitte gibt, müssen weitere Schriften zu den Klassen oben (mit und ohne Serifen) Ersatzschriften gesucht werden
+
+#### Serifenschrift
+* [Cormorant Garamond](https://fonts.google.com/specimen/Cormorant+Garamond) oder [Cormorant](https://fonts.google.com/specimen/Cormorant/)
+* [Noto Serif Display](https://fonts.google.com/noto/specimen/Noto+Serif+Display?query=Noto+Serif+Display)
 
 ### Dritte Schrift
- * Schreibmaschine / Archiv: [Sono](https://fonts.google.com/specimen/Sono) 
+Um den Bereich "Archiv" typografisch abzusetzen wird eine eigene Schrift gewählt, die an eine Schreibmaschine erinnert.
+ * Schreibmaschine / Archiv: [Sono](https://fonts.google.com/specimen/Sono)
 
 # Farben
 
@@ -134,6 +141,8 @@ Weitere geplante Anpassungen:
 * [Farbmischer](https://meyerweb.com/eric/tools/color-blend/#:::hex)
 * [Icons im Vektorformat](https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs/solid)
 * [Blindtext Generator](https://www.loremipsum.de/)
+* [Visueller Schriftvergleich](http://sadah.github.io/sada-samplecode/FontsCompare/)
+* [Schriftvergleich basierend auf Merkmalen(mit Beispiel "Melior" und "Garamond")](hhttp://www.identifont.com/differences?first=Garamond&second=Melior&q=Go)
 
 ## Sonstiges
 

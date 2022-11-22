@@ -17,6 +17,7 @@ draft: true
 * [Balsamiq Sans](https://fonts.google.com/specimen/Balsamiq+Sans) - Freie Comic Sans
 * [Irrlicht](https://web.archive.org/web/20170627014250/http://www.myfonts.de/2015/03/irrlicht/)
 * [League Spartan - Futura Variante](https://www.theleagueofmoveabletype.com/league-spartan)
+* [Oldenburg](https://fonts.google.com/specimen/Oldenburg?query=oldenburg)
 
 # Kartenmaterial
 * https://openlayers.org/en/latest/examples/icon-color.html
