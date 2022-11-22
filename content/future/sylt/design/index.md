@@ -143,6 +143,7 @@ Weitere geplante Anpassungen:
 * [Blindtext Generator](https://www.loremipsum.de/)
 * [Visueller Schriftvergleich](http://sadah.github.io/sada-samplecode/FontsCompare/)
 * [Schriftvergleich basierend auf Merkmalen(mit Beispiel "Melior" und "Garamond")](hhttp://www.identifont.com/differences?first=Garamond&second=Melior&q=Go)
+* [Schriften als NPM Pakete](https://fontsource.org/)
 
 ## Sonstiges
 
