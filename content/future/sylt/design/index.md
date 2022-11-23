@@ -142,7 +142,7 @@ Weitere geplante Anpassungen:
 * [Icons im Vektorformat](https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs/solid)
 * [Blindtext Generator](https://www.loremipsum.de/)
 * [Visueller Schriftvergleich](http://sadah.github.io/sada-samplecode/FontsCompare/)
-* [Schriftvergleich basierend auf Merkmalen(mit Beispiel "Melior" und "Garamond")](hhttp://www.identifont.com/differences?first=Garamond&second=Melior&q=Go)
+* [Schriftvergleich basierend auf Merkmalen (mit Beispiel "Melior" und "Garamond")](hhttp://www.identifont.com/differences?first=Garamond&second=Melior&q=Go)
 * [Schriften als NPM Pakete](https://fontsource.org/)
 
 ## Sonstiges

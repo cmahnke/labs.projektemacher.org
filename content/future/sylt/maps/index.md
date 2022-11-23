@@ -11,8 +11,11 @@ archive: false
 news: false
 ---
 
-# Links
-  * [Vorschauen erzeugen](https://snazzymaps.com/)
+Beispiele für die historische Bildungsarbeit des Sylter Archivs.
 
 # Koordinaten
-  * [54.898115, 8.319141](https://goo.gl/maps/VPSevhm86TP1s97d8)
+  * [Flutdalbe 54.898115, 8.319141](https://goo.gl/maps/VPSevhm86TP1s97d8)
+  * [Stromkästen](https://www.shz.de/lokales/sylt/artikel/sylt-diese-drei-drucken-geschichte-auf-stromkaesten-in-westerland-43442797)
+
+# Werkzeuge
+  * [Vorschauen erzeugen](https://snazzymaps.com/)
