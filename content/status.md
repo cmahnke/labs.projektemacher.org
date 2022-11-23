@@ -2,6 +2,7 @@
 title: Build Status
 displayinlist: false
 metaPage: true
+refresh: 60
 ---
 
 # Blogs
