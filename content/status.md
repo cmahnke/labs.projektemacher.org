@@ -51,6 +51,8 @@ refresh: 60
 
 # Tools
 
+* Font Action [![IIIF Action](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml)
+
 * IIIF Action [![IIIF Action](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml)
 
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
