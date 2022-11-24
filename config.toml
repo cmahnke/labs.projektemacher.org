@@ -13,9 +13,6 @@ paginate = 5
 enableInlineShortcodes = true
 copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>"
 
-[params]
-disableScale = "minimum-scale=1"
-
 [languages]
     [languages.de]
         languagename = "Deutsch"
