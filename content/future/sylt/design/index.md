@@ -167,3 +167,11 @@ In der Mitte können auch Grafiken platziert werden, so z.B. ein Lautsprechersym
 * Ein Scan in einer hohen Auflösung (600dpi)
 * Ein Webdienst: https://www.myfonts.com/pages/whatthefont
 * Dann Beurteilung der Ergebnisse, an Hand des zeitlichen Kontexts, da die Ergebnisse aus dem Schritt davor viele Schriften liefert, die es damals gar nicht gab, oder eher ungebräuchlich waren. Dabei helfen Schriftmusterbücher.
+
+# Rahmen
+
+## Fotokarton
+
+* RGB: rgb(189, 197, 201)
+* HTML: #bdc5c9
+* HSL: hsl(200, 10%, 76%)

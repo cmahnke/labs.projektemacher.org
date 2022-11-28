@@ -40,3 +40,11 @@ news: false
 * GPS Auflösung prüfen
 * 3D Modelle?
 * Wikipedia Eintrag
+
+# Weitere Links
+
+* [Leitfaden zur Umsetzung einer Website für kleine Museen](https://www.zeilenabstand.net/leitfaden-zur-umsetzung-einer-website-fuer-kleine-museen/)
+
+## Inspiration
+
+* [DAS KLEINE MUSEUM WEISSENSTADT](https://www.kleinesmuseum-weissenstadt.de/static/)
