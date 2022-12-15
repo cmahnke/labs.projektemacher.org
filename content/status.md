@@ -39,7 +39,7 @@ refresh: 60
 
 * [Vorsatzpapier](https://vorsatzpapier.projektemacher.org/) [![Vorsatzpapier](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml)
 
-* [Wilma Bräuner](https://xn--wilmabruner-r8a.projektemacher.org) [![Wilma Bräuner](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml)
+* [Wilma Bräuner](https://xn--wilmabruner-r8a.de/) [![Wilma Bräuner](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml)
 
 * [Yet another analog photo blog](https://yaapb.projektemacher.org/) [![Yet another analog photo blog](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml)
 
