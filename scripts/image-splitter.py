@@ -17,9 +17,11 @@ def crossed_eyed(left, right, file, format='jpeg'):
     return ce
 
 parser = argparse.ArgumentParser(description='Extract steroscopic images')
-parser.add_argument('--image',  type=pathlib.Path, help='Image to process', required=True)
-parser.add_argument('--coords',  type=pathlib.Path, help='File containing coordinates', required=True)
-parser.add_argument('--output',  choices=['gif', 'jps', 'images'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
+parser.add_argument('--coords', type=pathlib.Path, help='File containing coordinates', required=True)
+parser.add_argument('--output', choices=['gif', 'jps', 'images'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--samesize', '-s', help='Force same size (implies advanced)', default=False, action='store_true')
+parser.add_argument('--advanced', '-a', help='Use advanced features provided by StereoscoPy', default=False, action='store_true')
 
 args = parser.parse_args()
 
@@ -32,6 +34,19 @@ else:
     outputs = sum(args.output, [])
 
 cprint('Requested output formats: ' + ', '.join(outputs), 'yellow')
+same_size = False
+advanced = False
+if args.samesize:
+    same_size = True
+    cprint('Forcing same image size', 'yellow')
+    advanced = True
+
+if args.advanced and not advanced:
+    advanced = True
+    cprint('Using advanced features provided by StereoscoPy', 'yellow')
+
+if advanced:
+    import stereoscopy
 
 leftFileName = args.image.parent.joinpath(args.image.stem + '-left' + args.image.suffix)
 rightFileName = args.image.parent.joinpath(args.image.stem + '-right' + args.image.suffix)
@@ -83,6 +98,9 @@ if ( coords['left']['size']['y'] != coords['right']['size']['y']):
 
 left = im.crop((left_left, left_top, left_right, left_bottom))
 right = im.crop((right_left, right_top, right_right, right_bottom))
+
+if same_size:
+    (left, right) = stereoscopy.auto_align((left, right), shrink=same_size)
 
 # See https://blog.miguelgrinberg.com/post/take-3d-pictures-with-your-canon-dslr-and-magic-lantern
 
