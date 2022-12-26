@@ -4,6 +4,9 @@ from PIL import Image
 import argparse, pathlib, json
 from termcolor import cprint
 
+# Duration for Wigglegrams im ms
+defaultDuration = 100
+
 # See http://www.sview.ru/en/help/input/
 # See https://note.nkmk.me/en/python-pillow-concat-images/
 def crossed_eyed(left, right, file, format='jpeg'):
@@ -85,7 +88,7 @@ right = im.crop((right_left, right_top, right_right, right_bottom))
 
 if ('gif' in outputs):
     gifFileName = args.image.parent.joinpath(args.image.stem + '.gif')
-    left.save(gifFileName, save_all=True, append_images=[right], duration=0.1, loop=0, dispose=2)
+    left.save(gifFileName, save_all=True, append_images=[right], duration=(defaultDuration / 1000) * 100, loop=0, dispose=2)
 if ('jps' in outputs):
     ceFileName = args.image.parent.joinpath(args.image.stem + '.jps')
     crossed_eyed(left, right, ceFileName)

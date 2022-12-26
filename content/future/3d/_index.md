@@ -15,3 +15,6 @@ Ein Experiment zu Medientypen und Dateiformaten.
 {{< html/iframe-consent >}}
     {{< maps/osm src="./map.geojson" >}}
 {{< /html/iframe-consent >}}
+
+Weitere Informationen zur Ansicht im Browser bieten verschiedene Blogs:
+* [Learning to Free-View: See Stereoscopic Images with the Naked Eye](https://stereoscopy.blog/2022/03/11/learning-to-free-view-see-stereoscopic-images-with-the-naked-eye/)
