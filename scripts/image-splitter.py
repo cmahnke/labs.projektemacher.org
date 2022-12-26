@@ -19,7 +19,7 @@ def crossed_eyed(left, right, file, format='jpeg'):
 parser = argparse.ArgumentParser(description='Extract steroscopic images')
 parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
 parser.add_argument('--coords', type=pathlib.Path, help='File containing coordinates', required=True)
-parser.add_argument('--output', choices=['gif', 'jps', 'images'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--output', choices=['gif', 'jps', 'images', 'jpg'], action='append', nargs='+', help='Output format', default=[])
 parser.add_argument('--samesize', '-s', help='Force same size (implies advanced)', default=False, action='store_true')
 parser.add_argument('--advanced', '-a', help='Use advanced features provided by StereoscoPy', default=False, action='store_true')
 
@@ -36,10 +36,16 @@ else:
 cprint('Requested output formats: ' + ', '.join(outputs), 'yellow')
 same_size = False
 advanced = False
+
 if args.samesize:
     same_size = True
     cprint('Forcing same image size', 'yellow')
     advanced = True
+
+if ('jpg' in outputs):
+    cprint('Anayglyph output requires -s and -a, setting it automaticlly', 'yellow')
+    advanced = True
+    same_size = True
 
 if args.advanced and not advanced:
     advanced = True
@@ -110,6 +116,9 @@ if ('gif' in outputs):
 if ('jps' in outputs):
     ceFileName = args.image.parent.joinpath(args.image.stem + '.jps')
     crossed_eyed(left, right, ceFileName)
+if ('jpg' in outputs):
+    anagFileName = args.image.parent.joinpath(args.image.stem + '-anaglyph.jpg')
+    stereoscopy.create_anaglyph((left, right), method="gray").save(anagFileName)
 if ('images' in outputs):
     left.save(leftFileName)
     right.save(rightFileName)
