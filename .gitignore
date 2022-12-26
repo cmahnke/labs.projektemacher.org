@@ -38,3 +38,8 @@ content/**/ogPreview-overlay.*g
 **/.DS_Store
 **/*.ogv
 content/status.en.md
+
+postcss.config.js
+browserslist
+.stylelintrc.json
+purgecss.config.js
