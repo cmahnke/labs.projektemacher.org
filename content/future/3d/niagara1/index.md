@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "General View, Niagara Falls, N.Y., U.S.A."
 date: 2022-12-26T22:15:07+02:00
 type: 3d
 iiifContext: http://iiif.io/api/image/2/context.json

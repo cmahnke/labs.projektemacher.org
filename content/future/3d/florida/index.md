@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Among Florida palms where Nature turns and stone into cocoanuts"
 date: 2022-12-26T22:15:07+02:00
 type: 3d
 iiifContext: http://iiif.io/api/image/2/context.json
