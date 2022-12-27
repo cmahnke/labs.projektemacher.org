@@ -25,7 +25,14 @@ parser.add_argument('--advanced', '-a', help='Use advanced features provided by 
 
 args = parser.parse_args()
 
+images_suffix = args.image.suffix
+
+if str(args.image).endswith('.jxl'):
+    from jxlpy import JXLImagePlugin
+    images_suffix = '.jpg'
+
 im = Image.open(args.image)
+
 coords = json.load(args.coords.open())
 
 if (len(args.output) == 0):
@@ -54,8 +61,8 @@ if args.advanced and not advanced:
 if advanced:
     import stereoscopy
 
-leftFileName = args.image.parent.joinpath(args.image.stem + '-left' + args.image.suffix)
-rightFileName = args.image.parent.joinpath(args.image.stem + '-right' + args.image.suffix)
+leftFileName = args.image.parent.joinpath(args.image.stem + '-left' + images_suffix )
+rightFileName = args.image.parent.joinpath(args.image.stem + '-right' + images_suffix )
 cprint("Left start position {},{}, size {}, {} - File name {}".format(coords['left']['position']['x'], coords['left']['position']['y'], coords['left']['size']['x'], coords['left']['size']['y'], leftFileName), 'yellow')
 cprint("Right start position {},{}, size {}, {} - File name {}".format(coords['right']['position']['x'], coords['right']['position']['y'], coords['right']['size']['x'], coords['right']['size']['y'], rightFileName), 'yellow')
 

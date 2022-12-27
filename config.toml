@@ -62,6 +62,8 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
     suffixes = ["json"]
   [mediaTypes."application/x-qrcode-template"]
     suffixes = ["json"]
+  [mediaTypes."image/jxl"]
+    suffixes = ["jxl"]
 
 [outputFormats]
   [outputFormats.geojson]
