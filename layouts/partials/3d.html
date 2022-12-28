@@ -4,7 +4,7 @@
 
 {{- $jps := path.Join $context "front.jps" -}}
 {{- $gif := path.Join $context "front.gif" -}}
-{{- $ana := path.Join $context "front-ana.jpg" -}}
+{{- $ana := path.Join $context "front-anaglyph.jpg" -}}
 {{- $mpo := path.Join $context "front.mpo" -}}
 {{- $singleL := path.Join $context "front-left.jpg" -}}
 {{- $singleR := path.Join $context "front-right.jpg" -}}
@@ -45,6 +45,7 @@
                 <label class="tab" id="dreiD-single-tab" for="dreiD-single">Einzelbilder</label>
             {{- end }}
         </div>
+
         <div class="panels">
             {{ if (fileExists $jps) -}}
                 <div class="panel" id="dreiD-jps-panel">

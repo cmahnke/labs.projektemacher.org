@@ -19,6 +19,7 @@ Ein Experiment zu Medientypen und Dateiformaten.
 # Update Weihnachten 2022
 
 * Die Qualität der generierten Wigglegrammme wurde massiv durch die Nutzung von [StereoscoPy](https://github.com/2sh/StereoscoPy), verbessert. Es nutzt OpenCV um die Bildanordnung zu verbessern. Zusätzlich können jetzt Anaglyphen erzeugt werden.
+* Die verbesserte Anordnung funktion iert nicht sehr gut bei wenig strukturierten Inhalten, wie Innenräumen oder vielen Pflanzen, jeweils ohne Horizont.
 * Es sind nun mehr Bilder online
 
 
