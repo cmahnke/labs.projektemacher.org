@@ -1,0 +1,32 @@
+{{/* Required arguments */}}
+
+{{- $left := .left -}}
+{{- $right := .right -}}
+
+{{/*
+{{- $jps := .jps -}}
+*/}}
+{{ $main := $left }}
+
+{{- $class := "vr cardboard" -}}
+{{- if isset . "class" -}}
+  {{- $class = .class -}}
+{{- end -}}
+{{- $baseURL := "" -}}
+{{- if isset . "baseURL" -}}
+  {{- $baseURL = .baseURL -}}
+{{- else -}}
+  {{- $baseURL := path.Dir $main -}}
+{{- end -}}
+
+{{- $idSuffix := replace (replace (replace $main "/" "_") "." "") "-" "_" -}}
+{{- $divName := printf "cardboard_vr_%s_%s" (delimit (shuffle (seq 1 9)) "") $idSuffix -}}
+
+<div id="{{ $divName }}" class="viewer {{ $class }}">
+{{/* <stereo-img src="{{ printf "/%s" $jps }}" type="left-right"></stereo-img> */}}
+</div>
+<script type="text/javascript">
+  {{ $divName | safeJS }}_Div = document.getElementById("{{ $divName }}");
+  {{ $divName | safeJS }} = add3DViewer({{ $divName | safeJS }}_Div, '{{ printf "/%s" $left }}', '{{ printf "/%s" $right }}');
+  {{ $divName | safeJS }}_Div.data = {{ $divName | safeJS }};
+</script>

@@ -9,6 +9,8 @@ geojson:
   - 48.8599137
 tags:
 - 3D
+js:
+  - js/3d.js
 resources:
 - src: "front.jpg"
   name: front

@@ -9,6 +9,8 @@ geojson:
   coordinates:
   - -0.7042948865940065
   - 49.27527588969518
+js:
+  - js/3d.js
 resources:
 - src: "front.jpg"
   name: front

@@ -5,6 +5,8 @@ type: 3d
 iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
+js:
+  - js/3d.js
 geojson:
   coordinates:
   - 10.02659235098882

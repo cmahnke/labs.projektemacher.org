@@ -27,22 +27,25 @@
          {{- end }}
          {{ if and (fileExists $singleL) (fileExists $singleR) -}}
             <input class="radio" id="dreiD-single" name="3d" type="radio">
+            <input class="radio" id="dreiD-vr" name="3d" type="radio">
          {{- end -}}
         <div class="tabs">
             {{ if (fileExists $jps) -}}
                 <label class="tab" id="dreiD-jps-tab" for="dreiD-jps">JPS</label>
+
             {{- end }}
             {{ if (fileExists $gif) -}}
                 <label class="tab" id="dreiD-gif-tab" for="dreiD-gif">GIF</label>
             {{- end }}
             {{ if (fileExists $ana) -}}
-                <label class="tab" id="dreiD-ana-tab" for="dreiD-ana">Anaglyph (Für 3D Brillen)</label>
+                <label class="tab" id="dreiD-ana-tab" for="dreiD-ana">Anaglyph</label>
             {{- end }}
             {{ if (fileExists $mpo) -}}
                 <label class="tab" id="dreiD-mpo-tab" for="dreiD-mpo">Multi Picture Object (MPO)</label>
             {{- end }}
             {{ if and (fileExists $singleL) (fileExists $singleR) -}}
                 <label class="tab" id="dreiD-single-tab" for="dreiD-single">Einzelbilder</label>
+                <label class="tab" id="dreiD-vr-tab" for="dreiD-vr">VR Brille</label>
             {{- end }}
         </div>
 
@@ -89,6 +92,9 @@
                     <div class="description">
                         Das rechte Bild. <a class="newTab" href="{{ $singleR | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
                     </div>
+                </div>
+                <div class="panel" id="dreiD-vr-panel">
+                    {{- partial "3d/cardboard.html" (dict "left" $singleL "right" $singleR ) -}}
                 </div>
             {{- end }}
         </div>

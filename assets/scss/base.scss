@@ -179,7 +179,7 @@ article.single {
         .tabs {
             .tab {
                 cursor: pointer;
-                padding: 10px 10px;
+                padding: 10px 15px;
                 margin: 0 2px;
                 background: #2d2d2d;
                 display: inline-block;
@@ -192,7 +192,8 @@ article.single {
         #dreiD-gif:checked ~ .panels #dreiD-gif-panel,
         #dreiD-jps:checked ~ .panels #dreiD-jps-panel,
         #dreiD-mpo:checked ~ .panels #dreiD-mpo-panel,
-        #dreiD-single:checked ~ .panels #dreiD-single-panel {
+        #dreiD-single:checked ~ .panels #dreiD-single-panel,
+        #dreiD-vr:checked ~ .panels #dreiD-vr-panel {
             display: block;
         }
 
@@ -200,11 +201,18 @@ article.single {
         #dreiD-gif:checked ~ .tabs #dreiD-gif-tab,
         #dreiD-jps:checked ~ .tabs #dreiD-jps-tab,
         #dreiD-mpo:checked ~ .tabs #dreiD-mpo-tab,
-        #dreiD-single:checked ~ .tabs #dreiD-single-tab {
+        #dreiD-single:checked ~ .tabs #dreiD-single-tab,
+        #dreiD-vr:checked ~ .tabs #dreiD-vr-tab {
             background: #fc6;
             color: #000;
             border-top: 3px solid #393939;
         }
+    }
+
+    .stereo-canvas {
+        width: 100%;
+        display: block;
+        aspect-ratio: .9 / 1;
     }
 }
 

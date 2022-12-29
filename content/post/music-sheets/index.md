@@ -25,5 +25,5 @@ Die Noten müssen irgendwie transkribiert werden, dazu gibt es verschiedenen mö
 * [Muse Score](https://musescore.org/de)
 * [Audiveris](https://github.com/audiveris)
 
-Hier ein Ausschnitt, der als Biespiel dienen wird:
+Hier ein Ausschnitt, der als Beispiel dienen wird:
 {{< iiif/iiif src="page006/info.json" includeSources="true" share="true" >}}
