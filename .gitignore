@@ -26,6 +26,7 @@ content/future/3d/**/*-right.*
 content/future/3d/**/*-left.*
 content/future/3d/**/*.gif
 content/future/3d/**/*.jps
+content/future/3d/**/*.mpo
 content/future/3d/**/*-anaglyph.jpg
 content/**/img*-*.png
 content/**/page*-*.png

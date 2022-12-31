@@ -12,6 +12,6 @@ do
     elif [ -r "$DIR/$IMG_NAME_PREFIX.jxl" ] ; then
       IMG_FILE="$DIR/$IMG_NAME_PREFIX.jxl"
     fi
-    python3 $SCRIPT -s --image $IMG_FILE --coords $DIR/3d-images.json --output jps images gif jpg
+    python3 $SCRIPT -s --image $IMG_FILE --coords $DIR/3d-images.json --output jps images gif jpg mpo
 
 done

@@ -2,6 +2,7 @@
 
 from PIL import Image
 import argparse, pathlib, json
+from packaging import version
 from termcolor import cprint
 
 # Duration for Wigglegrams im ms
@@ -19,7 +20,7 @@ def crossed_eyed(left, right, file, format='jpeg'):
 parser = argparse.ArgumentParser(description='Extract steroscopic images')
 parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
 parser.add_argument('--coords', type=pathlib.Path, help='File containing coordinates', required=True)
-parser.add_argument('--output', choices=['gif', 'jps', 'images', 'jpg'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--output', choices=['gif', 'jps', 'images', 'jpg', 'mpo'], action='append', nargs='+', help='Output format', default=[])
 parser.add_argument('--samesize', '-s', help='Force same size (implies advanced)', default=False, action='store_true')
 parser.add_argument('--advanced', '-a', help='Use advanced features provided by StereoscoPy', default=False, action='store_true')
 
@@ -129,3 +130,9 @@ if ('jpg' in outputs):
 if ('images' in outputs):
     left.save(leftFileName)
     right.save(rightFileName)
+if ('mpo' in outputs):
+    if version.parse(Image.__version__) < version.parse('9.3.0'):
+        cprint('Your version of the Pillow (PIL) library is to old ({}), it only has partial MPO support'.format(Image.__version__),  'red')
+    else:
+        mpoFileName = args.image.parent.joinpath(args.image.stem + '.mpo')
+        left.save(mpoFileName, save_all=True, append_images=[right])
