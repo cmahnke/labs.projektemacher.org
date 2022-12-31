@@ -131,8 +131,18 @@ article.single {
     color: var(--base0a);
 }
 
+article.single.future-3d .body {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
 .iiif .viewer {
     width: 100% !important;
+}
+
+.iiif.stereoscopic .viewer {
+    height: unset;
+    aspect-ratio: auto 177/95;
 }
 
 .dreiD-images {
@@ -179,7 +189,7 @@ article.single {
         .tabs {
             .tab {
                 cursor: pointer;
-                padding: 10px 15px;
+                padding: 10px 5px;
                 margin: 0 2px;
                 background: #2d2d2d;
                 display: inline-block;

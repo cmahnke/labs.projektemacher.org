@@ -31,21 +31,20 @@
          {{- end -}}
         <div class="tabs">
             {{ if (fileExists $jps) -}}
-                <label class="tab" id="dreiD-jps-tab" for="dreiD-jps">JPS</label>
-
+                <label class="tab" id="dreiD-jps-tab" for="dreiD-jps">{{ i18n "sterescopic_jpeg" }}</label>
             {{- end }}
             {{ if (fileExists $gif) -}}
-                <label class="tab" id="dreiD-gif-tab" for="dreiD-gif">GIF</label>
+                <label class="tab" id="dreiD-gif-tab" for="dreiD-gif">{{ i18n "wigglegram" }}</label>
             {{- end }}
             {{ if (fileExists $ana) -}}
-                <label class="tab" id="dreiD-ana-tab" for="dreiD-ana">Anaglyph</label>
+                <label class="tab" id="dreiD-ana-tab" for="dreiD-ana">{{ i18n "anaglyph" }}</label>
             {{- end }}
             {{ if (fileExists $mpo) -}}
-                <label class="tab" id="dreiD-mpo-tab" for="dreiD-mpo">Multi Picture Object (MPO)</label>
+                <label class="tab" id="dreiD-mpo-tab" for="dreiD-mpo">{{ i18n "mpo" }}</label>
             {{- end }}
             {{ if and (fileExists $singleL) (fileExists $singleR) -}}
-                <label class="tab" id="dreiD-single-tab" for="dreiD-single">Einzelbilder</label>
-                <label class="tab" id="dreiD-vr-tab" for="dreiD-vr">VR Brille</label>
+                <label class="tab" id="dreiD-single-tab" for="dreiD-single">{{ i18n "single_frames" }}</label>
+                <label class="tab" id="dreiD-vr-tab" for="dreiD-vr">{{ i18n "vr_glasses" }}</label>
             {{- end }}
         </div>
 
@@ -54,7 +53,7 @@
                 <div class="panel" id="dreiD-jps-panel">
                     <img class="jps" src="{{ $jps | relURL }}" />
                     <div class="description">
-                        Beide Bilder im JPS (JPEG Stereoscopic) Format (vertauscht - "cross-eyed"). Kann mit <a href="http://www.sview.ru/en/" target="_blank">sView</a> betrachtet werden. <a class="newTab" href="{{ $jps | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
+                        {{ i18n "sterescopic_jpeg_desc" | safeHTML }} <a class="newTab" href="{{ $jps | relURL }}" target="_blank">{{ i18n "full_resolution_new_tab" }}</a>.
                     </div>
                 </div>
             {{- end }}
@@ -62,7 +61,7 @@
                 <div class="panel" id="dreiD-gif-panel">
                     <img class="gif" src="{{ $gif | relURL }}" />
                     <div class="description">
-                        Beide Bilder als animiertes Gif mit schnellem Wechsel. <a class="newTab" href="{{ $gif | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
+                        {{ i18n "wigglegram_desc" | safeHTML }} <a class="newTab" href="{{ $gif | relURL }}" target="_blank">{{ i18n "full_resolution_new_tab" }}</a>.
                     </div>
                 </div>
             {{- end }}
@@ -70,7 +69,7 @@
                 <div class="panel" id="dreiD-ana-panel">
                     <img class="ana" src="{{ $ana | relURL }}" />
                     <div class="description">
-                        Beide Bilder als <a href="https://de.wikipedia.org/wiki/Anaglyph_3D" target="_blank">Anaglyphe</a>. <a class="newTab" href="{{ $ana | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
+                        {{ i18n "anaglyph_desc" | safeHTML }} <a class="newTab" href="{{ $ana | relURL }}" target="_blank">{{ i18n "full_resolution_new_tab" }}</a>.
                     </div>
                 </div>
             {{- end }}
@@ -78,7 +77,7 @@
                 <div class="panel" id="dreiD-mpo-panel">
                     <img class="mpo" src="{{ $mpo | relURL }}" />
                     <div class="description">
-                        Beide Bilder im <a href="https://de.wikipedia.org/wiki/Multi_Picture_Object" target="_blank">MPO Format</a>. <a class="newTab" href="{{ $mpo | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
+                        {{ i18n "mpo_desc" | safeHTML }} <a class="newTab" href="{{ $mpo | relURL }}" target="_blank">{{ i18n "full_resolution_new_tab" }}</a>.
                     </div>
                 </div>
             {{- end }}
@@ -86,11 +85,11 @@
                 <div class="panel" id="dreiD-single-panel">
                     <img class="singleL" src="{{ $singleL | relURL }}" />
                     <div class="description">
-                        Das linke Bild. <a class="newTab" href="{{ $singleL | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
+                        {{ i18n "left_image" | safeHTML }} <a class="newTab" href="{{ $singleL | relURL }}" target="_blank">{{ i18n "full_resolution_new_tab" }}</a>.
                     </div>
                     <img class="singleR" src="{{ $singleR | relURL }}" />
                     <div class="description">
-                        Das rechte Bild. <a class="newTab" href="{{ $singleR | relURL }}" target="_blank">In voller Auflösung in einem neuen Tab öffnen</a>.
+                        {{ i18n "right_image" | safeHTML }} <a class="newTab" href="{{ $singleR | relURL }}" target="_blank">{{ i18n "full_resolution_new_tab" }}</a>.
                     </div>
                 </div>
                 <div class="panel" id="dreiD-vr-panel">
@@ -100,6 +99,3 @@
         </div>
     </div>
 </div>
-{{/*
-[JPS Datei](./front.jps) für [sView](http://www.sview.ru/en/).
-*/}}

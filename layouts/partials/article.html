@@ -1,10 +1,16 @@
 {{ $page := .Page }}
-<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+{{- $class := "single" -}}
+{{- if .Page.Ancestors -}}
+  {{- $class = (printf "%s %s" $class (replace (replace ( path.Clean (index .Ancestors 0).File.Dir) "." "") "/" "-")) -}}
+{{- end -}}
+<article class="{{ $class }}" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="meta">
+{{/*
 {{ if not .Page.Date.IsZero }}
     <span class="key">{{ i18n "publishedOn" }}</span>
     <span class="val"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{- partial "date.html" . -}}</time></span>
 {{ end }}
+*/}}
 {{ with .Params.categories }}
     <span class="key">{{ if $page.Date.IsZero }}published {{ end }}in</span>
     <span class="val">
