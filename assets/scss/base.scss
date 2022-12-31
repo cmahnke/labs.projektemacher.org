@@ -214,6 +214,10 @@ article.single {
         display: block;
         aspect-ratio: .9 / 1;
     }
+
+    .viewer.vr {
+        position: relative;
+    }
 }
 
 .iframe-wrapper {

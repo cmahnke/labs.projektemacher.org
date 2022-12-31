@@ -24,6 +24,9 @@ async function init3DViewer (left, right) {
   var angle, stereoData;
   const loader = new THREE.TextureLoader();
   var eyes = [{}, {}];
+  var scene = new THREE.Scene();
+  scene.background = new THREE.Color( 0x101010 );
+  const radius = 10;
 
   eyes[0].texture = await loader.loadAsync(left);
   eyes[1].texture = await loader.loadAsync(right);
@@ -41,10 +44,6 @@ async function init3DViewer (left, right) {
     thetaLength: thetaLength
   };
 
-  var scene = new THREE.Scene();
-  scene.background = new THREE.Color( 0x101010 );
-  const radius = 10;
-
   eyes.forEach(function (item, index) {
     eyes[index].texture.needsUpdate = true;
     eyes[index].material = new THREE.MeshBasicMaterial( { map: item.texture });
@@ -55,12 +54,10 @@ async function init3DViewer (left, right) {
     eyes[index].mesh.rotation.y = Math.PI / 2;
     eyes[index].mesh.rotation.x = stereoData.roll || 0;
     eyes[index].mesh.rotation.z = stereoData.pitch || 0;
+    eyes[index].mesh.layers.set(index + 1); // display in left eye only // display in right eye only
+    scene.add(eyes[index].mesh);
   });
 
-  eyes[0].mesh.layers.set( 1 ); // display in left eye only
-  scene.add( eyes[0].mesh );
-  eyes[1].mesh.layers.set( 2 ); // display in right eye only
-  scene.add( eyes[1].mesh );
   return scene;
 }
 
@@ -74,13 +71,19 @@ function createCanvas(element) {
 }
 
 async function add3DViewer (element, left, right) {
-  var stereoCanvas = createCanvas(element)
   var scene = await init3DViewer(left, right);
+  var width = scene.children[0].material.map.image.width;
+  var height = scene.children[0].material.map.image.height;
+  var stereoCanvas = createCanvas(element, width, height);
 
   var renderer = new THREE.WebGLRenderer({canvas: stereoCanvas});
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.xr.enabled = true;
   //Aspect ratio is about .9:1
+/*
+initialWidth = stereoCanvas.clientWidth;
+stereoCanvas.style.hight = (initialWidth / (width * 2)) * height;
+*/
   initialHight = stereoCanvas.clientWidth * (0.9/1)
   renderer.setSize(stereoCanvas.clientWidth, initialHight, false);
   //element.appendChild(renderer.domElement);
@@ -89,11 +92,21 @@ async function add3DViewer (element, left, right) {
   var camera = new THREE.PerspectiveCamera( 70, element.clientWidth / element.clientHeight, 1, 2000 );
   camera.layers.enable( 1 );
 
-  const controls = new OrbitControls(camera, renderer.domElement );
+  const controls = new OrbitControls(camera, renderer.domElement);
   camera.position.set(0, 0, 0.1);
   controls.update();
 
-  element.appendChild(VRButton.createButton(renderer));
+  var button = VRButton.createButton(renderer);
+  button.style.bottom = '30px';
+  button.style.opacity = '.85';
+  button.addEventListener("click", function() {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    window.scrollTo(0, 0);
+    button.style.zIndex = 10000;
+    button.style.position = "fixed";
+  });
+  element.appendChild(button);
+
 
   renderer.setAnimationLoop( () => {
     renderer.render(scene, camera );
