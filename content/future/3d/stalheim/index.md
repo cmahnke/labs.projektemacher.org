@@ -4,6 +4,10 @@ date: 2022-12-26T22:15:07+02:00
 type: 3d
 subtype: stereoscopic
 iiifContext: http://iiif.io/api/image/2/context.json
+geojson:
+  coordinates:
+  - 6.682095
+  - 60.835248
 tags:
 - 3D
 js:

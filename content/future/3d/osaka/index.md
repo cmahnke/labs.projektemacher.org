@@ -6,6 +6,10 @@ subtype: stereoscopic
 iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
+#geojson:
+#  coordinates:
+#  -
+#  - 
 js:
   - js/3d.js
 resources:
@@ -18,3 +22,4 @@ resources:
   params:
     iiif: back/info.json
 ---
+Vermutlich [Dōtonbori](https://en.wikipedia.org/wiki/D%C5%8Dtonbori) in [Osaka](https://de.wikipedia.org/wiki/Osaka), Japan

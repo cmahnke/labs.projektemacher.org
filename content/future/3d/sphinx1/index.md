@@ -6,6 +6,10 @@ subtype: stereoscopic
 iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
+geojson:
+  coordinates:
+  - 31.137557
+  - 29.975316
 js:
   - js/3d.js
 resources:
@@ -18,3 +22,5 @@ resources:
   params:
     iiif: back/info.json
 ---
+
+Die [große Sphinx von Gizeh](https://de.wikipedia.org/wiki/Gro%C3%9Fe_Sphinx_von_Gizeh).

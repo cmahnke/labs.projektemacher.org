@@ -8,6 +8,10 @@ tags:
 - 3D
 js:
   - js/3d.js
+geojson:
+  coordinates:
+  - 6.864325
+  - 45.832544
 resources:
 - src: "front.jxl"
   name: front
@@ -18,3 +22,5 @@ resources:
   params:
     iiif: back/info.json
 ---
+
+Der [Mont Blanc](Mont Blanc).

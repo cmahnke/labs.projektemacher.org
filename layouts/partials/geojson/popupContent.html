@@ -1,5 +1,6 @@
 {{- $context := path.Dir .File.Path -}}
 {{- $entry := . -}}
+{{ $name := "front" }}
 
 {{/* Extract the preview and make it JPEG XL compatible */}}
 
@@ -8,7 +9,7 @@
 {{- $images := newScratch -}}
 
 {{- range .Params.resources -}}
-    {{- if eq .name "front" -}}
+    {{- if eq .name $name -}}
         {{- $images.Set "previewLoc" (path.Join $context .src) -}}
         {{- $images.Set "preview" (($entry.Resources.ByType "image").GetMatch .name) -}}
     {{ end }}
@@ -18,6 +19,13 @@
 {{- $previewImg := $images.Get "preview" -}}
 {{- if eq $previewImg nil -}}
     {{- warnf "Can't find image %s for post %s" $imgLocation $context -}}
+{{- end -}}
+{{/* Check for JXL */}}
+{{- if eq (string $previewImg.MediaType) "image/jxl" -}}
+  {{- if not $name -}}
+    {{- warnf "JXL Reference in %s, but no 'name' set, using default" .File.Path -}}
+  {{- end -}}
+  {{- $previewImg = partial "iiif/preview.html" (dict "context" . "name" $name) -}}
 {{- end -}}
 {{- $previewImg = $previewImg.Resize $fit -}}
 

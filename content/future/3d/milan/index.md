@@ -6,6 +6,10 @@ subtype: stereoscopic
 iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
+geojson:
+  coordinates:
+  - 9.190556
+  - 45.464192
 js:
   - js/3d.js
 resources:
@@ -18,3 +22,5 @@ resources:
   params:
     iiif: back/info.json
 ---
+
+Dieses Bild zeigt einen Blick über Mailand vom [Mailänder Dom](https://de.wikipedia.org/wiki/Mail%C3%A4nder_Dom) aus gesehen.

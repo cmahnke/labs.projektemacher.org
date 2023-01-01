@@ -6,6 +6,10 @@ subtype: stereoscopic
 iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
+geojson:
+  coordinates:
+  - 88.360145
+  - 22.582290
 js:
   - js/3d.js
 resources:
@@ -18,3 +22,5 @@ resources:
   params:
     iiif: back/info.json
 ---
+
+Dieser Saal ist im ["Marble Palace"](https://de.wikipedia.org/wiki/Kalkutta#Marble_Palace) in [Kalkutta](https://de.wikipedia.org/wiki/Kalkutta) zu finden.
