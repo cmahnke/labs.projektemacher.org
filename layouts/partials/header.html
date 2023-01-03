@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-{{ partial "html/head/meta.html" . }}
+{{- partial "html/head/meta.html" . -}}
 {{- partial "html/head/style.html" (dict "context" . "css" "css/style.css") -}}
 {{- partial "html/head/script.html" (dict "js" (partial "html/head/iiif-js.html" .)) -}}
 {{- partial "html/head/page-scripts.html" . -}}
@@ -20,7 +20,7 @@
 {{- end -}}
 {{- if .Params.metaPage -}}
     {{- $class = printf "%s %s" $class "meta" -}}
-{{ end }}
+{{- end -}}
 <body class="{{ $class }}">
 
 <header>

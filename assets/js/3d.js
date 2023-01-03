@@ -99,11 +99,25 @@ stereoCanvas.style.hight = (initialWidth / (width * 2)) * height;
   var button = VRButton.createButton(renderer);
   button.style.bottom = '30px';
   button.style.opacity = '.85';
-  button.addEventListener("click", function() {
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    window.scrollTo(0, 0);
-    button.style.zIndex = 10000;
-    button.style.position = "fixed";
+  button.addEventListener("click", function(event) {
+    var state;
+    if (event.target.dataset.state) {
+      state = event.target.dataset.state;
+    } else {
+      state = false;
+    }
+    if (!state) {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      window.scrollTo(0, 0);
+      button.style.zIndex = 10000;
+      button.style.position = "fixed";
+      button.style.opacity = '.85';
+      event.target.dataset.state = true;
+    } else {
+      button.style.opacity = '.85';
+      button.style.position = "absolute";
+      event.target.dataset.state = false;
+    }
   });
   element.appendChild(button);
 

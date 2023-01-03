@@ -10,7 +10,7 @@ other = "Stereo JPEG"
 other = "Anaglyph"
 
 [mpo]
-other = "Multi Picture Object"
+other = "MPO"
 
 [single_frames]
 other = "Einzelbilder"

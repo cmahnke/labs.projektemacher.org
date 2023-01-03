@@ -189,7 +189,7 @@ article.single.future-3d .body {
         .tabs {
             .tab {
                 cursor: pointer;
-                padding: 10px 5px;
+                padding: 10px 10px;
                 margin: 0 2px;
                 background: #2d2d2d;
                 display: inline-block;
@@ -513,5 +513,45 @@ footer {
 
     .quote-from {
         text-align: right;
+    }
+}
+
+.section-pagination {
+    background-color: var(--base07);
+    color: var(--base00);
+    padding: 2rem 8rem;
+    border-radius: 2em;
+
+    .pagination-default {
+        display: flex;
+        list-style-type: none;
+        margin-block-start: unset;
+        margin-block-end: unset;
+        margin-inline-start: unset;
+        margin-inline-end: unset;
+        padding-inline-start: unset;
+        justify-content: space-evenly;
+
+        .page-link,
+        .page-link:active,
+        .page-link:focus,
+        .page-link:hover,
+        .page-link:visited {
+          color: var(--base0d);
+          text-decoration: none;
+          font-size: larger;
+        }
+
+        .page-item {
+            color: var(--base0d);
+
+            &.disabled {
+                color: gray;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }

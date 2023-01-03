@@ -28,7 +28,6 @@
             {{- $pages = .Scratch.Get "pages" -}}
 
             {{- if eq .CurrentSection .FirstSection -}}
-
                 {{- range $pages -}}
                     <article class="list-item">
                         <h2 class="headline" itemprop="headline">
@@ -48,6 +47,7 @@
                         {{ partial "article-list-item.html" . }}
                     {{- end -}}
                  </div>
+                 <div class="section-pagination">{{ template "_internal/pagination.html" . }}</div>
             {{- end -}}
         </div>
     </main>

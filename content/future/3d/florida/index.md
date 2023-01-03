@@ -1,5 +1,5 @@
 ---
-title: "Among Florida palms where Nature turns and stone into cocoanuts"
+title: "Wie Kokospalmen im Sande von Florida gedeihen. V. St. v. N.-A."
 date: 2022-12-26T22:15:07+02:00
 type: 3d
 subtype: stereoscopic

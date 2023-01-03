@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from PIL import Image
-import argparse, pathlib, json
+import argparse, pathlib, json, sys
 from packaging import version
 from termcolor import cprint
 
@@ -16,6 +16,92 @@ def crossed_eyed(left, right, file, format='jpeg'):
     ce.paste(left, (right.width, 0))
     ce.save(file, format)
     return ce
+
+def cut_stereo(coords, im):
+    left_left = coords['left']['position']['x']
+    left_top = coords['left']['position']['y']
+    left_right = coords['left']['size']['x'] + coords['left']['position']['x']
+    left_bottom = coords['left']['size']['y'] + coords['left']['position']['y']
+
+    right_left = coords['right']['position']['x']
+    right_top = coords['left']['position']['y']
+    right_right = coords['right']['size']['x'] + coords['right']['position']['x']
+    right_bottom =  coords['right']['size']['y'] + coords['right']['position']['y']
+
+    if (coords['left']['size']['x'] != coords['right']['size']['x']):
+        cprint('Width (x) doesn\'t match!', 'yellow', end=' ')
+        if (coords['left']['size']['x'] < coords['right']['size']['x']):
+            cprint ("Left image is narrower", 'yellow')
+            cprint("Old left for right image {}, right for right image {} - width {}".format(right_left, right_right, coords['right']['size']['x']), 'yellow')
+            right_left = (coords['right']['position']['x'] + (coords['right']['size']['x'] - coords['left']['size']['x']) / 2)
+            right_right = coords['left']['size']['x'] + right_left
+            print("New left for right image {}, right for right image {} - width {}".format(right_left, right_right, right_right - right_left))
+        else:
+            cprint ('Right image is narrower', 'yellow')
+            cprint("Old left for left image {}, right for left image {} - width {}".format(left_left, left_right, coords['left']['size']['x']), 'yellow')
+            left_left = coords['left']['position']['x'] + ((coords['left']['size']['x'] - coords['right']['size']['x']) / 2)
+            left_right = coords['right']['size']['x'] + left_left # change
+            cprint("New left for left image {}, right for left image {} - width {}".format(left_left, left_right, left_right - left_left), 'yellow')
+
+    if ( coords['left']['size']['y'] != coords['right']['size']['y']):
+        cprint("Height (y) doesn't match!", 'yellow', end=" ")
+
+        if (coords['left']['size']['y'] < coords['right']['size']['y']):
+            cprint ('Left image is smaller', 'yellow')
+            cprint("Old top for right image {}, bottom for right image {}".format(right_top, right_bottom), 'yellow')
+            right_top = (coords['right']['position']['y'] + (coords['right']['size']['y'] - coords['left']['size']['y']) / 2)
+            right_bottom = coords['left']['size']['y'] + right_top
+            cprint("New top for right image {}, bottom for right image {}".format(right_top, right_bottom), 'yellow')
+        else:
+            cprint ('Right image is smaller', 'yellow')
+            cprint("Old top for left image {}, bottom for left image {}".format(left_top, left_bottom), 'yellow')
+            left_top = (coords['left']['position']['y'] + (coords['left']['size']['y'] - coords['right']['size']['y']) / 2)
+            left_bottom = coords['right']['size']['y'] + left_top
+            cprint("New top for left image {}, bottom for left image {}".format(left_top, left_bottom), 'yellow')
+
+    left = im.crop((left_left, left_top, left_right, left_bottom))
+    right = im.crop((right_left, right_top, right_right, right_bottom))
+    return (left, right)
+
+# See https://parth3d.co.uk/splitting-anaglyph-images-in-python
+def cut_anaglyph(coords, im):
+    #from matplotlib import pyplot as plt
+    if not coords['left'] or not coords['right']:
+        h, w, _ = im.shape
+        for side in ['left', 'right']:
+            coords[side]['position']['x'] = 0
+            coords[side]['position']['y'] = 0
+            coords[side]['size']['x'] = w
+            coords[side]['size']['y'] = h
+
+    if not coords['left'] == coords['right']:
+        cprint('Both images should have the same size!', 'red')
+    if im.mode == "RGBA":
+        im = im.convert('RGB')
+    left = Image.new("RGB", (coords['left']['size']['x'], coords['left']['size']['y']), (255,255,255))
+    right = Image.new("RGB", (coords['right']['size']['x'], coords['right']['size']['y']), (255,255,255))
+    second_color = 'green'
+    if 'second_color' in coords:
+        second_color = coords['second_color']
+    for y in range(0, coords['left']['size']['y']):
+        for x in range(0, coords['left']['size']['x']):
+            col = im[x, y]
+            lc = int(col[0])
+            left[x, y] = (lc, lc, lc)
+            if second_color == "green":
+                rc = int(col[1])
+            elif second_color == "blue":
+                rc = int(col[2])
+            else:
+                rc = int((col[1] + col[2]) / 2)
+            right[x, y] = (rc, rc, rc)
+
+    return (left, right)
+
+def white_balance(im, coords = None):
+    import colorcorrect.algorithm.max_white
+    from colorcorrect.util import from_pil, to_pil
+    return to_pil(max_white(from_pil(im)))
 
 parser = argparse.ArgumentParser(description='Extract steroscopic images')
 parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
@@ -62,56 +148,23 @@ if args.advanced and not advanced:
 if advanced:
     import stereoscopy
 
-leftFileName = args.image.parent.joinpath(args.image.stem + '-left' + images_suffix )
-rightFileName = args.image.parent.joinpath(args.image.stem + '-right' + images_suffix )
-cprint("Left start position {},{}, size {}, {} - File name {}".format(coords['left']['position']['x'], coords['left']['position']['y'], coords['left']['size']['x'], coords['left']['size']['y'], leftFileName), 'yellow')
-cprint("Right start position {},{}, size {}, {} - File name {}".format(coords['right']['position']['x'], coords['right']['position']['y'], coords['right']['size']['x'], coords['right']['size']['y'], rightFileName), 'yellow')
+leftFileName = args.image.parent.joinpath(args.image.stem + '-left' + images_suffix)
+rightFileName = args.image.parent.joinpath(args.image.stem + '-right' + images_suffix)
+if coords['left'] and coords['right']:
+    cprint("Left start position {},{}, size {}, {} - File name {}".format(coords['left']['position']['x'], coords['left']['position']['y'], coords['left']['size']['x'], coords['left']['size']['y'], leftFileName), 'yellow')
+    cprint("Right start position {},{}, size {}, {} - File name {}".format(coords['right']['position']['x'], coords['right']['position']['y'], coords['right']['size']['x'], coords['right']['size']['y'], rightFileName), 'yellow')
 
-left_left = coords['left']['position']['x']
-left_top = coords['left']['position']['y']
-left_right = coords['left']['size']['x'] + coords['left']['position']['x']
-left_bottom = coords['left']['size']['y'] + coords['left']['position']['y']
-
-right_left = coords['right']['position']['x']
-right_top = coords['left']['position']['y']
-right_right = coords['right']['size']['x'] + coords['right']['position']['x']
-right_bottom =  coords['right']['size']['y'] + coords['right']['position']['y']
-
-if (coords['left']['size']['x'] != coords['right']['size']['x']):
-    cprint('Width (x) doesn\'t match!', 'yellow', end=' ')
-    if (coords['left']['size']['x'] < coords['right']['size']['x']):
-        cprint ("Left image is narrower", 'yellow')
-        cprint("Old left for right image {}, right for right image {} - width {}".format(right_left, right_right, coords['right']['size']['x']), 'yellow')
-        right_left = (coords['right']['position']['x'] + (coords['right']['size']['x'] - coords['left']['size']['x']) / 2)
-        right_right = coords['left']['size']['x'] + right_left
-        print("New left for right image {}, right for right image {} - width {}".format(right_left, right_right, right_right - right_left))
+if 'preprocess' in coords:
+    if isinstance(coords['preprocess'], list):
+        for method in coords['preprocess']:
+            method(im, coords)
     else:
-        cprint ('Right image is narrower', 'yellow')
-        cprint("Old left for left image {}, right for left image {} - width {}".format(left_left, left_right, coords['left']['size']['x']), 'yellow')
-        left_left = coords['left']['position']['x'] + ((coords['left']['size']['x'] - coords['right']['size']['x']) / 2)
-        left_right = coords['right']['size']['x'] + left_left # change
-        cprint("New left for left image {}, right for left image {} - width {}".format(left_left, left_right, left_right - left_left), 'yellow')
+        coords['preprocess'](im, coords)
 
-
-if ( coords['left']['size']['y'] != coords['right']['size']['y']):
-    cprint("Height (y) doesn't match!", 'yellow', end=" ")
-
-    if (coords['left']['size']['y'] < coords['right']['size']['y']):
-        cprint ('Left image is smaller', 'yellow')
-        cprint("Old top for right image {}, bottom for right image {}".format(right_top, right_bottom), 'yellow')
-        right_top = (coords['right']['position']['y'] + (coords['right']['size']['y'] - coords['left']['size']['y']) / 2)
-        right_bottom = coords['left']['size']['y'] + right_top
-        cprint("New top for right image {}, bottom for right image {}".format(right_top, right_bottom), 'yellow')
-    else:
-        cprint ('Right image is smaller', 'yellow')
-        cprint("Old top for left image {}, bottom for left image {}".format(left_top, left_bottom), 'yellow')
-        left_top = (coords['left']['position']['y'] + (coords['left']['size']['y'] - coords['right']['size']['y']) / 2)
-        left_bottom = coords['right']['size']['y'] + left_top
-        cprint("New top for left image {}, bottom for left image {}".format(left_top, left_bottom), 'yellow')
-
-
-left = im.crop((left_left, left_top, left_right, left_bottom))
-right = im.crop((right_left, right_top, right_right, right_bottom))
+if not 'type' in coords:
+    (left, right) = cut_stereo(coords, im)
+elif 'type' in coords and coods['type'] == 'anaglyph':
+    (left, right) = cut_anaglyph(coords, im)
 
 if same_size:
     (left, right) = stereoscopy.auto_align((left, right), shrink=same_size)
@@ -132,7 +185,9 @@ if ('images' in outputs):
     right.save(rightFileName)
 if ('mpo' in outputs):
     if version.parse(Image.__version__) < version.parse('9.3.0'):
-        cprint('Your version of the Pillow (PIL) library is to old ({}), it only has partial MPO support'.format(Image.__version__),  'red')
+        cprint('Your version of the Pillow (PIL) library is to old ({}), it only has partial MPO support. At least version 9.3.0 is required. MPO output is disabled'.format(Image.__version__),  'red')
     else:
+        if version.parse(Image.__version__) < version.parse('9.4.0'):
+            cprint('Pillow version 9.4.0 contains several improvements for MPO, consider updating.', 'yellow')
         mpoFileName = args.image.parent.joinpath(args.image.stem + '.mpo')
         left.save(mpoFileName, save_all=True, append_images=[right])

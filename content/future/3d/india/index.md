@@ -1,5 +1,5 @@
 ---
-title: "Army Elephants of India, Unloading Heavy Burdens"
+title: "Ausladen von Armee-Elephnaten in Indien"
 date: 2022-12-26T22:15:07+02:00
 type: 3d
 subtype: stereoscopic
@@ -18,3 +18,5 @@ resources:
   params:
     iiif: back/info.json
 ---
+
+Indische [Kriegselefanten](https://de.wikipedia.org/wiki/Kriegselefant).

@@ -1,2 +1,6 @@
 stereoscopy[auto_align]
 Pillow>=9.3.0
+matplotlib
+numpy
+packaging
+colorcorrect
