@@ -20,6 +20,7 @@ content/**/end-*/
 content/**/front-*/
 content/**/front*/
 content/**/back/
+content/**/glasses/
 content/**/back*/
 content/**/end/a
 content/future/3d/**/*-right.*
@@ -28,6 +29,7 @@ content/future/3d/**/*.gif
 content/future/3d/**/*.jps
 content/future/3d/**/*.mpo
 content/future/3d/**/*-anaglyph.jpg
+content/future/3d/**/*-white_balance.jpg
 content/**/img*-*.png
 content/**/page*-*.png
 content/**/img*-*.json

@@ -8,9 +8,14 @@
                     <div class="description">
                         {{ .Description }}
                     </div>
+                    {{- if .Content -}}
+                      {{- partial "article.html" . -}}
+                    {{- end -}}
+                    {{/*
                     <div class="content">
                         {{ .Content }}
                     </div>
+                    */}}
                 </article>
             {{- end -}}
 

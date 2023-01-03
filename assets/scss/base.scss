@@ -145,6 +145,11 @@ article.single.future-3d .body {
     aspect-ratio: auto 177/95;
 }
 
+.iiif.page .viewer {
+    height: unset;
+    aspect-ratio: auto 2/3;
+}
+
 .dreiD-images {
     width: 100%;
     margin-top: 1em;
@@ -255,8 +260,26 @@ article.single.future-3d .body {
         font-size: large;
     }
 
+    .single {
+        padding: unset;
+        margin: unset;
+    }
+
     .content {
         font-weight: bold;
+    }
+
+    &:has(.single) {
+        padding: 4rem;
+
+        .description {
+            margin-left: unset;
+            margin-right: unset;
+        }
+
+        section.body {
+            padding: unset;
+        }
     }
 }
 
@@ -554,4 +577,17 @@ footer {
             }
         }
     }
+}
+
+.glasses-icon {
+    height: 1em;
+    width: auto;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    img {
+        height: 1em;
+        width: unset !important;
+    }
+
 }

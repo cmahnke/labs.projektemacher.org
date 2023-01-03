@@ -67,7 +67,7 @@ def cut_stereo(coords, im):
 def cut_anaglyph(coords, im):
     #from matplotlib import pyplot as plt
     if not coords['left'] or not coords['right']:
-        h, w, _ = im.shape
+        h, w = im.size
         for side in ['left', 'right']:
             coords[side]['position']['x'] = 0
             coords[side]['position']['y'] = 0
@@ -78,30 +78,55 @@ def cut_anaglyph(coords, im):
         cprint('Both images should have the same size!', 'red')
     if im.mode == "RGBA":
         im = im.convert('RGB')
+
+    left_left = coords['left']['position']['x']
+    left_top = coords['left']['position']['y']
+    left_right = coords['left']['size']['x'] + coords['left']['position']['x']
+    left_bottom = coords['left']['size']['y'] + coords['left']['position']['y']
+    im = im.crop((left_left, left_top, left_right, left_bottom))
+
     left = Image.new("RGB", (coords['left']['size']['x'], coords['left']['size']['y']), (255,255,255))
     right = Image.new("RGB", (coords['right']['size']['x'], coords['right']['size']['y']), (255,255,255))
-    second_color = 'green'
+    second_color = ''
     if 'second_color' in coords:
         second_color = coords['second_color']
     for y in range(0, coords['left']['size']['y']):
         for x in range(0, coords['left']['size']['x']):
-            col = im[x, y]
+            col = im.getpixel((x, y))
             lc = int(col[0])
-            left[x, y] = (lc, lc, lc)
+            left.putpixel((x,y), (lc, lc, lc))
             if second_color == "green":
                 rc = int(col[1])
             elif second_color == "blue":
                 rc = int(col[2])
             else:
                 rc = int((col[1] + col[2]) / 2)
-            right[x, y] = (rc, rc, rc)
+            right.putpixel((x,y), (rc, rc, rc))
 
     return (left, right)
 
-def white_balance(im, coords = None):
-    import colorcorrect.algorithm.max_white
-    from colorcorrect.util import from_pil, to_pil
-    return to_pil(max_white(from_pil(im)))
+def get_patch (im):
+    h, w = im.size
+    (nw, nx) = (w / 3, w / 3)
+    (nh, ny) = (h / 30, h / 30)
+    return im.crop((nx, ny, nx + nw, ny + nh))
+
+# See https://mattmaulion.medium.com/white-balancing-an-enhancement-technique-in-image-processing-8dd773c69f6
+def white_balance(im, coords = None, file = None):
+    import numpy
+    mode = 'mean'
+    if im.mode == "RGBA":
+        im = im.convert('RGB')
+    image = numpy.asarray(im)
+    image_patch = numpy.asarray(get_patch(im))
+    if mode == 'mean':
+       image_gt = ((image * (image_patch.mean() / image.mean(axis=(0, 1)))).clip(0, 255).astype(int))
+    if mode == 'max':
+       image_gt = ((image * 1.0 / image_patch.max(axis=(0,1))).clip(0, 1))
+    im = Image.fromarray(image_gt.astype('uint8'))
+    if file != None:
+        im.save(file)
+    return im
 
 parser = argparse.ArgumentParser(description='Extract steroscopic images')
 parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
@@ -154,20 +179,21 @@ if coords['left'] and coords['right']:
     cprint("Left start position {},{}, size {}, {} - File name {}".format(coords['left']['position']['x'], coords['left']['position']['y'], coords['left']['size']['x'], coords['left']['size']['y'], leftFileName), 'yellow')
     cprint("Right start position {},{}, size {}, {} - File name {}".format(coords['right']['position']['x'], coords['right']['position']['y'], coords['right']['size']['x'], coords['right']['size']['y'], rightFileName), 'yellow')
 
-if 'preprocess' in coords:
+if 'preprocess' in coords and advanced:
     if isinstance(coords['preprocess'], list):
-        for method in coords['preprocess']:
-            method(im, coords)
+        methods = coords['preprocess']
     else:
-        coords['preprocess'](im, coords)
+        methods = [coords['preprocess']]
+    for method in methods:
+        preprocessFileName = args.image.parent.joinpath(args.image.stem + '-' + method + images_suffix)
+        locals()[method](im, coords, preprocessFileName)
 
 if not 'type' in coords:
     (left, right) = cut_stereo(coords, im)
-elif 'type' in coords and coods['type'] == 'anaglyph':
+    if same_size:
+        (left, right) = stereoscopy.auto_align((left, right), shrink=same_size)
+elif 'type' in coords and coords['type'] == 'anaglyph':
     (left, right) = cut_anaglyph(coords, im)
-
-if same_size:
-    (left, right) = stereoscopy.auto_align((left, right), shrink=same_size)
 
 # See https://blog.miguelgrinberg.com/post/take-3d-pictures-with-your-canon-dslr-and-magic-lantern
 

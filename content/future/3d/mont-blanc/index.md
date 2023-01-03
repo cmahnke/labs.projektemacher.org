@@ -23,4 +23,4 @@ resources:
     iiif: back/info.json
 ---
 
-Der [Mont Blanc](Mont Blanc).
+Der [Mont Blanc](https://de.wikipedia.org/wiki/Mont_Blanc).

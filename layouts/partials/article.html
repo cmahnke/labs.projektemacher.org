@@ -1,7 +1,8 @@
 {{ $page := .Page }}
 {{- $class := "single" -}}
 {{- if .Page.Ancestors -}}
-  {{- $class = (printf "%s %s" $class (replace (replace ( path.Clean (index .Ancestors 0).File.Dir) "." "") "/" "-")) -}}
+  {{- $level := (index .Ancestors.Reverse 2) -}}
+  {{- $class = (printf "%s %s" $class (replace (replace ( path.Clean $level.File.Dir) "." "") "/" "-")) -}}
 {{- end -}}
 <article class="{{ $class }}" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="meta">

@@ -2,12 +2,19 @@
 {{- $context := path.Dir .File.Path -}}
 {{- $pageURL := .Permalink -}}
 
-{{- $jps := path.Join $context "front.jps" -}}
-{{- $gif := path.Join $context "front.gif" -}}
-{{- $ana := path.Join $context "front-anaglyph.jpg" -}}
-{{- $mpo := path.Join $context "front.mpo" -}}
-{{- $singleL := path.Join $context "front-left.jpg" -}}
-{{- $singleR := path.Join $context "front-right.jpg" -}}
+{{- $baseImageName := "front" -}}
+{{- if lt (len (where .Params.resources ".name" "front")) 1 -}}
+  {{- $frontResource := (where .Params.resources ".name" "page") -}}
+  {{- $infoJson := (index $frontResource 0).params.iiif -}}
+  {{- $baseImageName =  path.Dir $infoJson -}}
+{{- end -}}
+
+{{- $jps := path.Join $context (printf "%s.jps" $baseImageName) -}}
+{{- $gif := path.Join $context (printf "%s.gif" $baseImageName) -}}
+{{- $ana := path.Join $context (printf "%s-anaglyph.jpg" $baseImageName) -}}
+{{- $mpo := path.Join $context (printf "%s.mpo" $baseImageName) -}}
+{{- $singleL := path.Join $context (printf "%s-left.jpg" $baseImageName) -}}
+{{- $singleR := path.Join $context (printf "%s-right.jpg" $baseImageName) -}}
 
 {{/* See https://codepen.io/Wendy-Ho/pen/MWWBvmd */}}
 
