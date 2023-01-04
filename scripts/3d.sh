@@ -13,7 +13,8 @@ if [ -z "$CORES" ] ; then
     CORES=$(getconf _NPROCESSORS_ONLN)
   fi
 fi
-JOBFILE=$(mktemp -t 3D_JOBS)
+JOBFILE=$(mktemp) # The GNU version of the tool is a step backwards, on BSD this works as well: -t 3D_JOBS
+mkdir -p ~/.parallel
 touch ~/.parallel/will-cite
 
 for META in `find "$IMAGE_PREFIX" -name "$IMG_METADATA"`
@@ -29,5 +30,5 @@ do
     echo "python3 $SCRIPT -s --image $IMG_FILE --coords $DIR/3d-images.json --output jps images gif jpg mpo" >> $JOBFILE
 
 done
-echo "Running generated jobs from $JOBFILE"
+echo "Running generated jobs from $JOBFILE, $CORES in parallel"
 parallel --jobs $CORES < $JOBFILE
