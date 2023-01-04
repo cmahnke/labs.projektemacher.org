@@ -40,10 +40,16 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.6.0
         with:
-          hugo-version: '0.106.0'
+          hugo-version: '0.109.0'
           extended: true
 
+      - name: Get number of CPU cores
+        uses: SimenB/github-actions-cpu-cores@v1
+        id: cpu-cores
+
       - name: Create IIIF derivates
+        env:
+          CORES: ${{ steps.cpu-cores.outputs.count }}
 # UID is also available via $(id -u)
         run: |
           echo "Running as ${UID}"
@@ -52,6 +58,7 @@ jobs:
       - name: Generate Files
         env:
           SKIP_IIIF: yes
+          CORES: ${{ steps.cpu-cores.outputs.count }}
         run: |
           ./scripts/setup.sh
 
