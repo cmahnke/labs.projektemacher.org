@@ -6,6 +6,7 @@ tags:
 - 3D
 js:
   - js/3d.js
+draft: true
 ---
 
 Eine weitere Form von Sterobildern sind Autosteregramme, eine gute Übersicht und Erklärung bietet die [englische Wikipedia](https://en.wikipedia.org/wiki/Autostereogram).
@@ -16,6 +17,7 @@ Autostereogramme sind besonders bekannt geworden, durch die Buchserie ["Das magi
 ## Python Bibliotheken für Autostereogramme:
 # Erstellen
  * [MagicPy](https://github.com/synesthesiam/magicpy)
+ * [pystereogram](https://github.com/yxiao1996/pystereogram)
  * [Making Your Own Autostereograms using Python](https://flothesof.github.io/making-stereograms-Python.html)
 
 # Interpretieren
