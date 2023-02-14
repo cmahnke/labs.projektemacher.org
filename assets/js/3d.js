@@ -74,18 +74,28 @@ async function add3DViewer (element, left, right) {
   var scene = await init3DViewer(left, right);
   var width = scene.children[0].material.map.image.width;
   var height = scene.children[0].material.map.image.height;
+  element.dataset.width = width;
+  element.dataset.height = height;
+
   var stereoCanvas = createCanvas(element, width, height);
 
-  var renderer = new THREE.WebGLRenderer({canvas: stereoCanvas});
+  var renderer = new THREE.WebGLRenderer({canvas: stereoCanvas, antialias: true});
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.xr.enabled = true;
+  var as = (width * 2) / height
   //Aspect ratio is about .9:1
+
 /*
-initialWidth = stereoCanvas.clientWidth;
+var initialWidth = stereoCanvas.clientWidth;
 stereoCanvas.style.hight = (initialWidth / (width * 2)) * height;
 */
-  initialHight = stereoCanvas.clientWidth * (0.9/1)
-  renderer.setSize(stereoCanvas.clientWidth, initialHight, false);
+  var initialHeight = stereoCanvas.clientWidth * (1/0.9)
+
+console.log("Height: " +height+", width: "+width+", canvas height: " +initialHeight);
+console.log(element.clientWidth)
+
+  stereoCanvas.style.aspectRatio = 'auto 1 / ' + as;
+  renderer.setSize(stereoCanvas.clientWidth, initialHeight, false);
   //element.appendChild(renderer.domElement);
 
   // TODO: Should we use component size instead?
@@ -120,7 +130,6 @@ stereoCanvas.style.hight = (initialWidth / (width * 2)) * height;
     }
   });
   element.appendChild(button);
-
 
   renderer.setAnimationLoop( () => {
     renderer.render(scene, camera );
