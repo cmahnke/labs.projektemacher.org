@@ -1,5 +1,5 @@
 ---
-title: 1900 in 3D (working title)
+title: Vintage Reality
 displayinlist: false
 metaPage: true
 description: "3D images are not a new invention - already at the end of the 19th century there were 3D viewers..."

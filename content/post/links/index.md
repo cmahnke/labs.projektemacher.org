@@ -26,6 +26,7 @@ draft: true
 * [Newsroom Theme](https://themes.gohugo.io/newsroom/) - Großflächige Bilder
 * [Introduction Theme](https://themes.gohugo.io/hugo-theme-introduction/)
 * [Omega](https://themes.gohugo.io/omega-hugo-theme/)
+* [Shell Theme](https://github.com/Yukuro/hugo-theme-shell)
 * Für Mockups: [Hugo Paper Theme](https://github.com/zwbetz-gh/papercss-hugo-theme/tree/master/static/css)
 
 # Webseiten zur Inspiration
