@@ -41,9 +41,9 @@ refresh: 60
 
 * [Wilma Bräuner](https://xn--wilmabruner-r8a.de/) [![Wilma Bräuner](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml)
 
-* [Yet another analog photo blog](https://yaapb.projektemacher.org/) [![Yet another analog photo blog](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml)
+* [Projektemacher URL Shortener](https://xn--h-zfa.xyz/) [![Projektemacher URL Shortener](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml)
 
-* [Yet another analog photo blog](https://xn--h-zfa.xyz/) [![Projektemacher URL Shortener](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml)
+* [Yet another analog photo blog](https://yaapb.projektemacher.org/) [![Yet another analog photo blog](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml)
 
 # Themes
 
