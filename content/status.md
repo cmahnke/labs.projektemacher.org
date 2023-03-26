@@ -43,6 +43,8 @@ refresh: 60
 
 * [Yet another analog photo blog](https://yaapb.projektemacher.org/) [![Yet another analog photo blog](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml)
 
+* [Yet another analog photo blog](https://xn--h-zfa.xyz/) [![Projektemacher URL Shortener](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml)
+
 # Themes
 
 * Projektemacher Base [![Projektemacher Base](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml/badge.svg)](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml)
