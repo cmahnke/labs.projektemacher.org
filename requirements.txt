@@ -4,3 +4,5 @@ stereoscopy[auto_align]
 Pillow>=9.3.0
 #matplotlib
 packaging
+pystereogram
+qrcode
