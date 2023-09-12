@@ -63,4 +63,8 @@ refresh: 60
 
 * Map Action [![Map Action](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml)
 
-* OSS Exhibition Tools [![Map Action](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
+* OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
+
+# Other
+
+* Projektemacher Static SSL Check [![Projektemacher Static SSL Check](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml)
