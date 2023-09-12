@@ -37,6 +37,8 @@ refresh: 60
 
 * [Schriftmuster](https://schriftmuster.projektemacher.org/) [![Schriftmuster](https://github.com/cmahnke/schriftmuster/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/schriftmuster/actions/workflows/gh-pages.yml)
 
+* [Vintage Reality](https://vintagereality.projektemacher.org/) [![Vintage Reality](https://github.com/cmahnke/vintagereality/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/vintagereality/actions/workflows/gh-pages.yml)
+
 * [Vorsatzpapier](https://vorsatzpapier.projektemacher.org/) [![Vorsatzpapier](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml)
 
 * [Wilma Bräuner](https://xn--wilmabruner-r8a.de/) [![Wilma Bräuner](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml)
@@ -60,3 +62,5 @@ refresh: 60
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
 
 * Map Action [![Map Action](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml)
+
+* OSS Exhibition Tools [![Map Action](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
