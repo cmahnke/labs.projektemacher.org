@@ -65,7 +65,7 @@ refresh: 60
 
 * OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
-* Projektemacher Maps [![Projektemacher Maps](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yml)
+* Projektemacher Maps [![Projektemacher Maps](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml)
 
 # Other
 
