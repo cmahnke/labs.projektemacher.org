@@ -65,6 +65,8 @@ refresh: 60
 
 * OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
+* Projektemacher Maps [![Projektemacher Maps](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yml)
+
 # Other
 
 * Projektemacher Static SSL Check [![Projektemacher Static SSL Check](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml)
