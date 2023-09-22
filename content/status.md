@@ -61,11 +61,11 @@ refresh: 60
 
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
 
-* Map Action [![Map Action](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml)
+* Map Action [![Map Action Docker images](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml) [![Map Action Data](https://github.com/cmahnke/map-action/actions/workflows/data.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/data.yaml)
 
 * OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
-* Projektemacher Maps [![Projektemacher Maps](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml)
+* Projektemacher Maps [![Projektemacher Maps Docker images](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml) [![Projektemacher Maps Deployment](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml)
 
 # Other
 
