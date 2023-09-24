@@ -61,7 +61,9 @@ refresh: 60
 
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
 
-* Map Action [![Map Action Docker images](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/docker.yaml) [![Map Action Data](https://github.com/cmahnke/map-action/actions/workflows/data.yaml/badge.svg)](https://github.com/cmahnke/map-action/actions/workflows/data.yaml)
+* Map Tools [![Map Tools Docker images](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml)
+
+* Map Data [![Map Data](https://github.com/cmahnke/map-data/actions/workflows/data.yaml/badge.svg)](https://github.com/cmahnke/map-data/actions/workflows/data.yaml)
 
 * OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
