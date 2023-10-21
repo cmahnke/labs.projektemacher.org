@@ -7,6 +7,8 @@ refresh: 60
 
 # Blogs
 
+* [9/11 TV](https://911tv.projektemacher.org/) [![9/11 TV](https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yml)
+
 * [Backsteinexpressionismus](https://backsteinexpressionismus.projektemacher.org/) [![Backsteinexpressionismus](https://github.com/cmahnke/backsteinexpressionismus/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/backsteinexpressionismus/actions/workflows/gh-pages.yml)
 
 * [Blaufußtölpel](https://xn--blaufusstlpel-qmb.de/) [![Blaufußtölpel](https://github.com/cmahnke/blaufusstoelpel/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/blaufusstoelpel/actions/workflows/gh-pages.yml)
