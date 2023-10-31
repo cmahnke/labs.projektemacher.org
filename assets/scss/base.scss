@@ -201,6 +201,13 @@ article.single.future-3d .body {
                 color: #fff;
                 border-radius: 6px 6px 0 0;
             }
+
+            @media only screen and (max-width: 400px) {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+
         }
         /* Inspired by https://codepen.io/Wendy-Ho/pen/MWWBvmd */
         #dreiD-ana:checked ~ .panels #dreiD-ana-panel,

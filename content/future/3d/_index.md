@@ -31,3 +31,12 @@ Ein Experiment zu Medientypen und Dateiformaten.
 Die folgenden Dateien von Wikimedia Commons kommen zum Einsatz, die jeweiligen Lizenzbedingungen finden sich hinter dem jeweiligen Link.
 * {{< figure src="/images/3d/3d_glasses_red_blue.svg" class="glasses-icon" link="https://commons.wikimedia.org/wiki/File:3d_glasses_red_blue.svg" >}}
 * {{< figure src="/images/3d/3d_glasses_red_cyan.svg" class="glasses-icon" link="https://de.wikipedia.org/wiki/Datei:3d_glasses_red_cyan.svg" >}}
+
+
+# Weitere Links
+
+* [The Stereoscopic Society: Early 3D](https://www.stereoscopicsociety.org.uk/WordPress/early-3d/)
+* [History of Stereoscopy](https://jules-richard-museum.com/history-stereoscopy-engl/)
+* [3D in the 19th century](https://blog.nationalmuseum.ch/en/2021/07/tourism-stereoscopic-images/)
+* [Stereo 3D Cameras](https://www.studio3d.com/pages/stereophoto.html)
+* [Stereoscopy: the birth of 3D technology](https://artsandculture.google.com/story/stereoscopy-the-birth-of-3d-technology-the-royal-society/pwWRTNS-hqDN5g?hl=en)

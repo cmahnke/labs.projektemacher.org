@@ -10,7 +10,15 @@ function angleOfViewFocalLengthIn35mmFormat(focalLengthIn35mmFormat, width, heig
   // https://en.wikipedia.org/wiki/Angle_of_view#Common_lens_angles_of_view
   // https://en.wikipedia.org/wiki/35_mm_equivalent_focal_length
   // angle of view on the diagonal (35mm is 24 mm (vertically) × 36 mm (horizontal), giving a diagonal of about 43.3 mm)
-  const diagonalAngle = 2 * Math.atan(43.3 / (2 * focalLengthIn35mmFormat));
+
+  const assumedDPI = 600;
+  const physicalHeight = (height / assumedDPI) * 25.4;
+  const physicalWidth = (width / assumedDPI) * 25.4;
+  const diagonal = Math.sqrt(Math.pow(physicalWidth, 2) + Math.pow(physicalHeight, 2));
+  console.log(`Physical size is ${physicalWidth}mm x ${physicalHeight}mm, diagonal ${diagonal}mm`);
+
+  const diagonalAngle = 2 * Math.atan(diagonal.toFixed(2) / (2 * focalLengthIn35mmFormat));
+  //const diagonalAngle = 2 * Math.atan(43.3 / (2 * focalLengthIn35mmFormat));
   // Pi / 4 for a square.
   const halfAngle = Math.atan(height / (width / 2));
   const horizontalAngle = diagonalAngle * Math.cos(halfAngle);
@@ -33,6 +41,7 @@ async function init3DViewer (left, right) {
 
   var width = eyes[0].texture.image.width;
   var height = eyes[0].texture.image.height;
+  //var textureDimensions = {};
   angle = angleOfViewFocalLengthIn35mmFormat(assumeFocalLengthIn35mmFormat, width, height);
   const phiLength = angle.horizontalAngle;
   const thetaLength = angle.verticalAngle;
@@ -61,12 +70,32 @@ async function init3DViewer (left, right) {
   return scene;
 }
 
-function createCanvas(element) {
+function createCanvas(element, width, height) {
   var id = element.getAttribute('id');
   var stereoCanvas = document.createElement('canvas');
   stereoCanvas.setAttribute('id', id + '-canvas');
   stereoCanvas.setAttribute('class', 'stereo-canvas');
+  var bbox = element.getBoundingClientRect();
+
+  //TODO: Sizes aren't working since the element isn't visible on initial setup
   element.appendChild(stereoCanvas);
+  /*
+  if (width !== undefined) {
+    canvasWidth = width;
+  } else {
+    canvasWidth = element.clientWidth;
+    canvasWidth = bbox.width;
+  }
+  stereoCanvas.setAttribute('width', canvasWidth);
+  if (height !== undefined) {
+    canvasHeight = height;
+  } else {
+    canvasHeight = element.clientHeight;
+    canvasHeight = bbox.height;
+  }
+  stereoCanvas.setAttribute('height', canvasHeight);
+  console.log(`Canvas size is ${canvasWidth} ${canvasHeight}`);
+  */
   return stereoCanvas;
 }
 
@@ -74,29 +103,42 @@ async function add3DViewer (element, left, right) {
   var scene = await init3DViewer(left, right);
   var width = scene.children[0].material.map.image.width;
   var height = scene.children[0].material.map.image.height;
-  element.dataset.width = width;
-  element.dataset.height = height;
+  //element.dataset.width = width;
+  //element.dataset.height = height;
 
-  var stereoCanvas = createCanvas(element, width, height);
+  //var stereoCanvas = createCanvas(element, width, height);
+  var stereoCanvas = createCanvas(element);
+
+  const visibilityObserver = new IntersectionObserver(() => {
+    if (element.clientWidth) {
+      var multiplier = element.clientWidth / width;
+      elementHeight = Math.floor(height * multiplier);
+      elementWidth = element.clientWidth;
+      element.dataset.width = elementWidth;
+      element.dataset.height = elementHeight;
+      element.style["height"] = elementHeight + "px";
+      var canvas = element.querySelector('canvas');
+      canvas.setAttribute('width', elementWidth);
+      canvas.setAttribute('height', elementHeight);
+      canvas.style["height"] = elementHeight + "px";
+
+      console.log(`Tab activated, Element size is ${elementWidth} ${elementHeight}`);
+    }
+  });
+  visibilityObserver.observe(element);
 
   var renderer = new THREE.WebGLRenderer({canvas: stereoCanvas, antialias: true});
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.xr.enabled = true;
   var as = (width * 2) / height
   //Aspect ratio is about .9:1
+  var aspectRatio = height / width;
+  var initialHeight = element.clientWidth * aspectRatio;
 
-/*
-var initialWidth = stereoCanvas.clientWidth;
-stereoCanvas.style.hight = (initialWidth / (width * 2)) * height;
-*/
-  var initialHeight = stereoCanvas.clientWidth * (1/0.9)
+  console.log("Height: " + height + ", width: " + width + ", canvas height: " + initialHeight + " client width: " + element.clientWidth);
 
-console.log("Height: " +height+", width: "+width+", canvas height: " +initialHeight);
-console.log(element.clientWidth)
-
-  stereoCanvas.style.aspectRatio = 'auto 1 / ' + as;
+  stereoCanvas.style.aspectRatio = 'auto 1 / ' + aspectRatio;
   renderer.setSize(stereoCanvas.clientWidth, initialHeight, false);
-  //element.appendChild(renderer.domElement);
 
   // TODO: Should we use component size instead?
   var camera = new THREE.PerspectiveCamera( 70, element.clientWidth / element.clientHeight, 1, 2000 );
