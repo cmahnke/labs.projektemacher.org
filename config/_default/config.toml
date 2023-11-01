@@ -2,6 +2,7 @@
   paginate = 5
   copyrightYears = "MMXXI - MMXXIII"
   minimalUI = true
+  disableScale = true
 
   [params.preview]
     outputPrefix = "ogPreview-overlay"
