@@ -187,4 +187,59 @@ async function add3DViewer (element, left, right) {
   return renderer;
 }
 
+function addFullScreen(element, left, right) {
+  function toggleScroll() {
+    var body = document.querySelector("body");
+    if (body.style["overflow"] === 'hidden') {
+      body.style["overflow"] = "unset";
+    } else {
+      body.style["overflow"] = "hidden";
+    }
+  }
+
+  function addButton(element, inactiveInner, activeInner) {
+    var id = element.getAttribute('id');
+    var button = document.createElement('button');
+    button.innerHTML = inactiveInner;
+    button.classList.add("fullscreen-button");
+    button.setAttribute('id', id + '-button');
+    button.addEventListener("click", function(event) {
+      if (!element.classList.contains("active")) {
+        button.innerHTML = activeInner;
+        element.classList.add("active");
+        toggleScroll();
+        window.scrollTo(0, 0);
+        button.style.zIndex = 10000;
+        button.style.position = "fixed";
+      } else {
+        button.innerHTML = inactiveInner;
+        element.classList.remove("active");
+        toggleScroll();
+        button.style.position = "absolute";
+      }
+    });
+    element.appendChild(button);
+    return button;
+  }
+
+  function init(element, left, right) {
+    leftImg = document.createElement('img');
+    leftImg.src = left;
+    leftImg.classList.add("left-img");
+    leftImg.classList.add("fullscreen-viewer-image");
+    rightImg = document.createElement('img');
+    rightImg.src = right;
+    rightImg.classList.add("right-img");
+    rightImg.classList.add("fullscreen-viewer-image");
+    element.appendChild(leftImg);
+    element.appendChild(rightImg);
+  }
+
+  init(element, left, right);
+  element.classList.add("fullscreen-viewer");
+  var button = addButton(element, 'Vollbild', 'Vollbild beenden');
+
+}
+
+window.addFullScreen = addFullScreen;
 window.add3DViewer = add3DViewer;

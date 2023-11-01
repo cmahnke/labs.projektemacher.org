@@ -18,6 +18,9 @@ other = "Einzelbilder"
 [vr_glasses]
 other = "VR Brille"
 
+[fullscreen]
+other = "Vollbild"
+
 # Type descriptions
 
 [wigglegram_desc]

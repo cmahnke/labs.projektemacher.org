@@ -238,7 +238,48 @@ article.single.future-3d .body {
     }
 
     .viewer.vr {
-        position: relative;
+      position: relative;
+    }
+
+    .fullscreen-viewer {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      justify-content: center;
+
+      .fullscreen-viewer-image {
+        width: 50% !important;
+      }
+
+      .fullscreen-button {
+        position: absolute;
+        bottom: 1em;
+        margin: auto;
+        padding: 0.6em;
+        opacity: .85;
+        border-radius: 6px;
+      }
+
+      &.active {
+        position: absolute;
+        height: 100vh;
+        /*width: 100vh;*/
+        top: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        overflow: hidden;
+
+        .fullscreen-viewer-image {
+          object-fit: contain;
+        }
+        .right-img {
+          object-position: left;
+        }
+        .left-img {
+          object-position: right;
+        }
+      }
     }
 }
 
