@@ -69,3 +69,9 @@ hugo serve -F --debug --disableFastRender  --disableLiveReload --watch=false --r
 brew install sass/sass/sass
 ln -s /opt/homebrew/bin/sass /usr/local/bin/dart-sass-embedded
 ```
+# Hugo
+
+## Running with HTTPS (for stupid Safari)
+```
+hugo server --tlsAuto
+```
