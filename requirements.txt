@@ -1,7 +1,9 @@
 numpy
 opencv-contrib-python-headless
 stereoscopy[auto_align]
-Pillow>=9.3.0
+Pillow==9.5.0
+# Newer Versions fail with `jxlpy`
+#Pillow>=9.3.0
 #matplotlib
 packaging
 pystereogram
