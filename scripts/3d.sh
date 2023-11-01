@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 IMAGE_PREFIX=content/future/3d/
 IMG_NAME_PREFIX=front
 IMG_METADATA=3d-images.json
