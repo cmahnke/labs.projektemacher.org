@@ -12,7 +12,7 @@ if [ -z "$PYTHON" ] ; then
   PYTHON=python3
 fi
 
-if [ `$PYTHON -V|cut -d ' ' -f2|cut -d '.' -f2` > 10 ] ; then
+if [ `$PYTHON -V|cut -d ' ' -f2|cut -d '.' -f2` -gt 10 ] ; then
   echo "Warning PyJXL not workimg with newer python versions"
 fi
 
