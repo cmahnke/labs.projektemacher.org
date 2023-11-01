@@ -6,7 +6,6 @@ tags:
 - 3D
 ---
 
-The category [1900 in 3D](/future/3d/) has been greatly expanded, there are now more stereograms and more output formats (MPO, anaglyphs) are provided. But before the category can become an own page the following open issues have to be solved:
-* Display in simple viewers, like [Google Cardboard](https://de.wikipedia.org/wiki/Google_Cardboard).
+The category [1900 in 3D](/future/3d/) has been greatly expanded, there are now more stereograms and more output formats (MPO, anaglyphs) are provided. And the display in a simple 3D viewer that works with a cell phone such as [Google Cardboard](https://de.wikipedia.org/wiki/Google_Cardboard) can now be realized via the integrated full-screen view in landscape format.
 
 And of course there also is a good title: **Vintage Reality**
