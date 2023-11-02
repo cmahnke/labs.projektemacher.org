@@ -13,6 +13,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "Pillow"
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
