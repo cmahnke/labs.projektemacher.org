@@ -46,3 +46,6 @@ postcss.config.js
 browserslist
 .stylelintrc.json
 purgecss.config.js
+
+static/fonts/
+assets/css/
