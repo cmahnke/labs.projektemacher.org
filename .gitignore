@@ -46,6 +46,7 @@ postcss.config.js
 browserslist
 .stylelintrc.json
 purgecss.config.js
+**/vips-properties.xml
 
 static/fonts/
 assets/css/

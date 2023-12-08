@@ -10,9 +10,12 @@ tags:
 - Zukünftiges Blog
 - Postkarte
 resources:
-- src: "front.jpg"
+- src: "front.jxl"
   name: front
   params:
     iiif: front/info.json
 ---
 Der [Felbertauerntunnel](https://de.wikipedia.org/wiki/Felbertauerntunnel).
+
+<!--more-->
+<div class="source"><a href="http://zeitzeug.de/">Zeitzeug</a> ist nicht nur der beste beste Anbieter historischer Tapeten in Göttingen, sondern verfügt auch über eine umfangreiche und vor allem sehr gut sortierte Auswahl an Postkarten.</div>
