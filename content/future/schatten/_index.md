@@ -4,6 +4,7 @@ displayinlist: false
 metaPage: true
 description: "Nächtliche Schatten"
 draft: true
+date: 2023-12-24T20:15:07+02:00
 ---
 
 {{< figure src="preview-teaser.png" title="Preview" >}}
@@ -15,4 +16,4 @@ draft: true
 ## Ideas
 
 * Black and white color
-* greyscale grandients
+* Greyscale grandients
