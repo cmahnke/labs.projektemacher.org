@@ -57,20 +57,26 @@ refresh: 60
 
 # Tools
 
-* Font Action [![IIIF Action](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml)
+## Images
 
 * IIIF Action [![IIIF Action](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml)
 
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
 
+## Fonts
+
+* Font Action [![IIIF Action](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml)
+
+# Maps
+
 * Map Tools [![Map Tools Docker images](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml)
 
 * Map Data [![Map Data](https://github.com/cmahnke/map-data/actions/workflows/data.yaml/badge.svg)](https://github.com/cmahnke/map-data/actions/workflows/data.yaml)
 
-* OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
-
 * Projektemacher Maps [![Projektemacher Maps Docker images](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml) [![Projektemacher Maps Deployment](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml)
 
-# Other
+## Other
+
+* OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
 * Projektemacher Static SSL Check [![Projektemacher Static SSL Check](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml)
