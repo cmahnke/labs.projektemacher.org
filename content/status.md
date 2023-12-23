@@ -67,7 +67,7 @@ refresh: 60
 
 * Font Action [![IIIF Action](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml)
 
-# Maps
+## Maps
 
 * Map Tools [![Map Tools Docker images](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml)
 
