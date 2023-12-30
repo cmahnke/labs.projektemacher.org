@@ -2,6 +2,7 @@
 
 IMAGES=$(find content -name '*.svg')
 
+IFS=$(echo -en "\n\b")
 for IMAGE in $IMAGES
 do
     IMAGE_PREFIX=$(basename "$IMAGE" .svg)
