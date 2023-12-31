@@ -25,7 +25,7 @@ refresh: 60
 
 * [Kinderbücher](https://xn--kinderbcher-zhb.projektemacher.org/) [![Kinderbücher](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--kinderbcher-zhb.projektemacher.org/" >}}
 
-* [Kleiderbügel](https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/) [![Kleiderbügel](https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--kinderbcher-zhb.projektemacher.org/" >}}
+* [Kleiderbügel](https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/) [![Kleiderbügel](https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/" >}}
 
 * [Krähenbeisser](https://krähenbeisser.de/) [![Krähenbeisser](https://github.com/cmahnke/kraehenbeisser/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kraehenbeisser/actions/workflows/gh-pages.yml) {{< site-generator url="https://krähenbeisser.de/" >}}
 
