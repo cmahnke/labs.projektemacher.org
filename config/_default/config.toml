@@ -3,6 +3,7 @@
   copyrightYears = "MMXXI - MMXXIII"
   minimalUI = true
   disableScale = true
+  description = "Experimental blogs"
 
   [params.preview]
     outputPrefix = "ogPreview-overlay"

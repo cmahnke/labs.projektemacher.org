@@ -23,7 +23,7 @@ refresh: 60
 
 * [Häßliche Plastiktiere und Zeugs](https://haesslicheplastiktiereundzeugs.projektemacher.org/) [![Häßliche Plastiktiere und Zeugs](https://github.com/cmahnke/haesslicheplastiktiereundzeugs/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/haesslicheplastiktiereundzeugs/actions/workflows/gh-pages.yml) {{< site-generator url="https://haesslicheplastiktiereundzeugs.projektemacher.org/" >}}
 
-* [Kinderbücher](https://xn--kinderbcher-zhb.projektemacher.org/) [![Kinderbücher](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml) {{< site-generator url="https://christianmahnke.de/" >}}
+* [Kinderbücher](https://xn--kinderbcher-zhb.projektemacher.org/) [![Kinderbücher](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--kinderbcher-zhb.projektemacher.org/" >}}
 
 * [Kleiderbügel](https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/) [![Kleiderbügel](https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--kinderbcher-zhb.projektemacher.org/" >}}
 
