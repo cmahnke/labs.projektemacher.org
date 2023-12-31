@@ -5,6 +5,12 @@
     .site-generator-url {
         display: none;
     }
-    .site-generator-version {}
+    .site-generator-version {
+        &::before {
+            content: 'Hugo Version: ';
+            font-weight: bold;
+        }
+
+    }
     .site-generator-desription {}
 }
