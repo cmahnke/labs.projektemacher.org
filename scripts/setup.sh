@@ -18,6 +18,7 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
 done
 
 ./scripts/3d.sh
+./scripts/3d-models.sh
 ./scripts/height-map.sh
 ./scripts/translate-status.sh
 ./scripts/svgo.sh

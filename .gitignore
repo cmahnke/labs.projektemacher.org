@@ -38,6 +38,8 @@ content/**/page*-*.json
 !content/**/page*-map.json
 content/**/ogPreview.*g
 content/**/ogPreview-overlay.*g
+content/**/*.gtlf
+content/**/*.glb
 **/.DS_Store
 **/*.ogv
 content/status.en.md
