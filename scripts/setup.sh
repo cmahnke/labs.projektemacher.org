@@ -18,14 +18,16 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
 done
 
 ./scripts/3d.sh
-./scripts/3d-models.sh
 ./scripts/height-map.sh
 ./scripts/translate-status.sh
-./scripts/svgo.sh
 
 if [ -d ./scripts/post-build ] ; then
     echo "Don't forget to run post build scripts after 'hugo'!"
 fi
+
+# Run scripts that need JS Dependencies
+./scripts/svgo.sh
+./themes/projektemacher-base/scripts/3d-models.sh
 
 # Favicons
 # See https://gist.github.com/pfig/1808188
