@@ -4,6 +4,7 @@
   minimalUI = true
   disableScale = true
   description = "Experimental blogs"
+  debug = false
 
   [params.preview]
     outputPrefix = "ogPreview-overlay"
