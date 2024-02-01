@@ -15,9 +15,11 @@
 <title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
 </head>
 {{- $class := "" -}}
-{{- if or (hasPrefix .Page.File.Path "about") (hasPrefix .Page.File.Path "/about") -}}
+
+{{- if and (ne .Page.File nil) (or (hasPrefix .Page.File.Path "about") (hasPrefix .Page.File.Path "/about")) -}}
     {{- $class = "about" -}}
 {{- end -}}
+
 {{- if .Params.metaPage -}}
     {{- $class = printf "%s %s" $class "meta" -}}
 {{- end -}}
