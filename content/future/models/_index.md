@@ -8,3 +8,5 @@ outputs:
 ---
 
 Versuche mit 3D Modellen
+
+Derzeit ist kein spezifisches Blog mit 3D Modellen geplant, nur als mediale Ergänzungen zu bestehenden.
