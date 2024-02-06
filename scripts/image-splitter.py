@@ -142,7 +142,7 @@ images_suffix = args.image.suffix
 
 if args.debug:
     import jxlpy
-    print("jxlpy: {}, libjxl: {}".format(jxlpy.__version__, jxlpy._jxl_version))
+    print("jxlpy: {}, libjxl: {}, pillow: {}".format(jxlpy.__version__, jxlpy._jxl_version, Image.__version__))
 
 if str(args.image).endswith('.jxl'):
     from jxlpy import JXLImagePlugin
