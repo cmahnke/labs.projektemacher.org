@@ -134,10 +134,15 @@ parser.add_argument('--coords', type=pathlib.Path, help='File containing coordin
 parser.add_argument('--output', choices=['gif', 'jps', 'images', 'jpg', 'mpo'], action='append', nargs='+', help='Output format', default=[])
 parser.add_argument('--samesize', '-s', help='Force same size (implies advanced)', default=False, action='store_true')
 parser.add_argument('--advanced', '-a', help='Use advanced features provided by StereoscoPy', default=False, action='store_true')
+parser.add_argument('--debug', '-d', help='Print information about JXL bindings', default=False, action='store_true')
 
 args = parser.parse_args()
 
 images_suffix = args.image.suffix
+
+if args.debug:
+    import jxlpy
+    print("jxlpy: {}, libjxl: {}".format(jxlpy.__version__, jxlpy._jxl_version))
 
 if str(args.image).endswith('.jxl'):
     from jxlpy import JXLImagePlugin
