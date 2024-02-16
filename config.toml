@@ -49,8 +49,30 @@ copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>
                 weight = 2
                 url = "en/about/"
 
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe= true
+
+    [markup.goldmark.extensions]
+        #typographer = true
+        attribute = true
+        strikethrough = true
+
+  [markup.goldmark.extensions.typographer]
+          apostrophe = '&rsquo;'
+          disable = false
+          ellipsis = '&hellip;'
+          emDash = '&mdash;'
+          enDash = '&ndash;'
+          leftAngleQuote = '&laquo;'
+          leftDoubleQuote = '&ldquo;'
+          leftSingleQuote = '&lsquo;'
+          rightAngleQuote = '&raquo;'
+          rightDoubleQuote = '&rdquo;'
+          rightSingleQuote = '&rsquo;'
 
 [imaging]
     quality = 95
