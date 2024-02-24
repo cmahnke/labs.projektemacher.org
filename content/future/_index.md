@@ -4,9 +4,9 @@ displayinlist: false
 metaPage: true
 cascade:
 - _target:
-    kind: {page,section}
+    kind: '{page,section}'
     lang: de
-    path: **
+    path: '**'
   params:
     archive: false
     news: false
