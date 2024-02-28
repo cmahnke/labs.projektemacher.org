@@ -4303,10 +4303,10 @@ object-keys@^1.1.1:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
 
-ol-mapbox-style@^12.0.0:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/ol-mapbox-style/-/ol-mapbox-style-12.2.0.tgz#081eb25270b8e8ed3b697a69b3f7c55f9838b7b6"
-  integrity sha512-krod1qyX6IedQ0Hb3Q3FYQE+Dq2cH6qqBrBrYDwwWNx934gw2mCxlvBg7h32Xd++GECwnPn47MOIPqV+M+DwGg==
+ol-mapbox-style@^12.2.1:
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/ol-mapbox-style/-/ol-mapbox-style-12.2.1.tgz#12b568f199a8448fd146191b817b93e075eac2f9"
+  integrity sha512-soh8x+8CwlA+e3fd8grotA4XXnm0DSWnpzu5Ef3aEQwpM1o2OfoGPSk/hpjhXL5kFUm79pEyiONTw+kdth2FEQ==
   dependencies:
     "@mapbox/mapbox-gl-style-spec" "^13.23.1"
     mapbox-to-css-font "^2.4.1"
