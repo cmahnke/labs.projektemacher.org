@@ -113,6 +113,9 @@ defaultMarkdownHandler = 'goldmark'
 #    page = ["HTML"]
 #    section= ["GEOJSON"]
 
+[sitemap]
+  changeFreq = 'weekly'
+
 [module]
     [[module.mounts]]
         source = "assets/scss"
