@@ -1461,10 +1461,10 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromium-bidi@0.5.10:
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-0.5.10.tgz#03ac8381e6a0d6be67886d27f77777ef3a978429"
-  integrity sha512-4hsPE1VaLLM/sgNK/SlLbI24Ra7ZOuWAjA3rhw1lVCZ8ZiUgccS6cL5L/iqo4hjRcl5vwgYJ8xTtbXdulA9b6Q==
+chromium-bidi@0.5.12:
+  version "0.5.12"
+  resolved "https://registry.yarnpkg.com/chromium-bidi/-/chromium-bidi-0.5.12.tgz#19f8576b5284169a340b7c38c9cd1e01f74fc695"
+  integrity sha512-sZMgEBWKbupD0Q7lyFu8AWkrE+rs5ycE12jFkGwIgD/VS8lDPtelPlXM7LYaq4zrkZ/O2L3f4afHUHL0ICdKog==
   dependencies:
     mitt "3.0.1"
     urlpattern-polyfill "10.0.0"
@@ -4656,10 +4656,10 @@ postcss-cli@^11.0.0:
     slash "^5.0.0"
     yargs "^17.0.0"
 
-postcss-discard-duplicates@^6.0.0:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-6.0.2.tgz#11f389e6af55099b928dca34b10734360b34bc93"
-  integrity sha512-U2rsj4w6pAGROCCcD13LP2eBIi1whUsXs4kgE6xkIuGfkbxCBSKhkCTWyowFd66WdVlLv0uM1euJKIgmdmZObg==
+postcss-discard-duplicates@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-6.0.3.tgz#d121e893c38dc58a67277f75bb58ba43fce4c3eb"
+  integrity sha512-+JA0DCvc5XvFAxwx6f/e68gQu/7Z9ud584VLmcgto28eB8FqSFZwtrLwB5Kcp70eIoWP/HXqz4wpo8rD8gpsTw==
 
 postcss-import@^16.0.0:
   version "16.0.1"
@@ -4906,26 +4906,26 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
 
-puppeteer-core@22.3.0:
-  version "22.3.0"
-  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-22.3.0.tgz#89fa75bbbcfa2927e3045c69253cc676f7bda728"
-  integrity sha512-Ho5Vdpdro05ZyCx/l5Hkc5vHiibKTaY37fIAD9NF9Gi/vDxkVTeX40U/mFnEmeoxyuYALvWCJfi7JTT82R6Tuw==
+puppeteer-core@22.4.0:
+  version "22.4.0"
+  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-22.4.0.tgz#26ea98c7392da0c617d587398e345c0013f2228f"
+  integrity sha512-MZttAbttrxi6O/B//rY6zQihjFe/vXeCLb5YvKH2xG6yrcVESo0Hc5/Cv49omwZyZzAJ1BK8BnDeatDsj+3hMw==
   dependencies:
     "@puppeteer/browsers" "2.1.0"
-    chromium-bidi "0.5.10"
+    chromium-bidi "0.5.12"
     cross-fetch "4.0.0"
     debug "4.3.4"
     devtools-protocol "0.0.1249869"
     ws "8.16.0"
 
-puppeteer@^22.3.0:
-  version "22.3.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-22.3.0.tgz#4ea1f1c8c5a527b0e4ca21a242af7d3d9b89e294"
-  integrity sha512-GC+tyjzYKjaNjhlDAuqRgDM+IOsqOG75Da4L28G4eULNLLxKDt+79x2OOSQ47HheJBgGq7ATSExNE6gayxP6cg==
+puppeteer@^22.4.0:
+  version "22.4.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-22.4.0.tgz#9713a291fbeb0733b3732b3b8be759e688e1f544"
+  integrity sha512-tR+JsDbA2qD1DqRX4F9k9SxQhk6UzcaCN+Qux7+WrDceS7wcR7tlFmMNB8+g8zE4Fmr/iRTOtf5wNnTW9cGUFQ==
   dependencies:
     "@puppeteer/browsers" "2.1.0"
     cosmiconfig "9.0.0"
-    puppeteer-core "22.3.0"
+    puppeteer-core "22.4.0"
 
 purgecss@^5.0.0:
   version "5.0.0"
@@ -5890,10 +5890,10 @@ stylelint-prettier@^5.0.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-stylelint-scss@^6.0.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-6.1.0.tgz#b7ef162c417132e8df2b69d1759ae07395d54fb5"
-  integrity sha512-kCfK8TQzthGwb4vaZniZgxRsVbCM4ZckmT1b/H5m4FU3I8Dz0id9llKsy1NMp3XXqC8+OPD4rVKtUbSxXlJb5g==
+stylelint-scss@^6.0.0, stylelint-scss@^6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-6.2.1.tgz#7675f3f5034a3b1d7d064d480e0d834ef9353244"
+  integrity sha512-ZoGLbVb1keZYRVGQlhB8G6sZOoNqw61whzzzGFWp05N12ErqLFfBv3JPrXiMLZaW98sBS7K/vUQhRnvUj4vwdw==
   dependencies:
     known-css-properties "^0.29.0"
     postcss-media-query-parser "^0.2.3"

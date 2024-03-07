@@ -2,6 +2,7 @@
   "dependencies": {
     "compare_view": "^1.3.4"
   },
+  "devDependencies": {
     "ak-kaleidoscope": "^1.1.0",
     "webxr-polyfill": "^2.0.3"
   },
