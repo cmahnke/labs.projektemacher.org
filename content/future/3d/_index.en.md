@@ -6,15 +6,20 @@ description: "3D images are not a new invention - already at the end of the 19th
 outputs:
 - html
 - geojson
+cascade:
+  - _target:
+      kind: "{page,section}"
+      lang: en
+      path: '**'
+    params:
+      draft: true
 ---
 
 An experiment on media types and file formats.
 
-{{< html/link file="./map.geojson" content="GeoJSON" >}}
+# Update spring 2024
 
-{{< html/iframe-consent >}}
-    {{< maps/osm src="./map.geojson" >}}
-{{< /html/iframe-consent >}}
+This section is now a separate [blog](https://vintagereality.projektemacher.org/), where previously unseen images are also provided. In addition, functionalities like a display for red-green glasses and generated depth maps, have been added.
 
 # Update Christmas 2022
 

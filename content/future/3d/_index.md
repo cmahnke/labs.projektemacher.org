@@ -6,15 +6,20 @@ description: "3D Bilder sind keine neue Erfindung - bereits Ende des 19. Jahrhun
 outputs:
 - html
 - geojson
+cascade:
+  - _target:
+      kind: "{page,section}"
+      lang: de
+      path: '**'
+    params:
+      draft: true
 ---
 
 Ein Experiment zu Medientypen und Dateiformaten.
 
-{{< html/link file="./map.geojson" content="GeoJSON" >}}
+# Update Frühjahr 2024
 
-{{< html/iframe-consent >}}
-    {{< maps/osm src="./map.geojson" >}}
-{{< /html/iframe-consent >}}
+Diese Sektion ist nun ein eigenes [Blog](https://vintagereality.projektemacher.org/), dort werden auch vorher nicht gezeigte Bilder bereitgestellt. Zusätzlich sind weitere Funktionalitäten, wie eine Darstellung für Rot-Grün-Brillen und generierte Tiefenkarten hinzugekommen.
 
 # Update Weihnachten 2022
 
