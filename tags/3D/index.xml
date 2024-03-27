@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/3D/</link>
+    <description>Recent content in 3D on Projektemacher Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 01 Jan 2023 11:15:44 +0200</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/tags/3D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vintage VR</title>
+      <link>https://labs.projektemacher.org/post/vintage-vr/</link>
+      <pubDate>Sun, 01 Jan 2023 11:15:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/vintage-vr/</guid>
+      <description>Update Frühjahr 2024 Diese Sektion ist nun ein eigenes Blog, dort werden auch vorher nicht gezeigte Bilder bereitgestellt. Zusätzlich sind weitere Funktionalitäten, wie eine Darstellung für Rot-Grün-Brillen und generierte Tiefenkarten hinzugekommen.&#xA;Ursprünglicher Beitrag Die Kategorie 1900 in 3D wurde stark erweitert, es gibt nun mehr Stereogramme und es werden mehr Ausgabeformate (MPO, Anaglyphen) bereitgestellt. Und die Darstellung in einem einfachen 3D Betrachter, der mit einem Mobiltelefon funktioniert wie z.B. Google Cardboard kann nun über die integrierte Vollbildansicht im Querformat realisiert werden.</description>
+    </item>
+  </channel>
+</rss>
