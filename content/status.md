@@ -29,6 +29,8 @@ refresh: 60
 
 * [Krähenbeisser](https://krähenbeisser.de/) [![Krähenbeisser](https://github.com/cmahnke/kraehenbeisser/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kraehenbeisser/actions/workflows/gh-pages.yml) {{< site-generator url="https://krähenbeisser.de/" >}}
 
+* [Nächtliche Schatten](https://schatten.yaapb.projektemacher.org/) [![Nächtliche Schatten](https://github.com/cmahnke/schatten/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/schatten/actions/workflows/gh-pages.yml) {{< site-generator url="https://schatten.yaapb.projektemacher.org/" >}}
+
 * [Projektemacher Labs](https://labs.projektemacher.org/) [![Projektemacher Labs](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml) {{< site-generator url="https://labs.projektemacher.org/" >}}
 
 * [Projektemacher Merch](https://merch.projektemacher.org/) [![Projektemacher Merch](https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml) {{< site-generator url="https://merch.projektemacher.org/" >}}
