@@ -1,34 +1,63 @@
 {{- $url := .Get "url" -}}
 
-{{- $patternDescMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?description"?\s+content=\s*"?.*?"?\s*/?>` }}
-{{- $patternDescVal :=  `(?s).*content=\s*"?(.*?)".*` }}
-{{- $patternVersion := `(?s)<meta\s+name="?generator"?\s+content="Hugo\s.+?"\s*/?>` }}
-{{- $patternVersionVal := `.*"Hugo\s+v?(\d+\.\d+\.?\d*).*".*` }}
+{{- $timeFormat := "2 Jan 2006" -}}
 
-{{- $description := "" }}
-{{- $title := "" }}
-{{- $version := "" }}
+{{- $patternDescMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?description"?\s+content=\s*"?.*?"?\s*/?>` -}}
+{{- $patternDescVal :=  `(?s).*content=\s*"?(.*?)".*` -}}
+{{- $patternVersion := `(?s)<meta\s+name="?generator"?\s+content="Hugo\s.+?"\s*/?>` -}}
+{{- $patternVersionVal := `.*"Hugo\s+v?(\d+\.\d+\.?\d*).*".*` -}}
+
+{{- $patternDateMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?projektemacher.org:build-date"?\s+content=\s*"?.*?"?\s*/?>` -}}
+{{- $patternDateVal :=  `(?s).*content=\s*"?(.*?)".*` -}}
+
+{{- $patternStatsMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?projektemacher.org:stats"?\s+content=\s*"?.*?"?\s*/?>` -}}
+{{- $patternStatsVal :=  `(?s).*content=\s*"?(.*?)".*` -}}
+
+{{- $description := "" -}}
+{{- $title := "" -}}
+{{- $version := "" -}}
+{{- $buildDate := "" }}
+{{- $latestPost := "" }}
+{{- $time := now -}}
 
 {{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
 {{- with resources.GetRemote $url $opts}}
   {{- with .Err }}
     {{- $description = printf "Unable to reach %s, skipping!" $url -}}
-    {{- warnf $description }}
-  {{- else }}
+    {{- warnf $description -}}
+  {{- else -}}
 
-    {{- with findRE $patternVersion .Content }}
-      {{- with index . 0 }}
-        {{- $version = replaceRE $patternVersionVal "$1" . }}
-      {{- end }}
-    {{- else }}
-      {{- $version = "Generater tag not set" }}
-    {{- end }}
+    {{- with findRE $patternVersion .Content -}}
+      {{- with index . 0 -}}
+        {{- $version = replaceRE $patternVersionVal "$1" . -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $version = "Generater tag not set" -}}
+    {{- end -}}
 
-    {{- with findRE $patternDescMeta .Content }}
-      {{- with index . 0 }}
-        {{- $description = replaceRE $patternDescVal "$1" . | safeHTML }}
-      {{- end }}
-    {{- end }}
+    {{- with findRE $patternDescMeta .Content -}}
+      {{- with index . 0 -}}
+        {{- $description = replaceRE $patternDescVal "$1" . | safeHTML -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- with findRE $patternDateMeta .Content -}}
+      {{- with index . 0 -}}
+        {{- $buildDate = replaceRE $patternDateVal "$1" . | safeHTML -}}
+        {{- $date := split $buildDate " " -}}
+        {{- $time = time.AsTime (printf "%sT%s" (index $date 0) (index $date 1)) -}}
+        {{- $buildDate = time.Format $timeFormat $time -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- with findRE $patternStatsMeta .Content -}}
+      {{- with index . 0 -}}
+        {{- $json := replaceRE $patternStatsVal "$1" . -}}
+        {{- $json = unmarshal (htmlUnescape $json) -}}
+        {{- $latestPost = time.Format $timeFormat (index $json "latest") -}}
+      {{- end -}}
+    {{- end -}}
+
   {{- end -}}
 {{- end -}}
 
@@ -37,5 +66,13 @@
     <td class="site-generator-url">{{ $url }}</td>
     <td class="site-generator-version">{{ $version }}</td>
     <td class="site-generator-desription">{{ $description }}</td>
+  </tr>
+  <tr>
+    {{- if ne $buildDate "" -}}
+      <td class="site-build-date">{{ $buildDate }}</td>
+    {{- end -}}
+    {{- if ne $latestPost "" -}}
+      <td class="site-latest-post">{{ $latestPost }}</td>
+    {{- end -}}
   </tr>
 </table>

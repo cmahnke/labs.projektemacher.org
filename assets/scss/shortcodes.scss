@@ -5,6 +5,7 @@
     .site-generator-url {
         display: none;
     }
+
     .site-generator-version {
         &::before {
             content: 'Hugo Version: ';
@@ -12,5 +13,27 @@
         }
 
     }
+
+    .site-build-date {
+      &::before {
+          content: 'Last build: ';
+          font-weight: bold;
+      }
+    }
+
+    .site-latest-post {
+      &::before {
+          content: 'Last post: ';
+          font-weight: bold;
+      }
+    }
+
     .site-generator-desription {}
+
+  tr td {
+    border-bottom-width: 0;
+    border-bottom-style: unset;
+    border-bottom-color: unset;
+  }
+
 }
