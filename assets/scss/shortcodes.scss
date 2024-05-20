@@ -11,29 +11,32 @@
             content: 'Hugo Version: ';
             font-weight: bold;
         }
-
     }
 
     .site-build-date {
-      &::before {
-          content: 'Last build: ';
-          font-weight: bold;
-      }
+        white-space: nowrap;
+
+        &::before {
+            content: 'Last build: ';
+            font-weight: bold;
+        }
     }
 
     .site-latest-post {
-      &::before {
-          content: 'Last post: ';
-          font-weight: bold;
-      }
+        white-space: nowrap;
+
+        &::before {
+            content: 'Last post: ';
+            font-weight: bold;
+        }
     }
 
     .site-generator-desription {}
 
-  tr td {
-    border-bottom-width: 0;
-    border-bottom-style: unset;
-    border-bottom-color: unset;
-  }
+    tr td {
+        border-bottom-width: 0;
+        border-bottom-style: unset;
+        border-bottom-color: unset;
+    }
 
 }
