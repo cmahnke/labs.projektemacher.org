@@ -1,6 +1,7 @@
 @import "normalize";
 @import "icons";
 @import "mirador";
+@import "ol";
 @import "ol-iiif";
 @import "iframe-consent";
 @import "fonts/source-code-pro";
@@ -522,4 +523,12 @@ footer {
         font-size: 2em;
     }
 
+}
+
+date.build-date {
+  text-align: end;
+  display: block;
+
+  &:before {
+  }
 }
