@@ -8,7 +8,7 @@
 {
     {{- $contextPath := path.Dir .File.Path -}}
     {{- $urlBase := "" -}}
-    {{- if or .Site.IsServer (not (isset .Site.Params "productioniiifurlprefix")) -}}
+    {{- if or hugo.IsServer (not (isset .Site.Params "productioniiifurlprefix")) -}}
         {{- $pl := .Permalink -}}
         {{- if ne $.Site.Language.Lang $defaultContentLanguage -}}
             {{- $pl = $defaultContentPage.Permalink -}}
