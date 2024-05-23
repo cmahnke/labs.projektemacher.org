@@ -65,6 +65,8 @@ refresh: 60
 
 * JPEG XL Action [![JPEG XL Action](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml)
 
+* HDR Tools [![HDR Tools](https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml)
+
 ## Fonts
 
 * Font Action [![IIIF Action](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml)
