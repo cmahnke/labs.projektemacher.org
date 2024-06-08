@@ -20,6 +20,19 @@
             content: 'Last build: ';
             font-weight: bold;
         }
+
+        &:hover .site-build-time {
+            transform: scaleX(1);
+            transition: all 250ms linear;
+        }
+    }
+
+    .site-build-time {
+        transform: scaleX(0);
+        transition: all 250ms linear;
+        display: inline-block;
+        margin-left: .4rem;
+        transform-origin: left;
     }
 
     .site-latest-post {

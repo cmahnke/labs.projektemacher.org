@@ -1,6 +1,7 @@
 {{- $url := .Get "url" -}}
 
-{{- $timeFormat := "2 Jan 2006" -}}
+{{- $dateFormat := "2 Jan 2006" -}}
+{{- $timeFormat := "15:04:05" -}}
 
 {{- $patternDescMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?description"?\s+content=\s*"?.*?"?\s*/?>` -}}
 {{- $patternDescVal :=  `(?s).*content=\s*"?(.*?)".*` -}}
@@ -17,6 +18,7 @@
 {{- $title := "" -}}
 {{- $version := "" -}}
 {{- $buildDate := "" }}
+{{- $buildTime := "" }}
 {{- $latestPost := "" }}
 {{- $time := now -}}
 
@@ -46,7 +48,8 @@
         {{- $buildDate = replaceRE $patternDateVal "$1" . | safeHTML -}}
         {{- $date := split $buildDate " " -}}
         {{- $time = time.AsTime (printf "%sT%s" (index $date 0) (index $date 1)) -}}
-        {{- $buildDate = time.Format $timeFormat $time -}}
+        {{- $buildDate = time.Format $dateFormat $time -}}
+        {{- $buildTime = time.Format $timeFormat $time -}}
       {{- end -}}
     {{- end -}}
 
@@ -54,7 +57,7 @@
       {{- with index . 0 -}}
         {{- $json := replaceRE $patternStatsVal "$1" . -}}
         {{- $json = unmarshal (htmlUnescape $json) -}}
-        {{- $latestPost = time.Format $timeFormat (index $json "latest") -}}
+        {{- $latestPost = time.Format $dateFormat (index $json "latest") -}}
       {{- end -}}
     {{- end -}}
 
@@ -69,7 +72,11 @@
   </tr>
   <tr>
     {{- if ne $buildDate "" -}}
-      <td class="site-build-date">{{ $buildDate }}</td>
+      <td class="site-build-date">{{ $buildDate }}
+        {{- if ne $buildTime "" -}}
+          <span class="site-build-time"> {{ $buildTime }}</span>
+        {{- end -}}
+      </td>
     {{- end -}}
     {{- if ne $latestPost "" -}}
       <td class="site-latest-post">{{ $latestPost }}</td>
