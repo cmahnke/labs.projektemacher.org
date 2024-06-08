@@ -26,6 +26,10 @@ The post-processing of the digitized images was carried out with [ScanTailor Adv
 
 The site is hosted by [GitHub](https://github.com/).
 
+# Privacy policy
+
+The privacy policy is available [here](/privacy).
+
 # Contact
 
 "Projektemacher Labs" is a project by **[Christian Mahnke](https://christianmahnke.de/)**.

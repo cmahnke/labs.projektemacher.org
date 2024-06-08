@@ -26,6 +26,9 @@ Für die Darstellung der Digitalisate von Einzelbildern wird [OpenLayers](https:
 
 Die Seite wird von [GitHub](https://github.com/) gehosted.
 
+# Datenschutzerklärung
+
+Die Datenschutzerklärung ist [hier](/privacy) verfügbar.
 
 # Kontakt
 
