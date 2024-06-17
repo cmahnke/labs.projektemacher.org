@@ -3,5 +3,5 @@ opencv-contrib-python-headless
 stereoscopy[auto_align]
 #matplotlib
 packaging
-#pystereogram
+pystereogram
 qrcode
