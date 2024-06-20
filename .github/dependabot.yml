@@ -23,6 +23,7 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: "Pillow"
+      - dependency-name: "numpy"
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
