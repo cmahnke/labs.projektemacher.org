@@ -85,4 +85,6 @@ refresh: 60
 
 * Projektemacher Static SSL Check [![Projektemacher Static SSL Check](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml)
 
+* Speech Tools [![Speech Tools](https://github.com/cmahnke/speech-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/speech-tools/actions/workflows/docker.yaml)
+
 Zuletzt aktualisiert {{< dates/build-date >}}
