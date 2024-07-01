@@ -40,7 +40,7 @@ Da die Konvertierung in IIIF Derivate auf GitHub durch ein [Docker Image](https:
 docker pull ghcr.io/cmahnke/iiif-action:latest-jxl
 ```
 
-Es gibt auch ein  Image, dass nur die JPEG XL Referenz-Implementierung beinahaltet:
+Es gibt auch ein  Image, dass nur die JPEG XL Referenz-Implementierung beinhaltet:
 
 ```
 docker pull ghcr.io/cmahnke/jpeg-xl-action:latest
