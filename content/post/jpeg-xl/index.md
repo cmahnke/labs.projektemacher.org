@@ -8,7 +8,7 @@ outputs:
 - html
 - iiif
 alias:
-- jepg-xl
+- /post/jepg-xl/
 resources:
 - src: "front.jxl"
   params:
