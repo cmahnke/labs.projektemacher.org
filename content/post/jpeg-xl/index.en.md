@@ -2,13 +2,15 @@
 date: 2021-04-17T11:22:44+02:00
 title: "JPEG XL"
 tags:
-- Work in progress
+- digitalImages
 iiifContext: http://iiif.io/api/presentation/2/context.json
 outputs:
 - html
 - iiif
 alias:
 - /post/jepg-xl/
+type: redirect
+target: https://christianmahnke.de/post/jpeg-xl/
 resources:
 - src: "front.jxl"
   params:
