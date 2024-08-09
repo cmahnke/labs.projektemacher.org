@@ -1,0 +1,47 @@
+{"@context":"http://iiif.io/api/presentation/2.1/context.json",
+    "@type":"sc:Manifest",
+    "@id":"https://labs.projektemacher.org/post/haptic-feedback/",
+    "viewingDirection":"left-to-right",
+    "viewingHint":"paged",
+
+    "label":"Haptisches Feedback","description": "Eine Einzelseite aus \"Textil-Atlas: ein Lehrbuch und Nachschlagebuch für den Textileinzelhandel und die Gewebeverarbeitung: Textilwarenkunde und Gewebemuster von Wilhelm Spitschka\"","sequences":[
+      {
+         "@id":"https://labs.projektemacher.org/post/haptic-feedback/sequence/normal",
+         "@type":"sc:Sequence",
+         "label":"Current Page Order",
+         "viewingDirection":"left-to-right",
+         "viewingHint":"paged",
+         "startCanvas":"https://labs.projektemacher.org/post/haptic-feedback/canvas/page031",
+         "canvases":[{
+                   "@id":"https://labs.projektemacher.org/post/haptic-feedback/canvas/page031",
+                   "@type":"sc:Canvas","viewingHint":"non-paged","label":"Tafel 31","height": 400,
+                   "width": 300,"thumbnail": {
+                       "@id": "https://labs.projektemacher.org/post/haptic-feedback/page031_hu3029239847418753059.jpg",
+                       "format": "image/jpeg",
+                       "@type":"dctypes:Image",
+                       "height": 80,
+                       "width": 120
+
+                    },
+                    "images":[{
+                         "@context":"http://iiif.io/api/presentation/2/context.json",
+                         "@id":"https://labs.projektemacher.org/post/haptic-feedback/annotation/page031",
+                         "@type":"oa:Annotation",
+                         "motivation":"sc:painting",
+                         "resource":{
+                            "@id":"https://labs.projektemacher.org/post/haptic-feedback/page031",
+                            "@type":"dctypes:Image",
+                            "format":"image/jpeg",
+                            "service":{
+                               "@context":"http://iiif.io/api/image/2/context.json",
+                               "@id":"https://labs.projektemacher.org/post/haptic-feedback/page031",
+                               "profile":"http://iiif.io/api/image/2/level0.json"
+                            },
+                            "height": 6138,
+                            "width": 4013
+                         },
+                         "on":"https://labs.projektemacher.org/post/haptic-feedback/canvas/page031"
+                    }]
+               }]
+     }
+  ]}
