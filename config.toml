@@ -19,18 +19,19 @@ enableGitInfo = true
         languagename = "Deutsch"
 
         [languages.de.params]
+          title = "Projektemacher Labs"
 
         [languages.de.menu]
 
-            [[languages.de.menu.main]]
-                name = "Geplante Blogs"
-                URL = "/future"
-                weight = 1
+          [[languages.de.menu.main]]
+              name = "Geplante Blogs"
+              URL = "/future"
+              weight = 1
 
-            [[languages.de.menu.main]]
-                name = "Über"
-                weight = 5
-                url = "about/"
+          [[languages.de.menu.main]]
+              name = "Über"
+              weight = 5
+              url = "about/"
 
     [languages.en]
         languagename = "English"
@@ -111,6 +112,20 @@ defaultMarkdownHandler = 'goldmark'
     isPlainText = true
     isHTML = false
     baseName = "manifest"
+    notAlternative = true
+
+  [outputFormats.iiif-manifest]
+    mediaType = "application/ld+json"
+    isPlainText = true
+    isHTML = false
+    baseName = "manifest"
+    notAlternative = true
+
+  [outputFormats.iiif-collection]
+    mediaType = "application/ld+json"
+    isPlainText = true
+    isHTML = false
+    baseName = "collection"
     notAlternative = true
 
   [outputFormats.qrcode]

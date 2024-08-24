@@ -1,0 +1,4 @@
+---
+outputs:
+  - iiif-collection
+---
