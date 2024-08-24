@@ -23,7 +23,7 @@
             {{- $defaultContentLanguage := partialCached "functions/i18n/default-lang" . -}}
             {{- if ne $.Site.Language.Lang $defaultContentLanguage -}}
                 {{- $defaultPath := (substr .RelPermalink (len .Site.LanguagePrefix)) -}}
-                {{- $defaultPages := (where $.Sites.First.Pages "Section" .Section) -}}
+                {{- $defaultPages := (where $.Sites.Default.Pages "Section" .Section) -}}
                 {{- $defaultPages := (where $defaultPages "Page.Parent.RelPermalink" $defaultPath) -}}
                 {{- .Scratch.Set "pages" ($pages | lang.Merge $defaultPages) -}}
             {{- else -}}
