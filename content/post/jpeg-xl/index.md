@@ -6,7 +6,7 @@ tags:
 iiifContext: http://iiif.io/api/presentation/2/context.json
 outputs:
 - html
-- iiif
+- iiif-manifest
 alias:
 - /post/jepg-xl/
 type: redirect
