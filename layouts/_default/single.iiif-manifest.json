@@ -1,0 +1,194 @@
+{{- $fullResImgSuffix := "/full/full/0/default.jpg" -}}
+{{/* TODO: THis below isn't valid anymore }}
+{{/* This is a hack to get the default content language - this is a missing Hugo feature */}}
+{{- $defaultContentLanguage := partialCached "functions/i18n/default-lang" . -}}
+{{- $defaultContentPage := partial "functions/i18n/page-for-lang" (dict "context" . "lang" $defaultContentLanguage) -}}
+
+{{- $imageIdSuffix := "" -}}
+{
+  {{- $contextPath := path.Dir .File.Path -}}
+  {{- $urlBase := "" -}}
+  {{- if or hugo.IsServer (not (isset .Site.Params "productioniiifurlprefix")) -}}
+    {{- $pl := .Permalink -}}
+    {{- if ne $.Site.Language.Lang $defaultContentLanguage -}}
+      {{- $pl = $defaultContentPage.Permalink -}}
+    {{- end -}}
+    {{- $urlBase = printf "%s/" (substr $pl 0 (sub (len $pl) 1)) -}}
+  {{- else -}}
+    {{- $localPath := (substr .RelPermalink 1 (sub (len .RelPermalink) 1)) -}}
+    {{- $urlBase = printf "%s%s" .Site.Params.productionIIIFURLPrefix $localPath -}}
+  {{- end -}}
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "type": "Manifest",
+  "id": "{{ .Permalink }}",
+  "viewingDirection": "left-to-right",
+  {{- $defaultBehavior := "paged" -}}
+
+  "behavior":
+    {{- if and (isset .Params "iiif") (isset .Params.iiif "behavior") -}}
+      {{ .Params.iiif.behavior | jsonify }}
+    {{- else -}}
+      ["{{ $defaultBehavior }}"]
+    {{- end -}}
+  ,
+
+  {{- if .Description -}}
+    {{- partial "iiif/3/manifest-summary.json" . -}},
+  {{- end -}}
+
+  {{- if and (isset .Params "iiif") (isset .Params.iiif "rights") -}}
+    {"rights", "{{ .Params.iiif.rights }}"},
+  {{- end -}}
+  {{ partial "iiif/3/required-statement.json" . }},
+  {{ partial "iiif/3/thumbnail.json" . }},
+  {{ partialCached "iiif/3/provider.json" . }},
+
+  "homepage": [
+    {
+      "id": "{{ .Permalink }}",
+      "type": "Text",
+      "format": "text/html",
+      {{- partial "iiif/3/manifest-label.json" . -}}
+    }
+  ],
+
+  {{- partial "iiif/3/manifest-label.json" . -}},
+  {{- if and (isset .Params "iiif") (isset .Params.iiif "metadata") -}}
+    {{- jsonify .Params.iiif.metadata -}}
+  {{- end -}}
+  {{- if isset .Params "iiifMetadata" -}}
+    {{- errorf "[single.iiii-metadata.json] .Params.iiifMetadata isn't supported anymore use .Params.iiif.metadata" -}}
+  {{- end -}}
+  {{- if and (isset .Params "iiif") (isset .Params.iiif "structure") -}}
+    "structures": {{- jsonify .Params.iiif.structure -}}
+  {{- end -}}
+
+  {{- if isset .Params "iiifStructure" -}}
+    {{- errorf "[single.iiii-metadata.json] .Params.iiifStructure isn't supported anymore use .Params.iiif.structure" -}}
+  {{- end -}}
+
+  {{- $firstCanvasId := "" -}}
+  {{- $firstResource := index .Params.resources 0 -}}
+  {{ if $firstResource.name -}}
+    {{- $firstCanvasId = $firstResource.name -}}
+  {{- else -}}
+    {{- $firstCanvasId = path.Dir $firstResource.params.iiif -}}
+  {{- end -}}
+
+    "sequences":[
+      {
+         "id":"{{ .Permalink }}sequence/normal",
+         "type":"Sequence",
+         "label":"Current Page Order",
+         "viewingDirection":"left-to-right",
+         "viewingHint":"paged",
+         "startCanvas":"{{ .Permalink }}canvas/{{ printf "%s" $firstCanvasId }}",
+         "canvases":[
+             {{- range $i, $res := .Params.resources -}}
+
+                 {{- $image := newScratch -}}
+                 {{- $manifestDir := path.Dir .params.iiif -}}
+
+                 {{- if .name -}}
+                    {{- $image.Set "previewImg" ($.Resources.GetMatch .name) -}}
+                 {{ else }}
+                    {{- $image.Set "previewImg" ($.Resources.GetMatch .src) -}}
+                 {{- end -}}
+                 {{- if eq (string ($image.Get "previewImg").MediaType) "image/jxl" -}}
+                   {{- $previewLoc := path.Join $manifestDir $fullResImgSuffix -}}
+                   {{- if not (fileExists (path.Join $.File.Dir $previewLoc)) -}}
+                     {{- errorf "[_default/single.iiif.json] %s referenced in %s doesn't exists!" $previewLoc $.File.Path -}}
+                   {{- end -}}
+                  {{- $image.Set "previewImg" ($.Resources.GetMatch $previewLoc) -}}
+                 {{- end -}}
+                 {{- if eq ($image.Get "previewImg") nil -}}
+                    {{- errorf "[_default/single.iiif.json] Can't find image %s" ($image.Get "previewLoc") -}}
+                 {{- end -}}
+
+                 {{- $canvas := "" -}}
+                 {{- if .name -}}
+                     {{- $canvas = .name -}}
+                 {{- else -}}
+                     {{- $canvas = path.Dir .params.iiif -}}
+                 {{- end -}}
+                 {{- $canvasId := printf "%scanvas/%s" $.Permalink $canvas -}}
+
+                 {
+                   "id":"{{ $canvasId }}",
+                   "type": "Canvas",
+                   {{- if .params.hint -}}
+              {{/* TODO Update to V3 */}}
+                        "viewingHint":"{{ .params.hint }}",
+                   {{- end -}}
+                   {{- if .params.label -}}
+                        "label": "{{ .params.label }}",
+                   {{- else if findRE `?gm:page0*(\d+)\..*` (path.Base .params.iiif) -}}
+                       {{ $pageNr := replaceRE `?gm:page0*(\d+)\..*` "$1" (path.Base .params.iiif) }}
+                       "label": {{ $pageNr | jsonify }},
+                   {{- else -}}
+                        "label": "uncounted",
+                   {{- end -}}
+
+                   {{- $canvasHeight := 400 -}}
+                   {{- $canvasWidth := 300 -}}
+                   {{- if .params.canvasheight -}}
+                        {{- $canvasHeight = .params.canvasheight -}}
+                   {{- else if $.Site.Params.iiifcanvasheight -}}
+                         {{- $canvasHeight = $.Site.Params.iiifcanvasheight -}}
+                   {{- end -}}
+                   {{- if .params.canvaswidth -}}
+                        {{- $canvasWidth = .params.canvaswidth -}}
+                   {{- else if $.Site.Params.iiifcanvaswidth -}}
+                         {{- $canvasWidth = $.Site.Params.iiifcanvaswidth -}}
+                   {{- end -}}
+
+                   "height": {{ $canvasHeight }},
+                   "width": {{ $canvasWidth }},
+                   "thumbnail": [
+                      {{- $thumbnail := ($image.Get "previewImg").Resize "300x" -}}
+                      {{- if or (not $thumbnail.Height) (not $thumbnail.Width) -}}
+                          {{- errorf "[_default/single.iiif.json] Can't get thumbnail for %s" ($image.Get "previewLoc") -}}
+                      {{- end -}}
+                      {
+                        "@id": "{{ $thumbnail.Permalink }}",
+                        "format": "image/jpeg",
+                        "type":"Image",
+                        "height": {{ $thumbnail.Height }},
+                        "width": {{ $thumbnail.Width }}
+
+                      }
+                    ],
+                    "images":[
+                    {{- $imageId := printf "%s%s%s" $urlBase $manifestDir $imageIdSuffix -}}
+                    {{- $annnotationId := printf "%sannotation/%s" $urlBase $manifestDir -}}
+                    {
+                         "id":"{{ $annnotationId }}",
+                         "type":"Annotation",
+                         "motivation":"painting",
+                         "resource":{
+                            "id":"{{ $imageId }}",
+                            "type":"Image",
+                            "format":"image/jpeg",
+                            "service":{
+                               "@context":"http://iiif.io/api/image/2/context.json",
+                               "id":"{{ $imageId }}",
+                               "profile":"http://iiif.io/api/image/2/level0.json"
+                            },
+                            "height": {{ ($image.Get "previewImg").Height }},
+                            "width": {{ ($image.Get "previewImg").Width }}
+                         },
+                         "on":"{{ $canvasId }}"
+                    }]
+               }
+               {{- if ne $i (sub (len $.Params.resources) 1) -}}
+                ,
+               {{- end -}}
+             {{- end -}}
+
+         ]
+     }
+  ]
+
+
+
+}
