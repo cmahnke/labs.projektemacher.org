@@ -57,6 +57,7 @@
       {{- with index . 0 -}}
         {{- $json := replaceRE $patternStatsVal "$1" . -}}
         {{- $json = unmarshal (htmlUnescape $json) -}}
+        {{- warnf "Extracting latest post from %s (JSON: %s)" $url $json -}}
         {{- $latestPost = time.Format $dateFormat (index $json "latest") -}}
       {{- end -}}
     {{- end -}}
