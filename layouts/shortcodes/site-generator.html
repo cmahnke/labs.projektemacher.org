@@ -57,8 +57,12 @@
       {{- with index . 0 -}}
         {{- $json := replaceRE $patternStatsVal "$1" . -}}
         {{- $json = unmarshal (htmlUnescape $json) -}}
-        {{- warnf "Extracting latest post from %s (JSON: %s)" $url $json -}}
-        {{- $latestPost = time.Format $dateFormat (index $json "latest") -}}
+        {{- if findRE `20\d{2}-\d{2}-\d{2}.\d{2}:\d{2}:\d{2}.*` (index $json "latest") -}}
+          {{- $latestPost = time.Format $dateFormat (index $json "latest") -}}
+        {{- else -}}
+          {{- warnf "Extracting latest post from %s (JSON: %s)" $url $json -}}
+          {{- $latestPost = "MALFORMED" -}}
+        {{- end -}}
       {{- end -}}
     {{- end -}}
 
