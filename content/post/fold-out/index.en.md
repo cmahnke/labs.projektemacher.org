@@ -5,6 +5,9 @@ iiifContext: http://iiif.io/api/presentation/2/context.json
 tags:
 - IIIF
 - Work in progress
+outputs:
+- html
+- iiif-manifest
 resources:
 - src: "front01.jpg"
   params:
