@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
 from PIL import Image, ImageFilter, ImageOps
+import numpy as np
 import argparse, pathlib, json
 from termcolor import cprint
+
+def image_array(image):
+    return np.array(image, dtype=int).tolist()
 
 def filter(operations, image):
     for j in range(len(operations)):
@@ -120,7 +124,8 @@ for i in range(len(metadata)):
     if ('json' in outputs):
         outFileName = args.image.parent.joinpath(args.image.stem + "-{}".format(i) + '.json')
         cprint("Saving image {}".format(outFileName), 'yellow')
-        json.dump({'height': height, 'width': width, 'data': list(image.getdata())}, open(outFileName, 'w'))
+        meta = {"scale": pixelPerMm, "width": right - left, "height": bottom - top}
+        json.dump({"meta": meta, 'height': height, 'width': width, 'data': image_array(image)}, open(outFileName, 'w'))
         #for h in range(height):
         #    for w in range(width):
         #        image.getpixel((0,0))
