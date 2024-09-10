@@ -4,49 +4,7 @@ from PIL import Image, ImageFilter, ImageOps
 import argparse, pathlib, json
 from termcolor import cprint
 
-parser = argparse.ArgumentParser(description='Create height map')
-parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
-parser.add_argument('--metadata', type=pathlib.Path, help='File containing metadata', required=True)
-parser.add_argument('--pixel-size', type=int, help='Size of a pixel in mm', default=1)
-parser.add_argument('--output', choices=['json', 'png'], action='append', nargs='+', help='Output format', default=[])
-parser.add_argument('--debug', '-d', action='store_true', help='Create images for each filter step', default=False)
-
-args = parser.parse_args()
-
-inImg = Image.open(args.image)
-dpi = inImg.info['dpi']
-if (len(set(dpi)) > 1):
-    cprint("Resolutions for x and y aren't equal!", 'red')
-dpi = dpi[0]
-pixelPerMm = dpi * 1 / 25.4
-cprint("Input DPI: {}, pixel per mmm: {}".format(dpi, pixelPerMm), 'yellow')
-
-if (len(args.output) == 0):
-    outputs = ['png']
-else:
-    outputs = sum(args.output, [])
-
-debug = False
-if (args.debug):
-    debug = True
-    cprint('Enabeling debug mode', 'yellow')
-    cprint('Requested output formats: ' + ', '.join(outputs), 'yellow')
-
-metadata = json.load(args.metadata.open())
-for i in range(len(metadata)):
-    cprint("Processing image {} from file {}".format(i, args.image), 'yellow')
-
-    left = metadata[i]['coords']['position']['x']
-    top = metadata[i]['coords']['position']['y']
-    right = metadata[i]['coords']['size']['x'] + metadata[i]['coords']['position']['x']
-    bottom = metadata[i]['coords']['size']['y'] + metadata[i]['coords']['position']['y']
-
-    image = inImg.crop((left, top, right, bottom))
-    if (debug):
-        debugFileName = args.image.parent.joinpath(args.image.stem + "-{}-cut".format(i) + '.png')
-        cprint("Saving image {}".format(debugFileName), 'yellow')
-        image.save(debugFileName)
-    operations = metadata[i]['filters']
+def filter(operations, image):
     for j in range(len(operations)):
         op = operations[j]
         if (isinstance(op, str)):
@@ -84,6 +42,70 @@ for i in range(len(metadata)):
             debugFileName = args.image.parent.joinpath(args.image.stem + "-{}-filter_{}_{}".format(i, j, name) + '.png')
             cprint("Saving image {}".format(debugFileName), 'yellow')
             image.save(debugFileName)
+    return image
+
+
+parser = argparse.ArgumentParser(description='Create height map')
+parser.add_argument('--image', type=pathlib.Path, help='Image to process', required=True)
+parser.add_argument('--metadata', type=pathlib.Path, help='File containing metadata', required=True)
+parser.add_argument('--pixel-size', type=int, help='Size of a pixel in mm', default=1)
+parser.add_argument('--output', choices=['json', 'png'], action='append', nargs='+', help='Output format', default=[])
+parser.add_argument('--debug', '-d', action='store_true', help='Create images for each filter step', default=False)
+
+args = parser.parse_args()
+
+inImg = Image.open(args.image)
+dpi = inImg.info['dpi']
+if (len(set(dpi)) > 1):
+    cprint("Resolutions for x and y aren't equal!", 'red')
+dpi = dpi[0]
+pixelPerMm = dpi * 1 / 25.4
+cprint("Input DPI: {}, pixel per mmm: {}".format(dpi, pixelPerMm), 'yellow')
+fragments = []
+
+
+if (len(args.output) == 0):
+    outputs = ['png']
+else:
+    outputs = sum(args.output, [])
+
+debug = False
+if (args.debug):
+    debug = True
+    cprint('Enabeling debug mode', 'yellow')
+    cprint('Requested output formats: ' + ', '.join(outputs), 'yellow')
+
+page = json.load(args.metadata.open())
+metadata = page["fragments"]
+if "defaults" in page and "filters" in page["defaults"]:
+    default_filters = page["defaults"]["filters"]
+else:
+    default_filters = None
+for i in range(len(metadata)):
+    cprint("Processing image {} from file {}".format(i, args.image), 'yellow')
+
+    left = metadata[i]['coords']['position']['x']
+    top = metadata[i]['coords']['position']['y']
+    right = metadata[i]['coords']['size']['x'] + metadata[i]['coords']['position']['x']
+    bottom = metadata[i]['coords']['size']['y'] + metadata[i]['coords']['position']['y']
+
+    image = inImg.crop((left, top, right, bottom))
+    if (debug):
+        debugFileName = args.image.parent.joinpath(args.image.stem + "-{}-cut".format(i) + '.png')
+        cprint("Saving image {}".format(debugFileName), 'yellow')
+        image.save(debugFileName)
+    if "filters" in metadata[i]:
+        cprint("Using fragment specific filter", 'yellow')
+        operations = metadata[i]['filters']
+        image = filter(operations, image)
+        applied_filters = operations
+    elif default_filters is not None:
+        cprint("Using page default filter", 'yellow')
+        image = filter(default_filters, image)
+        applied_filters = default_filters
+    else:
+        applied_filters = ""
+    fragments.append({"position": {"left": left, "top": top, "right": right, "bottom": bottom}, "image": args.image, "filter": applied_filters})
 
     if (args.pixel_size != 0):
         width = round(image.size[0] / (pixelPerMm * args.pixel_size))
