@@ -124,7 +124,7 @@ for i in range(len(metadata)):
     if ('json' in outputs):
         outFileName = args.image.parent.joinpath(args.image.stem + "-{}".format(i) + '.json')
         cprint("Saving image {}".format(outFileName), 'yellow')
-        meta = {"scale": pixelPerMm, "width": right - left, "height": bottom - top}
+        meta = {"scale": pixelPerMm, "width": right - left, "height": bottom - top, "dpi": image.info['dpi']}
         json.dump({"meta": meta, 'height': height, 'width': width, 'data': image_array(image)}, open(outFileName, 'w'))
         #for h in range(height):
         #    for w in range(width):
