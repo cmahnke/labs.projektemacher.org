@@ -20,6 +20,9 @@ draft: true
 * [Oldenburg](https://fonts.google.com/specimen/Oldenburg?query=oldenburg)
 * [Jost](https://fonts.google.com/specimen/Jost)
 
+## Symbols
+* [Unicode/List of useful symbols](https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols)
+
 # Kartenmaterial
 * https://openlayers.org/en/latest/examples/icon-color.html
 

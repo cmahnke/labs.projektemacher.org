@@ -5,6 +5,10 @@
 
 {{- $patternDescMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?description"?\s+content=\s*"?.*?"?\s*/?>` -}}
 {{- $patternDescVal :=  `(?s).*content=\s*"?(.*?)".*` -}}
+
+{{- $patternTit := `(?s)<title>.*?</title>` }}
+{{- $patternTitVal := `(?s)<title>(.*)</title>` }}
+
 {{- $patternVersion := `(?s)<meta\s+name="?generator"?\s+content="Hugo\s.+?"\s*/?>` -}}
 {{- $patternVersionVal := `.*"Hugo\s+v?(\d+\.\d+\.?\d*).*".*` -}}
 
@@ -43,6 +47,12 @@
       {{- end -}}
     {{- end -}}
 
+    {{- with findRE $patternTit .Content -}}
+      {{- with index . 0 -}}
+        {{- $title = replaceRE $patternTitVal "$1" . | safeHTML -}}
+      {{- end -}}
+    {{- end -}}
+
     {{- with findRE $patternDateMeta .Content -}}
       {{- with index . 0 -}}
         {{- $buildDate = replaceRE $patternDateVal "$1" . | safeHTML -}}
@@ -73,6 +83,7 @@
   <tr>
     <td class="site-generator-url">{{ $url }}</td>
     <td class="site-generator-version">{{ $version }}</td>
+    <td class="site-generator-title">{{ $title }}</td>
     <td class="site-generator-desription">{{ $description }}</td>
   </tr>
   <tr>
