@@ -47,7 +47,12 @@
     .site-generator-desription {}
 
     .site-generator-title {
-      display: none;
+        &::before {
+            content: 'Page title: ';
+            font-weight: bold;
+        }
+
+        display: none;
     }
 
     tr td {
