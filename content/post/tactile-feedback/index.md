@@ -5,6 +5,8 @@ description: 'Eine Einzelseite aus "Textil-Atlas: ein Lehrbuch und Nachschlagebu
 tags:
 - IIIF
 - Work in progress
+aliases:
+  - haptic-feedback
 #iiifManifest: ./manifest.json
 iiifContext: http://iiif.io/api/presentation/2/context.json
 outputs:
