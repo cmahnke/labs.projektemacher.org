@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Language" content="de">
+
+<meta name="description" content="Eine Einzelseite aus &#34;Textil-Atlas: ein Lehrbuch und Nachschlagebuch für den Textileinzelhandel und die Gewebeverarbeitung: Textilwarenkunde und Gewebemuster von Wilhelm Spitschka&#34;">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/post/tactile-feedback/" /><meta property="og:title" content="Haptisches Feedback" />
+
+  
+  
+    
+  
+
+
+
+<meta name="generator" content="Hugo 0.135.0">
+<meta name="projektemacher.org:build-date" content="2024-10-09 23:51:09.270365891 &#43;0000 UTC m=&#43;1.789457252"><meta name="projektemacher.org:git-commit" content="d102f96"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;116&#34;,&#34;latest&#34;:&#34;2024-01-01T12:30:07&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://labs.projektemacher.org/css/d9483fb2573fdd66700815f510dc32ce.min.f11f63d6ebd22f97d9d20d846933709be7cc5ec2130f61ee9e51c07a6113e1f6.css" rel="stylesheet" integrity="sha256-8R9j1uvSL5fZ0g2EaTNwm&#43;fMXsITD2HunlHAemET4fY=">
+<script src="https://labs.projektemacher.org/js/b474af5b00b2dca2295f9b193e77153b.min.710935085f520eab012bad0a6e72616cfb3396ea93b03c3602f11b2300c892db.js" integrity="sha256-cQk1CF9SDqsBK60KbnJhbPszluqTsDw2AvEbIwDIkts="></script>
+<title>Haptisches Feedback - Projektemacher Labs</title>
+</head><body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+    <ul class="navigation-list"><li class="navigation-item navto-future">
+            <a class="navigation-link" href="https://labs.projektemacher.org/future" title="Geplante Blogs">Geplante Blogs</a>
+          </li><li class="navigation-item navto-about">
+            <a class="navigation-link" href="https://labs.projektemacher.org/about/" title="Über">Über</a>
+          </li><li class="navigation-item lang">
+              <a href="https://labs.projektemacher.org/en/post/tactile-feedback/" title="English">English</a>
+            </li></ul>
+  </nav></div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      <article class="single " itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/IIIF">IIIF</a>
+
+        <a href="https://labs.projektemacher.org/tags/Work-in-progress">Work in progress</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">Haptisches Feedback</h1>
+  <section class="body" itemprop="articleBody"><div class="under-construction">
+        Diese Funktionalität ist derzeit in der Entwicklung
+    </div>
+    <hr class="under-construction-separator">
+    
+<p>Da es in diesem Blog auch darum gehen soll analoge Inhalte innovativ in den digitalen Raum zu transportieren, hier ein Versuch Stoffe fühlbar zu machen&hellip;</p>
+<h1 id="vorbereitung-der-bilddaten">Vorbereitung der Bilddaten</h1>
+<p>Diese Schritte sind konfigurierbar für jeden einzelnen Bildausschnitt, das Ziel ist die Überführung von Bilddaten in ein Raster von fühlbaren Punkten. Dabei muss noch experimentell ermittelt werden:</p>
+<ul>
+<li>Welche Kantenlänge jeder dieser Punkte haben soll - derzeit 1mm</li>
+<li>Wie viele Abstufungen von Intensität nützlich sind - derzeit nur 2 (An und Aus)</li>
+</ul>
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-cut.png" alt="Ausschnitt zur Analyse"/> <figcaption>
+                
+                <p>
+                    Ausschnitt zur Analyse
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_0_FIND_EDGES.png" alt="Kantenerkennung"/> <figcaption>
+                
+                <p>
+                    Kantenerkennung
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_1_EDGE_ENHANCE.png" alt="Kantenverbesserung"/> <figcaption>
+                
+                <p>
+                    Kantenverbesserung
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_2_SMOOTH_MORE.png" alt="Weichzeichnen 1"/> <figcaption>
+                
+                <p>
+                    Weichzeichnen 1
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_3_SMOOTH_MORE.png" alt="Weichzeichnen 2"/> <figcaption>
+                
+                <p>
+                    Weichzeichnen 2
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_4_GRAYSCALE.png" alt="Graustufen"/> <figcaption>
+                
+                <p>
+                    Graustufen
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_5_EQUALIZE.png" alt="Mittelwert"/> <figcaption>
+                
+                <p>
+                    Mittelwert
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1-filter_6_BINARIZE.png" alt="Binarisieren"/> <figcaption>
+                
+                <p>
+                    Binarisieren
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+
+
+
+<figure>
+    
+        <img src="https://labs.projektemacher.org/post/tactile-feedback/./page031-1.png" alt="Reduktion auf eine Pixelkantenlänge von 1mm"/> <figcaption>
+                
+                <p>
+                    Reduktion auf eine Pixelkantenlänge von 1mm
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+<h1 id="das-ergebnis">Das Ergebnis</h1>
+<p>Derzeit noch ohne Anreicherung.</p>
+
+
+<div class="iiif">
+    <div id="iiif-presentation" class="viewer presentation-api portrait"></div>
+    <script type="text/javascript">
+        var viewer = addMirador('iiif-presentation', 'https:\/\/labs.projektemacher.org\/post\/tactile-feedback\/manifest.json');
+    </script>
+</div>
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs ist ein <a href="https://projektemacher.org/">Projektemacher</a> Blog<img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;">
+    </p><p class="copyright">&copy; MMXXI - MMXXIV <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p></div>
+
+</footer>
+
+</body>
+</html>
+
