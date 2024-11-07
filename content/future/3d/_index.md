@@ -6,6 +6,8 @@ description: "3D Bilder sind keine neue Erfindung - bereits Ende des 19. Jahrhun
 outputs:
 - html
 - geojson
+type: redirect
+target: https://vintagereality.projektemacher.org/
 cascade:
   - _target:
       kind: "{page,section}"

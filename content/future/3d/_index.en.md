@@ -6,6 +6,8 @@ description: "3D images are not a new invention - already at the end of the 19th
 outputs:
 - html
 - geojson
+type: redirect
+target: https://vintagereality.projektemacher.org/
 cascade:
   - _target:
       kind: "{page,section}"
