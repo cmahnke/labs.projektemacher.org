@@ -1,0 +1,703 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://labs.projektemacher.org/post/fold-out/",
+"viewingDirection": "left-to-right","behavior":["paged"],"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/fold-out/front01_hu10779938065202236922.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 593,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/fold-out/front01.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4925,
+        "width": 2492,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/fold-out/front01",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://labs.projektemacher.org/post/fold-out/",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Projektemacher Labs: Fold-outs"
+        ],
+          "en": [
+            "Projektemacher Labs: Fold-outs"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Fold-outs"
+    ],
+      "en": [
+        "Fold-outs"
+      ]
+    }
+,"items": [{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front01",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2492,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front01_hu10779938065202236922.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 593,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front01",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front01/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front01/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2492,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front01",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front01"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front02",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2504,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front02_hu15818593952915679175.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 590,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front02",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front02/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front02/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2504,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front02",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front02"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front03",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2484,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front03_hu10270185986858511686.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 595,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front03",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front03/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front03/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2484,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front03",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front03"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front04",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2472,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front04_hu7756211556715482206.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 598,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front04",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front04/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front04/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2472,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front04",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front04"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front05",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2488,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front05_hu10307033560349470672.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 594,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front05",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front05/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front05/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2488,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front05",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front05"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front06",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2443,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front06_hu12480118371769016736.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 605,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front06",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front06/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front06/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2443,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front06",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front06"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front07",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2455,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front07_hu4276918190006688529.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 602,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front07",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front07/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front07/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2455,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front07",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front07"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front08",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2482,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front08_hu9965796299281365646.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 595,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front08",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front08/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front08/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2482,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front08",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front08"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front09",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"behavior": ["continuous"],"height": 4925,
+            "width": 2495,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front09_hu14075053940953135115.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 592,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front09",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front09/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front09/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2495,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front09",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front09"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/front10",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 4925,
+            "width": 2435,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/front10_hu8932143462590148028.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 607,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/front10",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/front10/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/front10/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4925,
+                  "width": 2435,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/front10",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/front10"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back01",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2459,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back01_hu17496579098329544239.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 602,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back01",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back01/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back01/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2459,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back01",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back01"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back02",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2518,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back02_hu16092297659438292315.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 588,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back02",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back02/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back02/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2518,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back02",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back02"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back03",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2489,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back03_hu11976174885949953062.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 594,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back03",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back03/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back03/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2489,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back03",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back03"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back04",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2442,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back04_hu262490261137942624.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 606,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back04",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back04/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back04/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2442,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back04",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back04"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back05",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2464,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back05_hu12308767089640194557.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 600,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back05",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back05/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back05/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2464,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back05",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back05"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back06",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2468,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back06_hu1412106858566362219.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 600,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back06",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back06/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back06/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2468,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back06",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back06"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back07",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2490,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back07_hu3026199104789870682.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 594,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back07",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back07/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back07/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2490,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back07",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back07"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back08",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2475,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back08_hu8202649016859793253.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 598,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back08",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back08/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back08/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2475,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back08",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back08"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back09",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"behavior": ["continuous"],"height": 4932,
+            "width": 2483,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back09_hu12854298782982843740.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 596,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back09",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back09/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back09/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2483,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back09",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back09"
+            }]
+          }]
+       },{
+          "id":"https://labs.projektemacher.org/post/fold-out/canvas/back10",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 4932,
+            "width": 2457,
+            "thumbnail": [{
+                "id": "https://labs.projektemacher.org/post/fold-out/back10_hu3269195443163717617.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 602,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://labs.projektemacher.org/post/fold-out/annotation/back10",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://labs.projektemacher.org/post/fold-out/annotation/back10/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://labs.projektemacher.org/post/fold-out/back10/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4932,
+                  "width": 2457,
+                  "service": [{
+                    "id":"https://labs.projektemacher.org/post/fold-out/back10",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://labs.projektemacher.org/post/fold-out/canvas/back10"
+            }]
+          }]
+       }]
+}
