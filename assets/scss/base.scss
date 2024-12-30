@@ -127,6 +127,15 @@ article.single {
     .under-construction {
         max-width: unset;
     }
+
+    .site-generator-shortcode {
+        td, th {
+            border-bottom-width: unset;
+            border-bottom-style: unset;
+            border-bottom-color: unset;
+        }
+    }
+
 }
 
 .sections h1.headline {
