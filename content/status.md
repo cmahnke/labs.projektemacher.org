@@ -45,7 +45,7 @@ refresh: 60
 
 * [Vorsatzpapier](https://vorsatzpapier.projektemacher.org/) [![Vorsatzpapier](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml) {{< site-generator url="https://vorsatzpapier.projektemacher.org/" >}}
 
-* [Wilma Bräuner](https://xn--wilmabruner-r8a.de/) [![Wilma Bräuner](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--wilmabruner-r8a.de/" >}}
+* [Wilma Bräuner](https://xn--wilmabruner-r8a.projektemacher.org/) [![Wilma Bräuner](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--wilmabruner-r8a.projektemacher.org/" >}}
 
 * [Projektemacher URL Shortener](https://xn--h-zfa.xyz/) [![Projektemacher URL Shortener](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--h-zfa.xyz/" >}}
 
