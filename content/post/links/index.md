@@ -37,6 +37,10 @@ draft: true
 
 * [Weiland Antikes & Neues](https://www.weiland-antiquitaeten.de/unser-sortiment/alte-modezeitschriften-50er/)
 
+## Themes ud Farbschemata
+
+* [Schwarz mit Gradienten](https://aidemos.meta.com/)
+
 # CSS Tricks
 * [CSS Cinema Effect](https://codepen.io/bullerb/pen/BzKzvK)
 * [Distortion Effect – Glitch Effect Design Inspiration](https://codemyui.com/tag/distortion-effect/)
