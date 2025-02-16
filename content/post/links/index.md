@@ -36,6 +36,7 @@ draft: true
 # Webseiten zur Inspiration
 
 * [Weiland Antikes & Neues](https://www.weiland-antiquitaeten.de/unser-sortiment/alte-modezeitschriften-50er/)
+* [Web Site Builder](https://grapesjs.com/)
 
 ## Themes ud Farbschemata
 
