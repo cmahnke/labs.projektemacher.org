@@ -136,6 +136,11 @@ article.single {
         }
     }
 
+    h2.status + ul img,
+    h1.status + ul img {
+        vertical-align: middle;
+    }
+
 }
 
 .sections h1.headline {

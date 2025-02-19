@@ -6,6 +6,7 @@ refresh: 60
 ---
 
 # Blogs
+{.status}
 
 * [9/11 TV](https://911tv.projektemacher.org/) [![9/11 TV](https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yaml/badge.svg)](https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yaml)
 
@@ -54,14 +55,17 @@ refresh: 60
 * [Yet another analog photo blog](https://yaapb.projektemacher.org/) [![Yet another analog photo blog](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml) {{< site-generator url="https://yaapb.projektemacher.org/" >}}
 
 # Themes
+{.status}
 
 * Projektemacher Base [![Projektemacher Base](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml/badge.svg)](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml)
 
 * Observer Hugo [![Observer Hugo](https://github.com/cmahnke/observer-hugo/actions/workflows/test.yml/badge.svg)](https://github.com/cmahnke/observer-hugo/actions/workflows/test.yml)
 
 # Tools
+{.status}
 
 ## Images
+{.status}
 
 * IIIF Action [![IIIF Action](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml)
 
@@ -70,10 +74,12 @@ refresh: 60
 * HDR Tools [![HDR Tools](https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml)
 
 ## Fonts
+{.status}
 
 * Font Action [![IIIF Action](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/font-action/actions/workflows/docker.yaml)
 
 ## Maps
+{.status}
 
 * Map Tools [![Map Tools Docker images](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml)
 
@@ -82,6 +88,7 @@ refresh: 60
 * Projektemacher Maps [![Projektemacher Maps Docker images](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml) [![Projektemacher Maps Deployment](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml)
 
 ## Other
+{.status}
 
 * OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
