@@ -1,0 +1,14 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://labs.projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Projektemacher Labs"
+      ],
+        "en": [
+          "Projektemacher Labs"
+        ]
+      },
+  "items": []
+}
