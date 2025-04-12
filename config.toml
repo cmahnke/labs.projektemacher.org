@@ -150,6 +150,10 @@ defaultMarkdownHandler = 'goldmark'
   changeFreq = 'weekly'
 
 [module]
+  [module.hugoVersion]
+    extended = true
+    min = '0.146.3'
+
     [[module.mounts]]
         source = "assets/scss"
         target = "assets/scss"
