@@ -20,7 +20,7 @@
             {{- end -}}
 
             {{- $pages := .CurrentSection.Pages -}}
-            {{- $defaultContentLanguage := partialCached "functions/i18n/default-lang" . -}}
+            {{- $defaultContentLanguage := (index $.Sites.Default.Languages 0).Lang  -}}
             {{- if ne $.Site.Language.Lang $defaultContentLanguage -}}
                 {{- $defaultPath := (substr .RelPermalink (len .Site.LanguagePrefix)) -}}
                 {{- $defaultPages := (where $.Sites.Default.Pages "Section" .Section) -}}
