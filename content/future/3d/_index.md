@@ -9,8 +9,8 @@ outputs:
 type: redirect
 target: https://vintagereality.projektemacher.org/
 cascade:
-  - _target:
-      kind: "{page,section}"
+  - target:
+      kind: "{page}"
       lang: de
       path: '**'
     params:
@@ -26,7 +26,7 @@ Diese Sektion ist nun ein eigenes [Blog](https://vintagereality.projektemacher.o
 # Update Weihnachten 2022
 
 * Die Qualität der generierten Wackelbilder wurde massiv durch die Nutzung von [StereoscoPy](https://github.com/2sh/StereoscoPy), verbessert. Es nutzt OpenCV um die Bildanordnung zu verbessern. Zusätzlich können jetzt Anaglyphen erzeugt werden.
-* Die verbesserte Anordnung funktion iert nicht sehr gut bei wenig strukturierten Inhalten, wie Innenräumen oder vielen Pflanzen, ohne Horizont oder ohne Kontrast.
+* Die verbesserte Anordnung funktioniert nicht sehr gut bei wenig strukturierten Inhalten, wie Innenräumen oder vielen Pflanzen, ohne Horizont oder ohne Kontrast.
 * Es sind nun mehr Bilder online
 * Es werden nun auch [MPO](https://de.wikipedia.org/wiki/Multi_Picture_Object) Dateien erzeugt.
 

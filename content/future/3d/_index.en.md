@@ -10,7 +10,7 @@ type: redirect
 target: https://vintagereality.projektemacher.org/
 cascade:
   - _target:
-      kind: "{page,section}"
+      kind: "{page}"
       lang: en
       path: '**'
     params:
