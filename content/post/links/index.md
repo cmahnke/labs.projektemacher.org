@@ -41,6 +41,7 @@ draft: true
 ## Themes ud Farbschemata
 
 * [Schwarz mit Gradienten](https://aidemos.meta.com/)
+* [Firebase Studio](https://firebase.studio/)
 
 # CSS Tricks
 * [CSS Cinema Effect](https://codepen.io/bullerb/pen/BzKzvK)
