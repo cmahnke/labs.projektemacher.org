@@ -1,0 +1,170 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://labs.projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Projektemacher Labs"
+      ],
+        "en": [
+          "Projektemacher Labs"
+        ]
+      },
+  "items": [{
+        "id": "https://labs.projektemacher.org/post/jpeg-xl/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/jpeg-xl/front/full/full/0/default_hu_c8e8a7e91bde6e07.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 421,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/jpeg-xl/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6933,
+        "width": 4946,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/jpeg-xl/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "JPEG XL"
+          ],
+                "en": [
+                  "JPEG XL"
+                ]}
+      },{
+        "id": "https://labs.projektemacher.org/post/jpeg-xl/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/jpeg-xl/front/full/full/0/default_hu_c8e8a7e91bde6e07.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 421,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/jpeg-xl/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6933,
+        "width": 4946,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/jpeg-xl/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "JPEG XL"
+          ],
+                "en": [
+                  "JPEG XL"
+                ]}
+      },{
+        "id": "https://labs.projektemacher.org/post/fold-out/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/fold-out/front01_hu_d102e3dbcb24463.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 593,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/fold-out/front01/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4925,
+        "width": 2492,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/fold-out/front01",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Fold-outs"
+          ],
+                "en": [
+                  "Fold-outs"
+                ]}
+      },{
+        "id": "https://labs.projektemacher.org/post/fold-out/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/fold-out/front01_hu_d102e3dbcb24463.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 593,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/fold-out/front01/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4925,
+        "width": 2492,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/fold-out/front01",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Fold-outs"
+          ],
+                "en": [
+                  "Fold-outs"
+                ]}
+      },{
+        "id": "https://labs.projektemacher.org/post/tactile-feedback/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/tactile-feedback/page031_hu_9242715901d1bcfc.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 459,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/tactile-feedback/page031/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6138,
+        "width": 4013,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/tactile-feedback/page031",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Haptisches Feedback"
+          ],
+                "en": [
+                  "Haptisches Feedback"
+                ]}
+      },{
+        "id": "https://labs.projektemacher.org/post/tactile-feedback/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://labs.projektemacher.org/post/tactile-feedback/page031_hu_9242715901d1bcfc.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 459,
+    "width": 300
+  },{
+        "id": "https://labs.projektemacher.org/post/tactile-feedback/page031/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6138,
+        "width": 4013,
+        "service": [{
+          "id":"https://labs.projektemacher.org/post/tactile-feedback/page031",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Haptisches Feedback"
+          ],
+                "en": [
+                  "Haptisches Feedback"
+                ]}
+      }]
+}
