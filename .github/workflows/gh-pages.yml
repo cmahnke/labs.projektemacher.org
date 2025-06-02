@@ -93,7 +93,9 @@ jobs:
           yarn run validate
 
       - name: Puppeteer
-        run: ./themes/projektemacher-base/scripts/github/check-js-errors.sh
+        run: |
+          ./themes/projektemacher-base/scripts/github/puppeteer-chrome.sh
+          ./themes/projektemacher-base/scripts/github/check-js-errors.sh
 
       - name: Archive links
         run: python ./themes/projektemacher-base/scripts/archive.py -d docs/ -e labs.projektemacher.org,projektemacher.org
