@@ -37,3 +37,5 @@ Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Bl
 * [CSS Stripes Generator](https://stripesgenerator.com/)
 * [SVG Gradient Map Filter](https://yoksel.github.io/svg-gradient-map/#/)
 * [Regex101](https://regex101.com/)
+* [Pyrexp](https://pythonium.net/regex)
+* [JSONing](https://jsoning.com/api/)
