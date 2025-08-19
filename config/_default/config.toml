@@ -22,3 +22,6 @@
 
   [params.footer]
       privacy = true
+
+  [params.robots]
+    llmsTXT = true

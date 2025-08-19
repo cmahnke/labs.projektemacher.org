@@ -12,6 +12,7 @@ theme = ["hugo-video", "projektemacher-base", "hugo-base16-theme"]
 enableInlineShortcodes = true
 copyright = "<a href=\"https://labs.projektemacher.org\">Projektemacher Labs</a>"
 enableGitInfo = true
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 5
