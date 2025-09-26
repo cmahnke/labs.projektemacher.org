@@ -155,21 +155,25 @@ defaultMarkdownHandler = 'goldmark'
     extended = true
     min = '0.146.3'
 
-    [[module.mounts]]
-        source = "assets/scss"
-        target = "assets/scss"
+  [[module.mounts]]
+    source = "assets/scss"
+    target = "assets/scss"
 
-    [[module.mounts]]
-        source = "static"
-        target = "static"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
 
-    [[module.mounts]]
-        source = "assets/js"
-        target = "assets/js"
+  [[module.mounts]]
+    source = "assets/js"
+    target = "assets/js"
 
-    [[module.mounts]]
-        source = "themes/hugo-base16-theme/static"
-        target = "assets"
+  [[module.mounts]]
+    source = "themes/hugo-base16-theme/static"
+    target = "assets"
+
+  [[module.mounts]]
+    source = "node_modules/tify/dist/"
+    target = "static/tify"
 
 [build]
     writeStats = true

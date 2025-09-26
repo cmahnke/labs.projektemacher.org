@@ -37,3 +37,5 @@ Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Bl
 * [CSS Stripes Generator](https://stripesgenerator.com/)
 * [SVG Gradient Map Filter](https://yoksel.github.io/svg-gradient-map/#/)
 * [Regex101](https://regex101.com/)
+* [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/)
+* [Stata palettes](https://repec.sowi.unibe.ch/stata/palettes/colors.html)

@@ -6,6 +6,12 @@
   description = "Experimental blogs"
   debug = false
 
+  [params.iiif]
+    presentationViewer = "js/iiif/tify.js"
+
+  [params.css]
+    includeDirs = ["node_modules/tify/dist/"]
+
   [params.preview]
     outputPrefix = "ogPreview-overlay"
     outputSuffix = ".png"
