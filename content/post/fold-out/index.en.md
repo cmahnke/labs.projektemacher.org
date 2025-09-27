@@ -111,4 +111,4 @@ Example for the necessary change:
     hint: continuous
 ```
 
-{{< iiif/mirador manifestUrl="manifest.json" >}}
+{{< iiif/presentation manifestUrl="manifest.json" >}}

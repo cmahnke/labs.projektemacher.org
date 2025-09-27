@@ -111,4 +111,4 @@ Beispiel für notwendige Änderung:
     hint: continuous
 ```
 
-{{< iiif/mirador manifestUrl="manifest.json" >}}
+{{< iiif/presentation manifestUrl="manifest.json" >}}
