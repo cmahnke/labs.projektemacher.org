@@ -22,8 +22,7 @@ $fullscreen-color: var(--base07);
 @import "3d";
 @import "shortcodes";
 
-@import "tify";
-@import "iiif/tify";
+@import "iiif/presentation-tify";
 
 body {
     min-height: 100vh;
