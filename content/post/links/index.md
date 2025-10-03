@@ -63,6 +63,10 @@ draft: true
 * https://www.youtube.com/watch?v=slDybGJI1Ao
 * https://www.youtube.com/watch?v=GRCkkMWeCCQ
 
+# Frameworks
+
+* https://fresh.deno.dev/
+
 # Informationen zum aktuellen Theme
 
 {{< debug >}}
