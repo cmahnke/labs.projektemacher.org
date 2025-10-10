@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /privacy/
+
+Disallow: /meta/
+
+Disallow: /meta/wikidata/index.json
+
+Sitemap: https://labs.projektemacher.org/sitemap.xml
+
+
+llms-txt: https://labs.projektemacher.org/llms.txt
