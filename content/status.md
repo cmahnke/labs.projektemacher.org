@@ -57,6 +57,8 @@ refresh: 60
 # Themes
 {.status}
 
+* Hugo XML Exporter [![Hugo XML Exporter](https://github.com/cmahnke/hugo-xml-exporter/actions/workflows/test.yml/badge.svg)](https://github.com/cmahnke/hugo-xml-exporter/actions/workflows/test.yml)
+
 * Projektemacher Base [![Projektemacher Base](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml/badge.svg)](https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml)
 
 * Observer Hugo [![Observer Hugo](https://github.com/cmahnke/observer-hugo/actions/workflows/test.yml/badge.svg)](https://github.com/cmahnke/observer-hugo/actions/workflows/test.yml)
