@@ -3,7 +3,7 @@ title: Zukünftige Blogs
 displayinlist: false
 metaPage: true
 cascade:
-  - _target:
+  - target:
       kind: '{page,section}'
       lang: de
       path: '**'

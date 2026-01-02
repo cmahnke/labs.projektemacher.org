@@ -3,7 +3,7 @@ title: Planned Blogs
 displayinlist: false
 metaPage: true
 cascade:
-- _target:
+- target:
     kind: '{page,section}'
     lang: en
     path: '**'
