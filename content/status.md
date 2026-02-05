@@ -34,6 +34,8 @@ refresh: 60
 
 * [Nächtliche Schatten](https://schatten.yaapb.projektemacher.org/) [![Nächtliche Schatten](https://github.com/cmahnke/schatten/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/schatten/actions/workflows/gh-pages.yml) {{< site-generator url="https://schatten.yaapb.projektemacher.org/" >}}
 
+* [Plastikwarenfabrik](https://plastikwarenfabrik.projektemacher.org/) [![Plastikwarenfabrik](https://github.com/cmahnke/plastikwarenfabrik/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/plastikwarenfabrik/actions/workflows/gh-pages.yml) {{< site-generator url="https://plastikwarenfabrik.projektemacher.org/" >}}
+
 * [Projektemacher Labs](https://labs.projektemacher.org/) [![Projektemacher Labs](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml) {{< site-generator url="https://labs.projektemacher.org/" >}}
 
 * [Projektemacher Merch](https://merch.projektemacher.org/) [![Projektemacher Merch](https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml) {{< site-generator url="https://merch.projektemacher.org/" >}}
