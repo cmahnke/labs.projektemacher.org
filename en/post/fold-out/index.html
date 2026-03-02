@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Experimental blogs">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/en/post/fold-out/" /><meta property="og:title" content="Fold-outs" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content=", IIIF, Work in progress"><meta name="dc.subject" content="IIIF"><meta name="dc.subject" content="Work in progress">
+<meta name="generator" content="Hugo 0.157.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 23:53:49.733179363 &#43;0000 UTC m=&#43;18.317984117"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;122&#34;,&#34;latest&#34;:&#34;2024-01-01T12:30:07&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://labs.projektemacher.org/css/de98a9243dac78c60665e2bf5939c8f8.min.70d358d6d801acc70599b7915cf36f622aad345f2ccb3ec237d6a8b05e632dbb.css" rel="stylesheet" integrity="sha256-cNNY1tgBrMcFmbeRXPNvYiqtNF8syz7CN9aosF5jLbs=">
+<script src="https://labs.projektemacher.org/js/b6784f3604da5279445eddee5a9c2760.min.9410c638f86d83b04035e303dc7241857788c15c619c862df2ba83092cbd27fa.js" integrity="sha256-lBDGOPhtg7BANeMD3HJBhXeIwVxhnIYt8rqDCSy9J/o="></script>
+<title>Fold-outs - Projektemacher Labs</title>
+</head><body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+    <ul class="navigation-list"><li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/en/future" title="Planed Blogs">Planed Blogs<i class="link-icon"></i></a></li><li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/en/about/" title="About">About<i class="link-icon"></i></a></li><li class="navigation-item lang">
+              <a href="https://labs.projektemacher.org/post/fold-out/" title="Deutsch">Deutsch</a>
+            </li></ul>
+  </nav></div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      <article class="single " itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/IIIF">IIIF</a>
+
+        <a href="https://labs.projektemacher.org/tags/Work-in-progress">Work in progress</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">Fold-outs</h1>
+  <section class="body" itemprop="articleBody"><div class="under-construction">
+        This feature is currently under construction
+    </div>
+    <hr class="under-construction-separator">
+    
+<p>Demonstrator for displaying fold-outs (Orihon, Accordion Book) using <a href="https://github.com/ProjectMirador/mirador" target="_blank">Mirador</a>. Hints on encoding the fold-out can be found <a href="https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw" target="_blank">here</a>. the following pages are relevant:</p>
+<ul>
+<li><a href="https://preview.iiif.io/cookbook/3333-choice/recipe/0035-foldouts/" target="_blank">IIIF cookbook</a></li>
+<li><a href="https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json#?c=0&amp;m=0&amp;s=0&amp;cv=0&amp;xywh=-25583%2C0%2C54981%2C49069" target="_blank">Example Mahābhārata scroll</a></li>
+</ul>
+<p>Example for currently supported viewing hints:</p>
+<pre tabindex="0"><code>- src: &#34;front01.jpg&#34;
+  params:
+    iiif: front01/info.json
+    hint: non-paged
+</code></pre><p>Example for the necessary change:</p>
+<pre tabindex="0"><code>- src: &#34;front01.jpg&#34;
+  params:
+    iiif: front01/info.json
+    hint: continuous
+</code></pre><div class="iiif">
+  <div id="_iiif-presentation-05126bc7d552bc6468c8d586942f3be1" class="viewer presentation-api portrait"></div>
+  <script type="text/javascript">
+    var viewer = iiifPresentationViewer('#_iiif-presentation-05126bc7d552bc6468c8d586942f3be1', 'https:\/\/labs.projektemacher.org\/en\/post\/fold-out\/manifest.json');
+  </script>
+</div>
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; MMXXI - MMXXVI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p><p class="privacy"><a href="https://labs.projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p></div>
+
+</footer>
+
+</body>
+</html>
+

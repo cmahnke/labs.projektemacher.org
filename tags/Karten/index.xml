@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karten on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/Karten/</link>
+    <description>Recent content in Karten on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/tags/Karten/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kartenmaterial</title>
+      <link>https://labs.projektemacher.org/post/maps/</link>
+      <pubDate>Sun, 13 Dec 2020 20:14:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/maps/</guid>
+      <description>&lt;h1 id=&#34;vorbereitungen&#34;&gt;Vorbereitungen&lt;/h1&gt;&#xA;&lt;p&gt;Bevor Beiträge auf Karten angezeigt werden können, müssen folgende Schritte erlegdigt sein:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Geokodierung von Beiträgen und / oder Tags&lt;/li&gt;&#xA;&lt;li&gt;Generierung einer anwendungsspezifischen Repräsentation (GeoJSON, KML)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Erst danach kann das auf einer Karte visualisiert werden.&lt;/p&gt;&#xA;&lt;p&gt;Ein Beispiel für die &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;alten 3D Bilder&lt;/a&gt; ist &lt;a href=&#34;https://labs.projektemacher.org/future/3d/map.geojson&#34;&gt;hier&lt;/a&gt; zu finden.&lt;/p&gt;&#xA;&lt;h1 id=&#34;anzeige-im-browser&#34;&gt;Anzeige im Browser&lt;/h1&gt;&#xA;&lt;p&gt;Um die generierten Daten im Browser anzuzeigen, kann das von &lt;a href=&#34;https://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt; bereitgestellte Kartenmaterial verwendet werden. Dabei übernimmt ein externer Server die Erzeugung der Bilddaten.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

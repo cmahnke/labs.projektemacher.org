@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DigitalImages on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/digitalImages/</link>
+    <description>Recent content in DigitalImages on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/tags/digitalImages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JPEG XL</title>
+      <link>https://labs.projektemacher.org/post/jpeg-xl/</link>
+      <pubDate>Sat, 17 Apr 2021 11:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/jpeg-xl/</guid>
+      <description>&lt;h1 id=&#34;warum-jpeg-xl&#34;&gt;Warum JPEG XL?&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/JPEG_XL&#34; target=&#34;_blank&#34;&gt;JPEG XL&lt;/a&gt; ist ein neues Format für Rasterbilder, so neu, das zur Zeit als dieser Text geschrieben wurde, es als Lemma noch nicht in der deutschen Wikipedia geführt wurde. Was genau JPEG XL anders bzw. besser macht als das allseits bekannte JPEG kann man dort nachlesen. Wir beschränken uns hier auf den Mehrwert für die Projektmacher Blogs:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Weniger Speicherplatz benötigt&lt;/li&gt;&#xA;&lt;li&gt;Verlustfreie Kompression möglich&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Nachteile sind derzeit noch:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

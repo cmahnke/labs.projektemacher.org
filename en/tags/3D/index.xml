@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/en/tags/3D/</link>
+    <description>Recent content in 3D on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/en/tags/3D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vintage VR</title>
+      <link>https://labs.projektemacher.org/en/post/vintage-vr/</link>
+      <pubDate>Sun, 01 Jan 2023 11:15:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/en/post/vintage-vr/</guid>
+      <description>&lt;h1 id=&#34;update-spring-2024&#34;&gt;Update spring 2024&lt;/h1&gt;&#xA;&lt;p&gt;This section is now a separate &lt;a href=&#34;https://vintagereality.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;, where previously unseen images are also provided. In addition, functionalities like a display for red-green glasses and generated depth maps, have been added.&lt;/p&gt;&#xA;&lt;h1 id=&#34;original-post&#34;&gt;Original post&lt;/h1&gt;&#xA;&lt;p&gt;The category &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;1900 in 3D&lt;/a&gt; has been greatly expanded, there are now more stereograms and more output formats (MPO, anaglyphs) are provided. And the display in a simple 3D viewer that works with a cell phone such as &lt;a href=&#34;https://de.wikipedia.org/wiki/Google_Cardboard&#34; target=&#34;_blank&#34;&gt;Google Cardboard&lt;/a&gt; can now be realized via the integrated full-screen view in landscape format.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kaleidoskope on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/future/kaleidoskope/</link>
+    <description>Recent content in Kaleidoskope on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <atom:link href="https://labs.projektemacher.org/future/kaleidoskope/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://labs.projektemacher.org/future/kaleidoskope/mock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://labs.projektemacher.org/future/kaleidoskope/mock/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;utf-8&#34; /&gt;&#xA;    &lt;meta http-equiv=&#34;x-ua-compatible&#34; content=&#34;ie=edge&#34; /&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;&#xA;&#xA;    &lt;!-- https://kawakamiakari.github.io/kaleidoscope/ --&gt;&#xA;&#xA;    &lt;style&gt;&#xA;&#xA;        .article-container {&#xA;            overflow: hidden;&#xA;            height: 100vh;&#xA;            position: relative;&#xA;            background-color: black;&#xA;        }&#xA;&#xA;        h1 {&#xA;            font-size: 9vw;&#xA;            margin: auto;&#xA;        }&#xA;&#xA;        /* https://css-tricks.com/almanac/properties/b/backdrop-filter/ */&#xA;        .background {&#xA;            position: absolute;&#xA;            width: 100%;&#xA;            height: 100%;&#xA;            filter: blur(15px);&#xA;        }&#xA;&#xA;        .background .wrapper {&#xA;            position: absolute;&#xA;            width: 100%;&#xA;            height: 100%;&#xA;        }&#xA;&#xA;        .background-tube {&#xA;            position: absolute;&#xA;            width: 100%;&#xA;            height: 100%;&#xA;            background-image: radial-gradient(circle, transparent 70vh, transparent 1%, gray 1%, gray 7%, black);&#xA;            mix-blend-mode: color;&#xA;        }&#xA;&#xA;        .content {&#xA;            margin: auto;&#xA;            text-align: center;&#xA;            display: flex;&#xA;            align-items: center;&#xA;            justify-content: center;&#xA;            position: absolute;&#xA;            width: 100%;&#xA;            height: 100%;&#xA;            color: #ffffffb0;&#xA;            mix-blend-mode: difference;&#xA;            font-family: &#39;League Spartan&#39;;&#xA;            font-weight: 600;&#xA;        }&#xA;&#xA;        #kaleidoscope {&#xA;            position: absolute;&#xA;            display: block;&#xA;            top: 0;&#xA;            left: 0;&#xA;            background-color: black;&#xA;            height: 100%;&#xA;            width: 100%;&#xA;        }&#xA;    &lt;/style&gt;&#xA;    &lt;title&gt;&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&#xA;&lt;body&gt;&#xA;    &lt;script&gt;&#xA;        window.exports = {&#xA;            __esModule: true&#xA;        };&#xA;    &lt;/script&gt;&#xA;    &lt;!--&#xA;    &lt;script src=&#34;node_modules/ak-kaleidoscope/dist/kaleidoscope.min.js&#34;&gt;&lt;/script&gt;&#xA;    --&gt;&#xA;    &lt;script&gt;&#xA;        window.onload = function() {&#xA;            var button = document.getElementById(&#39;fullscreen-button&#39;);&#xA;            var ctx = document.getElementById(&#39;fullscreen-context&#39;);&#xA;            addFSToggle(button, ctx);&#xA;            new Kaleidoscope({&#xA;                selector: &#39;#kaleidoscope&#39;,&#xA;            });&#xA;        };&#xA;    &lt;/script&gt;&#xA;    &lt;div class=&#34;article-container&#34;&gt;&#xA;        &lt;div class=&#34;background&#34;&gt;&#xA;            &lt;div class=&#34;wrapper&#34;&gt;&#xA;                &lt;canvas id=&#34;kaleidoscope&#34;&gt;&lt;/canvas&gt;&#xA;                &lt;div class=&#34;background-tube&#34;&gt;&lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;&#xA;        &lt;div class=&#34;content&#34;&gt;&#xA;            &lt;h1&gt;Kaleidoskope!&lt;/h1&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&#xA;&lt;/html&gt;</description>
+    </item>
+    <item>
+      <title>Startseite</title>
+      <link>https://labs.projektemacher.org/future/kaleidoskope/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://labs.projektemacher.org/future/kaleidoskope/theme/</guid>
+      <description>&lt;p&gt;Ein Entwurf für die Startseite&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Webcam</title>
+      <link>https://labs.projektemacher.org/future/kaleidoskope/webcam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://labs.projektemacher.org/future/kaleidoskope/webcam/</guid>
+      <description>&lt;p&gt;Ein Entwurf für die Visualisierung.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

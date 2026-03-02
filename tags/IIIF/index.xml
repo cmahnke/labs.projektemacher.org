@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IIIF on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/IIIF/</link>
+    <description>Recent content in IIIF on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/tags/IIIF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fold-outs</title>
+      <link>https://labs.projektemacher.org/post/fold-out/</link>
+      <pubDate>Fri, 26 Feb 2021 18:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/fold-out/</guid>
+      <description>&lt;p&gt;Demonstrator zur Anzeige von &lt;a href=&#34;https://de.wikipedia.org/wiki/Leporello_%28Heft%29&#34; target=&#34;_blank&#34;&gt;Leporello&lt;/a&gt; (fold-outs) mit Mirador &lt;a href=&#34;https://github.com/ProjectMirador/mirador&#34; target=&#34;_blank&#34;&gt;Mirador&lt;/a&gt;. Hinweise zur Kodierung können  &lt;a href=&#34;https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt; gefunden werden. Die folgenden Seiten bieten Dokumentation und Beispiele:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://preview.iiif.io/cookbook/3333-choice/recipe/0035-foldouts/&#34; target=&#34;_blank&#34;&gt;IIIF cookbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json#?c=0&amp;amp;m=0&amp;amp;s=0&amp;amp;cv=0&amp;amp;xywh=-25583%2C0%2C54981%2C49069&#34; target=&#34;_blank&#34;&gt;Example Mahābhārata scroll&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Haptisches Feedback</title>
+      <link>https://labs.projektemacher.org/post/tactile-feedback/</link>
+      <pubDate>Fri, 04 Dec 2020 18:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/tactile-feedback/</guid>
+      <description>&lt;p&gt;Da es in diesem Blog auch darum gehen soll analoge Inhalte innovativ in den digitalen Raum zu transportieren, hier ein Versuch Stoffe fühlbar zu machen&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Noten</title>
+      <link>https://labs.projektemacher.org/post/music-sheets/</link>
+      <pubDate>Fri, 04 Dec 2020 18:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/music-sheets/</guid>
+      <description>&lt;h1 id=&#34;warum&#34;&gt;Warum?&lt;/h1&gt;&#xA;&lt;p&gt;Einige Kinderbücher enthalten Noten für Kinderlieder - wäre es nicht toll, sie direkt im Digitalisat erklingen zu lasen?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

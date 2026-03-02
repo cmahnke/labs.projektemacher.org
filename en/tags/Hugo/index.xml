@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/en/tags/Hugo/</link>
+    <description>Recent content in Hugo on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/en/tags/Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node Abhängigkeiten aus Themes</title>
+      <link>https://labs.projektemacher.org/en/post/node-dependencies/</link>
+      <pubDate>Sat, 13 Mar 2021 12:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/en/post/node-dependencies/</guid>
+      <description>&lt;p&gt;Since the &lt;a href=&#34;https://labs.projektemacher.org/post/recent-hugo-version/&#34;&gt;upgrade to a Hugo version above 0.75.0&lt;/a&gt; there is an enhancement in the form of the command &lt;a href=&#34;https://gohugo.io/commands/hugo_mod_npm_pack/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;hugo mod npm pack&lt;/code&gt;&lt;/a&gt; to merge the node dependencies of a theme with those of a project.&lt;/p&gt;&#xA;&lt;p&gt;To use this new feature, the dependencies of a theme must be saved in a file &lt;code&gt;package.hugo.json&lt;/code&gt; instead of&lt;code&gt; package.json&lt;/code&gt;, it is sufficient to simply rename the file created by &lt;code&gt;npm&lt;/code&gt; or&lt;code&gt; yarn&lt;/code&gt;. A symlink alone doesn&amp;rsquo;t work because Hugo&amp;rsquo;s virtual filesystem (intentionally) doesn&amp;rsquo;t work with symlinks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Updates</title>
+      <link>https://labs.projektemacher.org/en/post/recent-hugo-version/</link>
+      <pubDate>Tue, 08 Dec 2020 12:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/en/post/recent-hugo-version/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Update: Hugo 0.82.0 is now being used&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Up to the time this article was written, Hugo 0.74.3 from July 23, 2020 was used, at that time the current version was 0.79. Changes to the handling of JavaScript build processes prevent an update. To make matters worse, &lt;code&gt;homebrew&lt;/code&gt; has been getting worse lately. Downgrades are no longer possible simply from the command line. In the meantime, Hugo is being built directly from the sources, see below.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/Node/</link>
+    <description>Recent content in Node on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/tags/Node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node Abhängigkeiten aus Themes</title>
+      <link>https://labs.projektemacher.org/post/node-dependencies/</link>
+      <pubDate>Sat, 13 Mar 2021 12:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/node-dependencies/</guid>
+      <description>&lt;p&gt;Mit dem &lt;a href=&#34;https://labs.projektemacher.org/post/recent-hugo-version/&#34;&gt;Upgrade auf eine Hugo version auf über 0.75.0&lt;/a&gt; besteht die Möglichkeit das Kommando &lt;code&gt;[hugo mod npm pack](https://gohugo.io/commands/hugo_mod_npm_pack/)&lt;/code&gt; zu verwenden um die Node Abhängigkeiten eines Themes mit denen eines Projektes zusammenzuführen.&lt;/p&gt;&#xA;&lt;p&gt;Dafür müssen die Abhängigkeiten eines Themes in einer Datei &lt;code&gt;package.hugo.json&lt;/code&gt; statt &lt;code&gt;package.json&lt;/code&gt; gesichert sein, es reicht einfach die von &lt;code&gt;npm&lt;/code&gt; oder &lt;code&gt;yarn&lt;/code&gt; angelegte Datei umzubenennen. Ein Symlink alleine funktioniert nicht, da Hugo&amp;rsquo;s virtuelles Dateisystem Symlinks nicht mag.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

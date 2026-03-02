@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karten on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/en/tags/Karten/</link>
+    <description>Recent content in Karten on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/en/tags/Karten/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kartenmaterial</title>
+      <link>https://labs.projektemacher.org/en/post/maps/</link>
+      <pubDate>Sun, 13 Dec 2020 20:14:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/en/post/maps/</guid>
+      <description>&lt;h1 id=&#34;preparations&#34;&gt;Preparations&lt;/h1&gt;&#xA;&lt;p&gt;Before posts can be displayed on maps, the following steps must be taken:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Geocoding of posts and / or tags&lt;/li&gt;&#xA;&lt;li&gt;Generation of an application-specific representations (GeoJSON, KML)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;After this has been done, the next step can be approached.&lt;/p&gt;&#xA;&lt;p&gt;An example of the &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;old 3D images&lt;/a&gt; can be found &lt;a href=&#34;https://labs.projektemacher.org/future/3d/map.geojson&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;plotting-data-on-a-map-in-a-browser&#34;&gt;Plotting data on a map in a browser&lt;/h1&gt;&#xA;&lt;p&gt;The map material provided by &lt;a href=&#34;https://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt; can be used to display the generated data in the browser. An external server generates the images needed to display a map.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

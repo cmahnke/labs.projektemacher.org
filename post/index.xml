@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/post/</link>
+    <description>Recent content in Posts on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vintage VR</title>
+      <link>https://labs.projektemacher.org/post/vintage-vr/</link>
+      <pubDate>Sun, 01 Jan 2023 11:15:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/vintage-vr/</guid>
+      <description>&lt;h1 id=&#34;update-frühjahr-2024&#34;&gt;Update Frühjahr 2024&lt;/h1&gt;&#xA;&lt;p&gt;Diese Sektion ist nun ein eigenes &lt;a href=&#34;https://vintagereality.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Blog&lt;/a&gt;, dort werden auch vorher nicht gezeigte Bilder bereitgestellt. Zusätzlich sind weitere Funktionalitäten, wie eine Darstellung für Rot-Grün-Brillen und generierte Tiefenkarten hinzugekommen.&lt;/p&gt;&#xA;&lt;h1 id=&#34;ursprünglicher-beitrag&#34;&gt;Ursprünglicher Beitrag&lt;/h1&gt;&#xA;&lt;p&gt;Die Kategorie &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;1900 in 3D&lt;/a&gt; wurde stark erweitert, es gibt nun mehr Stereogramme und es werden mehr Ausgabeformate (MPO, Anaglyphen) bereitgestellt. Und die Darstellung in einem einfachen 3D Betrachter, der mit einem Mobiltelefon funktioniert wie z.B. &lt;a href=&#34;https://de.wikipedia.org/wiki/Google_Cardboard&#34; target=&#34;_blank&#34;&gt;Google Cardboard&lt;/a&gt; kann nun über die integrierte Vollbildansicht im Querformat realisiert werden.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JPEG XL</title>
+      <link>https://labs.projektemacher.org/post/jpeg-xl/</link>
+      <pubDate>Sat, 17 Apr 2021 11:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/jpeg-xl/</guid>
+      <description>&lt;h1 id=&#34;warum-jpeg-xl&#34;&gt;Warum JPEG XL?&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/JPEG_XL&#34; target=&#34;_blank&#34;&gt;JPEG XL&lt;/a&gt; ist ein neues Format für Rasterbilder, so neu, das zur Zeit als dieser Text geschrieben wurde, es als Lemma noch nicht in der deutschen Wikipedia geführt wurde. Was genau JPEG XL anders bzw. besser macht als das allseits bekannte JPEG kann man dort nachlesen. Wir beschränken uns hier auf den Mehrwert für die Projektmacher Blogs:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Weniger Speicherplatz benötigt&lt;/li&gt;&#xA;&lt;li&gt;Verlustfreie Kompression möglich&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Nachteile sind derzeit noch:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Redirect</title>
+      <link>https://labs.projektemacher.org/post/redirect/</link>
+      <pubDate>Thu, 08 Apr 2021 20:14:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/redirect/</guid>
+      <description>&lt;p&gt;Neue Funktion für redirects, wird sofort demonstriert.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Node Abhängigkeiten aus Themes</title>
+      <link>https://labs.projektemacher.org/post/node-dependencies/</link>
+      <pubDate>Sat, 13 Mar 2021 12:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/node-dependencies/</guid>
+      <description>&lt;p&gt;Mit dem &lt;a href=&#34;https://labs.projektemacher.org/post/recent-hugo-version/&#34;&gt;Upgrade auf eine Hugo version auf über 0.75.0&lt;/a&gt; besteht die Möglichkeit das Kommando &lt;code&gt;[hugo mod npm pack](https://gohugo.io/commands/hugo_mod_npm_pack/)&lt;/code&gt; zu verwenden um die Node Abhängigkeiten eines Themes mit denen eines Projektes zusammenzuführen.&lt;/p&gt;&#xA;&lt;p&gt;Dafür müssen die Abhängigkeiten eines Themes in einer Datei &lt;code&gt;package.hugo.json&lt;/code&gt; statt &lt;code&gt;package.json&lt;/code&gt; gesichert sein, es reicht einfach die von &lt;code&gt;npm&lt;/code&gt; oder &lt;code&gt;yarn&lt;/code&gt; angelegte Datei umzubenennen. Ein Symlink alleine funktioniert nicht, da Hugo&amp;rsquo;s virtuelles Dateisystem Symlinks nicht mag.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fold-outs</title>
+      <link>https://labs.projektemacher.org/post/fold-out/</link>
+      <pubDate>Fri, 26 Feb 2021 18:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/fold-out/</guid>
+      <description>&lt;p&gt;Demonstrator zur Anzeige von &lt;a href=&#34;https://de.wikipedia.org/wiki/Leporello_%28Heft%29&#34; target=&#34;_blank&#34;&gt;Leporello&lt;/a&gt; (fold-outs) mit Mirador &lt;a href=&#34;https://github.com/ProjectMirador/mirador&#34; target=&#34;_blank&#34;&gt;Mirador&lt;/a&gt;. Hinweise zur Kodierung können  &lt;a href=&#34;https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt; gefunden werden. Die folgenden Seiten bieten Dokumentation und Beispiele:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://preview.iiif.io/cookbook/3333-choice/recipe/0035-foldouts/&#34; target=&#34;_blank&#34;&gt;IIIF cookbook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json#?c=0&amp;amp;m=0&amp;amp;s=0&amp;amp;cv=0&amp;amp;xywh=-25583%2C0%2C54981%2C49069&#34; target=&#34;_blank&#34;&gt;Example Mahābhārata scroll&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Video</title>
+      <link>https://labs.projektemacher.org/post/video/</link>
+      <pubDate>Wed, 16 Dec 2020 20:14:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/video/</guid>
+      <description>&lt;p&gt;Mit dem &lt;a href=&#34;https://github.com/martignoni/hugo-video&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;hugo-video&lt;/code&gt;&lt;/a&gt; Theme können einfach lokale Videos eingebunden werden:&lt;/p&gt;&#xA;&lt;video controls preload=&#34;auto&#34; width=&#34;100%&#34;  playsinline class=&#34;html-video&#34;&gt;&#xA;    &lt;source src=&#34;https://labs.projektemacher.org/post/video/marburg.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;  &lt;span&gt;Ihr Browser unterstützt keine integrierten Videos, aber keine Sorge, Sie können &lt;a href=&#34;https://labs.projektemacher.org/post/video/marburg.mp4&#34;&gt;es herunterladen&lt;/a&gt; und mit Ihrem Lieblings-Videoplayer ansehen!&lt;/span&gt;&#xA;&lt;/video&gt;</description>
+    </item>
+    <item>
+      <title>Kartenmaterial</title>
+      <link>https://labs.projektemacher.org/post/maps/</link>
+      <pubDate>Sun, 13 Dec 2020 20:14:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/maps/</guid>
+      <description>&lt;h1 id=&#34;vorbereitungen&#34;&gt;Vorbereitungen&lt;/h1&gt;&#xA;&lt;p&gt;Bevor Beiträge auf Karten angezeigt werden können, müssen folgende Schritte erlegdigt sein:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Geokodierung von Beiträgen und / oder Tags&lt;/li&gt;&#xA;&lt;li&gt;Generierung einer anwendungsspezifischen Repräsentation (GeoJSON, KML)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Erst danach kann das auf einer Karte visualisiert werden.&lt;/p&gt;&#xA;&lt;p&gt;Ein Beispiel für die &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;alten 3D Bilder&lt;/a&gt; ist &lt;a href=&#34;https://labs.projektemacher.org/future/3d/map.geojson&#34;&gt;hier&lt;/a&gt; zu finden.&lt;/p&gt;&#xA;&lt;h1 id=&#34;anzeige-im-browser&#34;&gt;Anzeige im Browser&lt;/h1&gt;&#xA;&lt;p&gt;Um die generierten Daten im Browser anzuzeigen, kann das von &lt;a href=&#34;https://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt; bereitgestellte Kartenmaterial verwendet werden. Dabei übernimmt ein externer Server die Erzeugung der Bilddaten.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Updates</title>
+      <link>https://labs.projektemacher.org/post/recent-hugo-version/</link>
+      <pubDate>Tue, 08 Dec 2020 12:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/recent-hugo-version/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Update: Inzwischen wird Hugo 0.82.0 eingesetzt&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bis zum Zeitpunk als dieser Beitrag geschrieben wurde, wurde Hugo 0.74.3 vom 23.7.20 verwendet, damals war Version 0.79 aktuell. Änderungen an der Handling von JavaScript Build-Prozessen verhindern ein Update. Erschwerend kommt hinzu, dass &lt;code&gt;homebrew&lt;/code&gt; in letzter Zeit eher verschlimmbessert wurde. Downgrades sind nicht mehr einfach über die Kommandozeile möglich. Inzwischen wird Hugo aber direkt aus den Quellen gebaut, siehe unten.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Haptisches Feedback</title>
+      <link>https://labs.projektemacher.org/post/tactile-feedback/</link>
+      <pubDate>Fri, 04 Dec 2020 18:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/tactile-feedback/</guid>
+      <description>&lt;p&gt;Da es in diesem Blog auch darum gehen soll analoge Inhalte innovativ in den digitalen Raum zu transportieren, hier ein Versuch Stoffe fühlbar zu machen&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Noten</title>
+      <link>https://labs.projektemacher.org/post/music-sheets/</link>
+      <pubDate>Fri, 04 Dec 2020 18:22:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/music-sheets/</guid>
+      <description>&lt;h1 id=&#34;warum&#34;&gt;Warum?&lt;/h1&gt;&#xA;&lt;p&gt;Einige Kinderbücher enthalten Noten für Kinderlieder - wäre es nicht toll, sie direkt im Digitalisat erklingen zu lasen?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

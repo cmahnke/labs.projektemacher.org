@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/collection.json</link>
+    <description>Recent content on Projektemacher Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright><atom:link href="https://labs.projektemacher.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postkarte Leipzig</title>
+      <link>https://labs.projektemacher.org/future/hortenkachel/leipzig/</link>
+      <pubDate>Mon, 01 Jan 2024 12:30:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/hortenkachel/leipzig/</guid>
+      <description>&lt;p&gt;Das &lt;a href=&#34;https://de.wikipedia.org/wiki/Blechb%C3%BCchse_%28Leipzig%29&#34; target=&#34;_blank&#34;&gt;Konsum Kaufhaus&lt;/a&gt; in Leipzig.&lt;/p&gt;
+&lt;p&gt;Vielleicht sollte man gleich etwas zu Kaufhausarchitektur machen 😉.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Postkarte Oldenburg</title>
+      <link>https://labs.projektemacher.org/future/hortenkachel/horten-oldenburg/</link>
+      <pubDate>Mon, 01 Jan 2024 12:30:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/hortenkachel/horten-oldenburg/</guid>
+      <description>&lt;p&gt;Das Horten Kaufhaus in Oldenburg.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Berlin</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-berlin/</link>
+      <pubDate>Mon, 01 Jan 2024 10:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-berlin/</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Elbtunnel Hamburg</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-hamburg/</link>
+      <pubDate>Mon, 01 Jan 2024 10:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-hamburg/</guid>
+      <description>&lt;p&gt;Der heutiger Elbtunnel für Fußgänger&amp;hellip;&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Felbertauerntunnel</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-felbertauerntunnel/</link>
+      <pubDate>Mon, 01 Jan 2024 10:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-felbertauerntunnel/</guid>
+      <description>&lt;p&gt;Der &lt;a href=&#34;https://de.wikipedia.org/wiki/Felbertauerntunnel&#34; target=&#34;_blank&#34;&gt;Felbertauerntunnel&lt;/a&gt;.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Kanaltunnel Rendsburg</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-rendsburg/</link>
+      <pubDate>Mon, 01 Jan 2024 10:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-rendsburg/</guid>
+      <description>&lt;p&gt;Eine der Vorlagen für &lt;a href=&#34;../kanaltunnel-rendsburg/&#34;&gt;die andere Karte des Tunnels&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Kanaltunnel Rendsburg</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/kanaltunnel-rendsburg/</link>
+      <pubDate>Tue, 07 Nov 2023 20:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/kanaltunnel-rendsburg/</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Postkarte Elbtunnel</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/elbtunnel-1/</link>
+      <pubDate>Tue, 07 Nov 2023 20:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/elbtunnel-1/</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Postkarte Elbtunnel</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/elbtunnel-2/</link>
+      <pubDate>Tue, 07 Nov 2023 20:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/elbtunnel-2/</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Vintage VR</title>
+      <link>https://labs.projektemacher.org/post/vintage-vr/</link>
+      <pubDate>Sun, 01 Jan 2023 11:15:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/vintage-vr/</guid>
+      <description>&lt;h1 id=&#34;update-frühjahr-2024&#34;&gt;Update Frühjahr 2024&lt;/h1&gt;
+&lt;p&gt;Diese Sektion ist nun ein eigenes &lt;a href=&#34;https://vintagereality.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Blog&lt;/a&gt;, dort werden auch vorher nicht gezeigte Bilder bereitgestellt. Zusätzlich sind weitere Funktionalitäten, wie eine Darstellung für Rot-Grün-Brillen und generierte Tiefenkarten hinzugekommen.&lt;/p&gt;
+&lt;h1 id=&#34;ursprünglicher-beitrag&#34;&gt;Ursprünglicher Beitrag&lt;/h1&gt;
+&lt;p&gt;Die Kategorie &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;1900 in 3D&lt;/a&gt; wurde stark erweitert, es gibt nun mehr Stereogramme und es werden mehr Ausgabeformate (MPO, Anaglyphen) bereitgestellt. Und die Darstellung in einem einfachen 3D Betrachter, der mit einem Mobiltelefon funktioniert wie z.B. &lt;a href=&#34;https://de.wikipedia.org/wiki/Google_Cardboard&#34; target=&#34;_blank&#34;&gt;Google Cardboard&lt;/a&gt; kann nun über die integrierte Vollbildansicht im Querformat realisiert werden.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Fassadenkachel des Kaufhauses Horten im Stadtmuseum Hagen</title>
+      <link>https://labs.projektemacher.org/future/hortenkachel/stadtmuseum-hagen/</link>
+      <pubDate>Mon, 17 May 2021 18:30:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/hortenkachel/stadtmuseum-hagen/</guid>
+      <description>&lt;p&gt;Die Hortenkachel ist auch in Museen zu finden, z.B. im &lt;a href=&#34;https://westfalen.museum-digital.de/index.php?t=objekt&amp;amp;oges=5819&#34; target=&#34;_blank&#34;&gt;Stadtmuseum Hagen&lt;/a&gt;.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Über die Zuschreibung</title>
+      <link>https://labs.projektemacher.org/future/hortenkachel/attribution/</link>
+      <pubDate>Mon, 17 May 2021 18:30:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/hortenkachel/attribution/</guid>
+      <description>&lt;p&gt;Die Hortenkachel wird häufig &lt;a href=&#34;https://de.wikipedia.org/wiki/Egon_Eiermann&#34; target=&#34;_blank&#34;&gt;Egon Eiermann&lt;/a&gt; zugeschrieben, &lt;a href=&#34;https://www.industriebau-online.de/aktuelles/die-hortenkachel/&#34; target=&#34;_blank&#34;&gt;dieser Artikel&lt;/a&gt; bietet eine Erklärung warum.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>3D Modell</title>
+      <link>https://labs.projektemacher.org/future/hortenkachel/sketchup/</link>
+      <pubDate>Wed, 05 May 2021 18:30:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/hortenkachel/sketchup/</guid>
+      <description>&lt;p&gt;Ein 3D Modell für &lt;a href=&#34;https://www.sketchup.com/&#34; target=&#34;_blank&#34;&gt;Sketchup&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>JPEG XL</title>
+      <link>https://labs.projektemacher.org/post/jpeg-xl/</link>
+      <pubDate>Sat, 17 Apr 2021 11:22:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/jpeg-xl/</guid>
+      <description>&lt;h1 id=&#34;warum-jpeg-xl&#34;&gt;Warum JPEG XL?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/JPEG_XL&#34; target=&#34;_blank&#34;&gt;JPEG XL&lt;/a&gt; ist ein neues Format für Rasterbilder, so neu, das zur Zeit als dieser Text geschrieben wurde, es als Lemma noch nicht in der deutschen Wikipedia geführt wurde. Was genau JPEG XL anders bzw. besser macht als das allseits bekannte JPEG kann man dort nachlesen. Wir beschränken uns hier auf den Mehrwert für die Projektmacher Blogs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Weniger Speicherplatz benötigt&lt;/li&gt;
+&lt;li&gt;Verlustfreie Kompression möglich&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nachteile sind derzeit noch:&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Postkarte Dortmund</title>
+      <link>https://labs.projektemacher.org/future/hortenkachel/horten-dortmund/</link>
+      <pubDate>Sat, 10 Apr 2021 12:30:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/hortenkachel/horten-dortmund/</guid>
+      <description>&lt;p&gt;Das Horten Kaufhaus in Dortmund.&lt;/p&gt;
+&lt;div class=&#34;source&#34;&gt;&lt;a href=&#34;http://zeitzeug.de/&#34;&gt;Zeitzeug&lt;/a&gt; ist nicht nur der beste beste Anbieter historischer Tapeten in Göttingen, sondern verfügt auch über eine umfangreiche und vor allem sehr gut sortierte Auswahl an Postkarten.&lt;/div&gt;</description>
+      </item>
+    
+    <item>
+      <title>Redirect</title>
+      <link>https://labs.projektemacher.org/post/redirect/</link>
+      <pubDate>Thu, 08 Apr 2021 20:14:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/redirect/</guid>
+      <description>&lt;p&gt;Neue Funktion für redirects, wird sofort demonstriert.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Postkarte Bielefeld</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-bielefeld/</link>
+      <pubDate>Sun, 28 Mar 2021 10:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-bielefeld/</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Postkarte Wolfsburg</title>
+      <link>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-wolfsburg/</link>
+      <pubDate>Sun, 28 Mar 2021 10:15:07 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/unterfuehrungen/postkarte-wolfsburg/</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Node Abhängigkeiten aus Themes</title>
+      <link>https://labs.projektemacher.org/post/node-dependencies/</link>
+      <pubDate>Sat, 13 Mar 2021 12:22:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/node-dependencies/</guid>
+      <description>&lt;p&gt;Mit dem &lt;a href=&#34;https://labs.projektemacher.org/post/recent-hugo-version/&#34;&gt;Upgrade auf eine Hugo version auf über 0.75.0&lt;/a&gt; besteht die Möglichkeit das Kommando &lt;code&gt;[hugo mod npm pack](https://gohugo.io/commands/hugo_mod_npm_pack/)&lt;/code&gt; zu verwenden um die Node Abhängigkeiten eines Themes mit denen eines Projektes zusammenzuführen.&lt;/p&gt;
+&lt;p&gt;Dafür müssen die Abhängigkeiten eines Themes in einer Datei &lt;code&gt;package.hugo.json&lt;/code&gt; statt &lt;code&gt;package.json&lt;/code&gt; gesichert sein, es reicht einfach die von &lt;code&gt;npm&lt;/code&gt; oder &lt;code&gt;yarn&lt;/code&gt; angelegte Datei umzubenennen. Ein Symlink alleine funktioniert nicht, da Hugo&amp;rsquo;s virtuelles Dateisystem Symlinks nicht mag.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Fold-outs</title>
+      <link>https://labs.projektemacher.org/post/fold-out/</link>
+      <pubDate>Fri, 26 Feb 2021 18:22:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/fold-out/</guid>
+      <description>&lt;p&gt;Demonstrator zur Anzeige von &lt;a href=&#34;https://de.wikipedia.org/wiki/Leporello_%28Heft%29&#34; target=&#34;_blank&#34;&gt;Leporello&lt;/a&gt; (fold-outs) mit Mirador &lt;a href=&#34;https://github.com/ProjectMirador/mirador&#34; target=&#34;_blank&#34;&gt;Mirador&lt;/a&gt;. Hinweise zur Kodierung können  &lt;a href=&#34;https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt; gefunden werden. Die folgenden Seiten bieten Dokumentation und Beispiele:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://preview.iiif.io/cookbook/3333-choice/recipe/0035-foldouts/&#34; target=&#34;_blank&#34;&gt;IIIF cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json#?c=0&amp;amp;m=0&amp;amp;s=0&amp;amp;cv=0&amp;amp;xywh=-25583%2C0%2C54981%2C49069&#34; target=&#34;_blank&#34;&gt;Example Mahābhārata scroll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+    
+    <item>
+      <title>Video</title>
+      <link>https://labs.projektemacher.org/post/video/</link>
+      <pubDate>Wed, 16 Dec 2020 20:14:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/video/</guid>
+      <description>&lt;p&gt;Mit dem &lt;a href=&#34;https://github.com/martignoni/hugo-video&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;hugo-video&lt;/code&gt;&lt;/a&gt; Theme können einfach lokale Videos eingebunden werden:&lt;/p&gt;
+&lt;video controls preload=&#34;auto&#34; width=&#34;100%&#34;  playsinline class=&#34;html-video&#34;&gt;
+    &lt;source src=&#34;https://labs.projektemacher.org/post/video/marburg.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;span&gt;Ihr Browser unterstützt keine integrierten Videos, aber keine Sorge, Sie können &lt;a href=&#34;https://labs.projektemacher.org/post/video/marburg.mp4&#34;&gt;es herunterladen&lt;/a&gt; und mit Ihrem Lieblings-Videoplayer ansehen!&lt;/span&gt;
+&lt;/video&gt;</description>
+      </item>
+    
+    <item>
+      <title>Kartenmaterial</title>
+      <link>https://labs.projektemacher.org/post/maps/</link>
+      <pubDate>Sun, 13 Dec 2020 20:14:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/maps/</guid>
+      <description>&lt;h1 id=&#34;vorbereitungen&#34;&gt;Vorbereitungen&lt;/h1&gt;
+&lt;p&gt;Bevor Beiträge auf Karten angezeigt werden können, müssen folgende Schritte erlegdigt sein:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geokodierung von Beiträgen und / oder Tags&lt;/li&gt;
+&lt;li&gt;Generierung einer anwendungsspezifischen Repräsentation (GeoJSON, KML)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Erst danach kann das auf einer Karte visualisiert werden.&lt;/p&gt;
+&lt;p&gt;Ein Beispiel für die &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;alten 3D Bilder&lt;/a&gt; ist &lt;a href=&#34;https://labs.projektemacher.org/future/3d/map.geojson&#34;&gt;hier&lt;/a&gt; zu finden.&lt;/p&gt;
+&lt;h1 id=&#34;anzeige-im-browser&#34;&gt;Anzeige im Browser&lt;/h1&gt;
+&lt;p&gt;Um die generierten Daten im Browser anzuzeigen, kann das von &lt;a href=&#34;https://www.openstreetmap.org/&#34; target=&#34;_blank&#34;&gt;OpenStreetMap&lt;/a&gt; bereitgestellte Kartenmaterial verwendet werden. Dabei übernimmt ein externer Server die Erzeugung der Bilddaten.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Hugo Updates</title>
+      <link>https://labs.projektemacher.org/post/recent-hugo-version/</link>
+      <pubDate>Tue, 08 Dec 2020 12:22:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/recent-hugo-version/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Update: Inzwischen wird Hugo 0.82.0 eingesetzt&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Bis zum Zeitpunk als dieser Beitrag geschrieben wurde, wurde Hugo 0.74.3 vom 23.7.20 verwendet, damals war Version 0.79 aktuell. Änderungen an der Handling von JavaScript Build-Prozessen verhindern ein Update. Erschwerend kommt hinzu, dass &lt;code&gt;homebrew&lt;/code&gt; in letzter Zeit eher verschlimmbessert wurde. Downgrades sind nicht mehr einfach über die Kommandozeile möglich. Inzwischen wird Hugo aber direkt aus den Quellen gebaut, siehe unten.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Haptisches Feedback</title>
+      <link>https://labs.projektemacher.org/post/tactile-feedback/</link>
+      <pubDate>Fri, 04 Dec 2020 18:22:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/tactile-feedback/</guid>
+      <description>&lt;p&gt;Da es in diesem Blog auch darum gehen soll analoge Inhalte innovativ in den digitalen Raum zu transportieren, hier ein Versuch Stoffe fühlbar zu machen&amp;hellip;&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Noten</title>
+      <link>https://labs.projektemacher.org/post/music-sheets/</link>
+      <pubDate>Fri, 04 Dec 2020 18:22:44 +0200</pubDate>
+      
+      <guid>https://labs.projektemacher.org/post/music-sheets/</guid>
+      <description>&lt;h1 id=&#34;warum&#34;&gt;Warum?&lt;/h1&gt;
+&lt;p&gt;Einige Kinderbücher enthalten Noten für Kinderlieder - wäre es nicht toll, sie direkt im Digitalisat erklingen zu lasen?&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title></title>
+      <link>https://labs.projektemacher.org/future/kaleidoskope/mock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/kaleidoskope/mock/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&#34;utf-8&#34; /&gt;
+    &lt;meta http-equiv=&#34;x-ua-compatible&#34; content=&#34;ie=edge&#34; /&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
+
+    &lt;!-- https://kawakamiakari.github.io/kaleidoscope/ --&gt;
+
+    &lt;style&gt;
+
+        .article-container {
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 9vw;
+            margin: auto;
+        }
+
+        /* https://css-tricks.com/almanac/properties/b/backdrop-filter/ */
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: blur(15px);
+        }
+
+        .background .wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .background-tube {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, transparent 70vh, transparent 1%, gray 1%, gray 7%, black);
+            mix-blend-mode: color;
+        }
+
+        .content {
+            margin: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: #ffffffb0;
+            mix-blend-mode: difference;
+            font-family: &#39;League Spartan&#39;;
+            font-weight: 600;
+        }
+
+        #kaleidoscope {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+        }
+    &lt;/style&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;script&gt;
+        window.exports = {
+            __esModule: true
+        };
+    &lt;/script&gt;
+    &lt;!--
+    &lt;script src=&#34;node_modules/ak-kaleidoscope/dist/kaleidoscope.min.js&#34;&gt;&lt;/script&gt;
+    --&gt;
+    &lt;script&gt;
+        window.onload = function() {
+            var button = document.getElementById(&#39;fullscreen-button&#39;);
+            var ctx = document.getElementById(&#39;fullscreen-context&#39;);
+            addFSToggle(button, ctx);
+            new Kaleidoscope({
+                selector: &#39;#kaleidoscope&#39;,
+            });
+        };
+    &lt;/script&gt;
+    &lt;div class=&#34;article-container&#34;&gt;
+        &lt;div class=&#34;background&#34;&gt;
+            &lt;div class=&#34;wrapper&#34;&gt;
+                &lt;canvas id=&#34;kaleidoscope&#34;&gt;&lt;/canvas&gt;
+                &lt;div class=&#34;background-tube&#34;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&#34;content&#34;&gt;
+            &lt;h1&gt;Kaleidoskope!&lt;/h1&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</description>
+      </item>
+    
+    <item>
+      <title>Art Deco Keramik Dose</title>
+      <link>https://labs.projektemacher.org/future/models/jar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/models/jar/</guid>
+      <description>&lt;p&gt;Eine Art Deco Dose aus Keramik / Steingut.&lt;/p&gt;
+&lt;div class=&#34;aframe-3d-model&#34; id=&#34;_gtlf-86eeff6cc18b9bdf9d5de9f6783179b0&#34; style=&#34;height: 300px; width: 100%;&#34;&gt;
+  &lt;a-scene renderer=&#34;colorManagement: true; antialias: true&#34; xr-mode-ui=&#34;enabled: true;&#34; embedded&gt;
+    &lt;a-assets&gt;
+      &lt;a-asset-item id=&#34;_gtlf-86eeff6cc18b9bdf9d5de9f6783179b0-src&#34; src=&#34;model/Dose.glb&#34;&gt;&lt;/a-asset-item&gt;
+    &lt;/a-assets&gt;
+
+    &lt;a-entity camera look-controls=&#34;enabled: false&#34; orbit-controls=&#34;autoRotate: true; enableDamping: true; dampingFactor: 0.05; minDistance: 2; maxDistance: 10; initialPosition: 0 0.5 4; rotateSpeed:0.15; maxPolarAngle: 90;&#34;  mouse-cursor=&#34;&#34;&gt;&lt;/a-entity&gt;
+    &lt;a-entity gltf-model=&#34;#_gtlf-86eeff6cc18b9bdf9d5de9f6783179b0-src&#34; rotation=&#34;0 90 0&#34;&gt;&lt;/a-entity&gt;
+    
+
+  &lt;/a-scene&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Der Viewer wurde mit &lt;a href=&#34;https://aframe.io/&#34; target=&#34;_blank&#34;&gt;A-Frame&lt;/a&gt; realisiert.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Ausstellung</title>
+      <link>https://labs.projektemacher.org/future/sylt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/sylt/</guid>
+      <description>&lt;p&gt;Die Ausstellung wird unter &lt;a href=&#34;https://wilmabr%c3%a4uner.de/&#34; target=&#34;_blank&#34;&gt;https://wilmabräuner.de/&lt;/a&gt; präsentiert.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Build Status</title>
+      <link>https://labs.projektemacher.org/status/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/status/</guid>
+      <description>&lt;h1 id=&#34;blogs&#34; class=&#34;status&#34;&gt;Blogs&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://911tv.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;9/11 TV&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yaml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yaml/badge.svg&#34; alt=&#34;9/11 TV&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://backsteinexpressionismus.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Backsteinexpressionismus&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/backsteinexpressionismus/actions/workflows/gh-pages.yml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/backsteinexpressionismus/actions/workflows/gh-pages.yml/badge.svg&#34; alt=&#34;Backsteinexpressionismus&#34;&gt;&lt;/a&gt; &lt;table class=&#34;site-generator-shortcode&#34;&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;site-generator-url&#34;&gt;https://backsteinexpressionismus.projektemacher.org/&lt;/td&gt;
+    &lt;td class=&#34;site-generator-version&#34;&gt;0.157.0&lt;/td&gt;
+    &lt;td class=&#34;site-generator-title&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;site-generator-desription&#34;&gt;Alte Abbildungen von Backsteinexpressionismus-Gebäuden aus Büchen und von Postkarten.&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td class=&#34;site-build-date&#34;&gt;26 Feb. 2026&lt;span class=&#34;site-build-time&#34;&gt; 04:18:00&lt;/span&gt;&lt;/td&gt;&lt;td class=&#34;site-latest-post&#34;&gt;31 Aug. 2025&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://xn--blaufusstlpel-qmb.de/&#34; target=&#34;_blank&#34;&gt;Blaufußtölpel&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/blaufusstoelpel/actions/workflows/gh-pages.yml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/blaufusstoelpel/actions/workflows/gh-pages.yml/badge.svg&#34; alt=&#34;Blaufußtölpel&#34;&gt;&lt;/a&gt; &lt;table class=&#34;site-generator-shortcode&#34;&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;site-generator-url&#34;&gt;https://xn--blaufusstlpel-qmb.de/&lt;/td&gt;
+    &lt;td class=&#34;site-generator-version&#34;&gt;0.157.0&lt;/td&gt;
+    &lt;td class=&#34;site-generator-title&#34;&gt;Blaufußtölpel&lt;/td&gt;
+    &lt;td class=&#34;site-generator-desription&#34;&gt;Alte Modezeitschriften&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td class=&#34;site-build-date&#34;&gt;26 Feb. 2026&lt;span class=&#34;site-build-time&#34;&gt; 05:31:54&lt;/span&gt;&lt;/td&gt;&lt;td class=&#34;site-latest-post&#34;&gt;10 Okt. 2024&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://briefsteller.de/&#34; target=&#34;_blank&#34;&gt;Briefsteller&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/briefsteller/actions/workflows/gh-pages.yml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/briefsteller/actions/workflows/gh-pages.yml/badge.svg&#34; alt=&#34;Briefsteller&#34;&gt;&lt;/a&gt; &lt;table class=&#34;site-generator-shortcode&#34;&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;site-generator-url&#34;&gt;https://briefsteller.de/&lt;/td&gt;
+    &lt;td class=&#34;site-generator-version&#34;&gt;0.157.0&lt;/td&gt;
+    &lt;td class=&#34;site-generator-title&#34;&gt;&lt;/td&gt;
+    &lt;td class=&#34;site-generator-desription&#34;&gt;Briefe aus alten Briefstellern&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td class=&#34;site-build-date&#34;&gt;1 März 2026&lt;span class=&#34;site-build-time&#34;&gt; 23:51:47&lt;/span&gt;&lt;/td&gt;&lt;td class=&#34;site-latest-post&#34;&gt;25 Juni 2024&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://christianmahnke.de/&#34; target=&#34;_blank&#34;&gt;Christian Mahnke&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/christianmahnke/actions/workflows/gh-pages.yml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/christianmahnke/actions/workflows/gh-pages.yml/badge.svg&#34; alt=&#34;Christian Mahnke&#34;&gt;&lt;/a&gt; &lt;table class=&#34;site-generator-shortcode&#34;&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;site-generator-url&#34;&gt;https://christianmahnke.de/&lt;/td&gt;
+    &lt;td class=&#34;site-generator-version&#34;&gt;0.157.0&lt;/td&gt;
+    &lt;td class=&#34;site-generator-title&#34;&gt;Blog · Christian Mahnke&lt;/td&gt;
+    &lt;td class=&#34;site-generator-desription&#34;&gt;Persönliche Homepage von Christian Mahnke&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td class=&#34;site-build-date&#34;&gt;26 Feb. 2026&lt;span class=&#34;site-build-time&#34;&gt; 17:10:21&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://diapraesentation.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Dia Präsentationen&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/diapraesentation/actions/workflows/gh-pages.yml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/diapraesentation/actions/workflows/gh-pages.yml/badge.svg&#34; alt=&#34;Dia Präsentationen&#34;&gt;&lt;/a&gt; &lt;table class=&#34;site-generator-shortcode&#34;&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;site-generator-url&#34;&gt;https://diapraesentation.projektemacher.org/&lt;/td&gt;
+    &lt;td class=&#34;site-generator-version&#34;&gt;0.157.0&lt;/td&gt;
+    &lt;td class=&#34;site-generator-title&#34;&gt;Diapräsentation&lt;/td&gt;
+    &lt;td class=&#34;site-generator-desription&#34;&gt;Diaprojektor statt PowerPoint&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td class=&#34;site-build-date&#34;&gt;28 Feb. 2026&lt;span class=&#34;site-build-time&#34;&gt; 06:25:51&lt;/span&gt;&lt;/td&gt;&lt;td class=&#34;site-latest-post&#34;&gt;15 Aug. 2020&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://flohmarktfunde.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Flohmarktfunde&lt;/a&gt; &lt;a href=&#34;https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml/badge.svg&#34; alt=&#34;Flohmarktfunde&#34;&gt;&lt;/a&gt; &lt;table class=&#34;site-generator-shortcode&#34;&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;site-generator-url&#34;&gt;https://flohmarktfunde.projektemacher.org/&lt;/td&gt;
+    &lt;td class=&#34;site-generator-version&#34;&gt;0.157.0&lt;/td&gt;
+    &lt;td class=&#34;site-generator-title&#34;&gt;Flohmarktfunde&lt;/td&gt;
+    &lt;td class=&#34;site-generator-desription&#34;&gt;Fundstücke vom Flohmarkt und aus Trödelläden&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;&lt;td class=&#34;site-build-date&#34;&gt;26 Feb. 2026&lt;span class=&#34;site-build-time&#34;&gt; 03:04:34&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Datenschutzerklärung</title>
+      <link>https://labs.projektemacher.org/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/privacy/</guid>
+      <description>&lt;h2 id=&#34;hosting&#34;&gt;Hosting&lt;/h2&gt;
+&lt;p&gt;Der Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittelt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IP-Adresse&lt;/li&gt;
+&lt;li&gt;Die Adresse der vorher besuchten Website (Referer [sic!] Anfrage-Header)&lt;/li&gt;
+&lt;li&gt;Datum und Uhrzeit der Anfrage&lt;/li&gt;
+&lt;li&gt;Zeitzonendifferenz zur Greenwich Mean Time&lt;/li&gt;
+&lt;li&gt;Inhalt der Anforderung&lt;/li&gt;
+&lt;li&gt;HTTP-Statuscode&lt;/li&gt;
+&lt;li&gt;Übertragene Datenmenge&lt;/li&gt;
+&lt;li&gt;Website, von der die Anforderung kommt&lt;/li&gt;
+&lt;li&gt;Informationen zu Browser und Betriebssystem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Das ist erforderlich, um die Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten. Dies entspricht berechtigtem Interesse im Sinne des &lt;a href=&#34;https://dsgvo-gesetz.de/art-6-dsgvo/&#34; target=&#34;_blank&#34;&gt;Art. 6 Abs. 1 S. 1 lit. f DSGVO&lt;/a&gt;.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Fat Lava Vase</title>
+      <link>https://labs.projektemacher.org/future/models/vase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/models/vase/</guid>
+      <description>&lt;p&gt;Eine 60er Fat Lava Vase.&lt;/p&gt;
+&lt;div class=&#34;aframe-3d-model&#34; id=&#34;_gtlf-16a30bc187ce78e61d3bcf31487bd0f9&#34; style=&#34;height: 300px; width: 100%;&#34;&gt;
+  &lt;a-scene renderer=&#34;colorManagement: true; antialias: true&#34; xr-mode-ui=&#34;enabled: true;&#34; embedded&gt;
+    &lt;a-assets&gt;
+      &lt;a-asset-item id=&#34;_gtlf-16a30bc187ce78e61d3bcf31487bd0f9-src&#34; src=&#34;model/LavaVase.glb&#34;&gt;&lt;/a-asset-item&gt;
+    &lt;/a-assets&gt;
+
+    &lt;a-entity camera look-controls=&#34;enabled: false&#34; orbit-controls=&#34;autoRotate: true; enableDamping: true; dampingFactor: 0.05; minDistance: 2; maxDistance: 10; initialPosition: 0 0.5 6; rotateSpeed:0.15; maxPolarAngle: 90;&#34;  mouse-cursor=&#34;&#34;&gt;&lt;/a-entity&gt;
+    &lt;a-entity gltf-model=&#34;#_gtlf-16a30bc187ce78e61d3bcf31487bd0f9-src&#34; rotation=&#34;0 90 0&#34;&gt;&lt;/a-entity&gt;
+    
+
+  &lt;/a-scene&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Der Viewer wurde mit &lt;a href=&#34;https://aframe.io/&#34; target=&#34;_blank&#34;&gt;A-Frame&lt;/a&gt; realisiert.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://labs.projektemacher.org/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/links/</guid>
+      <description>&lt;p&gt;Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Blogs oder Beitrags helfen können gesammelt:&lt;/p&gt;
+&lt;h1 id=&#34;hugo&#34;&gt;Hugo&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo Themes: Complete List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discourse.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo Support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://regisphilibert.com/tags/hugo/&#34; target=&#34;_blank&#34;&gt;Régis Philibert&amp;rsquo;s Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;css&#34;&gt;CSS&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/&#34; target=&#34;_blank&#34;&gt;CSS-Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&#34; target=&#34;_blank&#34;&gt;A Complete Guide to Flexbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;medienbearbeitung&#34;&gt;Medienbearbeitung&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Diolinux/PhotoGIMP&#34; target=&#34;_blank&#34;&gt;PhotoGIMP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;metadaten-für-beiträge&#34;&gt;Metadaten für Beiträge&lt;/h1&gt;
+&lt;h2 id=&#34;bücher&#34;&gt;Bücher&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.worldcat.org/&#34; target=&#34;_blank&#34;&gt;Worldcat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;geo-daten&#34;&gt;Geo Daten&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.meyersgaz.org/&#34; target=&#34;_blank&#34;&gt;Meyers Gazetteer&lt;/a&gt; - Meyers Orts- und Verkehrslexikon des deutschen Reichs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;sonstige-tools&#34;&gt;Sonstige Tools&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jsonformatter.org/yaml-validator&#34; target=&#34;_blank&#34;&gt;YAML Validierung mit hilfreichen Fehlermeldungen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.vectorizer.io/&#34; target=&#34;_blank&#34;&gt;Bilder vektorisieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yoksel.github.io/url-encoder/&#34; target=&#34;_blank&#34;&gt;SVG Grafiken für Inline CSS kodieren&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cssgradient.io/&#34; target=&#34;_blank&#34;&gt;CSS Gradient Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.w3schools.com/tags/ref_pxtoemconversion.asp&#34; target=&#34;_blank&#34;&gt;Pixels to Ems Conversion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.iconfinder.com/&#34; target=&#34;_blank&#34;&gt;Icon finder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bennettfeely.com/clippy/&#34; target=&#34;_blank&#34;&gt;CSS clip-path maker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stripesgenerator.com/&#34; target=&#34;_blank&#34;&gt;CSS Stripes Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yoksel.github.io/svg-gradient-map/#/&#34; target=&#34;_blank&#34;&gt;SVG Gradient Map Filter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://regex101.com/&#34; target=&#34;_blank&#34;&gt;Regex101&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sashamaps.net/docs/resources/20-colors/&#34; target=&#34;_blank&#34;&gt;List of 20 Simple, Distinct Colors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://repec.sowi.unibe.ch/stata/palettes/colors.html&#34; target=&#34;_blank&#34;&gt;Stata palettes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://labs.projektemacher.org/meta/posts/index.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/meta/posts/index.json</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Startseite</title>
+      <link>https://labs.projektemacher.org/future/kaleidoskope/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/kaleidoskope/theme/</guid>
+      <description>&lt;p&gt;Ein Entwurf für die Startseite&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Startseite</title>
+      <link>https://labs.projektemacher.org/future/schatten/theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/schatten/theme/</guid>
+      <description>&lt;p&gt;Ein Entwurf für die Startseite&lt;/p&gt;
+&lt;h2 id=&#34;ideas&#34;&gt;Ideas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Black and white color&lt;/li&gt;
+&lt;li&gt;Greyscale grandients&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://labs.projektemacher.org/meta/tags/index.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/meta/tags/index.json</guid>
+      <description></description>
+      </item>
+    
+    <item>
+      <title>Über dieses Blog</title>
+      <link>https://labs.projektemacher.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/about/</guid>
+      <description>&lt;p&gt;Bisher wurden, einem Schnellballsystem gleich, einzelne Blog-Projekte genutzt um neue Funktionalitäten für darauf folgende Projekte zu implementieren und zu testen. In einzelnen Fällen führe dieses vorgehen dazu, dass einzelne Seiten nicht immer funktionierten. Um dieses Problem zu Umgehen gibt es nun das &amp;ldquo;Lab&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Projektemacher Labs ist ein Versuchsfeld für bestehende und &lt;a href=&#34;https://labs.projektemacher.org/future/&#34;&gt;zukünftige&lt;/a&gt; &lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Projektemacher&lt;/a&gt; Blogs, die Schwerpunkte liegen dabei auf weitere Medientypen (z.B. Video), Geoinformationen und IIIF Erweiterungen.&lt;/p&gt;
+&lt;p&gt;Da diese Seite dazu dient neue Funktionalitäten zu testen, kann weder sicher gestellt werden, dass die Seite immer funktioniert noch, dass experimentelle Einträge erhalten bleiben. Dazu ist auch nicht alles für mobile Endgeräte optimiert. Die Links zu einzelnen Posts sollten nicht anderweitig verwendet werden, da sie nicht stabil sind. Allerdings werden die gewonnen Erkenntnisse irgendwann auf &lt;a href=&#34;https://christianmahnke.de&#34; target=&#34;_blank&#34;&gt;christianmahnke.de&lt;/a&gt; veröffentlicht.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Webcam</title>
+      <link>https://labs.projektemacher.org/future/kaleidoskope/webcam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/future/kaleidoskope/webcam/</guid>
+      <description>&lt;p&gt;Ein Entwurf für die Visualisierung.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
+      <title>Wikidata</title>
+      <link>https://labs.projektemacher.org/meta/wikidata/index.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://labs.projektemacher.org/meta/wikidata/index.json</guid>
+      <description></description>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D on Projektemacher Labs</title>
+    <link>https://labs.projektemacher.org/tags/3D/</link>
+    <description>Recent content in 3D on Projektemacher Labs</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://labs.projektemacher.org&#34;&gt;Projektemacher Labs&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 04:38:17 +0100</lastBuildDate>
+    <atom:link href="https://labs.projektemacher.org/tags/3D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vintage VR</title>
+      <link>https://labs.projektemacher.org/post/vintage-vr/</link>
+      <pubDate>Sun, 01 Jan 2023 11:15:44 +0200</pubDate>
+      <guid>https://labs.projektemacher.org/post/vintage-vr/</guid>
+      <description>&lt;h1 id=&#34;update-frühjahr-2024&#34;&gt;Update Frühjahr 2024&lt;/h1&gt;&#xA;&lt;p&gt;Diese Sektion ist nun ein eigenes &lt;a href=&#34;https://vintagereality.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Blog&lt;/a&gt;, dort werden auch vorher nicht gezeigte Bilder bereitgestellt. Zusätzlich sind weitere Funktionalitäten, wie eine Darstellung für Rot-Grün-Brillen und generierte Tiefenkarten hinzugekommen.&lt;/p&gt;&#xA;&lt;h1 id=&#34;ursprünglicher-beitrag&#34;&gt;Ursprünglicher Beitrag&lt;/h1&gt;&#xA;&lt;p&gt;Die Kategorie &lt;a href=&#34;https://labs.projektemacher.org/future/3d/&#34;&gt;1900 in 3D&lt;/a&gt; wurde stark erweitert, es gibt nun mehr Stereogramme und es werden mehr Ausgabeformate (MPO, Anaglyphen) bereitgestellt. Und die Darstellung in einem einfachen 3D Betrachter, der mit einem Mobiltelefon funktioniert wie z.B. &lt;a href=&#34;https://de.wikipedia.org/wiki/Google_Cardboard&#34; target=&#34;_blank&#34;&gt;Google Cardboard&lt;/a&gt; kann nun über die integrierte Vollbildansicht im Querformat realisiert werden.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

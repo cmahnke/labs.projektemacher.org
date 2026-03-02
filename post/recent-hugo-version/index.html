@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Language" content="de">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Experimental blogs">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/post/recent-hugo-version/" /><meta property="og:title" content="Hugo Updates" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content=", Hugo"><meta name="dc.subject" content="Hugo">
+<meta name="generator" content="Hugo 0.157.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 23:53:33.17846509 &#43;0000 UTC m=&#43;1.763269844"><meta name="projektemacher.org:git-commit" content="f628558"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;122&#34;,&#34;latest&#34;:&#34;2024-01-01T12:30:07&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://labs.projektemacher.org/css/de98a9243dac78c60665e2bf5939c8f8.min.70d358d6d801acc70599b7915cf36f622aad345f2ccb3ec237d6a8b05e632dbb.css" rel="stylesheet" integrity="sha256-cNNY1tgBrMcFmbeRXPNvYiqtNF8syz7CN9aosF5jLbs=">
+<script src="https://labs.projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.0fccc223fafd67061a00bb11d1fdf5900652bbe3b2456f54ea34e0be41076c5b.js" integrity="sha256-D8zCI/r9ZwYaALsR0f31kAZSu+OyRW9U6jTgvkEHbFs="></script>
+<title>Hugo Updates - Projektemacher Labs</title>
+</head><body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon"></i></label>
+    <ul class="navigation-list"><li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/future" title="Geplante Blogs">Geplante Blogs<i class="link-icon"></i></a></li><li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/about/" title="Über">Über<i class="link-icon"></i></a></li><li class="navigation-item lang">
+              <a href="https://labs.projektemacher.org/en/post/recent-hugo-version/" title="English">English</a>
+            </li></ul>
+  </nav></div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      <article class="single " itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/Hugo">Hugo</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">Hugo Updates</h1>
+  <section class="body" itemprop="articleBody"><p><strong>Update: Inzwischen wird Hugo 0.82.0 eingesetzt</strong></p>
+<p>Bis zum Zeitpunk als dieser Beitrag geschrieben wurde, wurde Hugo 0.74.3 vom 23.7.20 verwendet, damals war Version 0.79 aktuell. Änderungen an der Handling von JavaScript Build-Prozessen verhindern ein Update. Erschwerend kommt hinzu, dass <code>homebrew</code> in letzter Zeit eher verschlimmbessert wurde. Downgrades sind nicht mehr einfach über die Kommandozeile möglich. Inzwischen wird Hugo aber direkt aus den Quellen gebaut, siehe unten.</p>
+<h1 id="nutzung-einer-spezifischen-version">Nutzung einer spezifischen Version</h1>
+<p>Am Beispiel von Version 0.80.0.</p>
+<h2 id="aktualisierung-des-generators-lokal">Aktualisierung des Generators lokal</h2>
+<pre tabindex="0"><code>git clone https://github.com/gohugoio/hugo.git
+cd hugo
+git checkout release-0.80.0
+CGO_ENABLED=1 go build --tags extended
+mv hugo /usr/local/bin/hugo-0.80
+</code></pre><p>Damit steht als <code>hugo-0.80</code> eine aktuellere Hugo Version zur Verfügung.</p>
+<h2 id="im-github-workflow">Im GitHub Workflow</h2>
+<p>Zusätzlich muss <code>.github/workflows/gh-pages.yml</code> angepasst werden:</p>
+<pre tabindex="0"><code>      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: &#39;0.80.0&#39;
+</code></pre><h1 id="anpassungen-der-blogs-0743--0790">Anpassungen der Blogs 0.74.3 → 0.79.0</h1>
+<p>Die notwendigen Anpassungen liegen im Bereich des <a href="https://gohugo.io/hugo-pipes/js/" target="_blank">Bauens der Javascript Abhängigkeiten</a>, ein einheitliches Theme, das sowohl Mirador als auch Openlayers bereit stellt, sollte das Problem lösen.</p>
+<h1 id="weitere-aktualisierungen">Weitere Aktualisierungen</h1>
+<p>Dieser Abschnitt wird laufend aktualisiert.</p>
+<h2 id="hugo-081--082">Hugo 0.81 → 0.82</h2>
+<ul>
+<li><code>js.Build</code> funktioniert nicht mehr mit <code>minify</code> - siehe <a href="https://github.com/gohugoio/hugo/issues/8370" target="_blank">#8370</a></li>
+</ul>
+<h2 id="hugo-082--0821">Hugo 0.82 → 0.82.1</h2>
+<ul>
+<li>GeoJSON in <code>[outputFormats]</code> sollte nun funktionieren - siehe <a href="https://github.com/gohugoio/hugo/issues/8406" target="_blank">#8406</a></li>
+</ul>
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs ist ein <a href="https://projektemacher.org/">Projektemacher</a> Blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; MMXXI - MMXXVI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p><p class="privacy"><a href="https://labs.projektemacher.org/privacy" title="Datenschutzerklärung">Datenschutzerklärung</a></p></div>
+
+</footer>
+
+</body>
+</html>
+
