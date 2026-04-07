@@ -20,6 +20,11 @@ draft: true
 * [Oldenburg](https://fonts.google.com/specimen/Oldenburg?query=oldenburg)
 * [Jost](https://fonts.google.com/specimen/Jost)
 
+## Fonts, die bisher nicht in [FontSource](https://fontsource.org/) sind
+* [Strichpunkt Sans](https://github.com/strichpunkt-design/Strichpunkt_Sans)
+* [Geist](https://github.com/vercel/geist-font)
+* [Charito](https://github.com/YasenVN/charito)
+
 ## Symbols
 * [Unicode/List of useful symbols](https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols)
 
@@ -37,6 +42,7 @@ draft: true
 
 * [Weiland Antikes & Neues](https://www.weiland-antiquitaeten.de/unser-sortiment/alte-modezeitschriften-50er/)
 * [Web Site Builder](https://grapesjs.com/)
+* [Web Design Museum](https://www.webdesignmuseum.org/)
 
 ## Themes ud Farbschemata
 
@@ -66,6 +72,10 @@ draft: true
 # Frameworks
 
 * https://fresh.deno.dev/
+
+# SVG Effekte
+
+* https://www.fffuel.co/
 
 # Informationen zum aktuellen Theme
 
