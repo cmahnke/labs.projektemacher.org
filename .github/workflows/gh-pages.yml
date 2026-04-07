@@ -51,11 +51,15 @@ jobs:
         run: |
           ./scripts/github-setup.sh
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.0.0
-        with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v3.0.0
+      #   with:
+      #     hugo-version: ${{ env.HUGO_VERSION }}
+      #     extended: true
+
+      - name: Install Hugo
+        run: |
+          ./themes/projektemacher-base/scripts/github/setup-hugo.sh ${{ env.HUGO_VERSION }}
 
       - name: Get number of CPU cores
         uses: SimenB/github-actions-cpu-cores@v2
