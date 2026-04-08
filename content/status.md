@@ -68,6 +68,8 @@ refresh: 60
 # Tools
 {.status}
 
+* Projektemacher Hugo [![Projektemacher Hugo](https://github.com/cmahnke/projektemacher-hugo/actions/workflows/projektemacher.yml/badge.svg)](https://github.com/cmahnke/projektemacher-hugo/actions/workflows/projektemacher.yml)
+
 ## Images
 {.status}
 
