@@ -79,6 +79,10 @@ refresh: 60
 
 * HDR Tools [![HDR Tools](https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml)
 
+## RDF / Linked open data
+
+* LOD-Tools [![HDR Tools](https://github.com/cmahnke/lod-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/lod-tools/actions/workflows/docker.yaml) [![HDR Tools](https://github.com/cmahnke/lod-tools/actions/workflows/hdt-rs.yml/badge.svg)](https://github.com/cmahnke/lod-tools/actions/workflows/hdt-rs.yml)
+
 ## Fonts
 {.status}
 
