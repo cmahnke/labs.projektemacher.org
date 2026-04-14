@@ -24,6 +24,7 @@ draft: true
 * [Strichpunkt Sans](https://github.com/strichpunkt-design/Strichpunkt_Sans)
 * [Geist](https://github.com/vercel/geist-font)
 * [Charito](https://github.com/YasenVN/charito)
+* [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
 
 ## Symbols
 * [Unicode/List of useful symbols](https://en.wikibooks.org/wiki/Unicode/List_of_useful_symbols)
