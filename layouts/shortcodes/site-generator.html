@@ -30,8 +30,8 @@
 {{- with try (resources.GetRemote $url $opts) -}}
 {{/* {{- with resources.GetRemote $url $opts}} */}}
   {{- with .Err -}}
-    {{- $description = printf "Unable to reach %s, skipping!" $url -}}
-    {{- warnf $description -}}
+    {{- $description = printf "[site-generator.html] Unable to reach %s, skipping!" $url -}}
+    {{- errorf $description -}}
   {{- else with .Value -}}
 
     {{- with findRE $patternVersion .Content -}}
@@ -71,7 +71,7 @@
         {{- if findRE `20\d{2}-\d{2}-\d{2}.\d{2}:\d{2}:\d{2}.*` (index $json "latest") -}}
           {{- $latestPost = time.Format $dateFormat (index $json "latest") -}}
         {{- else -}}
-          {{- warnf "Extracting latest post from %s (JSON: %s)" $url $json -}}
+          {{- warnf "[site-generator.html] Extracting latest post from %s (JSON: %s)" $url $json -}}
           {{- $latestPost = "MALFORMED" -}}
         {{- end -}}
       {{- end -}}
