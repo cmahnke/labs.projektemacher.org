@@ -24,11 +24,11 @@ draft: true
 * [Strichpunkt Sans](https://github.com/strichpunkt-design/Strichpunkt_Sans)
 * [Geist](https://github.com/vercel/geist-font)
 * [Charito](https://github.com/YasenVN/charito)
-* [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
 * [Variable Fonts: Marvin Visions](https://v-fonts.com/fonts/marvin-visions)
   * [Marvin Visions Typeface](https://v-fonts.com/fonts/marvin-visions)
 
 ### Monospace
+* [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
 * [London TFL Dot Matrix Typeface](https://github.com/petykowski/London-Underground-Dot-Matrix-Typeface)
 * [agave](https://github.com/blobject/agave)
 
