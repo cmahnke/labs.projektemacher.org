@@ -186,4 +186,4 @@ defaultMarkdownHandler = 'goldmark'
 [security]
   [security.http]
     mediaTypes = ['^application/json$', '^application/json;\s?charset=[uU][tT][fF]-8$', '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$']
-    urls = ['^https://unpkg\.com/.*', '^https://aframe.io\/.*', '^https://.+?\.projektemacher\.org/.*', '^https://briefsteller.de/.*', '^https://christianmahnke.de/.*', '^https://projektemacher.de/.*', '^https://krähenbeisser.de/.*']
+    urls = ['^https://unpkg\.com/.*', '^https://aframe.io\/.*', '^https://.+?\.projektemacher\.org/.*', '^https://briefsteller.de/.*', '^https://christianmahnke.de/.*', '^https://projektemacher.de/.*', '^https://krähenbeisser.de/.*', '^https://.*?\.?xn--blaufusstlpel-qmb.de/.*', '^https://xn--h-zfa.xyz/.*']
