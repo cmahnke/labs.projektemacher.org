@@ -5,8 +5,7 @@
 
 {{- partial "html/head/meta.html" . -}}
 {{- partial "html/head/style.html" (dict "context" . "css" "css/style.css") -}}
-{{- partial "html/head/script.html" (dict "js" (partial "html/head/iiif-js.html" .)) -}}
-{{- partial "html/head/page-scripts.html" . -}}
+{{- partial "html/head/script.html" (dict  "context" . "js" (partial "html/head/iiif-js.html" .)) -}}
 
 {{- if eq .Params.layout "html-body" -}}
     {{- partial "html/head/style/include-css.html" . -}}

@@ -19,6 +19,7 @@ draft: true
 * [League Spartan - Futura Variante](https://www.theleagueofmoveabletype.com/league-spartan)
 * [Oldenburg](https://fonts.google.com/specimen/Oldenburg?query=oldenburg)
 * [Jost](https://fonts.google.com/specimen/Jost)
+* [Italiana](https://fonts.google.com/specimen/Italiana)
 
 ## Fonts, die bisher nicht in [FontSource](https://fontsource.org/) sind
 * [Strichpunkt Sans](https://github.com/strichpunkt-design/Strichpunkt_Sans)
@@ -26,6 +27,9 @@ draft: true
 * [Charito](https://github.com/YasenVN/charito)
 * [Variable Fonts: Marvin Visions](https://v-fonts.com/fonts/marvin-visions)
   * [Marvin Visions Typeface](https://v-fonts.com/fonts/marvin-visions)
+
+## Seiten mit interessanten Schiftarten:
+* [Junges Museum Frankfurt](https://junges-museum-frankfurt.de/familienspuren)
 
 ### Monospace
 * [Ioskeley Mono](https://github.com/ahatem/IoskeleyMono)
