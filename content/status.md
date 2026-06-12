@@ -22,6 +22,8 @@ refresh: 60
 
 * [Flohmarktfunde](https://flohmarktfunde.projektemacher.org/) [![Flohmarktfunde](https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml) {{< site-generator url="https://flohmarktfunde.projektemacher.org/" >}}
 
+* [Flugzeugbesteck](https://flugzeugbesteck.projektemacher.org/) [![Flugzeugbesteck](https://github.com/cmahnke/flugzeugbesteck/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/flugzeugbesteck/actions/workflows/gh-pages.yml) {{< site-generator url="https://flugzeugbesteck.projektemacher.org/" >}}
+
 * [Häßliche Plastiktiere und Zeugs](https://haesslicheplastiktiereundzeugs.projektemacher.org/) [![Häßliche Plastiktiere und Zeugs](https://github.com/cmahnke/haesslicheplastiktiereundzeugs/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/haesslicheplastiktiereundzeugs/actions/workflows/gh-pages.yml) {{< site-generator url="https://haesslicheplastiktiereundzeugs.projektemacher.org/" >}}
 
 * [Kinderbücher](https://xn--kinderbcher-zhb.projektemacher.org/) [![Kinderbücher](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml) {{< site-generator url="https://xn--kinderbcher-zhb.projektemacher.org/" >}}
