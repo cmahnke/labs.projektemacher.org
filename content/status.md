@@ -99,6 +99,17 @@ refresh: 60
 
 * Projektemacher Maps [![Projektemacher Maps Docker images](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml) [![Projektemacher Maps Deployment](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml/badge.svg)](https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml)
 
+## NPM Modules
+{.status}
+
+* Lucienne [![Lint and publish example](https://github.com/cmahnke/lucienne/actions/workflows/lint.yml/badge.svg)](https://github.com/cmahnke/lucienne/actions/workflows/lint.yml)
+
+* `hdr-canvas` [![Lint and publish example](https://github.com/cmahnke/hdr-canvas/actions/workflows/lint.yml/badge.svg)](https://github.com/cmahnke/hdr-canvas/actions/workflows/lint.yml)
+
+* `rollup-plugin-wasm-brotli` [![Lint and publish example](https://github.com/cmahnke/rollup-plugin-wasm-brotli/actions/workflows/lint.yml/badge.svg)](https://github.com/cmahnke/rollup-plugin-wasm-brotli/actions/workflows/lint.yml)
+
+* `vivliostyle-batch-cli` [![Lint and publish example](https://github.com/cmahnke/vivliostyle-batch-cli/actions/workflows/lint.yml/badge.svg)](https://github.com/cmahnke/vivliostyle-batch-cli/actions/workflows/lint.yml)
+
 ## Other
 {.status}
 
