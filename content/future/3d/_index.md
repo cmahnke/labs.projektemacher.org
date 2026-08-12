@@ -11,7 +11,9 @@ target: https://vintagereality.projektemacher.org/
 cascade:
   - target:
       kind: "{page}"
-      lang: de
+      sites:
+        matrix:
+          languages: [de]
       path: '**'
     params:
       draft: true
