@@ -9,7 +9,7 @@ outputs:
 type: redirect
 target: https://vintagereality.projektemacher.org/
 cascade:
-  - _target:
+  - target:
       kind: "{page}"
       sites:
         matrix:
