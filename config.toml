@@ -1,7 +1,6 @@
 baseURL = "https://labs.projektemacher.org/"
-languageCode = "de"
+locale = "de"
 title = "Projektemacher Labs"
-languagecode = "de"
 defaultcontentlanguage = "de"
 publishDir = "docs"
 canonifyurls = true
@@ -19,7 +18,7 @@ enableRobotsTXT = true
 
 [languages]
     [languages.de]
-        languagename = "Deutsch"
+        label = "Deutsch"
 
         [languages.de.params]
           title = "Projektemacher Labs"
@@ -37,7 +36,7 @@ enableRobotsTXT = true
               url = "about/"
 
     [languages.en]
-        languagename = "English"
+        label = "English"
 
         [languages.en.params]
 
