@@ -20,7 +20,7 @@
             {{- end -}}
 
             {{- $pages := .CurrentSection.Pages -}}
-            {{- $defaultContentLanguage := hugo.Sites.Default.Language..Lang  -}}
+            {{- $defaultContentLanguage := hugo.Sites.Default.Language.Lang  -}}
             {{- if ne $.Site.Language.Lang $defaultContentLanguage -}}
                 {{- $defaultPath := (substr .RelPermalink (len .Site.LanguagePrefix)) -}}
                 {{- $defaultPages := (where $.Sites.Default.Pages "Section" .Section) -}}
