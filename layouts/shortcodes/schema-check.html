@@ -1,0 +1,26 @@
+{{- $url := .Get "url" -}}
+
+{{- $patternSchema := `(?i)<script[^>]*type=["']application/ld\+json["']` -}}
+
+{{- $schema := false -}}
+
+{{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
+{{- with try (resources.GetRemote $url $opts) -}}
+  {{- with .Err -}}
+    {{- errorf "[schema-check.html] Unable to reach %s, skipping!" $url -}}
+  {{- else with .Value -}}
+    {{- with findRE $patternSchema .Content -}}
+      {{- $schema = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<table class="site-generator-shortcode schema-check-shortcode">
+  <tr>
+    {{- if $schema -}}
+      <td class="site-schema schema-ok"><a href="https://validator.schema.org/#url={{ $url | urlquery }}" title="Schema.org validator">✓</a></td>
+    {{- else -}}
+      <td class="site-schema schema-missing">✗</td>
+    {{- end -}}
+  </tr>
+</table>
