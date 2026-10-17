@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Language" content="de">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Experimental blogs">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/post/fold-out/" /><meta property="og:title" content="Fold-outs" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content=", IIIF, Work in progress"><meta name="dc.subject" content="IIIF"><meta name="dc.subject" content="Work in progress">
+<meta name="generator" content="Hugo 0.168.0">
+<meta name="projektemacher.org:build-date" content="2026-10-17 22:24:31.949576204 &#43;0000 UTC m=&#43;1.351175881"><meta name="projektemacher.org:git-commit" content="b8cefc5"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;126&#34;,&#34;latest&#34;:&#34;2024-01-01T12:30:07&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://labs.projektemacher.org/css/b757d114fb5286da59f88bbcfd300be4.min.8935e02b05f92720ae7f09276ff648985fe1cab6134f833a3524d4e3fdf9ecda.css" rel="stylesheet" integrity="sha256-iTXgKwX5JyCufwknb/ZImF/hyrYTT4M6NSTU4/357No=">
+<script src="https://labs.projektemacher.org/js/0edccf0483911e6e19e65bfcd08c549e.a1e23ffd9d13e1be0e454fa80600911c6c3f55fe2a9c72c4cb2ca1a1d4a8edac.js" integrity="sha256-oeI//Z0T4b4ORU+oBgCRHGw/Vf4qnHLEyyyhodSo7aw="></script><title>Fold-outs - Projektemacher Labs</title>
+</head><body class="">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu" aria-label="Hauptnavigation" data-menu-open-label="Hauptnavigation öffnen" data-menu-close-label="Hauptnavigation schließen">
+    
+    <input type="checkbox" id="menu-toggle" aria-label="Hauptnavigation" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon" aria-hidden="true"></i></label>
+    <ul id="main-navigation-list" class="navigation-list"><li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/future" title="Geplante Blogs">Geplante Blogs<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/about/" title="Über">Über<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item lang">
+              <a href="https://labs.projektemacher.org/en/post/fold-out/" title="English" hreflang="en" lang="en">English</a>
+            </li></ul>
+  </nav><script defer src="https://labs.projektemacher.org/js/menu.b5d9e05a033ce64dfbd97f3dc47b8e6c187d4e331ea9d407b3fcbc129d5ab95b.js" integrity="sha256-tdngWgM85k372X89xHuObBh9TjMeqdQHs/y8Ep1auVs="></script></div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      <article class="single " itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+    <br>
+    <span class="key">tags:</span>
+    <span class="val">
+
+        <a href="https://labs.projektemacher.org/tags/IIIF">IIIF</a>
+
+        <a href="https://labs.projektemacher.org/tags/Work-in-progress">Work in progress</a>
+
+    </span>
+
+  </div>
+  <h1 class="headline" itemprop="headline">Fold-outs</h1>
+  <section class="body" itemprop="articleBody"><div class="under-construction">
+        Diese Funktionalität ist derzeit in der Entwicklung
+    </div>
+    <hr class="under-construction-separator">
+    
+<p>Demonstrator zur Anzeige von <a href="https://de.wikipedia.org/wiki/Leporello_%28Heft%29" target="_blank" rel="noopener noreferrer">Leporello</a> (fold-outs) mit Mirador <a href="https://github.com/ProjectMirador/mirador" target="_blank" rel="noopener noreferrer">Mirador</a>. Hinweise zur Kodierung können  <a href="https://groups.google.com/g/iiif-discuss/c/tG1O3y3ecWw" target="_blank" rel="noopener noreferrer">hier</a> gefunden werden. Die folgenden Seiten bieten Dokumentation und Beispiele:</p>
+<ul>
+<li><a href="https://preview.iiif.io/cookbook/3333-choice/recipe/0035-foldouts/" target="_blank" rel="noopener noreferrer">IIIF cookbook</a></li>
+<li><a href="https://librarylabs.ed.ac.uk/iiif/uv/?manifest=https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json#?c=0&amp;m=0&amp;s=0&amp;cv=0&amp;xywh=-25583%2C0%2C54981%2C49069" target="_blank" rel="noopener noreferrer">Example Mahābhārata scroll</a></li>
+</ul>
+<p>Beispiel für derzeit unterstütztes <code>viewing hints</code> Attribut:</p>
+<pre tabindex="0"><code>- src: &#34;front01.jpg&#34;
+  params:
+    iiif: front01/info.json
+    hint: non-paged
+</code></pre><p>Beispiel für notwendige Änderung:</p>
+<pre tabindex="0"><code>- src: &#34;front01.jpg&#34;
+  params:
+    iiif: front01/info.json
+    hint: continuous
+</code></pre><div class="iiif">
+  <div id="_iiif-presentation-569a9a312f55e047d5572729606d2298" class="viewer presentation-api portrait"></div>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+      var viewer = iiifPresentationViewer('#_iiif-presentation-569a9a312f55e047d5572729606d2298', 'https:\/\/labs.projektemacher.org\/post\/fold-out\/manifest.json');
+    });
+  </script>
+</div>
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs ist ein <a href="https://projektemacher.org/">Projektemacher</a> Blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; MMXXI - MMXXVI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p><p class="privacy"><a href="https://labs.projektemacher.org/privacy" title="Datenschutzerklärung">Datenschutzerklärung</a></p></div>
+
+</footer>
+
+</body>
+</html>
+
