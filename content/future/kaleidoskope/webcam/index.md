@@ -3,7 +3,7 @@ title: Webcam
 src: mock.html
 layout: html-body
 js:
-  - js/kaleidoscope.js
+  - ts/kaleidoscope.ts
 ---
 
 Ein Entwurf für die Visualisierung.

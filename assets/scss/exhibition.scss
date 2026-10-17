@@ -1,105 +1,92 @@
 @import "fonts/roboto";
 
 .nav-tile {
-    position: relative;
-    img {
-      filter: blur(4px);
-      border-radius: 2rem !important;
+  position: relative;
+
+  img {
+    filter: blur(4px);
+    border-radius: 2rem !important;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-align: center;
+
+    h4 {
+      font-weight: 900 !important;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 3em;
+      color: var(--base07) !important;
+      font-style: normal;
+      /* margin-right: .5em */
+      margin: auto 0.5em;
     }
-    figcaption {
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        text-align: center;
-        h4 {
-            font-weight: 900 !important;
-            font-family: Roboto, Helvetica, Arial;
-            font-size: 3em;
-            color: var(--base07) !important;
-            font-style: normal;
-            /* margin-right: .5em */
-            margin: auto .5em;
-        }
-    }
+  }
 }
 
 .icon-preview {
-    width: 2em !important;
-    display: inline-block;
-    height: 2em;
-    padding: 0 !important;
-    margin-top: unset;
-    margin-bottom: unset !important;
+  width: 2em !important;
+  display: inline-block;
+  height: 2em;
+  padding: 0 !important;
+  margin-top: unset;
+  margin-bottom: unset !important;
 
-    img {
-        vertical-align: bottom;
-        max-height: 2em;
-    }
+  img {
+    vertical-align: bottom;
+    max-height: 2em;
+  }
 }
 
 .qr-preview {
-    display: inline-block;
-    padding: 0 !important;
-    margin-top: unset;
-    margin-bottom: unset !important;
-    width: 100% !important;
+  display: inline-block;
+  padding: 0 !important;
+  margin-top: unset;
+  margin-bottom: unset !important;
+  width: 100% !important;
 
-    img {
-        vertical-align: bottom;
-        
-        width: 40vh;
-    }
-
+  img {
+    vertical-align: bottom;
+    width: 40vh;
+  }
 }
 
 .nav-container {
+  display: flex;
+  width: 100%;
+
+  .tile-nav {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    aspect-ratio: 16 / 9;
+    align-content: space-around;
 
-    .tile-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        aspect-ratio: 16 / 9;
-        align-content: space-around;
+    .tile {
+      min-width: 40%;
+      display: inline-block;
+      padding: 0.6em;
 
+      .tile-container {
+        border-radius: 2rem !important;
 
-        .tile {
-            min-width: 40%;
-            display: inline-block;
-            padding: .6em;
-
-
-
-            .tile-container {
-                border-radius: 2rem !important;
-
-                .tile-title {
-                  position: absolute;
-                  position: relative;
-
-                }
-
-                .tile-image {
-                    filter: blur(4px);
-                    border-radius: 2rem !important;
-                    position: absolute;
-
-                }
-
-
-            }
-
-
-
+        .tile-title {
+          position: absolute;
+          position: relative;
         }
 
-
+        .tile-image {
+          filter: blur(4px);
+          border-radius: 2rem !important;
+          position: absolute;
+        }
+      }
     }
-
-
+  }
 }
 
 .about {
-    margin: auto;
+  margin: auto;
 }

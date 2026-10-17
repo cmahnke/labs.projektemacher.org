@@ -52,6 +52,7 @@ purgecss.config.js
 
 static/fonts/
 assets/css/
+assets/scss/npm-fonts/
 
 data/stats.json
 

@@ -9,8 +9,7 @@ tags:
 - Work in progress
 aliases:
   - haptic-feedback
-#iiifManifest: ./manifest.json
-iiifContext: http://iiif.io/api/presentation/2/context.json
+iiifcontext: http://iiif.io/api/presentation/3/context.json
 outputs:
 - html
 - iiif-manifest

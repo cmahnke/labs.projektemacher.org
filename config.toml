@@ -114,13 +114,6 @@ defaultMarkdownHandler = 'goldmark'
     baseName = "map"
     notAlternative = true
 
-  [outputFormats.iiif]
-    mediaType = "application/ld+json"
-    isPlainText = true
-    isHTML = false
-    baseName = "manifest"
-    notAlternative = true
-
   [outputFormats.iiif-manifest]
     mediaType = "application/ld+json"
     isPlainText = true
@@ -152,7 +145,7 @@ defaultMarkdownHandler = 'goldmark'
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.146.3'
+    min = '0.165.0'
 
   [[module.mounts]]
     source = "assets/scss"
@@ -163,8 +156,8 @@ defaultMarkdownHandler = 'goldmark'
     target = "static"
 
   [[module.mounts]]
-    source = "assets/js"
-    target = "assets/js"
+    source = "assets/ts"
+    target = "assets/ts"
 
   [[module.mounts]]
     source = "themes/hugo-base16-theme/static"

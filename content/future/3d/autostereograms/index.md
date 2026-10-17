@@ -5,7 +5,7 @@ subtype: autostereogram
 tags:
 - 3D
 js:
-  - js/3d.js
+  - ts/3d.ts
 draft: true
 ---
 

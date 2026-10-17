@@ -28,7 +28,7 @@ The site is hosted by [GitHub](https://github.com/).
 
 # Privacy policy
 
-The privacy policy is available [here](/privacy).
+The privacy policy is available on the [privacy policy page](/privacy).
 
 # Contact
 

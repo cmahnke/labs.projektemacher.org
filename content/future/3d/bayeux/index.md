@@ -11,7 +11,7 @@ geojson:
   - -0.7042948865940065
   - 49.27527588969518
 js:
-  - js/3d.js
+  - ts/3d.ts
 resources:
 - src: "front.jpg"
   name: front

@@ -11,7 +11,7 @@ geojson:
   - 31.137557
   - 29.975316
 js:
-  - js/3d.js
+  - ts/3d.ts
 resources:
 - src: "front.jxl"
   name: front

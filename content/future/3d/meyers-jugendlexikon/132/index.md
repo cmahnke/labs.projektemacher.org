@@ -9,7 +9,7 @@ iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - 3D
 js:
-  - js/3d.js
+  - ts/3d.ts
 resources:
 - src: "page132.jxl"
   name: page
