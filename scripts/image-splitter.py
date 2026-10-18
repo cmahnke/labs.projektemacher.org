@@ -1,15 +1,32 @@
 #!/usr/bin/env python
 
 from PIL import Image
-import argparse, pathlib, json, sys
+import argparse, pathlib, json, sys, io
 from packaging import version
 from termcolor import cprint
+
+try:
+    import pyvips
+except (ImportError, OSError):
+    pyvips = None
 
 # Duration for Wigglegrams im ms
 defaultDuration = 100
 
 # See http://www.sview.ru/en/help/input/
 # See https://note.nkmk.me/en/python-pillow-concat-images/
+def load_image(path):
+    """Load an image with PIL, falling back to pyvips for formats PIL can't decode (e.g. JXL)."""
+    try:
+        img = Image.open(path)
+        img.load()
+        return img
+    except (Image.UnidentifiedImageError, OSError):
+        if pyvips is None:
+            raise
+        pngBytes = pyvips.Image.new_from_file(str(path), access="sequential").write_to_buffer(".png")
+        return Image.open(io.BytesIO(pngBytes))
+
 def crossed_eyed(left, right, file, format='jpeg'):
     ce = Image.new('RGB', (right.width + left.width, right.height))
     ce.paste(right, (0, 0))
@@ -134,21 +151,23 @@ parser.add_argument('--coords', type=pathlib.Path, help='File containing coordin
 parser.add_argument('--output', choices=['gif', 'jps', 'images', 'jpg', 'mpo'], action='append', nargs='+', help='Output format', default=[])
 parser.add_argument('--samesize', '-s', help='Force same size (implies advanced)', default=False, action='store_true')
 parser.add_argument('--advanced', '-a', help='Use advanced features provided by StereoscoPy', default=False, action='store_true')
-parser.add_argument('--debug', '-d', help='Print information about JXL bindings', default=False, action='store_true')
+parser.add_argument('--debug', '-d', help='Print information about pyvips bindings', default=False, action='store_true')
 
 args = parser.parse_args()
 
 images_suffix = args.image.suffix
 
 if args.debug:
-    import jxlpy
-    print("jxlpy: {}, libjxl: {}, pillow: {}".format(jxlpy.__version__, jxlpy._jxl_version, Image.__version__))
+    print("pyvips: {}, libvips: {}.{}.{}, pillow: {}".format(
+        getattr(pyvips, '__version__', 'unknown'),
+        pyvips.version(0), pyvips.version(1), pyvips.version(2),
+        Image.__version__,
+    ))
 
 if str(args.image).endswith('.jxl'):
-    from jxlpy import JXLImagePlugin
     images_suffix = '.jpg'
 
-im = Image.open(args.image)
+im = load_image(args.image)
 
 coords = json.load(args.coords.open())
 

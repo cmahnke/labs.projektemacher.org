@@ -5,3 +5,4 @@ stereoscopy[auto_align]
 packaging
 #pystereogram
 qrcode
+pyvips
