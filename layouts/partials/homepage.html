@@ -6,12 +6,10 @@
 
       <h1 class="headline">{{ i18n "posts" }}</h1>
       {{- $pages := where (where site.RegularPages "Section" "post") "Params.displayinlist" "!=" false -}}
-      {{- .Scratch.Set "pages" $pages -}}
       {{- $mainSite := hugo.Sites.Default -}}
       {{- if ne $mainSite .Site -}}
-          {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" "post") ) -}}
+          {{- $pages = ($pages | lang.Merge (where $mainSite.RegularPages "Section" "post") ) -}}
       {{- end -}}
-      {{- $pages = .Scratch.Get "pages" -}}
 
     {{/*
       {{- $pages := where site.RegularPages "Section" "post" -}}

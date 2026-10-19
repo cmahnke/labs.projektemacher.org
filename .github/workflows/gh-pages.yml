@@ -89,7 +89,7 @@ jobs:
         env:
           OSTYPE: linux
         run: |
-          yarn run validate
+          npm run validate
 
       - name: Puppeteer
         if: ${{ !env.ACT }}

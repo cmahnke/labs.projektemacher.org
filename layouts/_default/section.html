@@ -22,7 +22,7 @@
             {{- $pages := .CurrentSection.Pages -}}
             {{- $defaultContentLanguage := hugo.Sites.Default.Language.Lang  -}}
             {{- if ne site.Language.Lang $defaultContentLanguage -}}
-                {{- $defaultPath := (strings.Substr .RelPermalink (len site.LanguagePrefix)) -}}
+                {{- $defaultPath := (strings.TrimPrefix .RelPermalink (printf "/%s" site.Language.Lang)) -}}
                 {{- $defaultPages := (where hugo.Sites.Default.Pages "Section" .Section) -}}
                 {{- $defaultPages := (where $defaultPages "Page.Parent.RelPermalink" $defaultPath) -}}
                 {{- .Scratch.Set "pages" ($pages | lang.Merge $defaultPages) -}}
