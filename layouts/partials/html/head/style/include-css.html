@@ -6,7 +6,7 @@
 
 {{- $css := "" -}}
 {{- if fileExists $fileName -}}
-    {{- $css = readFile $fileName -}}
+    {{- $css = os.ReadFile $fileName -}}
 {{- else -}}
     {{- errorf "Can't find %s!" $fileName -}}
 {{- end -}}

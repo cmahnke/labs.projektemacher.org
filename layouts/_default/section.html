@@ -21,9 +21,9 @@
 
             {{- $pages := .CurrentSection.Pages -}}
             {{- $defaultContentLanguage := hugo.Sites.Default.Language.Lang  -}}
-            {{- if ne $.Site.Language.Lang $defaultContentLanguage -}}
-                {{- $defaultPath := (substr .RelPermalink (len .Site.LanguagePrefix)) -}}
-                {{- $defaultPages := (where $.Sites.Default.Pages "Section" .Section) -}}
+            {{- if ne site.Language.Lang $defaultContentLanguage -}}
+                {{- $defaultPath := (strings.Substr .RelPermalink (len site.LanguagePrefix)) -}}
+                {{- $defaultPages := (where hugo.Sites.Default.Pages "Section" .Section) -}}
                 {{- $defaultPages := (where $defaultPages "Page.Parent.RelPermalink" $defaultPath) -}}
                 {{- .Scratch.Set "pages" ($pages | lang.Merge $defaultPages) -}}
             {{- else -}}

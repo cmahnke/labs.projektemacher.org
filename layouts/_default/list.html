@@ -2,7 +2,7 @@
 
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}
-    {{- $pages = .Site.RegularPages -}}
+    {{- $pages = site.RegularPages -}}
 {{- end -}}
 
 {{/* Sort sticky pages to top */}}

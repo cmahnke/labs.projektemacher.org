@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.Language.Lang }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ with site.Language.Lang }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 <meta charset="utf-8">
 
@@ -11,7 +11,7 @@
     {{- partial "html/head/style/include-css.html" . -}}
 {{- end -}}
 
-<title>{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}</title>
+<title>{{ with .Title }}{{.}} - {{ end }}{{ site.Title }}</title>
 </head>
 {{- $class := "" -}}
 
@@ -26,7 +26,7 @@
 
 <header>
   <div class="container clearfix">
-    <a class="path" href="{{ .Site.BaseURL }}">[{{ .Site.Title }}]</a>
+    <a class="path" href="{{ site.BaseURL }}">[{{ site.Title }}]</a>
     <span class="caret"># _</span>
     {{- partial "menu.html" . -}}
   </div>
