@@ -1,27 +1,24 @@
-@import "normalize";
-@import "icons";
+@use "normalize";
+@use "icons" as *;
+@use "ol-iiif";
+@use "iframe-consent";
+@use "npm-fonts/source-code-pro";
+@use "npm-fonts/league-spartan";
+@use "map";
+@use "share";
+@use "menu" as * with ($font-color-body: var(--base00), $secondary-icon-color: #69c, $frame-bg-color: var(--base01));
+@use "include";
+@use "audioplayer";
+@use "exhibition";
+@use "color-sample";
+@use "3d" as threed;
+@use "shortcodes";
+@use "iiif/presentation-tify";
 @import "ol";
-@import "ol-iiif";
-@import "iframe-consent";
-@import "npm-fonts/source-code-pro";
-@import "npm-fonts/league-spartan";
-@import "map";
-@import "share";
 /* Menu */
-$font-color-body: var(--base00);
-$secondary-icon-color: #69c;
-$frame-bg-color: var(--base01);
 $color-body-text: var(--base00);
 $fullscreen-color: var(--base07);
-@import "menu";
-@import "include";
-@import "audioplayer";
-@import "exhibition";
-@import "color-sample";
-@import "3d";
-@import "shortcodes";
 
-@import "iiif/presentation-tify";
 
 body {
   min-height: 100vh;
