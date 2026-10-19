@@ -1,8 +1,6 @@
 [params]
-  paginate = 5
   copyrightYears = "MMXXI - MMXXVI"
   minimalUI = true
-  disableScale = true
   description = "Experimental blogs"
   debug = false
   schemaPerson = "https://christianmahnke.de/person.jsonld"
