@@ -57,3 +57,11 @@ assets/scss/npm-fonts/
 data/stats.json
 
 XXX-*
+
+/package-lock.json
+
+/npm-shrinkwrap.json
+
+/pnpm-lock.yaml
+
+/yarn.lock
