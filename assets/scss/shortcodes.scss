@@ -66,6 +66,37 @@
     }
   }
 
+  .site-webmention {
+    white-space: nowrap;
+
+    &::before {
+      content: "Webmention: ";
+      font-weight: bold;
+    }
+
+    &.webmention-ok {
+      color: green;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    &.webmention-missing {
+      color: red;
+    }
+  }
+
+  .site-webmention-count {
+    white-space: nowrap;
+
+    &::before {
+      content: "Mentions: ";
+      font-weight: bold;
+    }
+  }
+
   .site-generator-desription {
   }
 

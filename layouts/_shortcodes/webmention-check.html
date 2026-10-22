@@ -1,0 +1,99 @@
+{{/*
+  Checks the current site for Webmention/Pingback support and counts
+  the collected mentions for it.
+
+  Rendering companion to 'schema-check.html' for the build status
+  page: the site at the 'url' parameter is fetched once per build
+  (Hugo's resource cache dedupes the fetch with the other status
+  shortcodes) and the document head is checked for the endpoint
+  advertisements. The check passes (✓) only when BOTH
+  '<link rel="webmention">' and '<link rel="pingback">' are present -
+  a single advertisement fails the check.
+
+  The mention count is read from the site's Hugo data
+  ('data/webmentions/mentions.json' - the shared collector harvests
+  all projektemacher domains into this repository, see the theme's
+  'services/webmentions/README.md'), summing the distinct
+  target/source pairs whose host matches the 'url' parameter's host.
+  The theme's own data file is merged into 'hugo.Data' as well, and
+  every lookup is nil/type guarded: without any data (or with
+  malformed data) the count simply renders as 0 - the check never
+  fails the build. IDN sites must use the punycode form, the
+  pipeline does not normalize between the two.
+
+  Usage:
+
+      {{< webmention-check url="https://example.org/" >}}
+*/}}
+{{- $url := .Get "url" -}}
+
+{{- $patternWebmention := `(?i)<link[^>]*rel=["'][^"']*webmention[^"']*["']` -}}
+{{- $patternPingback := `(?i)<link[^>]*rel=["'][^"']*pingback[^"']*["']` -}}
+
+{{- $webmention := false -}}
+{{- $pingback := false -}}
+
+{{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
+{{- with try (resources.GetRemote $url $opts) -}}
+  {{- with .Err -}}
+    {{- errorf "[webmention-check.html] Unable to reach %s, skipping!" $url -}}
+  {{- else with .Value -}}
+    {{- with findRE $patternWebmention .Content -}}
+      {{- $webmention = true -}}
+    {{- end -}}
+    {{- with findRE $patternPingback .Content -}}
+      {{- $pingback = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $host := "" -}}
+{{- with urls.Parse $url -}}
+  {{- $host = .Host | lower -}}
+{{- end -}}
+
+{{- $count := 0 -}}
+{{- with index hugo.Data "webmentions" -}}
+  {{- $dataDoc := default dict (index . "mentions") -}}
+  {{- $all := default dict (index $dataDoc "mentions") -}}
+  {{/*
+    Entries are stored under several normalized key variants (with
+    and without trailing slash, sharing the same list) - dedupe by
+    counting distinct 'target/source' pairs per host. The type guards
+    keep hand-edited or partial data from failing the count.
+  */}}
+  {{- $pairs := dict -}}
+  {{- range $key, $entries := $all -}}
+    {{- if ne (printf "%T" $entries) "[]interface {}" -}}
+      {{- continue -}}
+    {{- end -}}
+    {{- $targetHost := "" -}}
+    {{- with urls.Parse $key -}}
+      {{- $targetHost = .Host | lower -}}
+    {{- end -}}
+    {{- if eq $targetHost $host -}}
+      {{- $base := strings.TrimSuffix "/" $key -}}
+      {{- range $entries -}}
+        {{- if eq (printf "%T" .) "map[string]interface {}" -}}
+          {{- with index . "source" -}}
+            {{- $pairs = merge $pairs (dict (printf "%s|%s" $base .) true) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $count = len $pairs -}}
+{{- end -}}
+
+<table class="site-generator-shortcode webmention-check-shortcode">
+  <tr>
+    {{- if and $webmention $pingback -}}
+      <td class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></td>
+    {{- else if or $webmention $pingback -}}
+      <td class="site-webmention webmention-missing" title="Only one of webmention/pingback advertised">✗</td>
+    {{- else -}}
+      <td class="site-webmention webmention-missing" title="No webmention/pingback endpoint advertised">✗</td>
+    {{- end -}}
+    <td class="site-webmention-count">{{ $count }}</td>
+  </tr>
+</table>
