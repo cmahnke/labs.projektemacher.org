@@ -1,0 +1,95 @@
+{{/*
+  Checks a site for the well known discoverability files robots.txt,
+  llms.txt and sitemap.xml.
+
+  Rendering companion to 'schema-check.html' and 'webmention-check.html'
+  for the build status page: for each file the site is fetched once per
+  build (Hugo's resource cache dedupes with the other status
+  shortcodes) and the response is classified:
+
+  - HTTP 2xx and content passes the strict check → ✓ (linked)
+  - HTTP 2xx but content fails the strict check → ✗ (malformed)
+  - any HTTP error status (404 etc.) → ✗ (missing) - detected like the
+    theme's 'partials/html/head/webmention.html' does, by matching
+    'failed to fetch remote resource from' in the error message
+  - transport/policy failure → ✗ plus a build warning, the build never
+    fails (a fully unreachable site still fails via schema-check)
+
+  Strict content checks: robots.txt must contain at least one
+  directive line (user-agent/disallow/allow/sitemap/crawl-delay),
+  llms.txt must start with its H1 header ('#', see llmstxt.org),
+  sitemap.xml must be an urlset or sitemapindex document.
+
+  Usage:
+
+      {{< file-check url="https://example.org/" >}}
+*/}}
+{{- $url := .Get "url" -}}
+
+{{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
+
+{{- $checks := slice
+  (dict "file" "robots.txt" "class" "site-robots")
+  (dict "file" "llms.txt" "class" "site-llms")
+  (dict "file" "sitemap.xml" "class" "site-sitemap")
+-}}
+
+<table class="site-generator-shortcode file-check-shortcode">
+  <tr>
+    {{- range $checks -}}
+      {{- $file := .file -}}
+      {{- $class := .class -}}
+      {{- $fileUrl := urls.JoinPath $url $file -}}
+
+      {{- $state := "missing" -}}
+
+      {{- with try (resources.GetRemote $fileUrl $opts) -}}
+        {{- with .Err -}}
+          {{- $message := printf "%v" . -}}
+          {{- if findRE "failed to fetch remote resource from" $message -}}
+            {{- /* A status code came back (404 etc.) - the file is simply absent. */}}
+            {{- $state = "missing" -}}
+          {{- else -}}
+            {{- $state = "unreachable" -}}
+            {{- warnf "[file-check.html] %s is not reachable (%s), rendering as missing!" $fileUrl $message -}}
+          {{- end -}}
+        {{- else with .Value -}}
+          {{- $content := .Content -}}
+          {{- $state = "malformed" -}}
+          {{- if eq $file "robots.txt" -}}
+            {{- with findRE `(?im)^(user-agent|disallow|allow|sitemap|crawl-delay):` $content -}}
+              {{- $state = "ok" -}}
+            {{- end -}}
+          {{- else if eq $file "llms.txt" -}}
+            {{- if strings.HasPrefix (strings.TrimSpace $content) "#" -}}
+              {{- $state = "ok" -}}
+            {{- end -}}
+          {{- else if eq $file "sitemap.xml" -}}
+            {{- with findRE "(?i)<(urlset|sitemapindex)" $content -}}
+              {{- $state = "ok" -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- $title := "" -}}
+      {{- if eq $state "ok" -}}
+        {{- $title = $file -}}
+      {{- else if eq $state "malformed" -}}
+        {{- $title = printf "%s served but malformed" $file -}}
+      {{- else if eq $state "missing" -}}
+        {{- $title = printf "%s not found (HTTP error)" $file -}}
+      {{- else -}}
+        {{- $title = printf "%s unreachable (transport failure)" $file -}}
+      {{- end -}}
+
+      <td class="{{ $class }}{{ if eq $state "ok" }} file-ok{{ else }} file-missing{{ end }}">
+        {{- if eq $state "ok" -}}
+          <a target="_blank" href="{{ $fileUrl }}" title="{{ $title }}">✓</a>
+        {{- else -}}
+          <span title="{{ $title }}">✗</span>
+        {{- end -}}
+      </td>
+    {{- end -}}
+  </tr>
+</table>

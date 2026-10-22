@@ -97,6 +97,40 @@
     }
   }
 
+  .site-robots,
+  .site-llms,
+  .site-sitemap {
+    white-space: nowrap;
+  }
+
+  .site-robots::before {
+    content: "Robots: ";
+    font-weight: bold;
+  }
+
+  .site-llms::before {
+    content: "LLMs: ";
+    font-weight: bold;
+  }
+
+  .site-sitemap::before {
+    content: "Sitemap: ";
+    font-weight: bold;
+  }
+
+  .file-ok {
+    color: green;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .file-missing {
+    color: red;
+  }
+
   .site-generator-desription {
   }
 
