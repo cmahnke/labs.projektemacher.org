@@ -68,8 +68,11 @@
       {{- with index . 0 -}}
         {{- $json := replaceRE $patternStatsVal "$1" . -}}
         {{- $json = unmarshal (htmlUnescape $json) -}}
-        {{- if findRE `20\d{2}-\d{2}-\d{2}.\d{2}:\d{2}:\d{2}.*` (index $json "latest") -}}
-          {{- $latestPost = time.Format $dateFormat (index $json "latest") -}}
+        {{- $latest := default "" (index $json "latest") -}}
+        {{- if or (eq $latest "") (eq $latest "never") (findRE `^0001-01-01` $latest) -}}
+          {{- $latestPost = "—" -}}
+        {{- else if findRE `20\d{2}-\d{2}-\d{2}.\d{2}:\d{2}:\d{2}.*` $latest -}}
+          {{- $latestPost = time.Format $dateFormat $latest -}}
         {{- else -}}
           {{- warnf "[site-generator.html] Extracting latest post from %s (JSON: %s)" $url $json -}}
           {{- $latestPost = "MALFORMED" -}}

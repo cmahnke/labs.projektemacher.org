@@ -36,7 +36,7 @@
 {{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
 {{- with try (resources.GetRemote $url $opts) -}}
   {{- with .Err -}}
-    {{- errorf "[webmention-check.html] Unable to reach %s, skipping!" $url -}}
+    {{- warnf "[webmention-check.html] Unable to reach %s, skipping!" $url -}}
   {{- else with .Value -}}
     {{- with findRE $patternWebmention .Content -}}
       {{- $webmention = true -}}
