@@ -20,17 +20,13 @@
             {{- end -}}
 
             {{- $pages := .CurrentSection.Pages -}}
-            {{- $defaultContentLanguage := hugo.Sites.Default.Language.Lang  -}}
-            {{- if ne site.Language.Lang $defaultContentLanguage -}}
-                {{- $defaultPath := (strings.TrimPrefix .RelPermalink (printf "/%s" site.Language.Lang)) -}}
+            {{- $defaultContentLanguage := hugo.Sites.Default.Language.Name  -}}
+            {{- if ne site.Language.Name $defaultContentLanguage -}}
+                {{- $defaultPath := (strings.TrimPrefix .RelPermalink (printf "/%s" site.Language.Name)) -}}
                 {{- $defaultPages := (where hugo.Sites.Default.Pages "Section" .Section) -}}
                 {{- $defaultPages := (where $defaultPages "Page.Parent.RelPermalink" $defaultPath) -}}
-                {{- .Scratch.Set "pages" ($pages | lang.Merge $defaultPages) -}}
-            {{- else -}}
-                {{- .Scratch.Set "pages" $pages -}}
+                {{- $pages = ($pages | lang.Merge $defaultPages) -}}
             {{- end -}}
-
-            {{- $pages = .Scratch.Get "pages" -}}
 
             {{- if eq .CurrentSection .FirstSection -}}
                 {{- range $pages -}}

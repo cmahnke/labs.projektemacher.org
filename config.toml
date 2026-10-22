@@ -94,7 +94,10 @@ defaultMarkdownHandler = 'goldmark'
       enable = true
 
 [imaging]
-    quality = 95
+    [imaging.jpeg]
+        quality = 95
+    [imaging.webp]
+        quality = 95
 
 [mediaTypes]
   [mediaTypes."application/geo+json"]
