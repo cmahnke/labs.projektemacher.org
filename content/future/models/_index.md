@@ -1,7 +1,8 @@
 ---
 title: 3D Modelle
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 description: "3D Modelle"
 outputs:
 - html

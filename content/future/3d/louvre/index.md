@@ -2,16 +2,17 @@
 title: "Louvre Paris"
 date: 2021-04-02T17:15:07+02:00
 type: 3d
-subtype: stereoscopic
-iiifContext: http://iiif.io/api/image/2/context.json
-geojson:
-  coordinates:
-  - 2.3346566
-  - 48.8599137
+params:
+  subtype: stereoscopic
+  iiifContext: http://iiif.io/api/image/2/context.json
+  geojson:
+    coordinates:
+    - 2.3346566
+    - 48.8599137
+  js:
+    - ts/3d.ts
 tags:
 - 3D
-js:
-  - ts/3d.ts
 resources:
 - src: "front.jpg"
   name: front

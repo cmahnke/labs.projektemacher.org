@@ -1,7 +1,8 @@
 ---
 title: Über dieses Blog
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 
 Bisher wurden, einem Schnellballsystem gleich, einzelne Blog-Projekte genutzt um neue Funktionalitäten für darauf folgende Projekte zu implementieren und zu testen. In einzelnen Fällen führe dieses vorgehen dazu, dass einzelne Seiten nicht immer funktionierten. Um dieses Problem zu Umgehen gibt es nun das "Lab".
@@ -17,12 +18,11 @@ Diese Seite wurde mit [Hugo](https://gohugo.io/) generiert. Als Themes kommen [`
 Als Schriftart kommt [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) zum Einsatz.
 
 Die folgenden JavaScript und CSS Frameworks werden benutzt:
-* [jQuery](https://jquery.com/)
 * [normalize.css](https://necolas.github.io/normalize.css/)
 
 Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.
 
-Für die Darstellung der Digitalisate von Einzelbildern wird [OpenLayers](https://openlayers.org/), für ganze Bücher [Mirador](https://projectmirador.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [libvips](https://libvips.github.io/libvips/) erzeugt.
+Für die Darstellung der Digitalisate von Einzelbildern wird [OpenLayers](https://openlayers.org/) verwendet. Die jeweils angezeigten Ausschnitte wurden mit [libvips](https://libvips.github.io/libvips/) erzeugt.
 
 Die Seite wird von [GitHub](https://github.com/) gehosted.
 

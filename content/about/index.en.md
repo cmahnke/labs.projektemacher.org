@@ -1,7 +1,8 @@
 ---
 title: Über dieses Blog
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 
 Until now the blog projects have been used to implement and test new features for other ones. One of the undesired consequence has been broken pages and links. To get around these and similar problems there is now the "Lab".

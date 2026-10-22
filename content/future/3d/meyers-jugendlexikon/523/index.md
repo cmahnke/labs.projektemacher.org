@@ -3,13 +3,14 @@ title: "Seite 523"
 weight: 18
 date: 2022-12-31T12:15:07+02:00
 type: 3d
-subtype: anaglyph
-iiifClass: page
-iiifContext: http://iiif.io/api/image/2/context.json
+params:
+  subtype: anaglyph
+  iiifClass: page
+  iiifContext: http://iiif.io/api/image/2/context.json
+  js:
+    - ts/3d.ts
 tags:
 - 3D
-js:
-  - ts/3d.ts
 resources:
 - src: "page523.jxl"
   name: page

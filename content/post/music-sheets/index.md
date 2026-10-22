@@ -4,7 +4,8 @@ title: "Noten"
 tags:
 - IIIF
 - Work in progress
-iiifContext: http://iiif.io/api/image/2/context.json
+params:
+  iiifContext: http://iiif.io/api/image/2/context.json
 resources:
 - src: "page006.jpg"
   params:

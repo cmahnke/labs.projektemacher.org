@@ -1,10 +1,11 @@
 ---
 title: Webcam
-src: mock.html
+params:
+  src: mock.html
+  js:
+    - ts/kaleidoscope.ts
+    - ts/fullscreen.ts
 layout: html-body
-js:
-  - ts/kaleidoscope.ts
-  - ts/fullscreen.ts
 ---
 
 Ein Entwurf für die Visualisierung.

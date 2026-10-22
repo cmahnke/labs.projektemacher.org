@@ -1,7 +1,8 @@
 ---
 title: Planned Blogs
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 cascade:
 - target:
     kind: '{page,section}'

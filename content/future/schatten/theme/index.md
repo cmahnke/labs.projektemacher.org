@@ -1,6 +1,7 @@
 ---
 title: Startseite
-src: mock.html
+params:
+  src: mock.html
 layout: html-body
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Elbtunnel Hamburg"
 date: 2024-01-01T10:15:07+02:00
-iiifContext: http://iiif.io/api/image/2/context.json
+params:
+  iiifContext: http://iiif.io/api/image/2/context.json
 type: postcard
 tags:
 - Hamburg

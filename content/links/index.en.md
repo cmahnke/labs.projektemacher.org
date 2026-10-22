@@ -1,7 +1,8 @@
 ---
 title: Links
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 
 The links collected on this page, can help with the creation of a blog or post:

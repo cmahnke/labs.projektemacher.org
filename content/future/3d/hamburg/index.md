@@ -2,16 +2,17 @@
 title: "Neue Elbbrücke Hamburg"
 date: 2021-04-02T17:15:07+02:00
 type: 3d
-subtype: stereoscopic
-iiifContext: http://iiif.io/api/image/2/context.json
+params:
+  subtype: stereoscopic
+  iiifContext: http://iiif.io/api/image/2/context.json
+  js:
+    - ts/3d.ts
+  geojson:
+    coordinates:
+    - 10.02659235098882
+    - 53.53347046375686
 tags:
 - 3D
-js:
-  - ts/3d.ts
-geojson:
-  coordinates:
-  - 10.02659235098882
-  - 53.53347046375686
 resources:
 - src: "front.jpg"
   name: front

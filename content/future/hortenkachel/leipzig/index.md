@@ -2,7 +2,8 @@
 title: "Postkarte Leipzig"
 date: 2024-01-01T12:30:07+02:00
 type: postcard
-iiifContext: http://iiif.io/api/image/2/context.json
+params:
+  iiifContext: http://iiif.io/api/image/2/context.json
 tags:
 - Leipzig
 - Horten

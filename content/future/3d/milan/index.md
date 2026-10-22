@@ -2,16 +2,17 @@
 title: "Milan from its Cathedral Spires, Italy"
 date: 2022-12-26T22:15:07+02:00
 type: 3d
-subtype: stereoscopic
-iiifContext: http://iiif.io/api/image/2/context.json
+params:
+  subtype: stereoscopic
+  iiifContext: http://iiif.io/api/image/2/context.json
+  geojson:
+    coordinates:
+    - 9.190556
+    - 45.464192
+  js:
+    - ts/3d.ts
 tags:
 - 3D
-geojson:
-  coordinates:
-  - 9.190556
-  - 45.464192
-js:
-  - ts/3d.ts
 resources:
 - src: "front.jxl"
   name: front

@@ -2,14 +2,15 @@
 date: 2020-12-04T18:22:44+02:00
 title: "Haptisches Feedback"
 type: redirect
-target: https://christianmahnke.de/post/haptic-feedback/
+params:
+  target: https://christianmahnke.de/post/haptic-feedback/
+  iiifcontext: http://iiif.io/api/presentation/3/context.json
 description: "A page from 'Textil-Atlas: ein Lehrbuch und Nachschlagebuch für den Textileinzelhandel und die Gewebeverarbeitung: Textilwarenkunde und Gewebemuster von Wilhelm Spitschka'"
 tags:
 - IIIF
 - Work in progress
 aliases:
   - haptic-feedback
-iiifcontext: http://iiif.io/api/presentation/3/context.json
 outputs:
 - html
 - iiif-manifest

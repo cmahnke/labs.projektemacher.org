@@ -1,13 +1,14 @@
 ---
 title: Vintage Reality
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
+  target: https://vintagereality.projektemacher.org/
 description: "3D images are not a new invention - already at the end of the 19th century there were 3D viewers..."
 outputs:
 - html
 - geojson
 type: redirect
-target: https://vintagereality.projektemacher.org/
 cascade:
   - target:
       kind: "{page}"

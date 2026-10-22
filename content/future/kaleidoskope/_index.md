@@ -1,7 +1,8 @@
 ---
 title: Kaleidoskope
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 description: "Analoge optische Mustergeneratoren für Kinder"
 ---
 

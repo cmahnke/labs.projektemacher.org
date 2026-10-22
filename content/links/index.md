@@ -1,7 +1,8 @@
 ---
 title: Links
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 
 Auf dieser Seite werden verschiedene Links, die z.B. bei der Erstellung eines Blogs oder Beitrags helfen können gesammelt:

@@ -2,7 +2,8 @@
 date: 2020-12-13T20:14:44+02:00
 title: "Kartenmaterial"
 type: redirect
-target: https://christianmahnke.de/post/maps/
+params:
+  target: https://christianmahnke.de/post/maps/
 tags:
 - Karten
 ---

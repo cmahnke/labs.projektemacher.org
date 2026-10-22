@@ -1,7 +1,7 @@
 baseURL = "https://labs.projektemacher.org/"
 locale = "de"
 title = "Projektemacher Labs"
-defaultcontentlanguage = "de"
+defaultContentLanguage = "de"
 publishDir = "docs"
 canonifyURLs = true
 disablePathToLower = true

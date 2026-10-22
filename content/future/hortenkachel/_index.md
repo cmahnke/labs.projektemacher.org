@@ -1,7 +1,8 @@
 ---
 title: Hortenkacheln
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 description: "Hortenkacheln - Fassaden eines Konsumtempels"
 ---
 

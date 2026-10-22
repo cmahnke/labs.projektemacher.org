@@ -1,7 +1,8 @@
 ---
 title: Unterführungen
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 description: "Das im wahrsten Sinne düsterte Kapitel der autogerechten Stadt ist das der (Fußgänger-) Unterführung..."
 ---
 

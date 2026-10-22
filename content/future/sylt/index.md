@@ -1,7 +1,8 @@
 ---
 title: Ausstellung
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 description: "Internet Experimente zu einer Ausstellung"
 ---
 
