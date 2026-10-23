@@ -15,12 +15,10 @@
   {{- end -}}
 {{- end -}}
 
-<table class="site-generator-shortcode schema-check-shortcode">
-  <tr>
-    {{- if $schema -}}
-      <td class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url={{ $url | urlquery }}" title="Schema.org validator">✓</a></td>
-    {{- else -}}
-      <td class="site-schema schema-missing">✗</td>
-    {{- end -}}
-  </tr>
-</table>
+<div class="site-generator-shortcode schema-check-shortcode">
+  {{- if $schema -}}
+    <span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url={{ $url | urlquery }}" title="Schema.org validator">✓</a></span>
+  {{- else -}}
+    <span class="site-schema schema-missing">✗</span>
+  {{- end -}}
+</div>

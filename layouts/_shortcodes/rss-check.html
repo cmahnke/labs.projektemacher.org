@@ -78,18 +78,16 @@
   {{- end -}}
 {{- end -}}
 
-<table class="site-generator-shortcode rss-check-shortcode">
-  <tr>
-    <td class="site-rss{{ if eq $state "ok" }} rss-ok{{ else }} rss-missing{{ end }}">
-      {{- if eq $state "ok" -}}
-        <a target="_blank" href="https://validator.w3.org/feed/check.cgi?url={{ $feedUrl | urlquery }}" title="RSS advertised and served">✓</a>
-      {{- else if eq $state "malformed" -}}
-        <span title="{{ $feedUrl }} is advertised but the feed is an HTTP error or no XML document">✗</span>
-      {{- else if eq $state "missing" -}}
-        <span title="No RSS feed advertised in the document head">✗</span>
-      {{- else -}}
-        <span title="Home page unreachable, check skipped">✗</span>
-      {{- end -}}
-    </td>
-  </tr>
-</table>
+<div class="site-generator-shortcode rss-check-shortcode">
+  <span class="site-rss{{ if eq $state "ok" }} rss-ok{{ else }} rss-missing{{ end }}">
+    {{- if eq $state "ok" -}}
+      <a target="_blank" href="https://validator.w3.org/feed/check.cgi?url={{ $feedUrl | urlquery }}" title="RSS advertised and served">✓</a>
+    {{- else if eq $state "malformed" -}}
+      <span title="{{ $feedUrl }} is advertised but the feed is an HTTP error or no XML document">✗</span>
+    {{- else if eq $state "missing" -}}
+      <span title="No RSS feed advertised in the document head">✗</span>
+    {{- else -}}
+      <span title="Home page unreachable, check skipped">✗</span>
+    {{- end -}}
+  </span>
+</div>

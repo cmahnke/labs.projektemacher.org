@@ -2,6 +2,23 @@
   margin-left: 1em;
   font-size: small;
 
+  &.schema-check-shortcode,
+  &.webmention-check-shortcode,
+  &.rss-check-shortcode,
+  &.file-check-shortcode {
+    display: inline-block;
+  }
+
+  .site-schema,
+  .site-webmention,
+  .site-webmention-count,
+  .site-rss,
+  .site-robots,
+  .site-llms,
+  .site-sitemap {
+    display: inline-block;
+  }
+
   .site-generator-url {
     display: none;
   }

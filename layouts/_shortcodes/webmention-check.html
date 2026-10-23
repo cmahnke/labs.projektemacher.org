@@ -85,15 +85,13 @@
   {{- $count = len $pairs -}}
 {{- end -}}
 
-<table class="site-generator-shortcode webmention-check-shortcode">
-  <tr>
-    {{- if and $webmention $pingback -}}
-      <td class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></td>
-    {{- else if or $webmention $pingback -}}
-      <td class="site-webmention webmention-missing" title="Only one of webmention/pingback advertised">✗</td>
-    {{- else -}}
-      <td class="site-webmention webmention-missing" title="No webmention/pingback endpoint advertised">✗</td>
-    {{- end -}}
-    <td class="site-webmention-count">{{ $count }}</td>
-  </tr>
-</table>
+<div class="site-generator-shortcode webmention-check-shortcode">
+  {{- if and $webmention $pingback -}}
+    <span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span>
+  {{- else if or $webmention $pingback -}}
+    <span class="site-webmention webmention-missing" title="Only one of webmention/pingback advertised">✗</span>
+  {{- else -}}
+    <span class="site-webmention webmention-missing" title="No webmention/pingback endpoint advertised">✗</span>
+  {{- end -}}
+  <span class="site-webmention-count">{{ $count }}</span>
+</div>

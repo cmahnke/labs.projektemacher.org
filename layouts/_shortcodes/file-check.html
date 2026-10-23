@@ -34,9 +34,8 @@
   (dict "file" "sitemap.xml" "class" "site-sitemap")
 -}}
 
-<table class="site-generator-shortcode file-check-shortcode">
-  <tr>
-    {{- range $checks -}}
+<div class="site-generator-shortcode file-check-shortcode">
+  {{- range $checks -}}
       {{- $file := .file -}}
       {{- $class := .class -}}
       {{- $fileUrl := urls.JoinPath $url $file -}}
@@ -83,13 +82,12 @@
         {{- $title = printf "%s unreachable (transport failure)" $file -}}
       {{- end -}}
 
-      <td class="{{ $class }}{{ if eq $state "ok" }} file-ok{{ else }} file-missing{{ end }}">
+      <span class="{{ $class }}{{ if eq $state "ok" }} file-ok{{ else }} file-missing{{ end }}">
         {{- if eq $state "ok" -}}
           <a target="_blank" href="{{ $fileUrl }}" title="{{ $title }}">✓</a>
         {{- else -}}
           <span title="{{ $title }}">✗</span>
         {{- end -}}
-      </td>
+      </span>
     {{- end -}}
-  </tr>
-</table>
+</div>
