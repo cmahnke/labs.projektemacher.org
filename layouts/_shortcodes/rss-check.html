@@ -49,8 +49,7 @@
           {{- with findRE "(?i)href=[\"'][^\"']+[\"']" . -}}
             {{/* The href value: strip the name, the '=' and the quotes. */}}
             {{- $attr := index . 0 -}}
-            {{- $eq := strings.Index $attr "=" -}}
-            {{- $href := strings.TrimSpace (strings.Trim (slice $attr (add $eq 1)) `"'`) -}}
+            {{- $href := strings.TrimSpace (replaceRE "(?i)^href=[\"']([^\"']+)[\"']" "$1" $attr) -}}
             {{- if strings.HasPrefix $href "http" -}}
               {{- $feedUrl = $href -}}
             {{- else -}}
