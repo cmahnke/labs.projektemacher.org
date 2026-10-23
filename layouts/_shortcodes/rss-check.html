@@ -1,0 +1,96 @@
+{{/*
+  Checks a site for RSS feed support: the document head must advertise
+  the feed (<link rel="alternate" type="application/rss+xml">) AND the
+  advertised feed URL must serve parseable RSS/Atom XML.
+
+  Rendering companion to 'schema-check.html' and 'webmention-check.html'
+  for the build status page: the site homepage and the extracted feed
+  URL are fetched once per build (Hugo's resource cache dedupes the
+  fetch with the other status shortcodes). The check is strict - the
+  check passes (✓ linked to the W3C feed validator) only when BOTH
+  gates apply:
+
+  - the homepage head advertises an RSS feed (the <link> holds
+    'application/rss+xml'; attribute order independent - the theme's
+    'links.html' writes the href first, others may not)
+  - the advertised feed URL returns an XML document (<rss> or <feed>)
+
+  Any other outcome renders ✗ with the reason in the title tooltip:
+
+  - 'malformed' - advertised, but the feed is an HTTP error status or
+    no XML document (detected like the theme's
+    'partials/html/head/webmention.html' does, by matching 'failed to
+    fetch remote resource from' in the error message)
+  - 'missing' - no RSS link in the head (a valid but unadvertised
+    feed scores red - try yaapb)
+  - 'unreachable' - transport/policy failure on the homepage plus a
+    build warning, the build never fails (a fully unreachable site
+    still fails via schema-check)
+
+  Usage:
+
+      {{< rss-check url="https://example.org/" >}}
+*/}}
+{{- $url := .Get "url" -}}
+
+{{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
+
+{{- $feedUrl := "" -}}
+{{- $state := "unreachable" -}}
+
+{{- with try (resources.GetRemote $url $opts) -}}
+  {{- with .Err -}}
+    {{- warnf "[rss-check.html] Unable to reach %s, skipping!" $url -}}
+  {{- else with .Value -}}
+    {{- $state = "missing" -}}
+    {{- range findRE "(?i)<link[^>]+>" .Content -}}
+      {{- if not $feedUrl -}}
+        {{- if findRE "(?i)application/rss\\+xml" . -}}
+          {{- with findRE "(?i)href=[\"'][^\"']+[\"']" . -}}
+            {{/* The href value: strip the name, the '=' and the quotes. */}}
+            {{- $attr := index . 0 -}}
+            {{- $eq := strings.Index $attr "=" -}}
+            {{- $href := strings.TrimSpace (strings.Trim (slice $attr (add $eq 1)) `"'`) -}}
+            {{- if strings.HasPrefix $href "http" -}}
+              {{- $feedUrl = $href -}}
+            {{- else -}}
+              {{- $feedUrl = urls.JoinPath $url $href -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if $feedUrl -}}
+      {{- $state = "malformed" -}}
+      {{- with try (resources.GetRemote $feedUrl $opts) -}}
+        {{- with .Err -}}
+          {{- $message := printf "%v" . -}}
+          {{- if not (findRE "failed to fetch remote resource from" $message) -}}
+            {{- warnf "[rss-check.html] %s is advertised but not reachable (%s), rendering as malformed!" $feedUrl $message -}}
+          {{- end -}}
+        {{- else with .Value -}}
+          {{- if or (findRE "(?i)<rss[\\s>]" .Content) (findRE "(?i)<feed[\\s>]" .Content) -}}
+            {{- $state = "ok" -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<table class="site-generator-shortcode rss-check-shortcode">
+  <tr>
+    <td class="site-rss{{ if eq $state "ok" }} rss-ok{{ else }} rss-missing{{ end }}">
+      {{- if eq $state "ok" -}}
+        <a target="_blank" href="https://validator.w3.org/feed/check.cgi?url={{ $feedUrl | urlquery }}" title="RSS advertised and served">✓</a>
+      {{- else if eq $state "malformed" -}}
+        <span title="{{ $feedUrl }} is advertised but the feed is an HTTP error or no XML document">✗</span>
+      {{- else if eq $state "missing" -}}
+        <span title="No RSS feed advertised in the document head">✗</span>
+      {{- else -}}
+        <span title="Home page unreachable, check skipped">✗</span>
+      {{- end -}}
+    </td>
+  </tr>
+</table>
