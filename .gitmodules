@@ -1,6 +1,7 @@
 [submodule "themes/projektemacher-base"]
 	path = themes/projektemacher-base
 	url = https://github.com/cmahnke/projektemacher-base.git
+	branch = main
 [submodule "themes/hugo-base16-theme"]
 	path = themes/hugo-base16-theme
 	url = https://github.com/htdvisser/hugo-base16-theme.git
