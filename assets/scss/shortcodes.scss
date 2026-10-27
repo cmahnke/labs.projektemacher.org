@@ -162,9 +162,8 @@
     color: green;
 
     a {
-      color: inherit;
       text-decoration: none;
-      color: green;
+      color: green !important;
     }
   }
 
