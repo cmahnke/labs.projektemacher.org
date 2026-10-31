@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Experimental blogs">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://labs.projektemacher.org/en/status/" /><meta property="og:title" content="Build Status" />
+
+  
+  
+    
+  
+
+
+<meta http-equiv="refresh" content="60">
+
+<meta name="generator" content="Hugo 0.168.0">
+<meta name="projektemacher.org:build-date" content="2026-10-31 02:47:05.226044175 &#43;0000 UTC m=&#43;22.998705679"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;127&#34;,&#34;latest&#34;:&#34;2024-01-01T12:30:07&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, minimal-ui">
+
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+
+
+
+
+<link href="https://static.projektemacher.org/services/webmentions/webmention.php" rel="webmention" /><link href="https://static.projektemacher.org/services/webmentions/webmention.php" rel="pingback" /><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-cyrillic-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-cyrillic-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-greek-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-greek-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-vietnamese-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-latin-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-cyrillic-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-greek-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-greek-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-vietnamese-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/source-code-pro-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/league-spartan-vietnamese-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/league-spartan-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/league-spartan-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-cyrillic-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-cyrillic-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-greek-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-greek-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-vietnamese-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-latin-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-cyrillic-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-greek-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-greek-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-vietnamese-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/eb-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-200-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-200-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-500-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-600-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-800-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-greek-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-math-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-symbols-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-vietnamese-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://labs.projektemacher.org/fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link href="https://labs.projektemacher.org/css/de98a9243dac78c60665e2bf5939c8f8.min.92fd187ab36bb29c6b7754bc4d96429142d3b372a6eb79d9b8d064b580d19308.css" rel="stylesheet" integrity="sha256-kv0YerNrspxrd1S8TZZCkULTs3Km63nZuNBktYDRkwg=">
+<script src="https://labs.projektemacher.org/js/main.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js" integrity="sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=" crossorigin="anonymous" type="module"></script><title>Build Status - Projektemacher Labs</title>
+</head><body class=" meta">
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://labs.projektemacher.org/">[Projektemacher Labs]</a>
+    <span class="caret"># _</span><nav class="top top-menu" aria-label="Main navigation" data-menu-open-label="Open main navigation" data-menu-close-label="Close main navigation">
+    
+    <input type="checkbox" id="menu-toggle" aria-label="Main navigation" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon" aria-hidden="true"></i></label>
+    <ul id="main-navigation-list" class="navigation-list"><li class="navigation-item navto-future"><a class="navigation-link" href="https://labs.projektemacher.org/en/future" title="Planed Blogs">Planed Blogs<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-about"><a class="navigation-link" href="https://labs.projektemacher.org/en/about/" title="About">About<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item lang">
+              <a href="https://labs.projektemacher.org/status/" title="Deutsch" hreflang="de" lang="de">Deutsch</a>
+            </li></ul>
+  </nav><script type="module" src="https://labs.projektemacher.org/js/menu.4e558d33a76c185c2b5983d672cb89d555216f73d29034201829d5d05982cdd1.js" integrity="sha256-TlWNM6dsGFwrWYPWcsuJ1VUhb3PSkDQgGCnV0FmCzdE="></script></div>
+</header>
+
+<div class="container">
+    <main role="main" class="article">
+      <article class="single " itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">Build Status</h1>
+  <section class="body" itemprop="articleBody"><h1 id="blogs" class="status">Blogs</h1>
+<ul>
+<li>
+<p><a href="https://911tv.projektemacher.org/" target="_blank" rel="noopener noreferrer">9/11 TV</a> <a href="https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/911tv/actions/workflows/gh-pages.yaml/badge.svg" alt="9/11 TV"></a> <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-missing">✗</span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-missing" title="No webmention/pingback endpoint advertised">✗</span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-missing"><span title="No RSS feed advertised in the document head">✗</span></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-missing"><span title="robots.txt not found (HTTP error)">✗</span></span><span class="site-llms file-missing"><span title="llms.txt not found (HTTP error)">✗</span></span><span class="site-sitemap file-missing"><span title="sitemap.xml not found (HTTP error)">✗</span></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://backsteinexpressionismus.projektemacher.org/" target="_blank" rel="noopener noreferrer">Backsteinexpressionismus</a> <a href="https://github.com/cmahnke/backsteinexpressionismus/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/backsteinexpressionismus/actions/workflows/gh-pages.yml/badge.svg" alt="Backsteinexpressionismus"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://backsteinexpressionismus.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Alte Abbildungen von Backsteinexpressionismus-Gebäuden aus Büchen und von Postkarten.</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 08:26:04</span></td><td class="site-latest-post">31 Aug 2025</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fbacksteinexpressionismus.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fbacksteinexpressionismus.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://backsteinexpressionismus.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://backsteinexpressionismus.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://backsteinexpressionismus.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://xn--blaufusstlpel-qmb.de/" target="_blank" rel="noopener noreferrer">Blaufußtölpel</a> <a href="https://github.com/cmahnke/blaufusstoelpel/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/blaufusstoelpel/actions/workflows/gh-pages.yml/badge.svg" alt="Blaufußtölpel"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://xn--blaufusstlpel-qmb.de/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Blaufußtölpel</td>
+    <td class="site-generator-desription">Alte Modezeitschriften</td>
+  </tr>
+  <tr><td class="site-build-date">29 Oct 2026<span class="site-build-time"> 16:36:05</span></td><td class="site-latest-post">8 Oct 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fxn--blaufusstlpel-qmb.de%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fxn--blaufusstlpel-qmb.de%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://xn--blaufusstlpel-qmb.de/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://xn--blaufusstlpel-qmb.de/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://xn--blaufusstlpel-qmb.de/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://briefsteller.de/" target="_blank" rel="noopener noreferrer">Briefsteller</a> <a href="https://github.com/cmahnke/briefsteller/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/briefsteller/actions/workflows/gh-pages.yml/badge.svg" alt="Briefsteller"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://briefsteller.de/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Briefe aus alten Briefstellern</td>
+  </tr>
+  <tr><td class="site-build-date">27 Oct 2026<span class="site-build-time"> 22:59:05</span></td><td class="site-latest-post">25 Jun 2024</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fbriefsteller.de%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fbriefsteller.de%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://briefsteller.de/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://briefsteller.de/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://briefsteller.de/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://christianmahnke.de/" target="_blank" rel="noopener noreferrer">Christian Mahnke</a> <a href="https://github.com/cmahnke/christianmahnke/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/christianmahnke/actions/workflows/gh-pages.yml/badge.svg" alt="Christian Mahnke"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://christianmahnke.de/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Blog · Christian Mahnke</td>
+    <td class="site-generator-desription">Sammler und Creative Technologist, spezialisiert auf die Alltagskultur des 20. Jahrhunderts und ihre digitale Präsentation.</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 07:26:53</span></td><td class="site-latest-post">31 Dec 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fchristianmahnke.de%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fchristianmahnke.de%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://christianmahnke.de/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://christianmahnke.de/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://christianmahnke.de/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://diapraesentation.projektemacher.org/" target="_blank" rel="noopener noreferrer">Dia Präsentationen</a> <a href="https://github.com/cmahnke/diapraesentation/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/diapraesentation/actions/workflows/gh-pages.yml/badge.svg" alt="Dia Präsentationen"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://diapraesentation.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Diapräsentation</td>
+    <td class="site-generator-desription">Diaprojektor statt PowerPoint</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 07:34:33</span></td><td class="site-latest-post">15 Aug 2020</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fdiapraesentation.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fdiapraesentation.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://diapraesentation.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://diapraesentation.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://diapraesentation.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://flohmarktfunde.projektemacher.org/" target="_blank" rel="noopener noreferrer">Flohmarktfunde</a> <a href="https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/flohmarktfunde/actions/workflows/gh-pages.yml/badge.svg" alt="Flohmarktfunde"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://flohmarktfunde.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Flohmarktfunde</td>
+    <td class="site-generator-desription">Fundstücke vom Flohmarkt und aus Trödelläden</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 07:36:34</span></td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fflohmarktfunde.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fflohmarktfunde.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://flohmarktfunde.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://flohmarktfunde.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://flohmarktfunde.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://flugzeugbesteck.projektemacher.org/" target="_blank" rel="noopener noreferrer">Flugzeugbesteck</a> <a href="https://github.com/cmahnke/flugzeugbesteck/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/flugzeugbesteck/actions/workflows/gh-pages.yml/badge.svg" alt="Flugzeugbesteck"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://flugzeugbesteck.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Flugzeugbesteck - </td>
+    <td class="site-generator-desription"></td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 14:07:07</span></td><td class="site-latest-post">—</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-missing">✗</span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-missing" title="No webmention/pingback endpoint advertised">✗</span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fflugzeugbesteck.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://flugzeugbesteck.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://flugzeugbesteck.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://flugzeugbesteck.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://haesslicheplastiktiereundzeugs.projektemacher.org/" target="_blank" rel="noopener noreferrer">Häßliche Plastiktiere und Zeugs</a> <a href="https://github.com/cmahnke/haesslicheplastiktiereundzeugs/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/haesslicheplastiktiereundzeugs/actions/workflows/gh-pages.yml/badge.svg" alt="Häßliche Plastiktiere und Zeugs"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://haesslicheplastiktiereundzeugs.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Hässliche Plastiktiere und Zeugs</td>
+    <td class="site-generator-desription">Fotodokumentaion über Tierparaden</td>
+  </tr>
+  <tr><td class="site-build-date">27 Oct 2026<span class="site-build-time"> 23:20:40</span></td><td class="site-latest-post">24 Oct 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fhaesslicheplastiktiereundzeugs.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fhaesslicheplastiktiereundzeugs.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://haesslicheplastiktiereundzeugs.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://haesslicheplastiktiereundzeugs.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://haesslicheplastiktiereundzeugs.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://xn--kinderbcher-zhb.projektemacher.org/" target="_blank" rel="noopener noreferrer">Kinderbücher</a> <a href="https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/kinderbuecher/actions/workflows/gh-pages.yml/badge.svg" alt="Kinderbücher"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://xn--kinderbcher-zhb.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"> - </td>
+    <td class="site-generator-desription">Alte, schöne und fragwürdige Kinderbücher</td>
+  </tr>
+  <tr><td class="site-build-date">27 Oct 2026<span class="site-build-time"> 23:46:30</span></td><td class="site-latest-post">1 Dec 2024</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fxn--kinderbcher-zhb.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-missing"><span title="No RSS feed advertised in the document head">✗</span></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://xn--kinderbcher-zhb.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://xn--kinderbcher-zhb.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://xn--kinderbcher-zhb.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/" target="_blank" rel="noopener noreferrer">Kleiderbügel</a> <a href="https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/kleiderbuegel/actions/workflows/gh-pages.yml/badge.svg" alt="Kleiderbügel"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Alte, schöne und fragwürdige Kleiderbügel</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 13:55:12</span></td><td class="site-latest-post">26 Oct 2027</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fxn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fxn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://kr%c3%a4henbeisser.de/" target="_blank" rel="noopener noreferrer">Krähenbeisser</a> <a href="https://github.com/cmahnke/kraehenbeisser/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/kraehenbeisser/actions/workflows/gh-pages.yml/badge.svg" alt="Krähenbeisser"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://krähenbeisser.de/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Krähenbeißer</td>
+    <td class="site-generator-desription">Historische Abbildungen von Krähenbeißern</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 07:40:41</span></td><td class="site-latest-post">29 Jul 2020</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fkr%C3%A4henbeisser.de%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-missing"><span title="https://kr%C3%A4henbeisser.de/index.xml is advertised but the feed is an HTTP error or no XML document">✗</span></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://xn--krhenbeisser-hcb.de/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://xn--krhenbeisser-hcb.de/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://xn--krhenbeisser-hcb.de/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://never-built.goettingen.xyz/" target="_blank" rel="noopener noreferrer">Never Built Göttingen</a> <a href="https://github.com/cmahnke/never-built/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/never-built/actions/workflows/gh-pages.yml/badge.svg" alt="Never Built Göttingen"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://never-built.goettingen.xyz/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Das nicht gebaute Göttingen</td>
+  </tr>
+  <tr><td class="site-build-date">20 Oct 2026<span class="site-build-time"> 00:50:13</span></td><td class="site-latest-post">12 Aug 2025</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fnever-built.goettingen.xyz%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-missing" title="No webmention/pingback endpoint advertised">✗</span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-missing"><span title="No RSS feed advertised in the document head">✗</span></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://never-built.goettingen.xyz/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-missing"><span title="llms.txt not found (HTTP error)">✗</span></span><span class="site-sitemap file-ok"><a target="_blank" href="https://never-built.goettingen.xyz/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://schatten.yaapb.projektemacher.org/" target="_blank" rel="noopener noreferrer">Nächtliche Schatten</a> <a href="https://github.com/cmahnke/schatten/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/schatten/actions/workflows/gh-pages.yml/badge.svg" alt="Nächtliche Schatten"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://schatten.yaapb.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Die „Digitalisierung“ der Nacht</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 08:04:19</span></td><td class="site-latest-post">—</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fschatten.yaapb.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-missing"><span title="No RSS feed advertised in the document head">✗</span></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://schatten.yaapb.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://schatten.yaapb.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://schatten.yaapb.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://plastikwarenfabrik.projektemacher.org/" target="_blank" rel="noopener noreferrer">Plastikwarenfabrik</a> <a href="https://github.com/cmahnke/plastikwarenfabrik/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/plastikwarenfabrik/actions/workflows/gh-pages.yml/badge.svg" alt="Plastikwarenfabrik"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://plastikwarenfabrik.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Startseite - Klaus-Ingo&#39;s Plastikwarenfabrik</td>
+    <td class="site-generator-desription">Feinster AI Slop</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 07:40:34</span></td><td class="site-latest-post">25 Sep 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fplastikwarenfabrik.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fplastikwarenfabrik.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://plastikwarenfabrik.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://plastikwarenfabrik.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://plastikwarenfabrik.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://labs.projektemacher.org/" target="_blank" rel="noopener noreferrer">Projektemacher Labs</a> <a href="https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/gh-pages.yml/badge.svg" alt="Projektemacher Labs"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://labs.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Projektemacher Labs</td>
+    <td class="site-generator-desription">Experimental blogs</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 02:56:54</span></td><td class="site-latest-post">1 Jan 2024</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Flabs.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Flabs.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://labs.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://labs.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://labs.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://merch.projektemacher.org/" target="_blank" rel="noopener noreferrer">Projektemacher Merch</a> <a href="https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/merch.projektemacher/actions/workflows/gh-pages.yml/badge.svg" alt="Projektemacher Merch"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://merch.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Projektemacher Merch</td>
+    <td class="site-generator-desription">Hier finden sich alle Entwürfe.
+Manches davon wurde bisher nicht produziert, mit Neuzugängen ist sehr unregelmäßig zu rechnen.
+Bei Interesse schreib einfach eine Mail an merch@projektemacher.org.
+Weitere Informationen und die Datenschutzerklärung findest du auf der Über-Seite.</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 07:41:45</span></td><td class="site-latest-post">1 Jan 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fmerch.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fmerch.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://merch.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://merch.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://merch.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://projektemacher.org/" target="_blank" rel="noopener noreferrer">Projektemacher</a> <a href="https://github.com/cmahnke/projektemacher/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/projektemacher/actions/workflows/gh-pages.yml/badge.svg" alt="Projektemacher"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Projektemacher</td>
+    <td class="site-generator-desription">Blog Potpourri</td>
+  </tr>
+  <tr><td class="site-build-date">30 Oct 2026<span class="site-build-time"> 10:38:15</span></td><td class="site-latest-post">26 Oct 2027</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fprojektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">1</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fprojektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://ric-unknownartist.projektemacher.org/" target="_blank" rel="noopener noreferrer">Ric - An unknown artist</a> <a href="https://github.com/cmahnke/ric-unknownartist/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/ric-unknownartist/actions/workflows/gh-pages.yml/badge.svg" alt="Ric - An unknown artist"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://ric-unknownartist.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Ric - An unknown artist</td>
+    <td class="site-generator-desription">This blog tries to help to solve the mystery „Who was Ric?“</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 07:48:38</span></td><td class="site-latest-post">7 Oct 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fric-unknownartist.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fric-unknownartist.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://ric-unknownartist.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://ric-unknownartist.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://ric-unknownartist.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://schriftmuster.projektemacher.org/" target="_blank" rel="noopener noreferrer">Schriftmuster</a> <a href="https://github.com/cmahnke/schriftmuster/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/schriftmuster/actions/workflows/gh-pages.yml/badge.svg" alt="Schriftmuster"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://schriftmuster.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Specimens of old typefaces from catalogues for printers and from documents</td>
+  </tr>
+  <tr><td class="site-build-date">29 Oct 2026<span class="site-build-time"> 14:10:55</span></td><td class="site-latest-post">10 Jul 2025</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fschriftmuster.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fschriftmuster.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://schriftmuster.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://schriftmuster.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://schriftmuster.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://vintagereality.projektemacher.org/" target="_blank" rel="noopener noreferrer">Vintage Reality</a> <a href="https://github.com/cmahnke/vintagereality/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/vintagereality/actions/workflows/gh-pages.yml/badge.svg" alt="Vintage Reality"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://vintagereality.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">&#39;Virtuelle Realität&#39; im späten 19. und frühen 20. Jahrhundert</td>
+  </tr>
+  <tr><td class="site-build-date">29 Oct 2026<span class="site-build-time"> 02:57:38</span></td><td class="site-latest-post">19 Mar 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fvintagereality.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fvintagereality.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://vintagereality.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://vintagereality.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://vintagereality.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://vorsatzpapier.projektemacher.org/" target="_blank" rel="noopener noreferrer">Vorsatzpapier</a> <a href="https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml/badge.svg" alt="Vorsatzpapier"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://vorsatzpapier.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Vorsatzpapier - </td>
+    <td class="site-generator-desription">Old endpapers and wallpapers</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 14:26:44</span></td><td class="site-latest-post">1 Dec 2025</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fvorsatzpapier.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fvorsatzpapier.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://vorsatzpapier.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://vorsatzpapier.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://vorsatzpapier.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://xn--wilmabruner-r8a.projektemacher.org/" target="_blank" rel="noopener noreferrer">Wilma Bräuner</a> <a href="https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/wilmabraeuner/actions/workflows/gh-pages.yml/badge.svg" alt="Wilma Bräuner"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://xn--wilmabruner-r8a.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title"></td>
+    <td class="site-generator-desription">Spurensuche im Sylter Archiv: Zum Leben und Werk von Wilma Bräuner (1891-1985)</td>
+  </tr>
+  <tr><td class="site-build-date">27 Oct 2026<span class="site-build-time"> 23:02:52</span></td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fxn--wilmabruner-r8a.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fxn--wilmabruner-r8a.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://xn--wilmabruner-r8a.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://xn--wilmabruner-r8a.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://xn--wilmabruner-r8a.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://xn--h-zfa.xyz/" target="_blank" rel="noopener noreferrer">Projektemacher URL Shortener</a> <a href="https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/xn--h-zfa.xyz/actions/workflows/gh-pages.yml/badge.svg" alt="Projektemacher URL Shortener"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://xn--h-zfa.xyz/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Äh.XYZ</td>
+    <td class="site-generator-desription">Projektemacher URL Shortener</td>
+  </tr>
+  <tr></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fxn--h-zfa.xyz%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-missing"><span title="No RSS feed advertised in the document head">✗</span></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://xn--h-zfa.xyz/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://xn--h-zfa.xyz/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://xn--h-zfa.xyz/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+<li>
+<p><a href="https://yaapb.projektemacher.org/" target="_blank" rel="noopener noreferrer">Yet another analog photo blog</a> <a href="https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/yaapb/actions/workflows/gh-pages.yml/badge.svg" alt="Yet another analog photo blog"></a> <table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">https://yaapb.projektemacher.org/</td>
+    <td class="site-generator-version">0.168.0</td>
+    <td class="site-generator-title">Yet another analog photo blog · Yet another analog photo blog</td>
+    <td class="site-generator-desription">Yet another analog photo blog - photograpy with cameras from the flea market.</td>
+  </tr>
+  <tr><td class="site-build-date">28 Oct 2026<span class="site-build-time"> 07:38:39</span></td><td class="site-latest-post">20 Oct 2026</td></tr>
+</table>
+ <div class="site-generator-shortcode schema-check-shortcode"><span class="site-schema schema-ok"><a target="_blank" href="https://validator.schema.org/#url=https%3A%2F%2Fyaapb.projektemacher.org%2F" title="Schema.org validator">✓</a></span></div>
+ <div class="site-generator-shortcode webmention-check-shortcode"><span class="site-webmention webmention-ok"><a target="_blank" href="https://indieweb.org/Webmention" title="Webmention endpoint advertised">✓</a></span><span class="site-webmention-count">0</span>
+ </div>
+ <div class="site-generator-shortcode rss-check-shortcode">
+   <span class="site-rss rss-ok"><a target="_blank" href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fyaapb.projektemacher.org%2Findex.xml" title="RSS advertised and served">✓</a></span>
+ </div>
+ <div class="site-generator-shortcode file-check-shortcode"><span class="site-robots file-ok"><a target="_blank" href="https://yaapb.projektemacher.org/robots.txt" title="robots.txt">✓</a></span><span class="site-llms file-ok"><a target="_blank" href="https://yaapb.projektemacher.org/llms.txt" title="llms.txt">✓</a></span><span class="site-sitemap file-ok"><a target="_blank" href="https://yaapb.projektemacher.org/sitemap.xml" title="sitemap.xml">✓</a></span></div>
+</p>
+</li>
+</ul>
+<h1 id="themes" class="status">Themes</h1>
+<ul>
+<li>
+<p>Hugo XML Exporter <a href="https://github.com/cmahnke/hugo-xml-exporter/actions/workflows/test.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/hugo-xml-exporter/actions/workflows/test.yml/badge.svg" alt="Hugo XML Exporter"></a></p>
+</li>
+<li>
+<p>Projektemacher Base <a href="https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/projektemacher-base/actions/workflows/test.yml/badge.svg" alt="Projektemacher Base"></a></p>
+</li>
+<li>
+<p>Observer Hugo <a href="https://github.com/cmahnke/observer-hugo/actions/workflows/test.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/observer-hugo/actions/workflows/test.yml/badge.svg" alt="Observer Hugo"></a></p>
+</li>
+</ul>
+<h1 id="tools" class="status">Tools</h1>
+<ul>
+<li>Projektemacher Hugo <a href="https://github.com/cmahnke/projektemacher-hugo/actions/workflows/projektemacher.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/projektemacher-hugo/actions/workflows/projektemacher.yml/badge.svg" alt="Projektemacher Hugo"></a></li>
+</ul>
+<h2 id="images" class="status">Images</h2>
+<ul>
+<li>
+<p>IIIF Action <a href="https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/iiif-action/actions/workflows/docker.yaml/badge.svg" alt="IIIF Action"></a></p>
+</li>
+<li>
+<p>JPEG XL Action <a href="https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/jpeg-xl-action/actions/workflows/docker.yaml/badge.svg" alt="JPEG XL Action"></a></p>
+</li>
+<li>
+<p>HDR Tools <a href="https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/hdr-tools/actions/workflows/docker.yaml/badge.svg" alt="HDR Tools"></a></p>
+</li>
+</ul>
+<h2 id="rdf--linked-open-data">RDF / Linked open data</h2>
+<ul>
+<li>LOD-Tools <a href="https://github.com/cmahnke/lod-tools/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/lod-tools/actions/workflows/docker.yaml/badge.svg" alt="HDR Tools"></a> <a href="https://github.com/cmahnke/lod-tools/actions/workflows/hdt-rs.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/lod-tools/actions/workflows/hdt-rs.yml/badge.svg" alt="HDR Tools"></a></li>
+</ul>
+<h2 id="fonts" class="status">Fonts</h2>
+<ul>
+<li>Font Action <a href="https://github.com/cmahnke/font-action/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/font-action/actions/workflows/docker.yaml/badge.svg" alt="IIIF Action"></a></li>
+</ul>
+<h2 id="maps" class="status">Maps</h2>
+<ul>
+<li>
+<p>Map Tools <a href="https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/map-tools/actions/workflows/docker.yaml/badge.svg" alt="Map Tools Docker images"></a></p>
+</li>
+<li>
+<p>Map Data <a href="https://github.com/cmahnke/map-data/actions/workflows/data.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/map-data/actions/workflows/data.yaml/badge.svg" alt="Map Data"></a></p>
+</li>
+<li>
+<p>Projektemacher Maps <a href="https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/projektemacher-maps/actions/workflows/docker.yaml/badge.svg" alt="Projektemacher Maps Docker images"></a> <a href="https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/projektemacher-maps/actions/workflows/deploy.yaml/badge.svg" alt="Projektemacher Maps Deployment"></a></p>
+</li>
+</ul>
+<h2 id="npm-modules" class="status">NPM Modules</h2>
+<ul>
+<li>
+<p>Lucienne <a href="https://github.com/cmahnke/lucienne/actions/workflows/lint.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/lucienne/actions/workflows/lint.yml/badge.svg" alt="Lint and publish example"></a></p>
+</li>
+<li>
+<p><code>hdr-canvas</code> <a href="https://github.com/cmahnke/hdr-canvas/actions/workflows/lint.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/hdr-canvas/actions/workflows/lint.yml/badge.svg" alt="Lint and publish example"></a></p>
+</li>
+<li>
+<p><code>rollup-plugin-wasm-brotli</code> <a href="https://github.com/cmahnke/rollup-plugin-wasm-brotli/actions/workflows/lint.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/rollup-plugin-wasm-brotli/actions/workflows/lint.yml/badge.svg" alt="Lint and publish example"></a></p>
+</li>
+<li>
+<p><code>vivliostyle-batch-cli</code> <a href="https://github.com/cmahnke/vivliostyle-batch-cli/actions/workflows/lint.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/vivliostyle-batch-cli/actions/workflows/lint.yml/badge.svg" alt="Lint and publish example"></a></p>
+</li>
+</ul>
+<h2 id="other" class="status">Other</h2>
+<ul>
+<li>
+<p>OSS Exhibition Tools <a href="https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg" alt="OSS Exhibition Tools"></a></p>
+</li>
+<li>
+<p>Projektemacher Static SSL Check <a href="https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml/badge.svg" alt="Projektemacher Static SSL Check"></a></p>
+</li>
+<li>
+<p>Speech Tools <a href="https://github.com/cmahnke/speech-tools/actions/workflows/docker.yaml" target="_blank" rel="noopener noreferrer"><img src="https://github.com/cmahnke/speech-tools/actions/workflows/docker.yaml/badge.svg" alt="Speech Tools"></a></p>
+</li>
+</ul>
+<p>Zuletzt aktualisiert <date class="build-date">10/31/26 2:47:05 am</date>
+</p>
+
+  </section>
+</article>
+
+    </main>
+</div>
+<footer>
+  <div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher Labs is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img alt="Christian Mahnke" src="https://labs.projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; MMXXI - MMXXVI <a href="https://labs.projektemacher.org">Projektemacher Labs</a></p><p class="privacy"><a href="https://labs.projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p></div>
+
+</footer>
+
+</body>
+</html>
+
