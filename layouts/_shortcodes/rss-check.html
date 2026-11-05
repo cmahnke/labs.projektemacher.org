@@ -12,7 +12,10 @@
 
   - the homepage head advertises an RSS feed (the <link> holds
     'application/rss+xml'; attribute order independent - the theme's
-    'links.html' writes the href first, others may not)
+    'links.html' writes the href first, others may not - the head is
+    scanned entity-decoded ('htmlUnescape') so attribute values
+    escaped by Go's contextual escaping, e.g. '+' as '&#43;', match
+    too)
   - the advertised feed URL returns an XML document (<rss> or <feed>)
 
   Any other outcome renders ✗ with the reason in the title tooltip:
@@ -43,7 +46,11 @@
     {{- warnf "[rss-check.html] Unable to reach %s, skipping!" $url -}}
   {{- else with .Value -}}
     {{- $state = "missing" -}}
-    {{- range findRE "(?i)<link[^>]+>" .Content -}}
+    {{/* Scan entity-decoded HTML: Go's contextual escaping may emit attribute
+        values like type="application/rss&#43;xml" (kinderbuecher), which the
+        raw '+' regex below would otherwise miss. */}}
+    {{- $content := htmlUnescape .Content -}}
+    {{- range findRE "(?i)<link[^>]+>" $content -}}
       {{- if not $feedUrl -}}
         {{- if findRE "(?i)application/rss\\+xml" . -}}
           {{- with findRE "(?i)href=[\"'][^\"']+[\"']" . -}}
