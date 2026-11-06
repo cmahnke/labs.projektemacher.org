@@ -1,9 +1,9 @@
 ---
 title: "Postkarte Oldenburg"
 date: 2024-01-01T12:30:07+02:00
-type: postcard
 params:
   iiifContext: http://iiif.io/api/image/2/context.json
+  itemType: postcard
 tags:
 - Oldenburg
 - Horten

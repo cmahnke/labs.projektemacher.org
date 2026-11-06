@@ -3,7 +3,7 @@ title: "Postkarte Wolfsburg"
 date: 2021-03-28T10:15:07+02:00
 params:
   iiifContext: http://iiif.io/api/image/2/context.json
-type: postcard
+  itemType: postcard
 tags:
 - Wolfsburg
 - Unterführung

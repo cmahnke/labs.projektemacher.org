@@ -3,7 +3,7 @@ title: "Berlin"
 date: 2024-01-01T10:15:07+02:00
 params:
   iiifContext: http://iiif.io/api/image/2/context.json
-type: postcard
+  itemType: postcard
 tags:
 - Berlin
 - Unterführung

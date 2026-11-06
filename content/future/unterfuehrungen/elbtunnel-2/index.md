@@ -1,9 +1,9 @@
 ---
 title: "Postkarte Elbtunnel"
 date: 2023-11-07T20:15:07+02:00
-type: postcard
 params:
   iiifContext: http://iiif.io/api/image/2/context.json
+  itemType: postcard
 tags:
 - Hamburg
 - Unterführung

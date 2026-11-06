@@ -1,7 +1,6 @@
 ---
 title: "Kathedrale von Bayeux"
 date: 2021-04-02T17:15:07+02:00
-type: 3d
 params:
   subtype: stereoscopic
   iiifContext: http://iiif.io/api/image/2/context.json
@@ -11,6 +10,7 @@ params:
     - 49.27527588969518
   js:
     - ts/3d.ts
+  itemType: 3d
 tags:
 - 3D
 resources:

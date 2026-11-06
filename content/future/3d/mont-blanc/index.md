@@ -1,7 +1,6 @@
 ---
 title: "Die eisigen Höhen des Mont blanc von Le Brévent aus gesehen"
 date: 2022-12-31T08:15:07+02:00
-type: 3d
 params:
   subtype: stereoscopic
   iiifContext: http://iiif.io/api/image/2/context.json
@@ -11,6 +10,7 @@ params:
     coordinates:
     - 6.864325
     - 45.832544
+  itemType: 3d
 tags:
 - 3D
 resources:

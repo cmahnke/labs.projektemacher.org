@@ -1,9 +1,9 @@
 ---
 title: "Postkarte Bielefeld"
 date: 2021-03-28T10:15:07+02:00
-type: postcard
 params:
   iiifContext: http://iiif.io/api/image/2/context.json
+  itemType: postcard
 tags:
 - Bielefeld
 - Unterführung

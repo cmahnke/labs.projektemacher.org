@@ -1,7 +1,6 @@
 ---
 title: "Empfangssaal des Maharajah von Tangore in Calcutta, Indien"
 date: 2022-12-26T22:15:07+02:00
-type: 3d
 params:
   subtype: stereoscopic
   iiifContext: http://iiif.io/api/image/2/context.json
@@ -11,6 +10,7 @@ params:
     - 22.582290
   js:
     - ts/3d.ts
+  itemType: 3d
 tags:
 - 3D
 resources:

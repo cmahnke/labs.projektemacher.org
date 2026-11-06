@@ -9,7 +9,7 @@
 {{- partial "html/head/style.html" (dict "context" . "css" "css/style.css") -}}
 {{- partial "html/head/script.html" (dict  "context" . "js" (partial "html/head/iiif-js.html" .)) -}}
 
-{{- if eq .Params.layout "html-body" -}}
+{{- if eq .Layout "html-body" -}}
     {{- partial "html/head/style/include-css.html" . -}}
 {{- end -}}
 
