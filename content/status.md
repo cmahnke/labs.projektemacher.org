@@ -49,6 +49,8 @@ params:
 
 * [Schriftmuster](https://schriftmuster.projektemacher.org/) [![Schriftmuster](https://github.com/cmahnke/schriftmuster/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/schriftmuster/actions/workflows/gh-pages.yml) {{< site-generator url="https://schriftmuster.projektemacher.org/" >}} {{< schema-check url="https://schriftmuster.projektemacher.org/" >}} {{< webmention-check url="https://schriftmuster.projektemacher.org/" >}} {{< rss-check url="https://schriftmuster.projektemacher.org/" >}} {{< file-check url="https://schriftmuster.projektemacher.org/" >}}
 
+* [Strandkorb-Kombinat](https://strandkorbkombin.at/) [![Strandkorb-Kombinat](https://github.com/cmahnke/strandkorbkombin.at/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/strandkorbkombin.at/actions/workflows/gh-pages.yml) {{< site-generator url="https://strandkorbkombin.at/" >}} {{< schema-check url="https://strandkorbkombin.at/" >}} {{< webmention-check url="https://strandkorbkombin.at/" >}} {{< rss-check url="https://strandkorbkombin.at/" >}} {{< file-check url="https://strandkorbkombin.at/" >}}
+
 * [Vintage Reality](https://vintagereality.projektemacher.org/) [![Vintage Reality](https://github.com/cmahnke/vintagereality/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/vintagereality/actions/workflows/gh-pages.yml) {{< site-generator url="https://vintagereality.projektemacher.org/" >}} {{< schema-check url="https://vintagereality.projektemacher.org/" >}} {{< webmention-check url="https://vintagereality.projektemacher.org/" >}} {{< rss-check url="https://vintagereality.projektemacher.org/" >}} {{< file-check url="https://vintagereality.projektemacher.org/" >}}
 
 * [Vorsatzpapier](https://vorsatzpapier.projektemacher.org/) [![Vorsatzpapier](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/cmahnke/vorsatzpapier/actions/workflows/gh-pages.yml) {{< site-generator url="https://vorsatzpapier.projektemacher.org/" >}} {{< schema-check url="https://vorsatzpapier.projektemacher.org/" >}} {{< webmention-check url="https://vorsatzpapier.projektemacher.org/" >}} {{< rss-check url="https://vorsatzpapier.projektemacher.org/" >}} {{< file-check url="https://vorsatzpapier.projektemacher.org/" >}}
@@ -110,6 +112,12 @@ params:
 * `rollup-plugin-wasm-brotli` [![Lint and publish example](https://github.com/cmahnke/rollup-plugin-wasm-brotli/actions/workflows/lint.yml/badge.svg)](https://github.com/cmahnke/rollup-plugin-wasm-brotli/actions/workflows/lint.yml)
 
 * `vivliostyle-batch-cli` [![Lint and publish example](https://github.com/cmahnke/vivliostyle-batch-cli/actions/workflows/lint.yml/badge.svg)](https://github.com/cmahnke/vivliostyle-batch-cli/actions/workflows/lint.yml)
+
+* `coursereader` [![Validate](https://github.com/cmahnke/coursereader/actions/workflows/validate.yml/badge.svg)](https://github.com/cmahnke/coursereader/actions/workflows/validate.yml) [![Publish](https://github.com/cmahnke/coursereader/actions/workflows/publish.yml/badge.svg)](https://github.com/cmahnke/coursereader/actions/workflows/publish.yml)
+
+* `tify-plugins` [![CI](https://github.com/cmahnke/tify-plugins/actions/workflows/ci.yml/badge.svg)](https://github.com/cmahnke/tify-plugins/actions/workflows/ci.yml) [![Publish](https://github.com/cmahnke/tify-plugins/actions/workflows/publish.yml/badge.svg)](https://github.com/cmahnke/tify-plugins/actions/workflows/publish.yml)
+
+* StoryMapJS [![CI](https://github.com/cmahnke/StoryMapJS/actions/workflows/ci.yml/badge.svg)](https://github.com/cmahnke/StoryMapJS/actions/workflows/ci.yml) [![Release](https://github.com/cmahnke/StoryMapJS/actions/workflows/package.yml/badge.svg)](https://github.com/cmahnke/StoryMapJS/actions/workflows/package.yml)
 
 ## Other
 {.status}
