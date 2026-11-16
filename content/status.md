@@ -124,6 +124,8 @@ params:
 
 * OSS Exhibition Tools [![OSS Exhibition Tools](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/oss-exhibition-tools/actions/workflows/docker.yaml)
 
+* Pagefind Indexer [![Test installation](https://github.com/cmahnke/pagefind-indexer/actions/workflows/test-installation.yml/badge.svg)](https://github.com/cmahnke/pagefind-indexer/actions/workflows/test-installation.yml)
+
 * Projektemacher Static SSL Check [![Projektemacher Static SSL Check](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml/badge.svg)](https://github.com/cmahnke/labs.projektemacher.org/actions/workflows/ssl-check.yml)
 
 * Speech Tools [![Speech Tools](https://github.com/cmahnke/speech-tools/actions/workflows/docker.yaml/badge.svg)](https://github.com/cmahnke/speech-tools/actions/workflows/docker.yaml)
