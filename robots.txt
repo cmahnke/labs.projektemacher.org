@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /privacy/
+
+
+Disallow: /*.bib$
+
+Disallow: /*.json$
+
+Disallow: /*.xml$
+
+Sitemap: https://labs.projektemacher.org/sitemap.xml
+
+
+llms-txt: https://labs.projektemacher.org/llms.txt
